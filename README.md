@@ -11,5 +11,5 @@
 
 # 目录
 
-- [MITRE ATTACK](/notebook/ATTCK_Learning/notebook/MITRE_ATTACK.md)
+- [MITRE ATTACK](/notebook/MITRE_ATTACK.md)
 
