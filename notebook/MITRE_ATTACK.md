@@ -51,6 +51,11 @@ ICS 暂无细分领域
 
 ## 战术（Tactics ）列表
 
+> 注意：
+>
+> - 相同名称的Tactics在不同领域的ID不同
+> - 相同名称的Tactics在不同领域所包含的Techniques也不一样
+
 ATT&CK Matrix 中现有战术（Tactics ）如下：
 
 | ID                   | Tactics                                                      | 战术         | 描述                                                         | 领域                  |

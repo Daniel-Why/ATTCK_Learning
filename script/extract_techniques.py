@@ -2,7 +2,7 @@
 import json
 import csv
 
-with open(r'assets\attck_database\ics_attack_2023_5.json', 'r') as f:
+with open(r'assets\attck_database\v13\enterprise_attck\ics_attack_2023_5.json', 'r') as f:
     data = json.load(f)
 
 techniques = data['techniques']
