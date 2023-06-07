@@ -1,6 +1,6 @@
 reconnaissance,TA0043,enterprise
 resource-development,TA0042,enterprise
-initail-access,TA0001,enterprise
+initial-access,TA0001,enterprise
 execution,TA0002,enterprise
 persistence,TA0003,enterprise
 privilege-escalation,TA0004,enterprise

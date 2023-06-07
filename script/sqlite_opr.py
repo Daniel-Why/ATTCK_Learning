@@ -6,24 +6,24 @@ import csv
 
 
 #%% 打开数据库连接
-conn = sqlite3.connect('attck.db')
+conn = sqlite3.connect(r'..\assets\attck_database\v13\sqlite_db\attck.db')
 print("数据库打开成功")
 c = conn.cursor()
 
 #%% 创建 tactics 表
 c.execute('''CREATE TABLE att_tactics
-(id INTEGER PRIMARY KEY,
-tatic_id TEXT,
-tatic_name TEXT,
+( `id` INTEGER PRIMARY KEY,
+tactic_id TEXT,
+tactic_name TEXT,
 matric TEXT
 );''')
 
 #%% 创建 techniques 表
 c.execute('''CREATE TABLE att_techniques
-('id' INT PRIMARY KEY,
+(`id` INTEGER PRIMARY KEY,
 tech_id TEXT,
 tech_name TEXT,
-tatic_id TEXT,
+tactic_id TEXT,
 father_tech_id TEXT,
 matric TEXT);''')
 
@@ -34,7 +34,28 @@ with open(r'..\assets\attck_database\v13\enterprise_attck\enterprise_tactics.csv
     data = [row for row in reader]
 
 for row in data:
-    c.execute("INSERT INTO att_tactics (tatic_name,tatic_id,matric) VALUES ('{}', '{}', '{}')".format(row[0], row[1], row[2]))
+    c.execute("INSERT INTO att_tactics (tactic_name,tactic_id,matric) VALUES ('{}', '{}', '{}')".format(row[0], row[1], row[2]))
+
+
+
+
+#%% 插入数据到techniques表
+with open(r'..\assets\attck_database\v13\enterprise_attck\enterprise_techniques.csv',encoding='utf-8') as csvfile:
+    reader = csv.reader(csvfile)
+    data = [row for row in reader]
+
+n = 0
+for row in data:
+    tactics_list=row[2].split(",")
+    n+=1
+    for tt_name in tactics_list:
+        tt_id_list = c.execute(" SELECT tactic_id FROM att_tactics WHERE tactic_name like '{}' ".format(tt_name))
+        tt_id = tt_id_list.fetchall()[0][0]
+        c.execute("INSERT INTO att_techniques (tech_id,tech_name,tactic_id,matric) VALUES ('{}', '{}', '{}','{}')".format(row[0], row[1],tt_id, row[3])) 
+        print(n)
+
+#%% 删除表
+c.execute("DROP TABLE att_techniques")
 
 #%% 关闭数据库连接
 conn.commit()
