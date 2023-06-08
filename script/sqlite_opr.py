@@ -54,8 +54,17 @@ for row in data:
         c.execute("INSERT INTO att_techniques (tech_id,tech_name,tactic_id,matric) VALUES ('{}', '{}', '{}','{}')".format(row[0], row[1],tt_id, row[3])) 
         print(n)
 
+#%% 找出sub_tech的父级
+# 找出所有父级tech
+father_tech = c.execute("SELECT tech_id FROM att_techniques WHERE tech_id NOT LIKE '%.%'")
+for f_t in father_tech.fetchall():
+    #print(f_t[0])
+    sub_tech = c.execute("SELECT tech_id FROM att_techniques WHERE tech_id LIKE '{}.%'".format(f_t[0]))
+    for s_t in sub_tech.fetchall():
+        c.execute("UPDATE att_techniques set father_tech_id = '{}' where tech_id = '{}'".format(f_t[0],s_t[0]))
+
 #%% 删除表
-c.execute("DROP TABLE att_techniques")
+# c.execute("DROP TABLE att_techniques")
 
 #%% 关闭数据库连接
 conn.commit()
