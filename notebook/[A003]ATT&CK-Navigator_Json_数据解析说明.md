@@ -14,7 +14,7 @@
 
 1. 访问 https://mitre-attack.github.io/attack-navigator/ 打开浏览器``` dev-tool``` 并选择需要查看的矩阵领域
 
-   ![获取json步骤1](..\assets\article_data\A003\pic\P001.png)
+   ![获取json步骤1](../assets/article_data/A003/pic/P001.png)
 
    
 
