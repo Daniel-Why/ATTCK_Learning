@@ -14,7 +14,7 @@
 
 1. 访问 https://mitre-attack.github.io/attack-navigator/ 打开浏览器``` dev-tool``` 并选择需要查看的矩阵领域
 
-   ![获取json步骤1](..\assets\article_data\A003\pic\P001.png)
+   ![获取json步骤1](../assets/article_data/A003/pic/P001.png)
 
    
 
@@ -22,11 +22,11 @@
 
    > 此处以Enterprise为例
 
-   ![获取json步骤2](..\assets\article_data\A003\pic\P002.png)
+   ![获取json步骤2](../assets/article_data/A003/pic/P002.png)
 
 3. 将json数据另存为
 
-   ![获取json步骤3](..\assets\article_data\A003\pic\P003.png)
+   ![获取json步骤3](../assets/article_data/A003/pic/P003.png)
 
 # 数据结构
 
