@@ -31,7 +31,7 @@ STIX/TAXII旨在通过以下方式改善安全措施：
 
 >  能够对网络威胁进行表述和建模的一种语言
 
-<img src="..\assets\article_data\A005\pic\P001.svg" alt="P001" style="zoom: 25%;" />
+<img src="../assets/article_data/A005/pic/P001.svg" alt="P001" style="zoom: 25%;" />
 
 ​	STIX,即结构化威胁信息表达(Structured Threat Information Expression),是由MITRE和OASIS Cyber Threat Intelligence (CTI) Technical Committee共同开发的一种标准化语言，用于描述网络安全威胁信息。它已被多个情报共享社区和组织采用为国际标准。设计初衷是通过TAXII进行共享，但也可以使用其他方式进行共享。STIX的结构化设计使得用户可以描述威胁。
 
@@ -75,7 +75,7 @@ STIX 2.1中定义了18个STIX域名对象（STIX Domain Objects，SDOs），和2
 
 #### 可视化 SDOs 关系
 
-![P004](.\..\assets\article_data\A005\pic\P004.svg)
+![P004](./../assets/article_data/A005/pic/P004.svg)
 
 ### STIX关系对象（SROs）
 
@@ -112,7 +112,7 @@ STIX 2.1中定义了18个STIX域名对象（STIX Domain Objects，SDOs），和2
 
 > 一种通过HTTPS交换CTI(Cyber Threat Intelligence 威胁情报)的应用程序协议。
 
-![P002](..\assets\article_data\A005\pic\P002.svg)
+![P002](../assets/article_data/A005/pic/P002.svg)
 
 TAXII,即Trusted Automated Exchange of Intelligence Information,定义了通过服务和消息交换共享网络威胁情报的方式。它专门为支持STIX信息而设计，通过定义与常见共享模型相一致的API来实现。
 
@@ -122,7 +122,7 @@ TAXII的三个主要模型包括：
 - Source/subscriber （数据源/订阅者）– 一个单一的信息来源
 - Peer-to-peer（点对点） – 多个组织共享信息
 
-<img src="E:\Document\notebook\ATTCK_Learning\assets\article_data\A005\pic\P003.webp" alt="P003" style="zoom:50%;" />
+<img src="./../assets/article_data/A005/pic/P003.webp" alt="P003" style="zoom:50%;" />
 
 TAXII定义了四个服务。用户可以选择并实施任意数量的服务，并根据不同的共享模型组合它们。
 
