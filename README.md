@@ -19,9 +19,9 @@
 
 - **MITRE ATTACK**
 
-  - [[A002]MITRE ATTACK](./notebook/MITRE_ATTACK.md)
-
-  - [[A004]ATT&CK_Matrix_Database](./notebook/ATT&CK_Matrix_Database.md)
+  - [[A002]MITRE ATTACK](./notebook/[A002]MITRE_ATTACK.md)
+  - [[A004]ATT&CK_Matrix_Database](./notebook/[A004]ATT&CK_Matrix_Database.md)
+  - [[A007]ATT&CK_STIX Database数据研究](./notebook/[A007]ATT&CK_STIX_Database数据研究.ipynb)
 
 - **STIX & TAXII**
 
@@ -33,5 +33,5 @@
 
 > 已废弃的文章，文章可能有错误，或者不太符合当前需要
 
-- [[A003]ATT&CK-Navigator_Json_数据解析说明](./notebook/ATT&CK-Navigator_Json_数据解析说明.md)
+- [[A003]ATT&CK-Navigator_Json_数据解析说明](./notebook/[A003]ATT&CK-Navigator_Json_数据解析说明.md)
 
