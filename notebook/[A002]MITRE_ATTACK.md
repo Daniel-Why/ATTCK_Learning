@@ -18,6 +18,22 @@ MITRE ATT&CK Matrix 是一种用于描述攻击者在攻击过程中可能采取
 
 ATT&CK Matrix 主要由战术(tactics)和技术(techniques)构成，其中战术(tactics)指的是攻击者用来实现其攻击目标的策略，例如横向移动、数据收集、持久化等。而技术(techniques)则是指攻击者在攻击过程中使用的具体技术，例如恶意软件、社交工程、漏洞利用等。Tactics 和 techniques在ATT&CK Matrix都有相应的标识编码。其中tactics的标识编码为【TA+四位数字】，如[Initial Access ](https://attack.mitre.org/tactics/TA0001) [TA0001]，techniques的标识编码为【T+四位数字】，如[Drive-by Compromise ](https://attack.mitre.org/techniques/T1189)[T1189]。
 
+除了战术(tactics)和技术(techniques)以外，ATT&CK Matrix还对与技术相关联的组织、软件和缓解措施等进行了整理，并也有唯一的编码，如下：
+
+| 概念          | 中文     | 说明                                                  | ID格式    | 举例                                                       |
+| ------------- | -------- | ----------------------------------------------------- | --------- | ---------------------------------------------------------- |
+| Matrix        | 矩阵     | 攻击所对应的领域，当前有Enterprise\Mobile\ICS三个领域 | --        | --                                                         |
+| Tactic        | 战术     | 攻击者用来实现其攻击目标的策略                        | TAxxxx    | [TA0043](https://attack.mitre.org/tactics/TA0043/)         |
+| Techniques    | 技术     | 攻击者在攻击过程中使用的具体技术                      | Txxxx     | [T1595](https://attack.mitre.org/techniques/T1595)         |
+| Sub-Technique | 子技术   | 技术的更细的分类                                      | Txxxx.yyy | [T1595.001](https://attack.mitre.org/techniques/T1595/001) |
+| Mitigations   | 缓解措施 | 防御或缓解攻击技术威胁的方法                          | Mxxxx     | [M1056](https://attack.mitre.org/mitigations/M1056)        |
+| Data Sources  | 数据源   | 用于探测攻击技术的方法和数据来源                      | DSxxxx    | [DS0029](https://attack.mitre.org/datasources/DS0029/)     |
+| Group         | 组织     | 攻击组织或团体                                        | Gxxxx     | [G0139](https://attack.mitre.org/groups/G0139)             |
+| Software      | 软件     | 可用于执行攻击技术的一些工具                          | Sxxxx     | [S0349](https://attack.mitre.org/software/S0349)           |
+| Campaigns     | 活动     | 记录了已知的一些安全事件                              | Cxxxx     | [C0025](https://attack.mitre.org/campaigns/C0025)          |
+
+
+
 ATT&CK 整理了3个领域的攻击框架，分别是：
 
 - Enterprise：指企业网络环境，包括桌面电脑、笔记本电脑、服务器等各种计算机系统。
@@ -48,6 +64,8 @@ Mobile 领域细分为：
 - iOS
 
 ICS 暂无细分领域
+
+
 
 # 战术（Tactics ）
 
@@ -136,3 +154,4 @@ ATT&CK Matrix 中现有战术（Tactics ）如下：
 | TA0107 | [Inhibit Response Function](https://attack.mitre.org/tactics/TA0107) | 抑制响应功能 | ✅    |
 | TA0106 | [Impair Process Control](https://attack.mitre.org/tactics/TA0106) | 破坏过程控制 | ✅    |
 | TA0034 | [Impact](https://attack.mitre.org/tactics/TA0034)            | 影响         | ✅    |
+
