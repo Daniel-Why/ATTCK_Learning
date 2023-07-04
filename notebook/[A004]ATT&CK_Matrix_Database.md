@@ -36,6 +36,8 @@
 
 ​	可以从GitHub直接获取ATT&CK STIX数据，或者通过官方的ATT&CK TAXII服务器访问。Trusted Automated Exchange of Intelligence Information(TAXII)是一种通过HTTPS交换CTI的应用程序协议。ATT&CK TAXII服务器提供了对ATT&CK STIX知识库的API访问。有关如何访问TAXII服务器的更多信息，请[参阅此处](https://github.com/mitre/cti/blob/master/USAGE.md#access-from-the-attck-taxii-server)。
 
+使用```pip install stix2```安装STIX解析库
+
 ### Excel
 
 可在https://attack.mitre.org/resources/working-with-attack/下载，本项目中已经保存了xlsx格式的ATT&CK数据，见[文件夹](..\assets\attck_database\v13)
