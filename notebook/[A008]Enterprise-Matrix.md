@@ -78,55 +78,70 @@ Reconnaissance consists of techniques that involve adversaries actively or passi
 
 Resource Development consists of techniques that involve adversaries creating, purchasing, or compromising/stealing resources that can be used to support targeting. Such resources include infrastructure, accounts, or capabilities. These resources can be leveraged by the adversary to aid in other phases of the adversary lifecycle, such as using purchased domains to support Command and Control, email accounts for phishing as a part of Initial Access, or stealing code signing certificates to help with Defense Evasion.
 
+"Resource Development"（资源开发）是指攻击者试图建立可用于支持操作的资源。
+
+资源开发技术包括攻击者创建、购买或者入侵/窃取可用于支持目标定位的资源。这些资源包括基础设施、账户或能力。攻击者可以利用这些资源在攻击者生命周期的其他阶段中发挥作用，例如使用购买的域名来支持命令与控制，使用电子邮件账户进行钓鱼作为初始访问的一部分，或者窃取代码签名证书来帮助防御规避。
+
+Acquire Infrastructure技术主要涉及以下方面：
+
+1. 申请域名：攻击者可能通过使用正规渠道或恶意手段来注册或购买域名，以便在攻击过程中使用。
+2. 购买托管服务：攻击者可能会租赁或购买服务器、VPS（虚拟专用服务器）或云计算资源，作为操纵攻击活动所需的基础设施。
+3. 恶意软件分发：攻击者可以设置恶意软件分发网络，包括恶意广告、感染的网站或利用傀儡系统进行恶意软件传播。
+4. 使用匿名网络：攻击者可能会利用代理服务器、虚拟私人网络（VPN）或洋葱路由器等匿名网络工具来隐藏其真实身份和位置。
+
+这些行动旨在帮助攻击者建立一个可以满足其攻击目标的可信、稳定和隐蔽的基础设施。通过采取这些措施，攻击者可以更好地掩盖其攻击活动的来源和身份，增加攻击的成功率，并使其难以被检测和追踪。
+
+
+
 **Techniques:**
 
-| Tech                                                         | Sub-Tech                                                     | 中文 | External ID |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ----------- |
-| [Acquire Infrastructure](##[T1583]:Acquire Infrastructure)   |                                                              |      | T1583       |
-|                                                              | [Domains](###[T1583.001]:Domains)                            |      | T1583.001   |
-|                                                              | [DNS Server](###[T1583.002]:DNS Server)                      |      | T1583.002   |
-|                                                              | [Virtual Private Server](###[T1583.003]:Virtual Private Server) |      | T1583.003   |
-|                                                              | [Server](###[T1583.004]:Server)                              |      | T1583.004   |
-|                                                              | [Botnet](###[T1583.005]:Botnet)                              |      | T1583.005   |
-|                                                              | [Web Services](###[T1583.006]:Web Services)                  |      | T1583.006   |
-|                                                              | [Serverless](###[T1583.007]:Serverless)                      |      | T1583.007   |
-|                                                              | [Malvertising](###[T1583.008]:Malvertising)                  |      | T1583.008   |
-| [Compromise Infrastructure](##[T1584]:Compromise Infrastructure) |                                                              |      | T1584       |
-|                                                              | [Domains](###[T1584.001]:Domains)                            |      | T1584.001   |
-|                                                              | [DNS Server](###[T1584.002]:DNS Server)                      |      | T1584.002   |
-|                                                              | [Virtual Private Server](###[T1584.003]:Virtual Private Server) |      | T1584.003   |
-|                                                              | [Server](###[T1584.004]:Server)                              |      | T1584.004   |
-|                                                              | [Botnet](###[T1584.005]:Botnet)                              |      | T1584.005   |
-|                                                              | [Web Services](###[T1584.006]:Web Services)                  |      | T1584.006   |
-|                                                              | [Serverless](###[T1584.007]:Serverless)                      |      | T1584.007   |
-| [Establish Accounts](##[T1585]:Establish Accounts)           |                                                              |      | T1585       |
-|                                                              | [Social Media Accounts](###[T1585.001]:Social Media Accounts) |      | T1585.001   |
-|                                                              | [Email Accounts](###[T1585.002]:Email Accounts)              |      | T1585.002   |
-|                                                              | [Cloud Accounts](###[T1585.003]:Cloud Accounts)              |      | T1585.003   |
-| [Compromise Accounts](##[T1586]:Compromise Accounts)         |                                                              |      | T1586       |
-|                                                              | [Social Media Accounts](###[T1586.001]:Social Media Accounts) |      | T1586.001   |
-|                                                              | [Email Accounts](###[T1586.002]:Email Accounts)              |      | T1586.002   |
-|                                                              | [Cloud Accounts](###[T1586.003]:Cloud Accounts)              |      | T1586.003   |
-| [Develop Capabilities](##[T1587]:Develop Capabilities)       |                                                              |      | T1587       |
-|                                                              | [Malware](###[T1587.001]:Malware)                            |      | T1587.001   |
-|                                                              | [Code Signing Certificates](###[T1587.002]:Code Signing Certificates) |      | T1587.002   |
-|                                                              | [Digital Certificates](###[T1587.003]:Digital Certificates)  |      | T1587.003   |
-|                                                              | [Exploits](###[T1587.004]:Exploits)                          |      | T1587.004   |
-| [Obtain Capabilities](##[T1588]:Obtain Capabilities)         |                                                              |      | T1588       |
-|                                                              | [Malware](###[T1588.001]:Malware)                            |      | T1588.001   |
-|                                                              | [Tool](###[T1588.002]:Tool)                                  |      | T1588.002   |
-|                                                              | [Code Signing Certificates](###[T1588.003]:Code Signing Certificates) |      | T1588.003   |
-|                                                              | [Digital Certificates](###[T1588.004]:Digital Certificates)  |      | T1588.004   |
-|                                                              | [Exploits](###[T1588.005]:Exploits)                          |      | T1588.005   |
-|                                                              | [Vulnerabilities](###[T1588.006]:Vulnerabilities)            |      | T1588.006   |
-| [Stage Capabilities](##[T1608]:Stage Capabilities)           |                                                              |      | T1608       |
-|                                                              | [Upload Malware](###[T1608.001]:Upload Malware)              |      | T1608.001   |
-|                                                              | [Upload Tool](###[T1608.002]:Upload Tool)                    |      | T1608.002   |
-|                                                              | [Install Digital Certificate](###[T1608.003]:Install Digital Certificate) |      | T1608.003   |
-|                                                              | [Drive-by Target](###[T1608.004]:Drive-by Target)            |      | T1608.004   |
-|                                                              | [Link Target](###[T1608.005]:Link Target)                    |      | T1608.005   |
-|                                                              | [SEO Poisoning](###[T1608.006]:SEO Poisoning)                |      | T1608.006   |
-| [Acquire Access](##[T1650]:Acquire Access)                   |                                                              |      | T1650       |
+| Tech                                                         | Sub-Tech                                                     | 中文             | External ID |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------- | ----------- |
+| [Acquire Infrastructure](##[T1583]:Acquire Infrastructure)   |                                                              | 获取攻击基础设施 | T1583       |
+|                                                              | [Domains](###[T1583.001]:Domains)                            | 域名             | T1583.001   |
+|                                                              | [DNS Server](###[T1583.002]:DNS Server)                      | DNS服务器        | T1583.002   |
+|                                                              | [Virtual Private Server](###[T1583.003]:Virtual Private Server) | 虚拟服务器       | T1583.003   |
+|                                                              | [Server](###[T1583.004]:Server)                              | 服务器           | T1583.004   |
+|                                                              | [Botnet](###[T1583.005]:Botnet)                              | 僵尸网络         | T1583.005   |
+|                                                              | [Web Services](###[T1583.006]:Web Services)                  | Web服务          | T1583.006   |
+|                                                              | [Serverless](###[T1583.007]:Serverless)                      | 无服务器         | T1583.007   |
+|                                                              | [Malvertising](###[T1583.008]:Malvertising)                  | 恶意广告         | T1583.008   |
+| [Compromise Infrastructure](##[T1584]:Compromise Infrastructure) |                                                              | 被攻陷基础设施   | T1584       |
+|                                                              | [Domains](###[T1584.001]:Domains)                            | 域名             | T1584.001   |
+|                                                              | [DNS Server](###[T1584.002]:DNS Server)                      | DNS服务器        | T1584.002   |
+|                                                              | [Virtual Private Server](###[T1584.003]:Virtual Private Server) | 虚拟服务器       | T1584.003   |
+|                                                              | [Server](###[T1584.004]:Server)                              | 服务器           | T1584.004   |
+|                                                              | [Botnet](###[T1584.005]:Botnet)                              | 僵尸网络         | T1584.005   |
+|                                                              | [Web Services](###[T1584.006]:Web Services)                  | Web服务          | T1584.006   |
+|                                                              | [Serverless](###[T1584.007]:Serverless)                      | 无服务器         | T1584.007   |
+| [Establish Accounts](##[T1585]:Establish Accounts)           |                                                              | 建立账户         | T1585       |
+|                                                              | [Social Media Accounts](###[T1585.001]:Social Media Accounts) | 社交媒体账户     | T1585.001   |
+|                                                              | [Email Accounts](###[T1585.002]:Email Accounts)              | Email账户        | T1585.002   |
+|                                                              | [Cloud Accounts](###[T1585.003]:Cloud Accounts)              | 云账户           | T1585.003   |
+| [Compromise Accounts](##[T1586]:Compromise Accounts)         |                                                              | 被攻陷账户       | T1586       |
+|                                                              | [Social Media Accounts](###[T1586.001]:Social Media Accounts) | 社交媒体账户     | T1586.001   |
+|                                                              | [Email Accounts](###[T1586.002]:Email Accounts)              | Email账户        | T1586.002   |
+|                                                              | [Cloud Accounts](###[T1586.003]:Cloud Accounts)              | 云账户           | T1586.003   |
+| [Develop Capabilities](##[T1587]:Develop Capabilities)       |                                                              | 开发能力         | T1587       |
+|                                                              | [Malware](###[T1587.001]:Malware)                            | 恶意软件         | T1587.001   |
+|                                                              | [Code Signing Certificates](###[T1587.002]:Code Signing Certificates) | 代码签名证书     | T1587.002   |
+|                                                              | [Digital Certificates](###[T1587.003]:Digital Certificates)  | 数字证书         | T1587.003   |
+|                                                              | [Exploits](###[T1587.004]:Exploits)                          | 漏洞利用         | T1587.004   |
+| [Obtain Capabilities](##[T1588]:Obtain Capabilities)         |                                                              | 获取能力         | T1588       |
+|                                                              | [Malware](###[T1588.001]:Malware)                            | 恶意软件         | T1588.001   |
+|                                                              | [Tool](###[T1588.002]:Tool)                                  | 工具             | T1588.002   |
+|                                                              | [Code Signing Certificates](###[T1588.003]:Code Signing Certificates) | 代码签名证书     | T1588.003   |
+|                                                              | [Digital Certificates](###[T1588.004]:Digital Certificates)  | 数字证书         | T1588.004   |
+|                                                              | [Exploits](###[T1588.005]:Exploits)                          | 漏洞利用         | T1588.005   |
+|                                                              | [Vulnerabilities](###[T1588.006]:Vulnerabilities)            | 漏洞             | T1588.006   |
+| [Stage Capabilities](##[T1608]:Stage Capabilities)           |                                                              | 分阶段能力       | T1608       |
+|                                                              | [Upload Malware](###[T1608.001]:Upload Malware)              | 上传恶意工具     | T1608.001   |
+|                                                              | [Upload Tool](###[T1608.002]:Upload Tool)                    | 上传工具         | T1608.002   |
+|                                                              | [Install Digital Certificate](###[T1608.003]:Install Digital Certificate) | 安装数字证书     | T1608.003   |
+|                                                              | [Drive-by Target](###[T1608.004]:Drive-by Target)            | 无感染目标       | T1608.004   |
+|                                                              | [Link Target](###[T1608.005]:Link Target)                    | 链接目标         | T1608.005   |
+|                                                              | [SEO Poisoning](###[T1608.006]:SEO Poisoning)                | SEO 毒化         | T1608.006   |
+| [Acquire Access](##[T1650]:Acquire Access)                   |                                                              | 权限获取         | T1650       |
 
 
 
@@ -7547,6 +7562,8 @@ Cloud providers offer methods such as APIs and commands issued through CLIs to s
 
 An adversary may enumerate resources using a compromised user's access keys to determine which are available to that user.(Citation: Expel IO Evil in AWS) The discovery of these available resources may help adversaries determine their next steps in the Cloud environment, such as establishing Persistence.(Citation: Mandiant M-Trends 2020)An adversary may also use this information to change the configuration to make the bucket publicly accessible, allowing data to be accessed without authentication. Adversaries have also may use infrastructure discovery APIs such as <code>DescribeDBInstances</code> to determine size, owner, permissions, and network ACLs of database resources. (Citation: AWS Describe DB Instances) Adversaries can use this information to determine the potential value of databases and discover the requirements to access them. Unlike in [Cloud Service Discovery](https://attack.mitre.org/techniques/T1526), this technique focuses on the discovery of components of the provided services rather than the services themselves.
 ## [T1583]:Acquire Infrastructure
+> 中文：获取基础设施
+>
 > External ID: T1583
 > STIX ID: attack-pattern--0458aab9-ad42-4eac-9e22-706a95bafee2
 > Platforms: ['PRE']
@@ -7589,7 +7606,6 @@ By running their own DNS servers, adversaries can have more control over how the
 > Platforms: ['PRE']
 > Tactics: ['resource-development']
 
-
 **Description: **
  Adversaries may rent Virtual Private Servers (VPSs) that can be used during targeting. There exist a variety of cloud service providers that will sell virtual machines/containers as a service. By utilizing a VPS, adversaries can make it difficult to physically tie back operations to them. The use of cloud infrastructure can also make it easier for adversaries to rapidly provision, modify, and shut down their infrastructure.
 
@@ -7599,7 +7615,6 @@ Acquiring a VPS for use in later stages of the adversary lifecycle, such as Comm
 > STIX ID: attack-pattern--60c4b628-4807-4b0b-bbf5-fdac8643c337
 > Platforms: ['PRE']
 > Tactics: ['resource-development']
-
 
 **Description: **
  Adversaries may buy, lease, or rent physical servers that can be used during targeting. Use of servers allows an adversary to stage, launch, and execute an operation. During post-compromise activity, adversaries may utilize servers for various tasks, including for Command and Control. Adversaries may use web servers to support support watering hole operations, as in [Drive-by Compromise](https://attack.mitre.org/techniques/T1189), or email servers to support [Phishing](https://attack.mitre.org/techniques/T1566) operations. Instead of compromising a third-party [Server](https://attack.mitre.org/techniques/T1584/004) or renting a [Virtual Private Server](https://attack.mitre.org/techniques/T1583/003), adversaries may opt to configure and run their own servers in support of operations.
@@ -7634,12 +7649,24 @@ Adversaries may only need a lightweight setup if most of their activities will t
  Adversaries may purchase and configure serverless cloud infrastructure, such as Cloudflare Workers or AWS Lambda functions, that can be used during targeting. By utilizing serverless infrastructure, adversaries can make it more difficult to attribute infrastructure used during operations back to them.
 
 Once acquired, the serverless runtime environment can be leveraged to either respond directly to infected machines or to [Proxy](https://attack.mitre.org/techniques/T1090) traffic to an adversary-owned command and control server.(Citation: BlackWater Malware Cloudflare Workers)(Citation: AWS Lambda Redirector) As traffic generated by these functions will appear to come from subdomains of common cloud providers, it may be difficult to distinguish from ordinary traffic to these providers.(Citation: Detecting Command & Control in the Cloud)(Citation: BlackWater Malware Cloudflare Workers)
+
+攻击者可能购买和配置无服务器云基础设施，比如Cloudflare Workers或AWS Lambda函数，在目标攻击过程中使用。通过利用无服务器基础设施，攻击者可以增加追溯攻击过程中使用的基础设施归属到他们的难度。
+
+一旦获取到，无服务器运行环境可以被利用来直接响应感染的机器，或者将流量[代理](https://attack.mitre.org/techniques/T1090)到攻击者拥有的命令与控制服务器。(引证：BlackWater Malware Cloudflare Workers)(引证：AWS Lambda Redirector) 由这些函数生成的流量看起来来自常见云提供商的子域名，可能很难与这些提供商的普通流量区分开来。(引证：Detecting Command & Control in the Cloud)(引证：BlackWater Malware Cloudflare Workers)
+
+无服务器是一种[云原生](https://www.redhat.com/zh/topics/cloud-native-apps)开发模型，可使开发人员专注构建和运行应用，而无需管理服务器。
+
+无服务器方案中仍然有服务器，但它们已从应用开发中抽离了出来。[云提供商](https://www.redhat.com/zh/topics/cloud-computing/what-are-cloud-providers)负责[置备](https://www.redhat.com/zh/主题/自动化/什么是置备)、维护和扩展服务器[基础架构](https://www.redhat.com/zh/topics/cloud-computing/what-is-it-infrastructure)等例行工作。开发人员可以简单地将代码打包到[容器](https://www.redhat.com/zh/topics/containers)中进行部署。
+
+部署之后，无服务器应用即可响应需求，并根据需要[自动](https://www.redhat.com/zh/topics/automation)扩容。[公共云](https://www.redhat.com/zh/topics/cloud-computing/what-is-public-cloud)提供商的无服务器产品通常通过一种[事件驱动](https://www.redhat.com/zh/topics/integration/what-is-event-driven-architecture)执行模型来按需计量。因此，当无服务器功能闲置时，不会产生费用。
+
 ### [T1583.008]:Malvertising
+> 中文：恶意广告
+>
 > External ID: T1583.008
 > STIX ID: attack-pattern--155207c0-7f53-4f13-a06b-0a9907ef5096
 > Platforms: ['PRE']
 > Tactics: ['resource-development']
-
 
 **Description: **
  Adversaries may purchase online advertisements that can be abused to distribute malware to victims. Ads can be purchased to plant as well as favorably position artifacts in specific locations  online, such as prominently placed within search engine results. These ads may make it more difficult for users to distinguish between actual search results and advertisements.(Citation: spamhaus-malvertising) Purchased ads may also target specific audiences using the advertising network’s capabilities, potentially further taking advantage of the trust inherently given to search engines and popular websites. 
@@ -7649,6 +7676,17 @@ Adversaries may purchase ads and other resources to help distribute artifacts co
 Malvertising may be used to support [Drive-by Target](https://attack.mitre.org/techniques/T1608/004) and [Drive-by Compromise](https://attack.mitre.org/techniques/T1189), potentially requiring limited interaction from the user if the ad contains code/exploits that infect the target system's web browser.(Citation: BBC-malvertising)
 
 Adversaries may also employ several techniques to evade detection by the advertising network. For example, adversaries may dynamically route ad clicks to send automated crawler/policy enforcer traffic to benign sites while validating potential targets then sending victims referred from real ad clicks to malicious pages. This infection vector may therefore remain hidden from the ad network as well as any visitor not reaching the malicious sites with a valid identifier from clicking on the advertisement.(Citation: Masquerads-Guardio) Other tricks, such as intentional typos to avoid brand reputation monitoring, may also be used to evade automated detection.(Citation: spamhaus-malvertising) 
+
+攻击者可以购买在线广告，并滥用其来向受害者分发恶意软件。广告可以被购买并放置在特定位置，如在搜索引擎结果中的突出位置，以便种植和有利地展示特定位置的工件。这些广告可能会让用户更难区分实际搜索结果和广告。（引用：spamhaus-malvertising）购买的广告也可能利用广告网络的功能针对特定受众，进一步利用对搜索引擎和热门网站固有的信任。
+
+攻击者可以购买广告和其他资源，以帮助将包含恶意代码的工件分发给受害者。购买的广告可能会试图冒充或仿冒知名品牌。例如，这些伪造的广告可能会欺骗受害者点击广告，然后将他们发送到一个恶意域，该域可能是官方网站的克隆版本，并包含了经过木马植入的广告软件的版本。（引用：Masquerads-Guardio）攻击者创建恶意域和购买广告的努力也可能自动化扩展，以更好地抵抗清除工作的进行。（引用：sentinelone-malvertising）
+
+恶意广告可能被用于支持[Drive-by Target](https://attack.mitre.org/techniques/T1608/004)和[Drive-by Compromise](https://attack.mitre.org/techniques/T1189)，如果广告包含感染目标系统的代码/漏洞，可能不需要用户的有限交互即可实施攻击。（引用：BBC-malvertising）
+
+攻击者还可以采用多种技术来逃避广告网络的检测。例如，攻击者可以动态路由广告点击，将自动化的网络爬虫/策略执行器流量发送到良性网站，同时验证潜在目标，然后将从真实广告点击获得转介的受害者发送到恶意页面。因此，这种感染方式可以对广告网络以及未能通过点击广告在恶意网站上获得有效标识符的任何访问者隐藏起来。（引用：Masquerads-Guardio）其他技巧，如故意拼写错误以避免品牌声誉监控，也可能用于逃避自动检测。（引用：spamhaus-malvertising）
+
+
+
 ## [T1584]:Compromise Infrastructure
 > External ID: T1584
 > STIX ID: attack-pattern--7e3beebd-8bfe-4e7b-a892-e44ab06a75f9
@@ -7662,6 +7700,13 @@ Adversaries may also employ several techniques to evade detection by the adverti
 Use of compromised infrastructure allows adversaries to stage, launch, and execute operations. Compromised infrastructure can help adversary operations blend in with traffic that is seen as normal, such as contact with high reputation or trusted sites. For example, adversaries may leverage compromised infrastructure (potentially also in conjunction with [Digital Certificates](https://attack.mitre.org/techniques/T1588/004)) to further blend in and support staged information gathering and/or [Phishing](https://attack.mitre.org/techniques/T1566) campaigns.(Citation: FireEye DNS Hijack 2019) Additionally, adversaries may also compromise infrastructure to support [Proxy](https://attack.mitre.org/techniques/T1090).(Citation: amnesty_nso_pegasus)
 
 By using compromised infrastructure, adversaries may make it difficult to tie their actions back to them. Prior to targeting, adversaries may compromise the infrastructure of other adversaries.(Citation: NSA NCSC Turla OilRig)
+
+攻击者可能会侵害第三方基础设施，以在目标定位期间使用。基础设施解决方案包括物理或云服务器、域和第三方网络和DNS服务。攻击者可能会入侵基础设施，而不是购买、租用或租赁基础设施，并在攻击者生命周期的其他阶段使用它。（引文：Mandiant APT1）（引文：ICANNDomainNameHijacking）（引文：Talos DNSpionage Nov 2018）（引文：FireEye EPS Awakens Part 2）此外，攻击者可能会入侵多台计算机形成僵尸网络，并利用它们。
+
+使用被入侵的基础设施允许攻击者进行策划、发起和执行操作。被入侵的基础设施可以帮助攻击者的操作与被视为正常的流量混合，例如与声誉高或可信任的站点进行联系。例如，攻击者可以利用被入侵的基础设施（可能还结合[数字证书](https://attack.mitre.org/techniques/T1588/004)）进一步融入并支持分阶段信息收集和/或[网络钓鱼](https://attack.mitre.org/techniques/T1566)活动。（引文：FireEye DNS Hijack 2019）此外，攻击者还可能入侵基础设施以支持[代理](https://attack.mitre.org/techniques/T1090)。（引文：amnesty_nso_pegasus）
+
+通过使用被入侵的基础设施，攻击者可能会使其行动难以追溯到自己。在定位目标之前，攻击者可能会入侵其他攻击者的基础设施。（引文：NSA NCSC Turla OilRig）r
+
 ### [T1584.001]:Domains
 > External ID: T1584.001
 > STIX ID: attack-pattern--f9cc4d06-775f-4ee1-b401-4e2cc0da30ba
@@ -7785,6 +7830,11 @@ To decrease the chance of physically tying back operations to themselves, advers
  Adversaries may create accounts with cloud providers that can be used during targeting. Adversaries can use cloud accounts to further their operations, including leveraging cloud storage services such as Dropbox, MEGA, Microsoft OneDrive, or AWS S3 buckets for [Exfiltration to Cloud Storage](https://attack.mitre.org/techniques/T1567/002) or to [Upload Tool](https://attack.mitre.org/techniques/T1608/002)s. Cloud accounts can also be used in the acquisition of infrastructure, such as [Virtual Private Server](https://attack.mitre.org/techniques/T1583/003)s or [Serverless](https://attack.mitre.org/techniques/T1583/007) infrastructure. Establishing cloud accounts may allow adversaries to develop sophisticated capabilities without managing their own servers.(Citation: Awake Security C2 Cloud)
 
 Creating [Cloud Accounts](https://attack.mitre.org/techniques/T1585/003) may also require adversaries to establish [Email Accounts](https://attack.mitre.org/techniques/T1585/002) to register with the cloud provider. 
+
+攻击者可能会在云服务提供商那里创建账户，这些账户可用于攻击过程中。攻击者可以利用云账户来推进其操作，包括利用云存储服务，比如Dropbox、MEGA、Microsoft OneDrive或AWS S3桶，用于将数据外传到云存储（[Exfiltration to Cloud Storage](https://attack.mitre.org/techniques/T1567/002)），或者用于上传工具（[Upload Tool](https://attack.mitre.org/techniques/T1608/002)）。云账户还可用于获取基础设施，例如[虚拟专用服务器](https://attack.mitre.org/techniques/T1583/003)或[无服务器](https://attack.mitre.org/techniques/T1583/007)基础设施。建立云账户可以让攻击者在不管理自己的服务器的情况下开发复杂的能力。（引用：Awake Security C2 Cloud）
+
+创建[云账户](https://attack.mitre.org/techniques/T1585/003)可能还需要攻击者建立[电子邮件账户](https://attack.mitre.org/techniques/T1585/002)，以便注册云服务提供商的账户。
+
 ## [T1586]:Compromise Accounts
 > External ID: T1586
 > STIX ID: attack-pattern--81033c3b-16a4-46e4-8fed-9b030dd03c4a
@@ -7851,6 +7901,8 @@ A variety of methods exist for compromising cloud accounts, such as gathering cr
 
 As with legitimate development efforts, different skill sets may be required for developing capabilities. The skills needed may be located in-house, or may need to be contracted out. Use of a contractor may be considered an extension of that adversary's development capabilities, provided the adversary plays a role in shaping requirements and maintains a degree of exclusivity to the capability.
 ### [T1587.001]:Malware
+> 中文：恶意软件
+>
 > External ID: T1587.001
 > STIX ID: attack-pattern--212306d8-efa4-44c9-8c2d-ed3d2e224aa0
 > Platforms: ['PRE']
@@ -7863,7 +7915,32 @@ As with legitimate development efforts, different skill sets may be required for
 As with legitimate development efforts, different skill sets may be required for developing malware. The skills needed may be located in-house, or may need to be contracted out. Use of a contractor may be considered an extension of that adversary's malware development capabilities, provided the adversary plays a role in shaping requirements and maintains a degree of exclusivity to the malware.
 
 Some aspects of malware development, such as C2 protocol development, may require adversaries to obtain additional infrastructure. For example, malware developed that will communicate with Twitter for C2, may require use of [Web Services](https://attack.mitre.org/techniques/T1583/006).(Citation: FireEye APT29)
+
+
+
+Malware（恶意软件）指的是任何旨在侵入和破坏计算机系统、窃取敏感信息或未经授权访问网络的软件或代码。恶意软件可以采用多种形式，包括病毒、蠕虫、木马、勒索软件、间谍软件、广告软件和Rootkit（根工具包）等。
+
+以下是一些常见的恶意软件类型：
+
+1. 病毒：自我复制的程序，它们附加到干净的文件上，并在执行被感染的文件时从一台计算机传播到另一台计算机。
+
+2. 蠕虫：类似于病毒，蠕虫也可以自我复制，但它们不需要宿主文件来传播。相反，它们利用计算机网络或操作系统中的漏洞进行传播。
+
+3. 木马：以神话故事中的特洛伊木马为名，木马伪装成合法的软件或文件，并诱使用户安装。一旦安装，它们可以执行各种恶意活动，如数据盗取、远程控制或为其他恶意软件创建后门。
+
+4. 勒索软件：这种恶意软件会加密受害者的文件，并要求支付赎金，通常以加密货币的形式，以换取解密密钥。
+
+5. 间谍软件：旨在秘密监控用户活动的间谍软件，可以收集登录凭据、浏览习惯和个人数据等敏感信息，而没有用户的知识或同意。
+
+6. 广告软件：广告软件在用户设备上显示不需要的广告，通常以弹出窗口或横幅的形式。尽管它本身并没有恶意性，但它可能会干扰正常使用、减慢系统，并危及用户隐私。
+
+7. Rootkit（根工具包）：Rootkit是一种高级恶意软件，它隐藏自己的存在和活动，使用户和安全软件无法察觉。它们通常赋予黑客对受损系统的特权访问，使他们能够远程控制该系统。
+
+   
+
 ### [T1587.002]:Code Signing Certificates
+> 中文：代码签名证书
+>
 > External ID: T1587.002
 > STIX ID: attack-pattern--34b3f738-bd64-40e5-a112-29b0542bc8bf
 > Platforms: ['PRE']
@@ -7874,6 +7951,11 @@ Some aspects of malware development, such as C2 protocol development, may requir
  Adversaries may create self-signed code signing certificates that can be used during targeting. Code signing is the process of digitally signing executables and scripts to confirm the software author and guarantee that the code has not been altered or corrupted. Code signing provides a level of authenticity for a program from the developer and a guarantee that the program has not been tampered with.(Citation: Wikipedia Code Signing) Users and/or security tools may trust a signed piece of code more than an unsigned piece of code even if they don't know who issued the certificate or who the author is.
 
 Prior to [Code Signing](https://attack.mitre.org/techniques/T1553/002), adversaries may develop self-signed code signing certificates for use in operations.
+
+攻击者可能会创建自签名的代码签名证书，用于在攻击过程中使用。代码签名是对可执行文件和脚本进行数字签名的过程，用于确认软件作者并保证代码未被篡改或损坏。代码签名为程序提供了来自开发者的真实性，并保证程序未被篡改。
+
+在[代码签名](https://attack.mitre.org/techniques/T1553/002)之前，攻击者可能会开发自签名的代码签名证书，以便在操作中使用。即使用户或安全工具不知道谁颁发了证书或作者是谁，他们也可能更加信任已签名的代码而不是未签名的代码。
+
 ### [T1587.003]:Digital Certificates
 > External ID: T1587.003
 > STIX ID: attack-pattern--1cec9319-743b-4840-bb65-431547bce82a
@@ -7888,6 +7970,8 @@ Adversaries may create self-signed SSL/TLS certificates that can be used to furt
 
 After creating a digital certificate, an adversary may then install that certificate (see [Install Digital Certificate](https://attack.mitre.org/techniques/T1608/003)) on infrastructure under their control.
 ### [T1587.004]:Exploits
+> 中文：漏洞利用
+>
 > External ID: T1587.004
 > STIX ID: attack-pattern--bbc3cba7-84ae-410d-b18b-16750731dfa2
 > Platforms: ['PRE']
@@ -7901,6 +7985,8 @@ As with legitimate development efforts, different skill sets may be required for
 
 Adversaries may use exploits during various phases of the adversary lifecycle (i.e. [Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190), [Exploitation for Client Execution](https://attack.mitre.org/techniques/T1203), [Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068), [Exploitation for Defense Evasion](https://attack.mitre.org/techniques/T1211), [Exploitation for Credential Access](https://attack.mitre.org/techniques/T1212), [Exploitation of Remote Services](https://attack.mitre.org/techniques/T1210), and [Application or System Exploitation](https://attack.mitre.org/techniques/T1499/004)).
 ## [T1588]:Obtain Capabilities
+> 中文：获取能力
+>
 > External ID: T1588
 > STIX ID: attack-pattern--ce0687a0-e692-4b77-964a-0784a8e54ff1
 > Platforms: ['PRE']
@@ -7913,6 +7999,13 @@ Adversaries may use exploits during various phases of the adversary lifecycle (i
 In addition to downloading free malware, software, and exploits from the internet, adversaries may purchase these capabilities from third-party entities. Third-party entities can include technology companies that specialize in malware and exploits, criminal marketplaces, or from individuals.(Citation: NationsBuying)(Citation: PegasusCitizenLab)
 
 In addition to purchasing capabilities, adversaries may steal capabilities from third-party entities (including other adversaries). This can include stealing software licenses, malware, SSL/TLS and code-signing certificates, or raiding closed databases of vulnerabilities or exploits.(Citation: DiginotarCompromise)
+
+攻击者可能购买和/或窃取可用于定向攻击的能力。攻击者可能不在内部开发自己的能力，而是购买、免费下载或窃取它们。这些活动可能包括获取恶意软件、软件（包括许可证）、漏洞利用程序、证书以及与漏洞相关的信息。攻击者可能获取能力以支持他们在攻击者生命周期的多个阶段中的操作。
+
+除了从互联网上免费下载恶意软件、软件和漏洞利用程序之外，攻击者还可以从第三方实体购买这些能力。第三方实体可以是专门从事恶意软件和漏洞利用的技术公司、犯罪市场，或来自个人（引文：NationsBuying）（引文：PegasusCitizenLab）。
+
+除了购买能力，攻击者还可以从第三方实体（包括其他攻击者）那里窃取能力。这可能包括窃取软件许可证、恶意软件、SSL/TLS和代码签名证书，或者入侵封闭的漏洞或漏洞利用数据库（引文：DiginotarCompromise）。
+
 ### [T1588.001]:Malware
 > External ID: T1588.001
 > STIX ID: attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970
@@ -7987,6 +8080,11 @@ Adversaries may use exploits during various phases of the adversary lifecycle (i
  Adversaries may acquire information about vulnerabilities that can be used during targeting. A vulnerability is a weakness in computer hardware or software that can, potentially, be exploited by an adversary to cause unintended or unanticipated behavior to occur. Adversaries may find vulnerability information by searching open databases or gaining access to closed vulnerability databases.(Citation: National Vulnerability Database)
 
 An adversary may monitor vulnerability disclosures/databases to understand the state of existing, as well as newly discovered, vulnerabilities. There is usually a delay between when a vulnerability is discovered and when it is made public. An adversary may target the systems of those known to conduct vulnerability research (including commercial vendors). Knowledge of a vulnerability may cause an adversary to search for an existing exploit (i.e. [Exploits](https://attack.mitre.org/techniques/T1588/005)) or to attempt to develop one themselves (i.e. [Exploits](https://attack.mitre.org/techniques/T1587/004)).
+
+攻击者可能获取与目标攻击中可用的漏洞相关的信息。漏洞是计算机硬件或软件中的弱点，潜在地可以被攻击者利用以导致意外或未预期的行为发生。攻击者可以通过搜索开放数据库或获取关闭的漏洞数据库来获取漏洞信息。（引用：国家漏洞数据库）
+
+攻击者可能监视漏洞披露/数据库，以了解现有和新发现的漏洞的状态。通常，漏洞被发现和公开之间存在一段延迟时间。攻击者可能会针对已知进行漏洞研究（包括商业供应商）的系统。对漏洞的了解可能导致攻击者搜索现有的利用程序（即[Exploits](https://attack.mitre.org/techniques/T1588/005)）或尝试自己开发一个（即[Exploits](https://attack.mitre.org/techniques/T1587/004)）。
+
 ## [T1589]:Gather Victim Identity Information
 > External ID: T1589
 > STIX ID: attack-pattern--5282dd9a-d26d-4e16-88b7-7c0f4553daf4
@@ -8071,9 +8169,9 @@ Adversaries may gather this information in various ways, such as direct collecti
 
 Adversaries may gather this information in various ways, such as direct collection actions via [Active Scanning](https://attack.mitre.org/techniques/T1595) or [Phishing for Information](https://attack.mitre.org/techniques/T1598). Information about victim domains and their properties may also be exposed to adversaries via online or other accessible data sets (ex: [WHOIS](https://attack.mitre.org/techniques/T1596/002)).(Citation: WHOIS)(Citation: DNS Dumpster)(Citation: Circl Passive DNS) Where third-party cloud providers are in use, this information may also be exposed through publicly available API endpoints, such as GetUserRealm and autodiscover in Office 365 environments.(Citation: Azure Active Directory Reconnaisance)(Citation: Office 265 Azure Domain Availability) Gathering this information may reveal opportunities for other forms of reconnaissance (ex: [Search Open Technical Databases](https://attack.mitre.org/techniques/T1596), [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593), or [Phishing for Information](https://attack.mitre.org/techniques/T1598)), establishing operational resources (ex: [Acquire Infrastructure](https://attack.mitre.org/techniques/T1583) or [Compromise Infrastructure](https://attack.mitre.org/techniques/T1584)), and/or initial access (ex: [Phishing](https://attack.mitre.org/techniques/T1566)).
 
-对手可能会收集关于受害者网络域的信息，这些信息可以在定向攻击中使用。关于域及其属性的信息可能包括各种细节，包括受害者拥有的域以及管理数据(例如名称、注册商等)和更直接可操作的信息，如联系人(电子邮件地址和电话号码)、商业地址和名称服务器。
+攻击者可能会收集关于受害者网络域的信息，这些信息可以在定向攻击中使用。关于域及其属性的信息可能包括各种细节，包括受害者拥有的域以及管理数据(例如名称、注册商等)和更直接可操作的信息，如联系人(电子邮件地址和电话号码)、商业地址和名称服务器。
 
-对手可以通过各种方式收集这些信息，如通过[主动扫描](https://attack.mitre.org/techniques/T1595)或[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)。受害者域名及其属性的信息还可能通过在线或其他可访问的数据集暴露给对手(例如：[WHOIS](https://attack.mitre.org/techniques/T1596/002))。(引用：WHOIS)(引用：DNS Dumpster)(引用：Circl Passive DNS)当第三方云服务提供商在使用时，此信息还可能通过公共可用API端点暴露，如GetUserRealm和Office 365环境中的autodiscover。(引用：Azure Active Directory Reconnaisance)(引用：Office 265 Azure Domain Availability)收集这些信息可能会揭示其他形式的侦察机会(例如：[搜索开放的技术数据库](https://attack.mitre.org/techniques/T1596),[搜索开放的网站/域](https://attack.mitre.org/techniques/T1593)或[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)),建立运营资源(例如：[获取基础设施](https://attack.mitre.org/techniques/T1583)或[破坏基础设施](https://attack.mitre.org/techniques/T1584)),以及/或初始访问(例如：[钓鱼](https://attack.mitre.org/techniques/T1566))。
+攻击者可以通过各种方式收集这些信息，如通过[主动扫描](https://attack.mitre.org/techniques/T1595)或[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)。受害者域名及其属性的信息还可能通过在线或其他可访问的数据集暴露给攻击者(例如：[WHOIS](https://attack.mitre.org/techniques/T1596/002))。(引用：WHOIS)(引用：DNS Dumpster)(引用：Circl Passive DNS)当第三方云服务提供商在使用时，此信息还可能通过公共可用API端点暴露，如GetUserRealm和Office 365环境中的autodiscover。(引用：Azure Active Directory Reconnaisance)(引用：Office 265 Azure Domain Availability)收集这些信息可能会揭示其他形式的侦察机会(例如：[搜索开放的技术数据库](https://attack.mitre.org/techniques/T1596),[搜索开放的网站/域](https://attack.mitre.org/techniques/T1593)或[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)),建立运营资源(例如：[获取基础设施](https://attack.mitre.org/techniques/T1583)或[破坏基础设施](https://attack.mitre.org/techniques/T1584)),以及/或初始访问(例如：[钓鱼](https://attack.mitre.org/techniques/T1566))。
 
 ### [T1590.002]:DNS
 > External ID: T1590.002
@@ -8188,9 +8286,9 @@ Adversaries may gather this information in various ways, such as direct elicitat
 
 Adversaries may gather this information in various ways, such as direct elicitation via [Phishing for Information](https://attack.mitre.org/techniques/T1598). Information about business tempo may also be exposed to adversaries via online or other accessible data sets (ex: [Social Media](https://attack.mitre.org/techniques/T1593/001) or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)).(Citation: ThreatPost Broadvoice Leak) Gathering this information may reveal opportunities for other forms of reconnaissance (ex: [Phishing for Information](https://attack.mitre.org/techniques/T1598) or [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593)), establishing operational resources (ex: [Establish Accounts](https://attack.mitre.org/techniques/T1585) or [Compromise Accounts](https://attack.mitre.org/techniques/T1586)), and/or initial access (ex: [Supply Chain Compromise](https://attack.mitre.org/techniques/T1195) or [Trusted Relationship](https://attack.mitre.org/techniques/T1199))
 
-对手可能会收集关于受害者业务节奏的信息，并在攻击中加以利用。组织的业务节奏信息可能包括各种细节，包括运营时间/每周的工作日。这些信息还可以揭示受害者硬件和软件资源的购买和发货时间/日期。
+攻击者可能会收集关于受害者业务节奏的信息，并在攻击中加以利用。组织的业务节奏信息可能包括各种细节，包括运营时间/每周的工作日。这些信息还可以揭示受害者硬件和软件资源的购买和发货时间/日期。
 
-对手可以通过各种方式收集这些信息，例如直接引诱（通过[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)）等。有关业务节奏的信息也可能通过在线或其他可访问的数据集（例如[社交媒体](https://attack.mitre.org/techniques/T1593/001)或[搜索受害者拥有的网站](https://attack.mitre.org/techniques/T1594)）暴露给对手。（引文：ThreatPost Broadvoice Leak）收集这些信息可能揭示了其他形式的侦察机会（例如[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)或[搜索开放的网站/域名](https://attack.mitre.org/techniques/T1593)），建立操作资源（例如[建立账户](https://attack.mitre.org/techniques/T1585)或[入侵账户](https://attack.mitre.org/techniques/T1586)），以及/或初始访问（例如[供应链入侵](https://attack.mitre.org/techniques/T1195)或[信任关系](https://attack.mitre.org/techniques/T1199)）。
+攻击者可以通过各种方式收集这些信息，例如直接引诱（通过[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)）等。有关业务节奏的信息也可能通过在线或其他可访问的数据集（例如[社交媒体](https://attack.mitre.org/techniques/T1593/001)或[搜索受害者拥有的网站](https://attack.mitre.org/techniques/T1594)）暴露给攻击者。（引文：ThreatPost Broadvoice Leak）收集这些信息可能揭示了其他形式的侦察机会（例如[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)或[搜索开放的网站/域名](https://attack.mitre.org/techniques/T1593)），建立操作资源（例如[建立账户](https://attack.mitre.org/techniques/T1585)或[入侵账户](https://attack.mitre.org/techniques/T1586)），以及/或初始访问（例如[供应链入侵](https://attack.mitre.org/techniques/T1195)或[信任关系](https://attack.mitre.org/techniques/T1199)）。
 
 ### [T1591.004]:Identify Roles
 > 中文：识别角色
@@ -8206,9 +8304,9 @@ Adversaries may gather this information in various ways, such as direct elicitat
 
 Adversaries may gather this information in various ways, such as direct elicitation via [Phishing for Information](https://attack.mitre.org/techniques/T1598). Information about business roles may also be exposed to adversaries via online or other accessible data sets (ex: [Social Media](https://attack.mitre.org/techniques/T1593/001) or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)).(Citation: ThreatPost Broadvoice Leak) Gathering this information may reveal opportunities for other forms of reconnaissance (ex: [Phishing for Information](https://attack.mitre.org/techniques/T1598) or [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593)), establishing operational resources (ex: [Establish Accounts](https://attack.mitre.org/techniques/T1585) or [Compromise Accounts](https://attack.mitre.org/techniques/T1586)), and/or initial access (ex: [Phishing](https://attack.mitre.org/techniques/T1566)).
 
-对手可能会收集有关受害组织内身份和角色的信息，这些信息可以在针对性攻击中使用。有关商业角色的信息可能会揭示各种可被攻击的细节，包括关键人员的可识别信息以及他们能够访问的数据/资源。
+攻击者可能会收集有关受害组织内身份和角色的信息，这些信息可以在针对性攻击中使用。有关商业角色的信息可能会揭示各种可被攻击的细节，包括关键人员的可识别信息以及他们能够访问的数据/资源。
 
-对手可以通过多种方式收集这些信息，例如直接引导（通过[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)），有关商业角色的信息也可能通过在线或其他可访问的数据集（例如[社交媒体](https://attack.mitre.org/techniques/T1593/001)或[搜索受害者拥有的网站](https://attack.mitre.org/techniques/T1594)）暴露给对手。（引用：ThreatPost Broadvoice Leak）收集这些信息可能会揭示其他形式的侦察机会（例如[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)或[搜索公开网站/域名](https://attack.mitre.org/techniques/T1593)），建立操作资源（例如[建立账户](https://attack.mitre.org/techniques/T1585)或[入侵账户](https://attack.mitre.org/techniques/T1586)），以及/或初始访问（例如[钓鱼](https://attack.mitre.org/techniques/T1566)）。
+攻击者可以通过多种方式收集这些信息，例如直接引导（通过[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)），有关商业角色的信息也可能通过在线或其他可访问的数据集（例如[社交媒体](https://attack.mitre.org/techniques/T1593/001)或[搜索受害者拥有的网站](https://attack.mitre.org/techniques/T1594)）暴露给攻击者。（引用：ThreatPost Broadvoice Leak）收集这些信息可能会揭示其他形式的侦察机会（例如[钓鱼获取信息](https://attack.mitre.org/techniques/T1598)或[搜索公开网站/域名](https://attack.mitre.org/techniques/T1593)），建立操作资源（例如[建立账户](https://attack.mitre.org/techniques/T1585)或[入侵账户](https://attack.mitre.org/techniques/T1586)），以及/或初始访问（例如[钓鱼](https://attack.mitre.org/techniques/T1566)）。
 
 
 
@@ -8372,11 +8470,11 @@ For example, adversaries may use web content discovery tools such as Dirb, DirBu
 
 As cloud storage solutions typically use globally unique names, adversaries may also use target-specific wordlists and tools such as s3recon and GCPBucketBrute to enumerate public and private buckets on cloud infrastructure.(Citation: S3Recon GitHub)(Citation: GCPBucketBrute) Once storage objects are discovered, adversaries may leverage [Data from Cloud Storage](https://attack.mitre.org/techniques/T1530) to access valuable information that can be exfiltrated or used to escalate privileges and move laterally. 
 
-对手可能会使用暴力破解和爬行技术来迭代地探测基础设施。虽然这种技术采用了与[Brute Force](https://attack.mitre.org/techniques/T1110)类似的方法，但其目标是识别内容和基础设施，而不是发现有效的凭据。在这些扫描中使用的字典可能包含通用的常用名称、文件扩展名，或者特定于特定软件的术语。对手还可以使用从其他侦察技术（例如[Gather Victim Org Information](https://attack.mitre.org/techniques/T1591)或[Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)）收集的数据创建自定义的、针对特定目标的字典。
+攻击者可能会使用暴力破解和爬行技术来迭代地探测基础设施。虽然这种技术采用了与[Brute Force](https://attack.mitre.org/techniques/T1110)类似的方法，但其目标是识别内容和基础设施，而不是发现有效的凭据。在这些扫描中使用的字典可能包含通用的常用名称、文件扩展名，或者特定于特定软件的术语。攻击者还可以使用从其他侦察技术（例如[Gather Victim Org Information](https://attack.mitre.org/techniques/T1591)或[Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)）收集的数据创建自定义的、针对特定目标的字典。
 
-例如，对手可以使用网页内容发现工具，如Dirb、DirBuster和GoBuster，以及通用或自定义的字典来枚举网站的页面和目录。（引用：ClearSky Lebanese Cedar Jan 2021）这可以帮助他们发现旧的、存在漏洞的页面或隐藏的管理门户，可能成为进一步操作的目标（例如[Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190)或[Brute Force](https://attack.mitre.org/techniques/T1110)）。
+例如，攻击者可以使用网页内容发现工具，如Dirb、DirBuster和GoBuster，以及通用或自定义的字典来枚举网站的页面和目录。（引用：ClearSky Lebanese Cedar Jan 2021）这可以帮助他们发现旧的、存在漏洞的页面或隐藏的管理门户，可能成为进一步操作的目标（例如[Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190)或[Brute Force](https://attack.mitre.org/techniques/T1110)）。
 
-由于云存储解决方案通常使用全局唯一的名称，对手还可以使用针对特定目标的字典和工具，如s3recon和GCPBucketBrute，在云基础设施上枚举公共和私有存储桶。（引用：S3Recon GitHub）（引用：GCPBucketBrute）一旦发现存储对象，对手可能利用[Data from Cloud Storage](https://attack.mitre.org/techniques/T1530)来访问有价值的信息，这些信息可以被窃取或用于提升权限和横向移动。
+由于云存储解决方案通常使用全局唯一的名称，攻击者还可以使用针对特定目标的字典和工具，如s3recon和GCPBucketBrute，在云基础设施上枚举公共和私有存储桶。（引用：S3Recon GitHub）（引用：GCPBucketBrute）一旦发现存储对象，攻击者可能利用[Data from Cloud Storage](https://attack.mitre.org/techniques/T1530)来访问有价值的信息，这些信息可以被窃取或用于提升权限和横向移动。
 
 ## [T1596]:Search Open Technical Databases
 > External ID: T1596
@@ -8447,9 +8545,9 @@ Adversaries may search CDN data to gather actionable information. Threat actors 
 
 Adversaries may search scan databases to gather actionable information. Threat actors can use online resources and lookup tools to harvest information from these services. Adversaries may seek information about their already identified targets, or use these datasets to discover opportunities for successful breaches. Information from these sources may reveal opportunities for other forms of reconnaissance (ex: [Active Scanning](https://attack.mitre.org/techniques/T1595) or [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593)), establishing operational resources (ex: [Develop Capabilities](https://attack.mitre.org/techniques/T1587) or [Obtain Capabilities](https://attack.mitre.org/techniques/T1588)), and/or initial access (ex: [External Remote Services](https://attack.mitre.org/techniques/T1133) or [Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190)).
 
-对手可能会在公共扫描数据库中搜索有关受害者的信息，这些信息可以在针对性攻击过程中使用。各种在线服务不断发布互联网扫描/调查的结果，通常收集活动IP地址、主机名、开放端口、证书甚至服务器横幅等信息。（引用：Shodan）
+攻击者可能会在公共扫描数据库中搜索有关受害者的信息，这些信息可以在针对性攻击过程中使用。各种在线服务不断发布互联网扫描/调查的结果，通常收集活动IP地址、主机名、开放端口、证书甚至服务器横幅等信息。（引用：Shodan）
 
-对手可能会搜索扫描数据库以收集可操作的信息。威胁行为者可以利用在线资源和查询工具从这些服务中收集信息。对手可能寻找与已经识别的目标有关的信息，或者利用这些数据集发现成功入侵的机会。这些来源的信息可能揭示其他形式的侦察机会（例如[Active Scanning](https://attack.mitre.org/techniques/T1595)或[Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593)），建立运作资源（例如[Develop Capabilities](https://attack.mitre.org/techniques/T1587)或[Obtain Capabilities](https://attack.mitre.org/techniques/T1588)），以及/或初始访问（例如[External Remote Services](https://attack.mitre.org/techniques/T1133)或[Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190)）。
+攻击者可能会搜索扫描数据库以收集可操作的信息。威胁行为者可以利用在线资源和查询工具从这些服务中收集信息。攻击者可能寻找与已经识别的目标有关的信息，或者利用这些数据集发现成功入侵的机会。这些来源的信息可能揭示其他形式的侦察机会（例如[Active Scanning](https://attack.mitre.org/techniques/T1595)或[Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593)），建立运作资源（例如[Develop Capabilities](https://attack.mitre.org/techniques/T1587)或[Obtain Capabilities](https://attack.mitre.org/techniques/T1588)），以及/或初始访问（例如[External Remote Services](https://attack.mitre.org/techniques/T1133)或[Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190)）。
 
 ## [T1597]:Search Closed Sources
 > External ID: T1597
@@ -8741,6 +8839,18 @@ Staging of capabilities can aid the adversary in a number of initial access and 
 * Staging web resources for a link target to be used with spearphishing.(Citation: Malwarebytes Silent Librarian October 2020)(Citation: Proofpoint TA407 September 2019)
 * Uploading malware or tools to a location accessible to a victim network to enable [Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105).(Citation: Volexity Ocean Lotus November 2020)
 * Installing a previously acquired SSL/TLS certificate to use to encrypt command and control traffic (ex: [Asymmetric Cryptography](https://attack.mitre.org/techniques/T1573/002) with [Web Protocols](https://attack.mitre.org/techniques/T1071/001)).(Citation: DigiCert Install SSL Cert)
+
+攻击者可能会上传、安装或设置在目标攻击过程中使用的能力。为了支持他们的行动，攻击者可能需要将他们开发的能力（[开发能力](https://attack.mitre.org/techniques/T1587)）或获取的能力（[获取能力](https://attack.mitre.org/techniques/T1588)）进行分阶段并部署到他们控制的基础设施上。这些能力可能会被分阶段部署在之前由攻击者购买/租用的基础设施上（[获取基础设施](https://attack.mitre.org/techniques/T1583)），或者是被他们入侵的基础设施上（[入侵基础设施](https://attack.mitre.org/techniques/T1584)）。能力也可以分阶段部署在诸如GitHub或Pastebin等网络服务上，或者在平台即服务（PaaS）提供的服务上，该服务使用户可以轻松地提供应用程序（引用：Volexity Ocean Lotus November 2020）（引用：Dragos Heroku Watering Hole）（引用：Malwarebytes Heroku Skimmers）（引用：Netskope GCP Redirection）（引用：Netskope Cloud Phishing）。
+
+能力的分阶段部署可以协助攻击者进行一系列初始访问和后期入侵行为，包括但不限于：
+
+- 在用户浏览到某个站点时，分阶段部署进行[驱动程序攻击](https://attack.mitre.org/techniques/T1189)所需的网络资源（引用：FireEye CFR Watering Hole 2012）（引用：Gallagher 2015）（引用：ATT ScanBox）。
+- 为钓鱼活动中的链接目标分阶段部署网络资源（引用：Malwarebytes Silent Librarian October 2020）（引用：Proofpoint TA407 September 2019）。
+- 将恶意软件或工具上传到受害者网络可访问的位置，以实现[入口工具传输](https://attack.mitre.org/techniques/T1105)（引用：Volexity Ocean Lotus November 2020）。
+- 安装之前获取的SSL/TLS证书，用于加密命令和控制流量（例如使用[非对称密码术](https://attack.mitre.org/techniques/T1573/002)和[Web协议](https://attack.mitre.org/techniques/T1071/001)）（引用：DigiCert Install SSL Cert）。
+
+以上是攻击者可能在能力分阶段过程中采取的一些行为示例。了解这些能力可以帮助防御方制定适当的检测、预防和响应机制，以减轻潜在威胁。
+
 ### [T1608.001]:Upload Malware
 > External ID: T1608.001
 > STIX ID: attack-pattern--3ee16395-03f0-4690-a32e-69ce9ada0f9e
@@ -8754,6 +8864,9 @@ Staging of capabilities can aid the adversary in a number of initial access and 
 Malware may be placed on infrastructure that was previously purchased/rented by the adversary ([Acquire Infrastructure](https://attack.mitre.org/techniques/T1583)) or was otherwise compromised by them ([Compromise Infrastructure](https://attack.mitre.org/techniques/T1584)). Malware can also be staged on web services, such as GitHub or Pastebin, or hosted on the InterPlanetary File System (IPFS), where decentralized content storage makes the removal of malicious files difficult.(Citation: Volexity Ocean Lotus November 2020)(Citation: Talos IPFS 2022)
 
 Adversaries may upload backdoored files, such as application binaries, virtual machine images, or container images, to third-party software stores or repositories (ex: GitHub, CNET, AWS Community AMIs, Docker Hub). By chance encounter, victims may directly download/install these backdoored files via [User Execution](https://attack.mitre.org/techniques/T1204). [Masquerading](https://attack.mitre.org/techniques/T1036) may increase the chance of users mistakenly executing these files.
+
+攻击者可能会将恶意软件上传到第三方或攻击者控制的基础设施，以便在定向攻击期间进行访问。恶意软件可以包括有效载荷、传递器、后期妥协工具、后门和各种其他恶意内容。攻击者可能会上传恶意软件来支持他们的操作，例如将有效载荷放置在可以通过互联网访问的网络服务器上，以便为受害者网络启用[入侵工具传输](https://attack.mitre.org/techniques/T1105)。 恶意软件可以放置在之前由攻击者购买/租用的基础设施上（[获取基础设施](https://attack.mitre.org/techniques/T1583)），或者是被攻击者入侵后控制的基础设施（[入侵基础设施](https://attack.mitre.org/techniques/T1584)）。恶意软件也可以被放置在诸如GitHub或Pastebin之类的Web服务上，或者托管在InterPlanetary File System（IPFS）上，其中分散的内容存储使得删除恶意文件变得困难。（引用：Volexity Ocean Lotus November 2020）（引用：Talos IPFS 2022） 攻击者可能会将包含后门文件的文件（例如应用程序二进制文件、虚拟机映像或容器映像）上传到第三方软件商店或存储库（例如GitHub、CNET、AWS Community AMIs、Docker Hub）。偶然的机会下，受害者可能会通过[用户执行](https://attack.mitre.org/techniques/T1204)直接下载/安装这些包含后门的文件。[伪装](https://attack.mitre.org/techniques/T1036)可能会增加用户错误执行这些文件的几率。
+
 ### [T1608.002]:Upload Tool
 > External ID: T1608.002
 > STIX ID: attack-pattern--506f6f49-7045-4156-9007-7474cb44ad6d
@@ -8767,6 +8880,13 @@ Adversaries may upload backdoored files, such as application binaries, virtual m
 Tools may be placed on infrastructure that was previously purchased/rented by the adversary ([Acquire Infrastructure](https://attack.mitre.org/techniques/T1583)) or was otherwise compromised by them ([Compromise Infrastructure](https://attack.mitre.org/techniques/T1584)).(Citation: Dell TG-3390) Tools can also be staged on web services, such as an adversary controlled GitHub repo, or on Platform-as-a-Service offerings that enable users to easily provision applications.(Citation: Dragos Heroku Watering Hole)(Citation: Malwarebytes Heroku Skimmers)(Citation: Intezer App Service Phishing)
 
 Adversaries can avoid the need to upload a tool by having compromised victim machines download the tool directly from a third-party hosting location (ex: a non-adversary controlled GitHub repo), including the original hosting site of the tool.
+
+攻击者可能会将工具上传到第三方或攻击者控制的基础设施上，以便在攻击目标时让其易于访问。这些工具可以是开源或闭源的，免费或商业的。攻击者可以利用这些工具进行恶意行为，但（与恶意软件不同），这些工具并不是为了那些目的而设计的（例如：[PsExec](https://attack.mitre.org/software/S0029)）。攻击者可能会上传工具来支持他们的操作，例如将一个工具放置在可通过互联网访问的Web服务器上，使其对受害者网络可用，以便实现[Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105)。
+
+这些工具可以被放置在之前由攻击者购买/租用的基础设施上（[Acquire Infrastructure](https://attack.mitre.org/techniques/T1583)），或者被攻击者以其他方式入侵的基础设施上（[Compromise Infrastructure](https://attack.mitre.org/techniques/T1584)）。（引用：Dell TG-3390）工具还可以被放置在Web服务上，例如攻击者控制的GitHub代码库，或者允许用户轻松提供应用程序的平台即服务（Platform-as-a-Service）提供商上。（引用：Dragos Heroku Watering Hole）（引用：Malwarebytes Heroku Skimmers）（引用：Intezer App Service Phishing）
+
+攻击者可以通过使受感染的受害者机器直接从第三方托管位置（例如：非攻击者控制的GitHub代码库），包括工具的原始托管站点，下载工具，从而避免上传工具的需求。
+
 ### [T1608.003]:Install Digital Certificate
 > External ID: T1608.003
 > STIX ID: attack-pattern--c071d8c1-3b3a-4f22-9407-ca4e96921069
@@ -8781,11 +8901,12 @@ Adversaries may install SSL/TLS certificates that can be used to further their o
 
 Adversaries can obtain digital certificates (see [Digital Certificates](https://attack.mitre.org/techniques/T1588/004)) or create self-signed certificates (see [Digital Certificates](https://attack.mitre.org/techniques/T1587/003)). Digital certificates can then be installed on adversary controlled infrastructure that may have been acquired ([Acquire Infrastructure](https://attack.mitre.org/techniques/T1583)) or previously compromised ([Compromise Infrastructure](https://attack.mitre.org/techniques/T1584)).
 ### [T1608.004]:Drive-by Target
+> 中文：无感染目标
+>
 > External ID: T1608.004
 > STIX ID: attack-pattern--31fe0ba2-62fd-4fd9-9293-4043d84f7fe9
 > Platforms: ['PRE']
 > Tactics: ['resource-development']
-
 
 **Description: **
  Adversaries may prepare an operational environment to infect systems that visit a website over the normal course of browsing. Endpoint systems may be compromised through browsing to adversary controlled sites, as in [Drive-by Compromise](https://attack.mitre.org/techniques/T1189). In such cases, the user's web browser is typically targeted for exploitation (often not requiring any extra user interaction once landing on the site), but adversaries may also set up websites for non-exploitation behavior such as [Application Access Token](https://attack.mitre.org/techniques/T1550/001). Prior to [Drive-by Compromise](https://attack.mitre.org/techniques/T1189), adversaries must stage resources needed to deliver that exploit to users who browse to an adversary controlled site. Drive-by content can be staged on adversary controlled infrastructure that has been acquired ([Acquire Infrastructure](https://attack.mitre.org/techniques/T1583)) or previously compromised ([Compromise Infrastructure](https://attack.mitre.org/techniques/T1584)).
@@ -8801,7 +8922,24 @@ In addition to staging content to exploit a user's web browser, adversaries may 
 Websites compromised by an adversary and used to stage a drive-by may be ones visited by a specific community, such as government, a particular industry, or region, where the goal is to compromise a specific user or set of users based on a shared interest. This kind of targeted campaign is referred to a strategic web compromise or watering hole attack.
 
 Adversaries may purchase domains similar to legitimate domains (ex: homoglyphs, typosquatting, different top-level domain, etc.) during acquisition of infrastructure ([Domains](https://attack.mitre.org/techniques/T1583/001)) to help facilitate [Drive-by Compromise](https://attack.mitre.org/techniques/T1189).
+
+攻击者可能会准备一个操作环境，以感染在正常浏览过程中访问网站的系统。通过访问攻击者控制的网站，终端系统可能会被入侵，就像[T1189](https://attack.mitre.org/techniques/T1189)中的"Drive-by Compromise"技术一样。在这种情况下，通常会针对用户的Web浏览器进行利用（通常在着陆网站后不需要额外的用户交互），但攻击者也可以设置用于非利用行为（例如[Application Access Token](https://attack.mitre.org/techniques/T1550/001)）的网站。在进行[Drive-by Compromise](https://attack.mitre.org/techniques/T1189)之前，攻击者必须准备资源，以向浏览到攻击者控制的网站的用户提供该利用。Drive-by内容可以被放置在已获取的攻击者控制的基础设施上（[Acquire Infrastructure](https://attack.mitre.org/techniques/T1583)）或之前被入侵的基础设施上（[Compromise Infrastructure](https://attack.mitre.org/techniques/T1584)）。
+
+攻击者可能会上传或注入恶意Web内容，例如[JavaScript](https://attack.mitre.org/techniques/T1059/007)到网站中。（引用：FireEye CFR Watering Hole 2012）（引用：Gallagher 2015）这可以通过以下多种方式实现：
+
+- 将恶意脚本插入网页或其他用户可控的Web内容，例如论坛帖子。
+- 修改从公共可写云存储桶为网站提供的脚本文件。
+- 制作恶意网络广告，并通过合法的广告提供商购买广告位（即[Malvertising](https://attack.mitre.org/techniques/T1583/008)）。
+
+除了准备利用用户的Web浏览器的内容外，攻击者还可能准备脚本内容来对用户的浏览器进行配置文件分析（例如[Gather Victim Host Information](https://attack.mitre.org/techniques/T1592)），以确保其在尝试利用之前存在漏洞。（引用：ATT ScanBox）
+
+被攻击者入侵并用于进行Drive-by攻击的网站可能是特定社区访问的网站，例如政府、特定行业或地区，旨在基于共同兴趣来入侵特定用户或一组用户。这种有针对性的攻击活动被称为战略网络入侵或浇灌陷阱攻击。
+
+攻击者在获取基础设施时可能会购买与合法域名类似的域名（例如：同形字、拼写错误、不同的顶级域等），以帮助促成[Drive-by Compromise](https://attack.mitre.org/techniques/T1189)。
+
 ### [T1608.005]:Link Target
+> 中文：链接目标
+>
 > External ID: T1608.005
 > STIX ID: attack-pattern--84ae8255-b4f4-4237-b5c5-e717405a9701
 > Platforms: ['PRE']
@@ -8814,7 +8952,16 @@ Adversaries may purchase domains similar to legitimate domains (ex: homoglyphs, 
 Typically, the resources for a link target will be an HTML page that may include some client-side script such as [JavaScript](https://attack.mitre.org/techniques/T1059/007) to decide what content to serve to the user. Adversaries may clone legitimate sites to serve as the link target, this can include cloning of login pages of legitimate web services or organization login pages in an effort to harvest credentials during [Spearphishing Link](https://attack.mitre.org/techniques/T1598/003).(Citation: Malwarebytes Silent Librarian October 2020)(Citation: Proofpoint TA407 September 2019) Adversaries may also [Upload Malware](https://attack.mitre.org/techniques/T1608/001) and have the link target point to malware for download/execution by the user.
 
 Adversaries may purchase domains similar to legitimate domains (ex: homoglyphs, typosquatting, different top-level domain, etc.) during acquisition of infrastructure ([Domains](https://attack.mitre.org/techniques/T1583/001)) to help facilitate [Malicious Link](https://attack.mitre.org/techniques/T1204/001). Link shortening services can also be employed. Adversaries may also use free or paid accounts on Platform-as-a-Service providers to host link targets while taking advantage of the widely trusted domains of those providers to avoid being blocked.(Citation: Netskope GCP Redirection)(Citation: Netskope Cloud Phishing)(Citation: Intezer App Service Phishing) Finally, adversaries may take advantage of the decentralized nature of the InterPlanetary File System (IPFS) to host link targets that are difficult to remove.(Citation: Talos IPFS 2022)
+
+对手可能设置被链接引用的资源，这些资源可以在定位过程中被使用。对手可能依赖用户点击恶意链接以泄露信息（包括凭据）或进行执行，如[恶意链接](https://attack.mitre.org/techniques/T1204/001)中所示。链接可用于钓鱼攻击，例如发送带有社交工程文本的电子邮件，以诱使用户主动点击或复制粘贴URL到浏览器中。在进行信息钓鱼（如[针对性链接](https://attack.mitre.org/techniques/T1598/003)）或获得系统初始访问权限的钓鱼之前（如[针对性链接](https://attack.mitre.org/techniques/T1566/002)），对手必须为钓鱼链接设置链接目标的资源。
+
+通常，链接目标的资源将是一个HTML页面，其中可能包含一些客户端脚本，如[JavaScript](https://attack.mitre.org/techniques/T1059/007)，以决定向用户提供什么内容。对手可能克隆合法网站作为链接目标，这可能包括克隆合法网络服务的登录页面或组织登录页面，以试图在[针对性链接](https://attack.mitre.org/techniques/T1598/003)期间窃取凭据。（引用：Malwarebytes Silent Librarian 2020年10月）（引用：Proofpoint TA407 2019年9月）对手还可能[上传恶意软件](https://attack.mitre.org/techniques/T1608/001)，并将链接目标指向供用户下载/执行的恶意软件。
+
+对手可能在获取基础设施时购买类似合法域名的域名（例如：同形异义词、拼写错误、不同的顶级域等），以帮助促成[恶意链接](https://attack.mitre.org/techniques/T1204/001)。还可以使用链接缩短服务。对手还可以使用平台即服务提供商上的免费或付费账户来托管链接目标，同时利用这些提供商广受信任的域名，以避免被阻止。（引用：Netskope GCP Redirection）（引用：Netskope Cloud Phishing）（引用：Intezer App Service Phishing）最后，对手可能利用去中心化的星际文件系统（IPFS）的特性来托管难以删除的链接目标。（引用：Talos IPFS 2022年）
+
 ### [T1608.006]:SEO Poisoning
+> 中文：SEO 毒化
+>
 > External ID: T1608.006
 > STIX ID: attack-pattern--e5d550f3-2202-4634-85f2-4a200a1d49b3
 > Platforms: ['PRE']
@@ -8829,6 +8976,31 @@ To help facilitate [Drive-by Compromise](https://attack.mitre.org/techniques/T11
 Adversaries may also purchase or plant incoming links to staged capabilities in order to boost the site’s calculated relevance and reputation.(Citation: MalwareBytes SEO)(Citation: DFIR Report Gootloader)
 
 SEO poisoning may also be combined with evasive redirects and other cloaking mechanisms (such as measuring mouse movements or serving content based on browser user agents, user language/localization settings, or HTTP headers) in order to feed SEO inputs while avoiding scrutiny from defenders.(Citation: ZScaler SEO)(Citation: Sophos Gootloader)
+
+对手可能操纵影响搜索引擎优化（SEO）的机制，以吸引目标受害者的注意力。搜索引擎通常根据购买的广告以及网页爬虫和算法计算出的网站排名/得分/声誉来向用户显示搜索结果。（引用：Atlas SEO）（引用：MalwareBytes SEO）
+
+为了促进[驱动式妥协](https://attack.mitre.org/techniques/T1189)，对手可能会制作明确操纵SEO排名的内容，以在搜索引擎中推广托管恶意载荷的网站（例如[驱动式目标](https://attack.mitre.org/techniques/T1608/004)）。毒化SEO排名可能涉及各种技巧，例如将关键词（包括隐藏文本形式）注入到被入侵的网站中。这些关键词可能与目标受害者的兴趣/浏览习惯有关，也可能与更广泛、应季热门的话题相关（例如选举、热门新闻）。 （引用：ZScaler SEO）（引用：Atlas SEO）
+
+对手还可以购买或插入指向预设能力的链接，以提升网站的相关性和声誉计算结果。（引用：MalwareBytes SEO）（引用：DFIR Report Gootloader）
+
+SEO毒化还可以与逃避性重定向和其他掩盖机制相结合（例如根据鼠标移动测量或根据浏览器用户代理、用户语言/本地化设置或HTTP头部提供内容），以在避开防御者的监视时提供SEO输入。（引用：ZScaler SEO）（引用：Sophos Gootloader）
+
+
+
+SEO (Search Engine Optimization) Poisoning是一种黑帽SEO技术，旨在通过操纵搜索引擎结果页面（SERP）来欺骗用户并传播恶意内容。它利用搜索引擎的算法和排名机制，使恶意网站在相关搜索查询中获得更高的排名，从而吸引用户点击。
+
+SEO Poisoning的过程通常包括以下步骤：
+
+1. 选择关键词：攻击者会选择流行且与恶意内容相关的关键词。这些关键词可能与当前热门话题、新闻事件或流行产品相关。
+2. 创建恶意网页：攻击者会创建一个或多个针对选定关键词优化的网页，其中包含恶意内容或链接到恶意网站。
+3. 操作搜索引擎算法：攻击者会尝试操纵搜索引擎的算法，以使恶意网页在相关搜索查询中获得更高的排名。这可以通过各种技术实现，如大量的关键词堆叠、隐藏文本、虚假链接等。
+4. 用户点击：一旦搜索引擎将恶意网页排名较高，当用户进行相关搜索并看到这些网页时，他们可能会被误导并点击链接。
+5. 传播恶意内容：一旦用户点击恶意链接，他们可能会被重定向到包含恶意软件、欺诈页面、钓鱼网站或其他恶意内容的网站。攻击者可以利用这些机会进行恶意活动，如窃取个人信息、传播恶意软件等。
+
+SEO Poisoning对用户和组织都构成威胁。对用户而言，他们可能会被引导到感染恶意软件的网站，导致数据泄露或身份盗窃。对于企业和网站所有者，SEO Poisoning可能导致品牌声誉受损、流量减少以及经济损失。
+
+为了防止SEO Poisoning，搜索引擎公司采取了各种措施来检测和排除恶意网页。此外，用户也应保持警惕，不要随意点击可疑链接，并确保其计算设备和软件处于最新、安全的状态。
+
 ## [T1609]:Container Administration Command
 > External ID: T1609
 > STIX ID: attack-pattern--7b50a1d3-4ca7-45d1-989d-a6503f04bfe1
@@ -9020,6 +9192,8 @@ Abusing certificates for authentication credentials may enable other behaviors s
 
 Adversaries who have access to root (or subordinate) CA certificate private keys (or mechanisms protecting/managing these keys) may also establish [Persistence](https://attack.mitre.org/tactics/TA0003) by forging arbitrary authentication certificates for the victim domain (known as “golden” certificates).(Citation: Medium Certified Pre Owned) Adversaries may also target certificates and related services in order to access other forms of credentials, such as [Golden Ticket](https://attack.mitre.org/techniques/T1558/001) ticket-granting tickets (TGT) or NTLM plaintext.(Citation: Medium Certified Pre Owned)
 ## [T1650]:Acquire Access
+> 中文：权限获取
+>
 > External ID: T1650
 > STIX ID: attack-pattern--d21bb61f-08ad-4dc1-b001-81ca6cb79954
 > Platforms: ['PRE']
@@ -9036,6 +9210,17 @@ By leveraging existing access broker networks rather than developing or obtainin
 In some cases, purchasing access to an organization in sectors such as IT contracting, software development, or telecommunications may allow an adversary to compromise additional victims via a [Trusted Relationship](https://attack.mitre.org/techniques/T1199), [Multi-Factor Authentication Interception](https://attack.mitre.org/techniques/T1111), or even [Supply Chain Compromise](https://attack.mitre.org/techniques/T1195).
 
 **Note:** while this technique is distinct from other behaviors such as [Purchase Technical Data](https://attack.mitre.org/techniques/T1597/002) and [Credentials](https://attack.mitre.org/techniques/T1589/001), they may often be used in conjunction (especially where the acquired foothold requires [Valid Accounts](https://attack.mitre.org/techniques/T1078)).
+
+对手可能购买或以其他方式获取对目标系统或网络的现有访问权限。有各种在线服务和初始访问经纪人网络可供出售先前被入侵系统的访问权限。（引用：Microsoft Ransomware as a Service）（引用：CrowdStrike Access Brokers）（引用：Krebs Access Brokers Fortune 500）在某些情况下，对手团队可能会建立合作关系，共享彼此被入侵的系统。（引用：CISA Karakurt 2022）
+
+对被入侵系统的立足点可能采取多种形式，例如获得植入的后门（例如[Web Shell](https://attack.mitre.org/techniques/T1505/003)）或通过[外部远程服务](https://attack.mitre.org/techniques/T1133)建立的访问权限。在一些情况下，访问经纪人会在被入侵系统中植入一个“载荷”，该载荷可用于为付费客户安装额外的恶意软件。（引用：Microsoft Ransomware as a Service）
+
+通过利用现有的访问经纪人网络而不是开发或获取自己的初始访问能力，对手可以潜在地减少获得对目标网络立足点所需的资源，并将其努力集中在后期的妥协阶段。对手可能优先考虑获取已确定缺乏安全监控或拥有高权限的系统的访问权限，或者属于特定行业组织的系统。（引用：Microsoft Ransomware as a Service）（引用：CrowdStrike Access Brokers）
+
+在某些情况下，购买IT承包、软件开发或电信等行业组织的访问权限可能使对手能够通过[受信任关系](https://attack.mitre.org/techniques/T1199)、[多因素身份验证拦截](https://attack.mitre.org/techniques/T1111)甚至[供应链妥协](https://attack.mitre.org/techniques/T1195)来攻击其他受害者。
+
+**注意：**尽管这种技术与其他行为（如[购买技术数据](https://attack.mitre.org/techniques/T1597/002)和[凭据](https://attack.mitre.org/techniques/T1589/001)）是不同的，但它们通常会结合使用（特别是在获得立足点需要[有效账户](https://attack.mitre.org/techniques/T1078)的情况下）。
+
 ## [T1651]:Cloud Administration Command
 > External ID: T1651
 > STIX ID: attack-pattern--d94b3ae9-8059-4989-8e9f-ea0f601f80a7
