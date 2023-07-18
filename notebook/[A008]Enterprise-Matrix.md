@@ -138,7 +138,7 @@ Acquire Infrastructure技术主要涉及以下方面：
 |                                                              | [Upload Malware](###[T1608.001]:Upload Malware)              | 上传恶意工具     | T1608.001   |
 |                                                              | [Upload Tool](###[T1608.002]:Upload Tool)                    | 上传工具         | T1608.002   |
 |                                                              | [Install Digital Certificate](###[T1608.003]:Install Digital Certificate) | 安装数字证书     | T1608.003   |
-|                                                              | [Drive-by Target](###[T1608.004]:Drive-by Target)            | 无感染目标       | T1608.004   |
+|                                                              | [Drive-by Target](###[T1608.004]:Drive-by Target)            | 路过式目标       | T1608.004   |
 |                                                              | [Link Target](###[T1608.005]:Link Target)                    | 链接目标         | T1608.005   |
 |                                                              | [SEO Poisoning](###[T1608.006]:SEO Poisoning)                | SEO 毒化         | T1608.006   |
 | [Acquire Access](##[T1650]:Acquire Access)                   |                                                              | 权限获取         | T1650       |
@@ -159,25 +159,25 @@ Initial Access consists of techniques that use various entry vectors to gain the
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[Valid Accounts](##[T1078]:Valid Accounts)|||T1078|
-||[Default Accounts](###[T1078.001]:Default Accounts)||T1078.001|
-||[Domain Accounts](###[T1078.002]:Domain Accounts)||T1078.002|
-||[Local Accounts](###[T1078.003]:Local Accounts)||T1078.003|
-||[Cloud Accounts](###[T1078.004]:Cloud Accounts)||T1078.004|
-|[Replication Through Removable Media](##[T1091]:Replication Through Removable Media)|||T1091|
-|[External Remote Services](##[T1133]:External Remote Services)|||T1133|
-|[Drive-by Compromise](##[T1189]:Drive-by Compromise)|||T1189|
-|[Exploit Public-Facing Application](##[T1190]:Exploit Public-Facing Application)|||T1190|
-|[Supply Chain Compromise](##[T1195]:Supply Chain Compromise)|||T1195|
-||[Compromise Software Dependencies and Development Tools](###[T1195.001]:Compromise Software Dependencies and Development Tools)||T1195.001|
-||[Compromise Software Supply Chain](###[T1195.002]:Compromise Software Supply Chain)||T1195.002|
-||[Compromise Hardware Supply Chain](###[T1195.003]:Compromise Hardware Supply Chain)||T1195.003|
-|[Trusted Relationship](##[T1199]:Trusted Relationship)|||T1199|
-|[Hardware Additions](##[T1200]:Hardware Additions)|||T1200|
-|[Phishing](##[T1566]:Phishing)|||T1566|
-||[Spearphishing Attachment](###[T1566.001]:Spearphishing Attachment)||T1566.001|
-||[Spearphishing Link](###[T1566.002]:Spearphishing Link)||T1566.002|
-||[Spearphishing via Service](###[T1566.003]:Spearphishing via Service)||T1566.003|
+|[Valid Accounts](##[T1078]:Valid Accounts)||有效账户|T1078|
+||[Default Accounts](###[T1078.001]:Default Accounts)|默认账户|T1078.001|
+||[Domain Accounts](###[T1078.002]:Domain Accounts)|域账户|T1078.002|
+||[Local Accounts](###[T1078.003]:Local Accounts)|本地账户|T1078.003|
+||[Cloud Accounts](###[T1078.004]:Cloud Accounts)|云账户|T1078.004|
+|[Replication Through Removable Media](##[T1091]:Replication Through Removable Media)||通过可移动介质进行复制|T1091|
+|[External Remote Services](##[T1133]:External Remote Services)||外部远程服务|T1133|
+|[Drive-by Compromise](##[T1189]:Drive-by Compromise)||路过式攻击|T1189|
+|[Exploit Public-Facing Application](##[T1190]:Exploit Public-Facing Application)||利用面向公共的应用程序|T1190|
+|[Supply Chain Compromise](##[T1195]:Supply Chain Compromise)||供应链攻击|T1195|
+||[Compromise Software Dependencies and Development Tools](###[T1195.001]:Compromise Software Dependencies and Development Tools)|攻击软件依赖和开发工具|T1195.001|
+||[Compromise Software Supply Chain](###[T1195.002]:Compromise Software Supply Chain)|攻击软件供应链|T1195.002|
+||[Compromise Hardware Supply Chain](###[T1195.003]:Compromise Hardware Supply Chain)|攻击硬件供应链|T1195.003|
+|[Trusted Relationship](##[T1199]:Trusted Relationship)||信赖关系|T1199|
+|[Hardware Additions](##[T1200]:Hardware Additions)|| 增加硬件               |T1200|
+|[Phishing](##[T1566]:Phishing)||钓鱼|T1566|
+||[Spearphishing Attachment](###[T1566.001]:Spearphishing Attachment)|钓鱼附件|T1566.001|
+||[Spearphishing Link](###[T1566.002]:Spearphishing Link)|钓鱼链接|T1566.002|
+||[Spearphishing via Service](###[T1566.003]:Spearphishing via Service)|钓鱼服务|T1566.003|
 
 
 
@@ -193,44 +193,44 @@ Execution consists of techniques that result in adversary-controlled code runnin
 
 **Techniques:**
 
-| Tech                                                         | Sub-Tech                                                     | 中文 | External ID |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ----------- |
-| [Windows Management Instrumentation](##[T1047]:Windows Management Instrumentation) |                                                              |      | T1047       |
-| [Scheduled Task/Job](##[T1053]:Scheduled Task/Job)           |                                                              |      | T1053       |
-|                                                              | [At](###[T1053.002]:At)                                      |      | T1053.002   |
-|                                                              | [Cron](###[T1053.003]:Cron)                                  |      | T1053.003   |
-|                                                              | [Scheduled Task](###[T1053.005]:Scheduled Task)              |      | T1053.005   |
-|                                                              | [Systemd Timers](###[T1053.006]:Systemd Timers)              |      | T1053.006   |
-|                                                              | [Container Orchestration Job](###[T1053.007]:Container Orchestration Job) |      | T1053.007   |
-| [Command and Scripting Interpreter](##[T1059]:Command and Scripting Interpreter) |                                                              |      | T1059       |
-|                                                              | [PowerShell](###[T1059.001]:PowerShell)                      |      | T1059.001   |
-|                                                              | [AppleScript](###[T1059.002]:AppleScript)                    |      | T1059.002   |
-|                                                              | [Windows Command Shell](###[T1059.003]:Windows Command Shell) |      | T1059.003   |
-|                                                              | [Unix Shell](###[T1059.004]:Unix Shell)                      |      | T1059.004   |
-|                                                              | [Visual Basic](###[T1059.005]:Visual Basic)                  |      | T1059.005   |
-|                                                              | [Python](###[T1059.006]:Python)                              |      | T1059.006   |
-|                                                              | [JavaScript](###[T1059.007]:JavaScript)                      |      | T1059.007   |
-|                                                              | [Network Device CLI](###[T1059.008]:Network Device CLI)      |      | T1059.008   |
-|                                                              | [Cloud API](###[T1059.009]:Cloud API)                        |      | T1059.009   |
-| [Software Deployment Tools](##[T1072]:Software Deployment Tools) |                                                              |      | T1072       |
-| [Native API](##[T1106]:Native API)                           |                                                              |      | T1106       |
-| [Shared Modules](##[T1129]:Shared Modules)                   |                                                              |      | T1129       |
-| [Exploitation for Client Execution](##[T1203]:Exploitation for Client Execution) |                                                              |      | T1203       |
-| [User Execution](##[T1204]:User Execution)                   |                                                              |      | T1204       |
-|                                                              | [Malicious Link](###[T1204.001]:Malicious Link)              |      | T1204.001   |
-|                                                              | [Malicious File](###[T1204.002]:Malicious File)              |      | T1204.002   |
-|                                                              | [Malicious Image](###[T1204.003]:Malicious Image)            |      | T1204.003   |
-| [Inter-Process Communication](##[T1559]:Inter-Process Communication) |                                                              |      | T1559       |
-|                                                              | [Component Object Model](###[T1559.001]:Component Object Model) |      | T1559.001   |
-|                                                              | [Dynamic Data Exchange](###[T1559.002]:Dynamic Data Exchange) |      | T1559.002   |
-|                                                              | [XPC Services](###[T1559.003]:XPC Services)                  |      | T1559.003   |
-| [System Services](##[T1569]:System Services)                 |                                                              |      | T1569       |
-|                                                              | [Launchctl](###[T1569.001]:Launchctl)                        |      | T1569.001   |
-|                                                              | [Service Execution](###[T1569.002]:Service Execution)        |      | T1569.002   |
-| [Container Administration Command](##[T1609]:Container Administration Command) |                                                              |      | T1609       |
-| [Deploy Container](##[T1610]:Deploy Container)               |                                                              |      | T1610       |
-| [Serverless Execution](##[T1648]:Serverless Execution)       |                                                              |      | T1648       |
-| [Cloud Administration Command](##[T1651]:Cloud Administration Command) |                                                              |      | T1651       |
+| Tech                                                         | Sub-Tech                                                     | 中文                  | External ID |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------- | ----------- |
+| [Windows Management Instrumentation](##[T1047]:Windows Management Instrumentation) |                                                              | WMI                   | T1047       |
+| [Scheduled Task/Job](##[T1053]:Scheduled Task/Job)           |                                                              | 计划任务              | T1053       |
+|                                                              | [At](###[T1053.002]:At)                                      | AT                    | T1053.002   |
+|                                                              | [Cron](###[T1053.003]:Cron)                                  | corn                  | T1053.003   |
+|                                                              | [Scheduled Task](###[T1053.005]:Scheduled Task)              | 计划任务              | T1053.005   |
+|                                                              | [Systemd Timers](###[T1053.006]:Systemd Timers)              | systemd定时器         | T1053.006   |
+|                                                              | [Container Orchestration Job](###[T1053.007]:Container Orchestration Job) | 容器编排作业          | T1053.007   |
+| [Command and Scripting Interpreter](##[T1059]:Command and Scripting Interpreter) |                                                              | 命令和脚本解释器      | T1059       |
+|                                                              | [PowerShell](###[T1059.001]:PowerShell)                      | PowerShell            | T1059.001   |
+|                                                              | [AppleScript](###[T1059.002]:AppleScript)                    | AppleScript           | T1059.002   |
+|                                                              | [Windows Command Shell](###[T1059.003]:Windows Command Shell) | Windows Command Shell | T1059.003   |
+|                                                              | [Unix Shell](###[T1059.004]:Unix Shell)                      | Unix Shell            | T1059.004   |
+|                                                              | [Visual Basic](###[T1059.005]:Visual Basic)                  | Visual Basic          | T1059.005   |
+|                                                              | [Python](###[T1059.006]:Python)                              | Python                | T1059.006   |
+|                                                              | [JavaScript](###[T1059.007]:JavaScript)                      | JavaScript            | T1059.007   |
+|                                                              | [Network Device CLI](###[T1059.008]:Network Device CLI)      | 网络设备 CLI          | T1059.008   |
+|                                                              | [Cloud API](###[T1059.009]:Cloud API)                        | 云 API                | T1059.009   |
+| [Software Deployment Tools](##[T1072]:Software Deployment Tools) |                                                              | 软件开发工具          | T1072       |
+| [Native API](##[T1106]:Native API)                           |                                                              | 原生API               | T1106       |
+| [Shared Modules](##[T1129]:Shared Modules)                   |                                                              | 共享模组              | T1129       |
+| [Exploitation for Client Execution](##[T1203]:Exploitation for Client Execution) |                                                              | 利用客户端执行        | T1203       |
+| [User Execution](##[T1204]:User Execution)                   |                                                              | 用户执行              | T1204       |
+|                                                              | [Malicious Link](###[T1204.001]:Malicious Link)              | 恶意链接              | T1204.001   |
+|                                                              | [Malicious File](###[T1204.002]:Malicious File)              | 恶意文件              | T1204.002   |
+|                                                              | [Malicious Image](###[T1204.003]:Malicious Image)            | 恶意图片              | T1204.003   |
+| [Inter-Process Communication](##[T1559]:Inter-Process Communication) |                                                              | 进程间通信(IPC)       | T1559       |
+|                                                              | [Component Object Model](###[T1559.001]:Component Object Model) | 组件对象模型(COM)     | T1559.001   |
+|                                                              | [Dynamic Data Exchange](###[T1559.002]:Dynamic Data Exchange) | 动态数据交换(DDE)     | T1559.002   |
+|                                                              | [XPC Services](###[T1559.003]:XPC Services)                  | XPC服务               | T1559.003   |
+| [System Services](##[T1569]:System Services)                 |                                                              | 系统服务              | T1569       |
+|                                                              | [Launchctl](###[T1569.001]:Launchctl)                        | -- | T1569.001 |
+|                                                              | [Service Execution](###[T1569.002]:Service Execution)        | 服务执行              | T1569.002   |
+| [Container Administration Command](##[T1609]:Container Administration Command) |                                                              | 容器管理服务 | T1609       |
+| [Deploy Container](##[T1610]:Deploy Container)               |                                                              | 部署容器 | T1610       |
+| [Serverless Execution](##[T1648]:Serverless Execution)       |                                                              | 无服务执行 | T1648       |
+| [Cloud Administration Command](##[T1651]:Cloud Administration Command) |                                                              | 云管理服务 | T1651       |
 
 
 
@@ -2046,7 +2046,6 @@ Adversaries may use task scheduling to execute programs at system startup or on 
 > Platforms: ['Windows', 'Linux', 'macOS']
 > Tactics: ['execution', 'persistence', 'privilege-escalation']
 
-
 **Description: **
  Adversaries may abuse the [at](https://attack.mitre.org/software/S0110) utility to perform task scheduling for initial or recurring execution of malicious code. The [at](https://attack.mitre.org/software/S0110) utility exists as an executable within Windows, Linux, and macOS for scheduling tasks at a specified time and date. Although deprecated in favor of [Scheduled Task](https://attack.mitre.org/techniques/T1053/005)'s [schtasks](https://attack.mitre.org/software/S0111) in Windows environments, using [at](https://attack.mitre.org/software/S0110) requires that the Task Scheduler service be running, and the user to be logged on as a member of the local Administrators group.
 
@@ -3035,6 +3034,8 @@ In the case of network infrastructure, particularly routers, it is possible for 
 
 For example, if domain-x and domain-y are customers of the same CDN, it is possible to place domain-x in the TLS header and domain-y in the HTTP header. Traffic will appear to be going to domain-x, however the CDN may route it to domain-y.
 ## [T1091]:Replication Through Removable Media
+> 中文：通过可移动介质进行复制
+>
 > External ID: T1091
 > STIX ID: attack-pattern--3b744087-9945-4a6f-91e8-9dbceda417a4
 > Platforms: ['Windows']
@@ -3045,6 +3046,13 @@ For example, if domain-x and domain-y are customers of the same CDN, it is possi
  Adversaries may move onto systems, possibly those on disconnected or air-gapped networks, by copying malware to removable media and taking advantage of Autorun features when the media is inserted into a system and executes. In the case of Lateral Movement, this may occur through modification of executable files stored on removable media or by copying malware and renaming it to look like a legitimate file to trick users into executing it on a separate system. In the case of Initial Access, this may occur through manual manipulation of the media, modification of systems used to initially format the media, or modification to the media's firmware itself.
 
 Mobile devices may also be used to infect PCs with malware if connected via USB.(Citation: Exploiting Smartphone USB ) This infection may be achieved using devices (Android, iOS, etc.) and, in some instances, USB charging cables.(Citation: Windows Malware Infecting Android)(Citation: iPhone Charging Cable Hack) For example, when a smartphone is connected to a system, it may appear to be mounted similar to a USB-connected disk drive. If malware that is compatible with the connected system is on the mobile device, the malware could infect the machine (especially if Autorun features are enabled).
+
+攻击者可能通过将恶意软件复制到可移动介质上，并在将介质插入系统并执行时利用自动运行功能，进入系统，尤其那些断开连接或空隔离网络的系统。在横向移动的情况下，这可能发生修改存储在可移动介质上的可执行文件或复制恶意软件并其重命名为看似合法的文件以欺骗用户在另一个系统上执行它。在初始访问的情况下，这可能通过手动操作介质、修改用于最初格式化介质的系统或修改介质固件本身来现。
+
+如果通过USB连接，动设备也可以用于感PC上的恶意软件。（引用：Exploiting Smartphone USB）这种染可以使用设备（Android、iOS等）和在某些情况下使用USB充电线实现。（引用：Windows Malware Infecting Android）（引用：iPhone Charging Cable Hack）例如，当智能手机连接到系统时，它可能会被挂类似于连接的USB磁盘驱动器。如果与连接的系统容的恶意软件存在于移动设备，恶意软件可能会感染该器（特别是如果启了自动运行功能）。
+
+
+
 ## [T1092]:Communication Through Removable Media
 > External ID: T1092
 > STIX ID: attack-pattern--64196062-5210-42c3-9a02-563a0d1797ef
@@ -3228,6 +3236,8 @@ Files can also be transferred using various [Web Service](https://attack.mitre.o
 
 On Windows, adversaries may use various utilities to download tools, such as `copy`, `finger`, [certutil](https://attack.mitre.org/software/S0160), and [PowerShell](https://attack.mitre.org/techniques/T1059/001) commands such as <code>IEX(New-Object Net.WebClient).downloadString()</code> and <code>Invoke-WebRequest</code>. On Linux and macOS systems, a variety of utilities also exist, such as `curl`, `scp`, `sftp`, `tftp`, `rsync`, `finger`, and `wget`.(Citation: t1105_lolbas)
 ## [T1106]:Native API
+> 中文：原生API
+>
 > External ID: T1106
 > STIX ID: attack-pattern--391d824f-0ef1-47a0-b0ee-c59a75e27670
 > Platforms: ['Windows', 'macOS', 'Linux']
@@ -3242,6 +3252,15 @@ Native API functions (such as <code>NtCreateProcess</code>) may be directed invo
 Higher level software frameworks, such as Microsoft .NET and macOS Cocoa, are also available to interact with native APIs. These frameworks typically provide language wrappers/abstractions to API functionalities and are designed for ease-of-use/portability of code.(Citation: Microsoft NET)(Citation: Apple Core Services)(Citation: MACOS Cocoa)(Citation: macOS Foundation)
 
 Adversaries may abuse these OS API functions as a means of executing behaviors. Similar to [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059), the native API and its hierarchy of interfaces provide mechanisms to interact with and utilize various components of a victimized system. While invoking API functions, adversaries may also attempt to bypass defensive tools (ex: unhooking monitored functions via [Disable or Modify Tools](https://attack.mitre.org/techniques/T1562/001)).
+
+攻击者可能与原生操作系统应用程序编程接口（API）进行交互以执行行为。原生API提供了一种控的方式来调用核中的低级别操作系统服务，例如涉硬件/设备、内和进程的服务。（用：NT API Windows）（引用：Linux Kernel API）这些原生API在系统启时（其他系统组件尚初始化）以及在日操作中执行任务和请求时操作系统利用。
+
+原生API函数（如<code>NtCreateProcess</code>）可以通过系统调/syscall直接调，但这些功能通常也通过接和库向用户模式应程序公开。（引用：OutFlank System Calls）（引用：CyBit System Calls）（引：MDSec System Calls）例如，Windows API的<code>CreateProcess()</code>或GNU的<code>fork()</code>函数允许程序和脚本启动其他程。（引用：Microsoft CreateProcess）（引用：GNU Fork）这可以使API调者执行二进制文件、运行CLI命令、加载块等，因为各种系统操作存在数千类似的API函数。（用：Microsoft Win32）（引用：LIBC）（引用：GLIBC）
+
+还有更高级别的软框架，如Microsoft .NET和macOS Cocoa，可用于与生API进行交互这些框架通常提供语言包装器/抽象层以问API功能，并设计用于代码易用性和可移植性。（引用：Microsoft NET）引用：Apple Core Services）（引：MACOS Cocoa）（引用：macOS Foundation）
+
+攻击者可能滥用这些操作系统API函数来执行行为。类于命令和脚本解释，原生API及其接层次结构提了与受害系统的各个组件进行交互和利用的机制。在调用API函数时，攻击者还可能尝试绕过防御工具（例如通过[禁用或修改工具](https://attack.mitre.org/techniques/T1562/)取消挂钩监视函数）。
+
 ## [T1110]:Brute Force
 > External ID: T1110
 > STIX ID: attack-pattern--a93494bb-4b80-4ea1-8695-3236a49916fd
@@ -3574,11 +3593,12 @@ Adversaries may use this functionality as a way to execute arbitrary payloads on
 **Description: **
  Adversaries may encode data with a non-standard data encoding system to make the content of command and control traffic more difficult to detect. Command and control (C2) information can be encoded using a non-standard data encoding system that diverges from existing protocol specifications. Non-standard data encoding schemes may be based on or related to standard data encoding schemes, such as a modified Base64 encoding for the message body of an HTTP request.(Citation: Wikipedia Binary-to-text Encoding) (Citation: Wikipedia Character Encoding) 
 ## [T1133]:External Remote Services
+> 中文：外部远程服务
+>
 > External ID: T1133
 > STIX ID: attack-pattern--10d51417-ee35-4589-b1ff-b6df1c334e8d
 > Platforms: ['Windows', 'Linux', 'Containers', 'macOS']
 > Tactics: ['persistence', 'initial-access']
-
 
 **Description: **
  Adversaries may leverage external-facing remote services to initially access and/or persist within a network. Remote services such as VPNs, Citrix, and other access mechanisms allow users to connect to internal enterprise network resources from external locations. There are often remote service gateways that manage connections and credential authentication for these services. Services such as [Windows Remote Management](https://attack.mitre.org/techniques/T1021/006) and [VNC](https://attack.mitre.org/techniques/T1021/005) can also be used externally.(Citation: MacOS VNC software for Remote Desktop)
@@ -3586,6 +3606,15 @@ Adversaries may use this functionality as a way to execute arbitrary payloads on
 Access to [Valid Accounts](https://attack.mitre.org/techniques/T1078) to use the service is often a requirement, which could be obtained through credential pharming or by obtaining the credentials from users after compromising the enterprise network.(Citation: Volexity Virtual Private Keylogging) Access to remote services may be used as a redundant or persistent access mechanism during an operation.
 
 Access may also be gained through an exposed service that doesn’t require authentication. In containerized environments, this may include an exposed Docker API, Kubernetes API server, kubelet, or web application such as the Kubernetes dashboard.(Citation: Trend Micro Exposed Docker Server)(Citation: Unit 42 Hildegard Malware)
+
+攻击者可能利用面向外部的远程服务来最初访问和/或在网络中持久存在远程服务，如VPN、Citrix和其他访问机制允许用户从外位置连接到内部企业网络资源。通常有管理这些服务的远程服务网关，用于管理连接和凭据认证。也可以在外部使用诸如[Windows远程管理](https://attack.mitre.org/techniques/T1/006)和[VNC](https://attack.mitre.org/techniques/T1021/)等服务。（引：MacOS VNC软件用于远程桌）
+
+通常需要访问[有效账户](https://attack.mitre.org/techniques/T1078)来使用该服务，这可以通过凭据鱼或在入企业网络后从用户那里获取据来获得。（用：Volexity虚私人按键记录）在操作过程，访问远程服务可能被用作冗余持久的访问制。
+
+还可以通过不需要身份验证的暴露服务获得访问权限。在容器化环境中，这可能包括暴露的Docker APIKubernetes API服务器、kubelet或应用程序，如Kubernetes仪表板。（引用：趋势技暴露的Docker服务器）（引用：Unit 42 Hildegard恶意软件）
+
+
+
 ## [T1134]:Access Token Manipulation
 > External ID: T1134
 > STIX ID: attack-pattern--dcaa092b-7de9-4a21-977f-7fcb77e89c48
@@ -3874,6 +3903,8 @@ There are several different ways this can occur. (Citation: Osanda Stealing NetN
 * A spearphishing attachment containing a document with a resource that is automatically loaded when the document is opened (i.e. [Template Injection](https://attack.mitre.org/techniques/T1221)). The document can include, for example, a request similar to <code>file[:]//[remote address]/Normal.dotm</code> to trigger the SMB request. (Citation: US-CERT APT Energy Oct 2017)
 * A modified .LNK or .SCF file with the icon filename pointing to an external reference such as <code>\\[remote address]\pic.png</code> that will force the system to load the resource when the icon is rendered to repeatedly gather credentials. (Citation: US-CERT APT Energy Oct 2017)
 ## [T1189]:Drive-by Compromise
+> 中文：路过式攻击
+>
 > External ID: T1189
 > STIX ID: attack-pattern--d742a578-d70e-4d0e-96a6-02a9c30204e6
 > Platforms: ['Windows', 'Linux', 'macOS', 'SaaS']
@@ -3904,12 +3935,38 @@ Typical drive-by compromise process:
 Unlike [Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190), the focus of this technique is to exploit software on a client endpoint upon visiting a website. This will commonly give an adversary access to systems on the internal network instead of external systems that may be in a DMZ.
 
 Adversaries may also use compromised websites to deliver a user to a malicious application designed to [Steal Application Access Token](https://attack.mitre.org/techniques/T1528)s, like OAuth tokens, to gain access to protected applications and information. These malicious applications have been delivered through popups on legitimate websites.(Citation: Volexity OceanLotus Nov 2017)
+
+攻击者可能通过用户在正常浏览过程中访问网站来获取对系统的访问权限。使用这种技术，通常会针对用户的网络浏览器进行攻击，但攻击者也可以利用受损的网站进行非攻击性行为，例如获取[应用访问令牌](https://attack.mitre.org/techniques/T1550/001)。
+
+向浏览器传递利用代码的多种方式存在（例如，[Drive-by Target](https://attack.mitre.org/techniques/T1608/004)），包括：
+
+- 一个合法网站被入侵，攻击者注入了某种形式的恶意代码，如JavaScript、iFrames和跨站脚本
+- 通过可公开写入的云存储存储桶向合法网站提供的脚本文件被攻击者修改
+- 恶意广告通过合法广告提供商支付并提供（例如，[广告劫持](https://attack.mitre.org/techniques/T1583/008)）
+- 利用内置的Web应用程序接口插入任何其他类型的对象，可用于显示Web内容或包含在访问客户端上执行的脚本（例如论坛帖子、评论和其他用户可控制的Web内容）。
+
+攻击者通常使用的网站是特定社区访问的网站，例如政府、特定行业或地区，目标是基于共同兴趣来破坏特定用户或一组用户。这种有针对性的攻击活动通常被称为战略性Web入侵或诱饵攻击。已知有几个此类事件的例子。（引用：Shadowserver战略性Web入侵）
+
+典型的驱动目标攻击过程：
+
+1. 用户访问用于托管攻击者控制内容的网站。
+2. 脚本自动执行，通常搜索浏览器和插件的各个版本，以寻找潜在的易受攻击版本。
+   - 用户可能需要协助此过程，通过启用脚本或活动网站组件，并忽略警告对话框。
+3. 找到易受攻击的版本后，将传递利用代码到浏览器。
+4. 如果利用成功，攻击者将能够在用户系统上执行代码，除非有其他保护措施。
+   - 在某些情况下，需要在初始扫描之后再次访问网站，才会传递利用代码。
+
+与[利用面向公众的应用程序](https://attack.mitre.org/techniques/T1190)不同，此技术的重点是在访问网站时利用客户端终端上的软件。这通常会使攻击者能够访问内部网络上的系统，而不是位于DMZ中的外部系统。
+
+攻击者还可以利用受损的网站向用户传递恶意应用程序，旨在窃取[应用访问令牌](https://attack.mitre.org/techniques/T1528)，如OAuth令牌，以获得对受保护应用程序和信息的访问权限。这些恶意应用程序通过合法网站上的弹出窗口进行传递。（引用：Volexity OceanLotus Nov 2017）
+
+
+
 ## [T1190]:Exploit Public-Facing Application
 > External ID: T1190
 > STIX ID: attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c
 > Platforms: ['Windows', 'IaaS', 'Network', 'Linux', 'macOS', 'Containers']
 > Tactics: ['initial-access']
-
 
 **Description: **
  Adversaries may attempt to exploit a weakness in an Internet-facing host or system to initially access a network. The weakness in the system can be a software bug, a temporary glitch, or a misconfiguration.
@@ -3991,6 +4048,8 @@ Adversaries may abuse BITS to download (e.g. [Ingress Tool Transfer](https://att
 
 BITS upload functionalities can also be used to perform [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048).(Citation: CTU BITS Malware June 2016)
 ## [T1199]:Trusted Relationship
+> 中文：信赖关系
+>
 > External ID: T1199
 > STIX ID: attack-pattern--9fa07bef-9c81-421e-a8e5-ad4366c5a925
 > Platforms: ['Windows', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Office 365']
@@ -4003,17 +4062,29 @@ BITS upload functionalities can also be used to perform [Exfiltration Over Alter
 Organizations often grant elevated access to second or third-party external providers in order to allow them to manage internal systems as well as cloud-based environments. Some examples of these relationships include IT services contractors, managed security providers, infrastructure contractors (e.g. HVAC, elevators, physical security). The third-party provider's access may be intended to be limited to the infrastructure being maintained, but may exist on the same network as the rest of the enterprise. As such, [Valid Accounts](https://attack.mitre.org/techniques/T1078) used by the other party for access to internal network systems may be compromised and used.(Citation: CISA IT Service Providers)
 
 In Office 365 environments, organizations may grant Microsoft partners or resellers delegated administrator permissions. By compromising a partner or reseller account, an adversary may be able to leverage existing delegated administrator relationships or send new delegated administrator offers to clients in order to gain administrative control over the victim tenant.(Citation: Office 365 Delegated Administration)
+
+攻击者可能会侵犯或利用能够接触到目标受害者的组织。通过信任的第三方关系获取访权限滥用了现有的连接，这连接可能没有得到保护，或者比获得网络访问权限的标准机受到的审查更少。
+
+为了允许第方或第三方外部提商管理内部系统以及基于云的环境，组织通常会授予们更高级别访问权限。这些关系一些例子包IT服务承包商、管安全提供商、基础设施承包商例如暖通空调、电梯、物理安全）。三方提供商的访问权限可能只限于正在维护的基础设，但可能存在企业的其他部分相同的网络上因此，其他一方用于访问内部网络系统的有效账户可能会被攻击入侵并使用。（引用：CISA IT服务提供商）
+
+在Office 365环境中组织可能会授予微合作伙伴或经销商委派管理员权限。通过入侵合伙伴或经销商账户，攻击者可以利现有的委派管理员关系，或向客户发送新的委派管理员请，以获得对受害租户的管理控制权。（引用：Office 365委派管理）
+
 ## [T1200]:Hardware Additions
+
 > External ID: T1200
 > STIX ID: attack-pattern--d40239b3-05ff-46d8-9bdd-b46d13463ef9
 > Platforms: ['Windows', 'Linux', 'macOS']
 > Tactics: ['initial-access']
 
-
 **Description: **
  Adversaries may introduce computer accessories, networking hardware, or other computing devices into a system or network that can be used as a vector to gain access. Rather than just connecting and distributing payloads via removable storage (i.e. [Replication Through Removable Media](https://attack.mitre.org/techniques/T1091)), more robust hardware additions can be used to introduce new functionalities and/or features into a system that can then be abused.
 
 While public references of usage by threat actors are scarce, many red teams/penetration testers leverage hardware additions for initial access. Commercial and open source products can be leveraged with capabilities such as passive network tapping, network traffic modification (i.e. [Adversary-in-the-Middle](https://attack.mitre.org/techniques/T1557)), keystroke injection, kernel memory reading via DMA, addition of new wireless access to an existing network, and others.(Citation: Ossmann Star Feb 2011)(Citation: Aleks Weapons Nov 2015)(Citation: Frisk DMA August 2016)(Citation: McMillan Pwn March 2012)
+
+攻击者可能会将计算机配件、网络硬件或其他计算设备引入系统或网络，作为获取访问权限的一种途径。与仅通过移动存储质连接和分发意载荷（例如[通过可移动介质进行复制](https://attack.mitre.org/techniques/T1091)）不同，更大的硬件附件可以用于引入系统中可以被滥用的新功能和/或特性。
+
+虽公开的关于威胁为者使用这些技的参考资料很，但许多红队/渗透测试人员利用硬件附件进行初始访问。商业和开源产品可以利用被动网络监听、网络流量修改即[中间人击](https://attack.mitre.org/techniques/T1557)）、键盘注入、通过DMA读取核内存、向现有网络添加新的无线接入等功能。（引用：Ossmann Star 2011年2月）（引用：ks Weapons 2015年11月）（引用Frisk DMA 2016年8月）（引：McMillan Pwn 2012年3月）
+
 ## [T1201]:Password Policy Discovery
 > External ID: T1201
 > STIX ID: attack-pattern--b6075259-dba3-44e9-87c7-e954f37ec0d5
@@ -4039,28 +4110,48 @@ Password policies can be discovered in cloud environments using available APIs s
 
 Adversaries may abuse these features for [Defense Evasion](https://attack.mitre.org/tactics/TA0005), specifically to perform arbitrary execution while subverting detections and/or mitigation controls (such as Group Policy) that limit/prevent the usage of [cmd](https://attack.mitre.org/software/S0106) or file extensions more commonly associated with malicious payloads.
 ## [T1203]:Exploitation for Client Execution
+> 中文：客户端可执行程序利用
+>
 > External ID: T1203
 > STIX ID: attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63
 > Platforms: ['Linux', 'Windows', 'macOS']
 > Tactics: ['execution']
-
 
 **Description: **
  Adversaries may exploit software vulnerabilities in client applications to execute code. Vulnerabilities can exist in software due to unsecure coding practices that can lead to unanticipated behavior. Adversaries can take advantage of certain vulnerabilities through targeted exploitation for the purpose of arbitrary code execution. Oftentimes the most valuable exploits to an offensive toolkit are those that can be used to obtain code execution on a remote system because they can be used to gain access to that system. Users will expect to see files related to the applications they commonly used to do work, so they are a useful target for exploit research and development because of their high utility.
 
 Several types exist:
 
-### Browser-based Exploitation
+**Browser-based Exploitation**
 
 Web browsers are a common target through [Drive-by Compromise](https://attack.mitre.org/techniques/T1189) and [Spearphishing Link](https://attack.mitre.org/techniques/T1566/002). Endpoint systems may be compromised through normal web browsing or from certain users being targeted by links in spearphishing emails to adversary controlled sites used to exploit the web browser. These often do not require an action by the user for the exploit to be executed.
 
-### Office Applications
+**Office Applications**
 
 Common office and productivity applications such as Microsoft Office are also targeted through [Phishing](https://attack.mitre.org/techniques/T1566). Malicious files will be transmitted directly as attachments or through links to download them. These require the user to open the document or file for the exploit to run.
 
-### Common Third-party Applications
+**Common Third-party Applications**
 
 Other applications that are commonly seen or are part of the software deployed in a target network may also be used for exploitation. Applications such as Adobe Reader and Flash, which are common in enterprise environments, have been routinely targeted by adversaries attempting to gain access to systems. Depending on the software and nature of the vulnerability, some may be exploited in the browser or require the user to open a file. For instance, some Flash exploits have been delivered as objects within Microsoft Office documents.
+
+攻击者可能利用客户端应用程序中的软件漏洞来执行代码。由于不安全的编码实践，软件可能存在漏洞，从而导致意行为。攻击者可以通过有针对性的利用来利用某些漏洞，以达到任意代码执行的目的。通常，对攻击工具包最有价值的利用是那可以用于在远程系统上执行代码的利用，为它们可以用于获取对该系统的访问权限。用户期望看到与他们常用的用程序相关的文件，因此它们是利用研究和开发的用目标，因为它们有很高的效用。
+
+存在几种类型：
+
+**基于浏览的利用**
+
+Web浏览是通过[Drive-by Compromise](https://attack.mitre.org/techniques/T1189)和[Spearphishing Link](https://attack.mitre.org/techniques/T1566/)进行攻击的常见目标。终端系统可能通过正常的网络浏览某些用户被针对性发送的链接（用利用Web浏览的攻击者控制的站点）而受到攻击。这些攻击通常不需要用户采取任何操作即可执行用。
+
+**办公应用程序**
+
+常见的公和生产力应用程序，如Microsoft Office，也通过[Phishing](https://attack.mitre.org/techniques/T1566)进行攻的目标。恶意文件将直接作为附件传输或通过链接下载。这需要用户打开文档或文件才能运行利。
+
+**常见的三方应用程序**
+
+其他常见或部署在标网络中的软件应用程序也可能用于攻击。诸如Adobe Reader和Flash之类的用程序在企业环中很常见因此经常成为手试图获取系统访问权限的目标。根软件和漏洞的性质，些可能在浏览器中被用，而有些则需要用户打开文件。例如一些Flash利用是作为Microsoft Office文档中的对象交付的。
+
+
+
 ## [T1204]:User Execution
 > External ID: T1204
 > STIX ID: attack-pattern--8c32eb4d-805f-4fc5-bf60-c4d476c131b5
@@ -6563,6 +6654,8 @@ An account registered to a domain, with or without special privileges, can be ab
 
 Cracked hashes may enable [Persistence](https://attack.mitre.org/tactics/TA0003), [Privilege Escalation](https://attack.mitre.org/tactics/TA0004), and [Lateral Movement](https://attack.mitre.org/tactics/TA0008) via access to [Valid Accounts](https://attack.mitre.org/techniques/T1078).(Citation: SANS Attacking Kerberos Nov 2014)
 ## [T1559]:Inter-Process Communication
+> 中文：进程间通信(IPC)
+>
 > External ID: T1559
 > STIX ID: attack-pattern--acd0ba37-7ba9-4cc5-ac61-796586cd856d
 > Platforms: ['Windows', 'macOS', 'Linux']
@@ -6573,6 +6666,26 @@ Cracked hashes may enable [Persistence](https://attack.mitre.org/tactics/TA0003)
  Adversaries may abuse inter-process communication (IPC) mechanisms for local code or command execution. IPC is typically used by processes to share data, communicate with each other, or synchronize execution. IPC is also commonly used to avoid situations such as deadlocks, which occurs when processes are stuck in a cyclic waiting pattern. 
 
 Adversaries may abuse IPC to execute arbitrary code or commands. IPC mechanisms may differ depending on OS, but typically exists in a form accessible through programming languages/libraries or native interfaces such as Windows [Dynamic Data Exchange](https://attack.mitre.org/techniques/T1559/002) or [Component Object Model](https://attack.mitre.org/techniques/T1559/001). Linux environments support several different IPC mechanisms, two of which being sockets and pipes.(Citation: Linux IPC) Higher level execution mediums, such as those of [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059)s, may also leverage underlying IPC mechanisms. Adversaries may also use [Remote Services](https://attack.mitre.org/techniques/T1021) such as [Distributed Component Object Model](https://attack.mitre.org/techniques/T1021/003) to facilitate remote IPC execution.(Citation: Fireeye Hunting COM June 2019)
+
+攻击者可能滥用进程间通信（IPC）机制来进行本地代码或命令执行。IPC通常由进程用于享数据、相互通或同步执行。IPC也常于避免死锁等情况，即进程入循环等待模式。
+
+攻击者可能滥用IPC来执行任意代码或命令。IPC机可能因操作系统而，但通常以编程语言/库或本地接的形式存在，例如Windows的动态数据交（Dynamic Data Exchange）或组件对象模型（Component Object Model）。Linux环境支持多种不同的IPC机制，其中两种是套字和管道更高级别的执行介质，如命令脚本解释器，可以利用底层IPC机制。攻击者还可以使用远程服务（如分布式件对象模型）来促进远IPC执行。
+
+Inter-Process Communication (IPC) 是指在操作系统中，不同进程之间进行数据交换和通信的机制。它允进程之间共享信息、传递数据和协调操作以实现各种功能。
+
+IPC 提供一组标准化的接口和通信协议，使得进程可以在不同的执行环境进行通信。它可以在一台计算机上的不同程之间进行通信，也可以在网络上不同计算机之进行通信。
+
+常见的 IPC 方法包括：
+
+1. 管道（Pipe）：管道一种单向的通信机制，用于在父子进程或者兄进程之间传递数据。
+2. 命名管道（Named Pipe）：命名管道是一种有名字的管道，允许无关的进程间进行通信。
+3. 信号量Semaphore）：信号量用于控对共享资源的访问，多个程可以通过信号量来同步它们的操作。
+4. 消息队列（Message Queue）：消息队列是一存放在内核中的消息链表进程可以通过读写消息队列进行通信。
+5. 共享内存（Shared Memory）：共享内存允许多个进程问同一块物理内存，从而现高效的数据享。
+6. 套接字（Socket）：套接字是一种网络通信机制，允不同计算机上的进程进行通信。
+
+这些 IPC 方法各有特点适用于不同的景和需求。开发人员可以根据具体的应用需求选择合适 IPC 方法来实现进程间的通信。
+
 ### [T1559.001]:Component Object Model
 > External ID: T1559.001
 > STIX ID: attack-pattern--2f6b4ed7-fef1-44ba-bcb8-1b4beb610b64
@@ -8953,11 +9066,11 @@ Typically, the resources for a link target will be an HTML page that may include
 
 Adversaries may purchase domains similar to legitimate domains (ex: homoglyphs, typosquatting, different top-level domain, etc.) during acquisition of infrastructure ([Domains](https://attack.mitre.org/techniques/T1583/001)) to help facilitate [Malicious Link](https://attack.mitre.org/techniques/T1204/001). Link shortening services can also be employed. Adversaries may also use free or paid accounts on Platform-as-a-Service providers to host link targets while taking advantage of the widely trusted domains of those providers to avoid being blocked.(Citation: Netskope GCP Redirection)(Citation: Netskope Cloud Phishing)(Citation: Intezer App Service Phishing) Finally, adversaries may take advantage of the decentralized nature of the InterPlanetary File System (IPFS) to host link targets that are difficult to remove.(Citation: Talos IPFS 2022)
 
-对手可能设置被链接引用的资源，这些资源可以在定位过程中被使用。对手可能依赖用户点击恶意链接以泄露信息（包括凭据）或进行执行，如[恶意链接](https://attack.mitre.org/techniques/T1204/001)中所示。链接可用于钓鱼攻击，例如发送带有社交工程文本的电子邮件，以诱使用户主动点击或复制粘贴URL到浏览器中。在进行信息钓鱼（如[针对性链接](https://attack.mitre.org/techniques/T1598/003)）或获得系统初始访问权限的钓鱼之前（如[针对性链接](https://attack.mitre.org/techniques/T1566/002)），对手必须为钓鱼链接设置链接目标的资源。
+攻击者可能设置被链接引用的资源，这些资源可以在定位过程中被使用。攻击者可能依赖用户点击恶意链接以泄露信息（包括凭据）或进行执行，如[恶意链接](https://attack.mitre.org/techniques/T1204/001)中所示。链接可用于钓鱼攻击，例如发送带有社交工程文本的电子邮件，以诱使用户主动点击或复制粘贴URL到浏览器中。在进行信息钓鱼（如[针对性链接](https://attack.mitre.org/techniques/T1598/003)）或获得系统初始访问权限的钓鱼之前（如[针对性链接](https://attack.mitre.org/techniques/T1566/002)），攻击者必须为钓鱼链接设置链接目标的资源。
 
-通常，链接目标的资源将是一个HTML页面，其中可能包含一些客户端脚本，如[JavaScript](https://attack.mitre.org/techniques/T1059/007)，以决定向用户提供什么内容。对手可能克隆合法网站作为链接目标，这可能包括克隆合法网络服务的登录页面或组织登录页面，以试图在[针对性链接](https://attack.mitre.org/techniques/T1598/003)期间窃取凭据。（引用：Malwarebytes Silent Librarian 2020年10月）（引用：Proofpoint TA407 2019年9月）对手还可能[上传恶意软件](https://attack.mitre.org/techniques/T1608/001)，并将链接目标指向供用户下载/执行的恶意软件。
+通常，链接目标的资源将是一个HTML页面，其中可能包含一些客户端脚本，如[JavaScript](https://attack.mitre.org/techniques/T1059/007)，以决定向用户提供什么内容。攻击者可能克隆合法网站作为链接目标，这可能包括克隆合法网络服务的登录页面或组织登录页面，以试图在[针对性链接](https://attack.mitre.org/techniques/T1598/003)期间窃取凭据。（引用：Malwarebytes Silent Librarian 2020年10月）（引用：Proofpoint TA407 2019年9月）攻击者还可能[上传恶意软件](https://attack.mitre.org/techniques/T1608/001)，并将链接目标指向供用户下载/执行的恶意软件。
 
-对手可能在获取基础设施时购买类似合法域名的域名（例如：同形异义词、拼写错误、不同的顶级域等），以帮助促成[恶意链接](https://attack.mitre.org/techniques/T1204/001)。还可以使用链接缩短服务。对手还可以使用平台即服务提供商上的免费或付费账户来托管链接目标，同时利用这些提供商广受信任的域名，以避免被阻止。（引用：Netskope GCP Redirection）（引用：Netskope Cloud Phishing）（引用：Intezer App Service Phishing）最后，对手可能利用去中心化的星际文件系统（IPFS）的特性来托管难以删除的链接目标。（引用：Talos IPFS 2022年）
+攻击者可能在获取基础设施时购买类似合法域名的域名（例如：同形异义词、拼写错误、不同的顶级域等），以帮助促成[恶意链接](https://attack.mitre.org/techniques/T1204/001)。还可以使用链接缩短服务。攻击者还可以使用平台即服务提供商上的免费或付费账户来托管链接目标，同时利用这些提供商广受信任的域名，以避免被阻止。（引用：Netskope GCP Redirection）（引用：Netskope Cloud Phishing）（引用：Intezer App Service Phishing）最后，攻击者可能利用去中心化的星际文件系统（IPFS）的特性来托管难以删除的链接目标。（引用：Talos IPFS 2022年）
 
 ### [T1608.006]:SEO Poisoning
 > 中文：SEO 毒化
@@ -8977,11 +9090,11 @@ Adversaries may also purchase or plant incoming links to staged capabilities in 
 
 SEO poisoning may also be combined with evasive redirects and other cloaking mechanisms (such as measuring mouse movements or serving content based on browser user agents, user language/localization settings, or HTTP headers) in order to feed SEO inputs while avoiding scrutiny from defenders.(Citation: ZScaler SEO)(Citation: Sophos Gootloader)
 
-对手可能操纵影响搜索引擎优化（SEO）的机制，以吸引目标受害者的注意力。搜索引擎通常根据购买的广告以及网页爬虫和算法计算出的网站排名/得分/声誉来向用户显示搜索结果。（引用：Atlas SEO）（引用：MalwareBytes SEO）
+攻击者可能操纵影响搜索引擎优化（SEO）的机制，以吸引目标受害者的注意力。搜索引擎通常根据购买的广告以及网页爬虫和算法计算出的网站排名/得分/声誉来向用户显示搜索结果。（引用：Atlas SEO）（引用：MalwareBytes SEO）
 
-为了促进[驱动式妥协](https://attack.mitre.org/techniques/T1189)，对手可能会制作明确操纵SEO排名的内容，以在搜索引擎中推广托管恶意载荷的网站（例如[驱动式目标](https://attack.mitre.org/techniques/T1608/004)）。毒化SEO排名可能涉及各种技巧，例如将关键词（包括隐藏文本形式）注入到被入侵的网站中。这些关键词可能与目标受害者的兴趣/浏览习惯有关，也可能与更广泛、应季热门的话题相关（例如选举、热门新闻）。 （引用：ZScaler SEO）（引用：Atlas SEO）
+为了促进[驱动式妥协](https://attack.mitre.org/techniques/T1189)，攻击者可能会制作明确操纵SEO排名的内容，以在搜索引擎中推广托管恶意载荷的网站（例如[驱动式目标](https://attack.mitre.org/techniques/T1608/004)）。毒化SEO排名可能涉及各种技巧，例如将关键词（包括隐藏文本形式）注入到被入侵的网站中。这些关键词可能与目标受害者的兴趣/浏览习惯有关，也可能与更广泛、应季热门的话题相关（例如选举、热门新闻）。 （引用：ZScaler SEO）（引用：Atlas SEO）
 
-对手还可以购买或插入指向预设能力的链接，以提升网站的相关性和声誉计算结果。（引用：MalwareBytes SEO）（引用：DFIR Report Gootloader）
+攻击者还可以购买或插入指向预设能力的链接，以提升网站的相关性和声誉计算结果。（引用：MalwareBytes SEO）（引用：DFIR Report Gootloader）
 
 SEO毒化还可以与逃避性重定向和其他掩盖机制相结合（例如根据鼠标移动测量或根据浏览器用户代理、用户语言/本地化设置或HTTP头部提供内容），以在避开防御者的监视时提供SEO输入。（引用：ZScaler SEO）（引用：Sophos Gootloader）
 
@@ -9012,6 +9125,13 @@ SEO Poisoning对用户和组织都构成威胁。对用户而言，他们可能�
  Adversaries may abuse a container administration service to execute commands within a container. A container administration service such as the Docker daemon, the Kubernetes API server, or the kubelet may allow remote management of containers within an environment.(Citation: Docker Daemon CLI)(Citation: Kubernetes API)(Citation: Kubernetes Kubelet)
 
 In Docker, adversaries may specify an entrypoint during container deployment that executes a script or command, or they may use a command such as <code>docker exec</code> to execute a command within a running container.(Citation: Docker Entrypoint)(Citation: Docker Exec) In Kubernetes, if an adversary has sufficient permissions, they may gain remote execution in a container in the cluster via interaction with the Kubernetes API server, the kubelet, or by running a command such as <code>kubectl exec</code>.(Citation: Kubectl Exec Get Shell)
+
+攻击者可能滥用容器管理服务来在容器内执行命令。诸如Docker守护进程、Kubernetes API服务器或kubelet之类的器管理服务可以允许在环境中远管理容器。（引用Docker守护进程CLI）（引用：Kubernetes API）（引用：Kubernetes kubelet）
+
+在Docker中，攻击者可以在容器署期间指定一个入口来执行脚本或命令，或者他可以使用<code>docker exec</code>等命令运行中的容器内执行令。（引用：Docker入口）（引用：Docker Exec）在Kubernetes中，如果攻击者具有足够的权限，他们可以通过与Kubernetes API服务器、kubelet的交互或运行<code>kubectl exec</code>等命令，在集群中容器中实现远程执行。（引用：Kubectl Exec Get Shell）
+
+
+
 ## [T1610]:Deploy Container
 > External ID: T1610
 > STIX ID: attack-pattern--56e0d8b8-3e25-49dd-9050-3aa252f5aa92
@@ -9176,12 +9296,20 @@ For example, adversaries can add a malicious application path to the `~/Library/
 Adversaries may abuse these resources in various ways as a means of executing arbitrary commands. For example, adversaries may use serverless functions to execute malicious code, such as crypto-mining malware (i.e. [Resource Hijacking](https://attack.mitre.org/techniques/T1496)).(Citation: Cado Security Denonia) Adversaries may also create functions that enable further compromise of the cloud environment. For example, an adversary may use the `IAM:PassRole` permission in AWS or the `iam.serviceAccounts.actAs` permission in Google Cloud to add [Additional Cloud Roles](https://attack.mitre.org/techniques/T1098/003) to a serverless cloud function, which may then be able to perform actions the original user cannot.(Citation: Rhino Security Labs AWS Privilege Escalation)(Citation: Rhingo Security Labs GCP Privilege Escalation)
 
 Serverless functions can also be invoked in response to cloud events (i.e. [Event Triggered Execution](https://attack.mitre.org/techniques/T1546)), potentially enabling persistent execution over time. For example, in AWS environments, an adversary may create a Lambda function that automatically adds [Additional Cloud Credentials](https://attack.mitre.org/techniques/T1098/001) to a user and a corresponding CloudWatch events rule that invokes that function whenever a new user is created.(Citation: Backdooring an AWS account) Similarly, an adversary may create a Power Automate workflow in Office 365 environments that forwards all emails a user receives or creates anonymous sharing links whenever a user is granted access to a document in SharePoint.(Citation: Varonis Power Automate Data Exfiltration)(Citation: Microsoft DART Case Report 001)
+
+攻击者可能滥用无服务器计算、集成和自动化服务，在云环境中执行任意代码。许多云提供商提供各种无服务器资源包括计算引擎、应用程序集成服务和 Web 服务器。
+
+攻击者可以以各种方式滥用这些资源来执行任意命令。例如，手可以使用无服务器函数执行恶意代码，如密货币挖矿恶意件（即[资源劫持](https://attack.mitre.org/techniques/T1496)）。攻击者还可以创建函数，以进一步妥协环境。例如，攻击者可以在 AWS 中使用 `IAM:PassRole` 权限或在 Google Cloud 中使用 `iam.serviceAccounts.actAs` 权限将[附加的云角](https://attack.mitre.org/techniques/T1098/003)添加到无服务器云函数，然后该函数可能能够执行原用户无法执行的操作。（引用：Rhino Security Labs AWS 特权升级（引用：Rhingo Security Labs GCP 特权升级）
+
+无服务器函数还可以响应云事件而被调用即[事件触发执行](https://attack.mitre.org/techniques/T1546)），从而可能现持久执行。例如，在 AWS 环境中，攻击者可以创建一个 Lambda 函数，动向用户添加[附的云凭据](https://attack.mitre.org/techniques/T1098/001)，并创建相应的 CloudWatch 事件规则，每创建新用户时调该函数。（引：Backdooring an AWS account）类似地，在 Office 365 环境中，手可以创建一个 Power Automate 工作流，将用户收到的所有电子件转发或在用户授予对 SharePoint 文档访问权限时创建匿名共享链接。（引用：Varonis Power Automate 数据泄）（引用：Microsoft DART 案例报告 001）
+
+
+
 ## [T1649]:Steal or Forge Authentication Certificates
 > External ID: T1649
 > STIX ID: attack-pattern--7de1f7ac-5d0c-4c9c-8873-627202205331
 > Platforms: ['Windows', 'Linux', 'macOS', 'Azure AD']
 > Tactics: ['credential-access']
-
 
 **Description: **
  Adversaries may steal or forge certificates used for authentication to access remote systems or resources. Digital certificates are often used to sign and encrypt messages and/or files. Certificates are also used as authentication material. For example, Azure AD device certificates and Active Directory Certificate Services (AD CS) certificates bind to an identity and can be used as credentials for domain accounts.(Citation: O365 Blog Azure AD Device IDs)(Citation: Microsoft AD CS Overview)
@@ -9211,13 +9339,13 @@ In some cases, purchasing access to an organization in sectors such as IT contra
 
 **Note:** while this technique is distinct from other behaviors such as [Purchase Technical Data](https://attack.mitre.org/techniques/T1597/002) and [Credentials](https://attack.mitre.org/techniques/T1589/001), they may often be used in conjunction (especially where the acquired foothold requires [Valid Accounts](https://attack.mitre.org/techniques/T1078)).
 
-对手可能购买或以其他方式获取对目标系统或网络的现有访问权限。有各种在线服务和初始访问经纪人网络可供出售先前被入侵系统的访问权限。（引用：Microsoft Ransomware as a Service）（引用：CrowdStrike Access Brokers）（引用：Krebs Access Brokers Fortune 500）在某些情况下，对手团队可能会建立合作关系，共享彼此被入侵的系统。（引用：CISA Karakurt 2022）
+攻击者可能购买或以其他方式获取对目标系统或网络的现有访问权限。有各种在线服务和初始访问经纪人网络可供出售先前被入侵系统的访问权限。（引用：Microsoft Ransomware as a Service）（引用：CrowdStrike Access Brokers）（引用：Krebs Access Brokers Fortune 500）在某些情况下，攻击者团队可能会建立合作关系，共享彼此被入侵的系统。（引用：CISA Karakurt 2022）
 
 对被入侵系统的立足点可能采取多种形式，例如获得植入的后门（例如[Web Shell](https://attack.mitre.org/techniques/T1505/003)）或通过[外部远程服务](https://attack.mitre.org/techniques/T1133)建立的访问权限。在一些情况下，访问经纪人会在被入侵系统中植入一个“载荷”，该载荷可用于为付费客户安装额外的恶意软件。（引用：Microsoft Ransomware as a Service）
 
-通过利用现有的访问经纪人网络而不是开发或获取自己的初始访问能力，对手可以潜在地减少获得对目标网络立足点所需的资源，并将其努力集中在后期的妥协阶段。对手可能优先考虑获取已确定缺乏安全监控或拥有高权限的系统的访问权限，或者属于特定行业组织的系统。（引用：Microsoft Ransomware as a Service）（引用：CrowdStrike Access Brokers）
+通过利用现有的访问经纪人网络而不是开发或获取自己的初始访问能力，攻击者可以潜在地减少获得对目标网络立足点所需的资源，并将其努力集中在后期的妥协阶段。攻击者可能优先考虑获取已确定缺乏安全监控或拥有高权限的系统的访问权限，或者属于特定行业组织的系统。（引用：Microsoft Ransomware as a Service）（引用：CrowdStrike Access Brokers）
 
-在某些情况下，购买IT承包、软件开发或电信等行业组织的访问权限可能使对手能够通过[受信任关系](https://attack.mitre.org/techniques/T1199)、[多因素身份验证拦截](https://attack.mitre.org/techniques/T1111)甚至[供应链妥协](https://attack.mitre.org/techniques/T1195)来攻击其他受害者。
+在某些情况下，购买IT承包、软件开发或电信等行业组织的访问权限可能使攻击者能够通过[受信任关系](https://attack.mitre.org/techniques/T1199)、[多因素身份验证拦截](https://attack.mitre.org/techniques/T1111)甚至[供应链妥协](https://attack.mitre.org/techniques/T1195)来攻击其他受害者。
 
 **注意：**尽管这种技术与其他行为（如[购买技术数据](https://attack.mitre.org/techniques/T1597/002)和[凭据](https://attack.mitre.org/techniques/T1589/001)）是不同的，但它们通常会结合使用（特别是在获得立足点需要[有效账户](https://attack.mitre.org/techniques/T1078)的情况下）。
 
