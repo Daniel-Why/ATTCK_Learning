@@ -149,11 +149,14 @@ Acquire Infrastructure技术主要涉及以下方面：
 > External ID: TA0001
 > STIX ID: x-mitre-tactic--ffd5bcee-6e16-4dd2-8eca-7b3beedf33ca
 
-
 **Description: **
  The adversary is trying to get into your network.
 
 Initial Access consists of techniques that use various entry vectors to gain their initial foothold within a network. Techniques used to gain a foothold include targeted spearphishing and exploiting weaknesses on public-facing web servers. Footholds gained through initial access may allow for continued access, like valid accounts and use of external remote services, or may be limited-use due to changing passwords.
+
+攻击者正试图进入您的网络。
+
+“初始访问”是指使用各种入侵向量来在网络中获得最初立足点的技术。用于获取立足点的技术包括有针对性的钓鱼和利用公开的 Web 服务器上的漏洞。通过初始访问获得的立足点可能允许持续访问，比如使用有效账户和外部远程服务，或者由于密码变动而只能限量使用。
 
 **Techniques:**
 
@@ -190,6 +193,10 @@ Initial Access consists of techniques that use various entry vectors to gain the
  The adversary is trying to run malicious code.
 
 Execution consists of techniques that result in adversary-controlled code running on a local or remote system. Techniques that run malicious code are often paired with techniques from all other tactics to achieve broader goals, like exploring a network or stealing data. For example, an adversary might use a remote access tool to run a PowerShell script that does Remote System Discovery. 
+
+攻击者正试图运行恶意代码。
+
+“执行”是指导致攻击者控制的代码在本地或远程系统上运行的技术。运行恶意代码的技术通常与所有其他战术的技术配对使用，以实现更广泛的目标，比如探索网络或窃取数据。例如，攻击者可能使用远程访问工具来运行PowerShell脚本，进行远程系统发现。
 
 **Techniques:**
 
@@ -239,85 +246,88 @@ Execution consists of techniques that result in adversary-controlled code runnin
 > External ID: TA0003
 > STIX ID: x-mitre-tactic--5bc1d813-693e-4823-9961-abf9af4b0e92
 
-
 **Description: **
  The adversary is trying to maintain their foothold.
 
 Persistence consists of techniques that adversaries use to keep access to systems across restarts, changed credentials, and other interruptions that could cut off their access. Techniques used for persistence include any access, action, or configuration changes that let them maintain their foothold on systems, such as replacing or hijacking legitimate code or adding startup code. 
 
+攻击者试图保持他们的立足点。
+
+持久化包括攻击者用来在系统重新启动、更改凭据和其他可能切断他们访问权限的中断情况下维持对系统的访问的技术。用于持久化的技术包括任何允许他们在系统上保持立足点的访问、操作或配置更改，例如替换或劫持合法代码或添加启动代码。
+
 **Techniques:**
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[Boot or Logon Initialization Scripts](##[T1037]:Boot or Logon Initialization Scripts)|||T1037|
-||[Logon Script (Windows)](###[T1037.001]:Logon Script (Windows))||T1037.001|
-||[Login Hook](###[T1037.002]:Login Hook)||T1037.002|
-||[Network Logon Script](###[T1037.003]:Network Logon Script)||T1037.003|
-||[RC Scripts](###[T1037.004]:RC Scripts)||T1037.004|
-||[Startup Items](###[T1037.005]:Startup Items)||T1037.005|
-|[Scheduled Task/Job](##[T1053]:Scheduled Task/Job)|||T1053|
-||[At](###[T1053.002]:At)||T1053.002|
-||[Cron](###[T1053.003]:Cron)||T1053.003|
-||[Scheduled Task](###[T1053.005]:Scheduled Task)||T1053.005|
-||[Systemd Timers](###[T1053.006]:Systemd Timers)||T1053.006|
-||[Container Orchestration Job](###[T1053.007]:Container Orchestration Job)||T1053.007|
-|[Valid Accounts](##[T1078]:Valid Accounts)|||T1078|
-||[Default Accounts](###[T1078.001]:Default Accounts)||T1078.001|
-||[Domain Accounts](###[T1078.002]:Domain Accounts)||T1078.002|
-||[Local Accounts](###[T1078.003]:Local Accounts)||T1078.003|
-||[Cloud Accounts](###[T1078.004]:Cloud Accounts)||T1078.004|
-|[Account Manipulation](##[T1098]:Account Manipulation)|||T1098|
-||[Additional Cloud Credentials](###[T1098.001]:Additional Cloud Credentials)||T1098.001|
-||[Additional Email Delegate Permissions](###[T1098.002]:Additional Email Delegate Permissions)||T1098.002|
-||[Additional Cloud Roles](###[T1098.003]:Additional Cloud Roles)||T1098.003|
-||[SSH Authorized Keys](###[T1098.004]:SSH Authorized Keys)||T1098.004|
-||[Device Registration](###[T1098.005]:Device Registration)||T1098.005|
-|[External Remote Services](##[T1133]:External Remote Services)|||T1133|
-|[Create Account](##[T1136]:Create Account)|||T1136|
-||[Local Account](###[T1136.001]:Local Account)||T1136.001|
-||[Domain Account](###[T1136.002]:Domain Account)||T1136.002|
-||[Cloud Account](###[T1136.003]:Cloud Account)||T1136.003|
-|[Office Application Startup](##[T1137]:Office Application Startup)|||T1137|
-||[Office Template Macros](###[T1137.001]:Office Template Macros)||T1137.001|
-||[Office Test](###[T1137.002]:Office Test)||T1137.002|
-||[Outlook Forms](###[T1137.003]:Outlook Forms)||T1137.003|
-||[Outlook Home Page](###[T1137.004]:Outlook Home Page)||T1137.004|
-||[Outlook Rules](###[T1137.005]:Outlook Rules)||T1137.005|
-||[Add-ins](###[T1137.006]:Add-ins)||T1137.006|
-|[Browser Extensions](##[T1176]:Browser Extensions)|||T1176|
-|[BITS Jobs](##[T1197]:BITS Jobs)|||T1197|
-|[Traffic Signaling](##[T1205]:Traffic Signaling)|||T1205|
-||[Port Knocking](###[T1205.001]:Port Knocking)||T1205.001|
-||[Socket Filters](###[T1205.002]:Socket Filters)||T1205.002|
-|[Server Software Component](##[T1505]:Server Software Component)|||T1505|
-||[SQL Stored Procedures](###[T1505.001]:SQL Stored Procedures)||T1505.001|
-||[Transport Agent](###[T1505.002]:Transport Agent)||T1505.002|
-||[Web Shell](###[T1505.003]:Web Shell)||T1505.003|
-||[IIS Components](###[T1505.004]:IIS Components)||T1505.004|
-||[Terminal Services DLL](###[T1505.005]:Terminal Services DLL)||T1505.005|
-|[Implant Internal Image](##[T1525]:Implant Internal Image)|||T1525|
-|[Pre-OS Boot](##[T1542]:Pre-OS Boot)|||T1542|
-||[System Firmware](###[T1542.001]:System Firmware)||T1542.001|
-||[Component Firmware](###[T1542.002]:Component Firmware)||T1542.002|
-||[Bootkit](###[T1542.003]:Bootkit)||T1542.003|
-||[ROMMONkit](###[T1542.004]:ROMMONkit)||T1542.004|
-||[TFTP Boot](###[T1542.005]:TFTP Boot)||T1542.005|
-|[Create or Modify System Process](##[T1543]:Create or Modify System Process)|||T1543|
-||[Launch Agent](###[T1543.001]:Launch Agent)||T1543.001|
-||[Systemd Service](###[T1543.002]:Systemd Service)||T1543.002|
-||[Windows Service](###[T1543.003]:Windows Service)||T1543.003|
-||[Launch Daemon](###[T1543.004]:Launch Daemon)||T1543.004|
-|[Event Triggered Execution](##[T1546]:Event Triggered Execution)|||T1546|
-||[Change Default File Association](###[T1546.001]:Change Default File Association)||T1546.001|
-||[Screensaver](###[T1546.002]:Screensaver)||T1546.002|
-||[Windows Management Instrumentation Event Subscription](###[T1546.003]:Windows Management Instrumentation Event Subscription)||T1546.003|
-||[Unix Shell Configuration Modification](###[T1546.004]:Unix Shell Configuration Modification)||T1546.004|
-||[Trap](###[T1546.005]:Trap)||T1546.005|
+|[Boot or Logon Initialization Scripts](##[T1037]:Boot or Logon Initialization Scripts)||启动或登录初始化脚本|T1037|
+||[Logon Script (Windows)](###[T1037.001]:Logon Script (Windows)) [*](#com-TA0003-1)|登录脚本|T1037.001|
+||[Login Hook](###[T1037.002]:Login Hook)|登录劫持|T1037.002|
+||[Network Logon Script](###[T1037.003]:Network Logon Script)|网络登录脚本|T1037.003|
+||[RC Scripts](###[T1037.004]:RC Scripts)|RC 脚本|T1037.004|
+||[Startup Items](###[T1037.005]:Startup Items)|启动项|T1037.005|
+|[Scheduled Task/Job](##[T1053]:Scheduled Task/Job)||计划任务|T1053|
+||[At](###[T1053.002]:At)|AT|T1053.002|
+||[Cron](###[T1053.003]:Cron)|Cron|T1053.003|
+||[Scheduled Task](###[T1053.005]:Scheduled Task)|计划任务|T1053.005|
+||[Systemd Timers](###[T1053.006]:Systemd Timers)|systemd定时器|T1053.006|
+||[Container Orchestration Job](###[T1053.007]:Container Orchestration Job)|容器编排作业|T1053.007|
+|[Valid Accounts](##[T1078]:Valid Accounts)||有效账户|T1078|
+||[Default Accounts](###[T1078.001]:Default Accounts)|默认账户|T1078.001|
+||[Domain Accounts](###[T1078.002]:Domain Accounts)|域账户|T1078.002|
+||[Local Accounts](###[T1078.003]:Local Accounts)|本地账户|T1078.003|
+||[Cloud Accounts](###[T1078.004]:Cloud Accounts)|云账户|T1078.004|
+|[Account Manipulation](##[T1098]:Account Manipulation)||账户操作|T1098|
+||[Additional Cloud Credentials](###[T1098.001]:Additional Cloud Credentials)|添加云凭证|T1098.001|
+||[Additional Email Delegate Permissions](###[T1098.002]:Additional Email Delegate Permissions)|添加邮件委派权限|T1098.002|
+||[Additional Cloud Roles](###[T1098.003]:Additional Cloud Roles)|添加云角色|T1098.003|
+||[SSH Authorized Keys](###[T1098.004]:SSH Authorized Keys)|SSH 授权密钥|T1098.004|
+||[Device Registration](###[T1098.005]:Device Registration)|设备注册|T1098.005|
+|[External Remote Services](##[T1133]:External Remote Services)||外部远程服务|T1133|
+|[Create Account](##[T1136]:Create Account)||创建账户|T1136|
+||[Local Account](###[T1136.001]:Local Account)|本地账户|T1136.001|
+||[Domain Account](###[T1136.002]:Domain Account)|域账户|T1136.002|
+||[Cloud Account](###[T1136.003]:Cloud Account)|云账户|T1136.003|
+|[Office Application Startup](##[T1137]:Office Application Startup)||Office 应用启动项|T1137|
+||[Office Template Macros](###[T1137.001]:Office Template Macros)|Office 模板宏|T1137.001|
+||[Office Test](###[T1137.002]:Office Test)|Office Test|T1137.002|
+||[Outlook Forms](###[T1137.003]:Outlook Forms)|Outlook 表单|T1137.003|
+||[Outlook Home Page](###[T1137.004]:Outlook Home Page)|Outlook首页|T1137.004|
+||[Outlook Rules](###[T1137.005]:Outlook Rules)|Outlook 规则|T1137.005|
+||[Add-ins](###[T1137.006]:Add-ins)|插件|T1137.006|
+|[Browser Extensions](##[T1176]:Browser Extensions)||浏览器插件|T1176|
+|[BITS Jobs](##[T1197]:BITS Jobs)||BITS作业|T1197|
+|[Traffic Signaling](##[T1205]:Traffic Signaling)||流量信号|T1205|
+||[Port Knocking](###[T1205.001]:Port Knocking)|端口敲门|T1205.001|
+||[Socket Filters](###[T1205.002]:Socket Filters)|Socket过滤器|T1205.002|
+|[Server Software Component](##[T1505]:Server Software Component)||服务软件组件|T1505|
+||[SQL Stored Procedures](###[T1505.001]:SQL Stored Procedures)|SQL 存储过程|T1505.001|
+||[Transport Agent](###[T1505.002]:Transport Agent)|传输代理|T1505.002|
+||[Web Shell](###[T1505.003]:Web Shell)|WebShell|T1505.003|
+||[IIS Components](###[T1505.004]:IIS Components)|IIS 组件|T1505.004|
+||[Terminal Services DLL](###[T1505.005]:Terminal Services DLL)|终端服务DLL|T1505.005|
+|[Implant Internal Image](##[T1525]:Implant Internal Image)||植入内部镜像|T1525|
+|[Pre-OS Boot](##[T1542]:Pre-OS Boot)||系统预启动|T1542|
+||[System Firmware](###[T1542.001]:System Firmware)|系统固件|T1542.001|
+||[Component Firmware](###[T1542.002]:Component Firmware)|组件固件|T1542.002|
+||[Bootkit](###[T1542.003]:Bootkit)|引导工具包|T1542.003|
+||[ROMMONkit](###[T1542.004]:ROMMONkit)|ROMMON工具包|T1542.004|
+||[TFTP Boot](###[T1542.005]:TFTP Boot)|TFTP启动|T1542.005|
+|[Create or Modify System Process](##[T1543]:Create or Modify System Process)||创建和修改系统进程|T1543|
+||[Launch Agent](###[T1543.001]:Launch Agent)|Launch Agent|T1543.001|
+||[Systemd Service](###[T1543.002]:Systemd Service)|Systemd 服务|T1543.002|
+||[Windows Service](###[T1543.003]:Windows Service)|Windows 服务|T1543.003|
+||[Launch Daemon](###[T1543.004]:Launch Daemon)|Launch Daemon|T1543.004|
+|[Event Triggered Execution](##[T1546]:Event Triggered Execution)||事件触发执行|T1546|
+||[Change Default File Association](###[T1546.001]:Change Default File Association)|更改默认文件关联|T1546.001|
+||[Screensaver](###[T1546.002]:Screensaver)|屏幕保护|T1546.002|
+||[Windows Management Instrumentation Event Subscription](###[T1546.003]:Windows Management Instrumentation Event Subscription)|WMI订阅事件|T1546.003|
+||[Unix Shell Configuration Modification](###[T1546.004]:Unix Shell Configuration Modification)|Unix Shell Configuration Modification（USCM）|T1546.004|
+||[Trap](###[T1546.005]:Trap)|Trap 命令|T1546.005|
 ||[LC_LOAD_DYLIB Addition](###[T1546.006]:LC_LOAD_DYLIB Addition)||T1546.006|
 ||[Netsh Helper DLL](###[T1546.007]:Netsh Helper DLL)||T1546.007|
 ||[Accessibility Features](###[T1546.008]:Accessibility Features)||T1546.008|
-||[AppCert DLLs](###[T1546.009]:AppCert DLLs)||T1546.009|
-||[AppInit DLLs](###[T1546.010]:AppInit DLLs)||T1546.010|
+||[AppCert DLLs](###[T1546.009]:AppCert DLLs)|AppCert DLLs|T1546.009|
+||[AppInit DLLs](###[T1546.010]:AppInit DLLs)|AppInit DLLs|T1546.010|
 ||[Application Shimming](###[T1546.011]:Application Shimming)||T1546.011|
 ||[Image File Execution Options Injection](###[T1546.012]:Image File Execution Options Injection)||T1546.012|
 ||[PowerShell Profile](###[T1546.013]:PowerShell Profile)||T1546.013|
@@ -363,8 +373,20 @@ Persistence consists of techniques that adversaries use to keep access to system
 ||[COR_PROFILER](###[T1574.012]:COR_PROFILER)||T1574.012|
 ||[KernelCallbackTable](###[T1574.013]:KernelCallbackTable)||T1574.013|
 
+> 备注：
+>
+> <a id="com-TA0003-1">**1.Logon 和 Login 的区别** </a>
+>
+> "Logon"和"Login"是两个术语，通常用于描述用户登录计算机系统或网络服务的过程。尽管这两个术语在不同的上下文中可能被使用，但它们没有明显的区别，很多时候可以互换使用。
+>
+> 一些人认为"Logon"更常用于描述在主机或操作系统级别上进行登录，而"Login"更常用于描述在应用程序或网站上进行登录。但实际上，这种区分并不是普遍适用的，因为这两个词在不同的技术文档和行业中使用方式可能会有所不同。
+>
+> 总结起来，"Logon"和"Login"在大多数情况下都指代相同的概念，即用户通过提供凭据（如用户名和密码）来访问计算机系统或网络服务。
+>
+> 
 
 ## [TA0004]:Privilege Escalation
+
 > External ID: TA0004
 > STIX ID: x-mitre-tactic--5e29b093-294e-49e9-a803-dab3d73b77dd
 
@@ -1802,7 +1824,6 @@ Common file types, such as text files (.txt, .doc, etc.) and image files (.jpg, 
 > Platforms: ['Linux', 'macOS', 'Windows']
 > Tactics: ['defense-evasion']
 
-
 **Description: **
  Adversaries may masquerade malicious payloads as legitimate files through changes to the payload's formatting, including the file’s signature, extension, and contents. Various file types have a typical standard format, including how they are encoded and organized. For example, a file’s signature (also known as header or magic bytes) is the beginning bytes of a file and is often used to identify the file’s type. For example, the header of a JPEG file,  is <code> 0xFF 0xD8</code> and the file extension is either `.JPE`, `.JPEG` or `.JPG`. 
 
@@ -1812,6 +1833,8 @@ Common non-executable file types and extensions, such as text files (`.txt`) and
 
 Polygot files, which are files that have multiple different file types and that function differently based on the application that will execute them, may also be used to disguise malicious malware and capabilities.(Citation: polygot_icedID)
 ## [T1037]:Boot or Logon Initialization Scripts
+> 中文：启动或登录初始化脚本
+>
 > External ID: T1037
 > STIX ID: attack-pattern--03259939-0b57-482f-8eb5-87c0e0d54334
 > Platforms: ['macOS', 'Windows', 'Linux']
@@ -1824,6 +1847,23 @@ Polygot files, which are files that have multiple different file types and that 
 Adversaries may use these scripts to maintain persistence on a single system. Depending on the access configuration of the logon scripts, either local credentials or an administrator account may be necessary. 
 
 An adversary may also be able to escalate their privileges since some boot or logon initialization scripts run with higher privileges.
+
+攻击者可能会使用在启动或登录初始化期间自动执行的脚本来建立持久化。初始化脚本可用于执行管理功能，通常会执行其他程序或将信息发送到内部日志服务器。这些脚本可能因操作系统和是否应用于本地或远程而有所不同。
+
+攻击者可能会使用这些脚本在单个系统上维持持久化。根据登录脚本的访问配置，可能需要本地凭据或管理员帐户。
+
+由于一些启动或登录初始化脚本以更高的权限运行，攻击者还可能能够提升其权限。
+
+Boot or Logon Initialization Scripts（启动或登录初始化脚本）是在计算机启动或用户登录时执行的脚本或命令。这些脚本用于自动运行特定的操作、设置环境变量、加载驱动程序或应用程序等。
+
+在操作系统启动过程中，可以配置启动初始化脚本来执行各种任务。例如，在Linux系统中，可以使用SysV init脚本、Systemd单元文件或Upstart脚本来定义启动时要运行的命令和服务。这些脚本可以控制启动顺序、加载内核模块、启动网络服务等。
+
+而在用户登录过程中，也可以配置登录初始化脚本来自动执行一些操作。例如，Windows操作系统支持通过组策略或注册表设置来配置登录脚本，这些脚本可以在用户成功登录后运行，进行用户特定的配置或启动应用程序。
+
+通过编写适当的启动或登录初始化脚本，可以提高计算机的自动化程度，减少手动操作，并确保所需的任务在系统启动或用户登录时得到正确执行。
+
+
+
 ### [T1037.001]:Logon Script (Windows)
 > External ID: T1037.001
 > STIX ID: attack-pattern--eb125d40-0b2d-41ac-a71a-3229241c2cd3
@@ -1859,12 +1899,16 @@ Adversaries can add or insert a path to a malicious script in the <code>com.appl
  Adversaries may use network logon scripts automatically executed at logon initialization to establish persistence. Network logon scripts can be assigned using Active Directory or Group Policy Objects.(Citation: Petri Logon Script AD) These logon scripts run with the privileges of the user they are assigned to. Depending on the systems within the network, initializing one of these scripts could apply to more than one or potentially all systems.  
 
 Adversaries may use these scripts to maintain persistence on a network. Depending on the access configuration of the logon scripts, either local credentials or an administrator account may be necessary.
+
+攻击者可能会利用在登录初始化时自动执行的网络登录脚本来确立持久性。可以使用Active Directory或组策略对象分配网络登录脚本。（引用：Petri Logon Script AD）这些登录脚本以被分配给它们的用户的权限运行。根据网络中的系统情况，初始化其中一个脚本可能适用于多个或潜在地所有系统。
+
+攻击者可能会利用这些脚本在网络上保持持久性。根据登录脚本的访问配置，可能需要本地凭据或管理员账户。
+
 ### [T1037.004]:RC Scripts
 > External ID: T1037.004
 > STIX ID: attack-pattern--dca670cf-eeec-438f-8185-fd959d9ef211
 > Platforms: ['macOS', 'Linux']
 > Tactics: ['persistence', 'privilege-escalation']
-
 
 **Description: **
  Adversaries may establish persistence by modifying RC scripts which are executed during a Unix-like system’s startup. These files allow system administrators to map and start custom services at startup for different run levels. RC scripts require root privileges to modify.
@@ -1874,12 +1918,38 @@ Adversaries can establish persistence by adding a malicious binary path or shell
 Adversary abuse of RC scripts is especially effective for lightweight Unix-like distributions using the root user as default, such as IoT or embedded systems.(Citation: intezer-kaiji-malware)
 
 Several Unix-like systems have moved to Systemd and deprecated the use of RC scripts. This is now a deprecated mechanism in macOS in favor of [Launchd](https://attack.mitre.org/techniques/T1053/004). (Citation: Apple Developer Doco Archive Launchd)(Citation: Startup Items) This technique can be used on Mac OS X Panther v10.3 and earlier versions which still execute the RC scripts.(Citation: Methods of Mac Malware Persistence) To maintain backwards compatibility some systems, such as Ubuntu, will execute the RC scripts if they exist with the correct file permissions.(Citation: Ubuntu Manpage systemd rc)
+
+攻击者可以通过修改在类Unix系统启动期间执行的RC脚本来建立持久性。这些文件允许系统管理员在不同的运行级别上映射和启动自定义服务。修改RC脚本需要root权限。
+
+攻击者可以通过向<code>rc.local</code>、<code>rc.common</code>和其他与特定类Unix发行版相关的RC脚本中添加恶意二进制路径或shell命令来建立持久性。(引用：IranThreats Kittens Dec 2017)(引用：Intezer HiddenWasp Map 2019)重启后，系统以root身份执行脚本的内容，从而实现持久性。
+
+攻击者滥用RC脚本对于使用root用户作为默认用户的轻量级类Unix发行版特别有效，例如物联网(IoT)或嵌入式系统。(引用：intezer-kaiji-malware)
+
+几个类Unix系统已经转向Systemd，并弃用了RC脚本的使用。现在，在macOS中，这是一种已被废弃的机制，取而代之的是[Launchd](https://attack.mitre.org/techniques/T1053/004)。(引用：Apple Developer Doco Archive Launchd)(引用：Startup Items)这种技术可以在仍然执行RC脚本的Mac OS X Panther v10.3及更早版本上使用。(引用：Methods of Mac Malware Persistence)为了保持向后兼容性，一些系统（如Ubuntu）将在存在具有正确文件权限的情况下执行RC脚本。(引用：Ubuntu Manpage systemd rc)
+
+
+
+RC Scripts是一种在Unix和Unix-like操作系统中使用的脚本文件，用于启动、停止和管理系统服务。"RC"代表"Run Commands"（运行命令），这些脚本通常位于操作系统的启动过程中执行，以确保在系统引导期间正确配置并启动所需的服务和进程。
+
+在Unix-like系统中，如Linux和FreeBSD，系统服务通常以后台进程或守护进程的形式运行。RC Scripts用于控制这些进程的启动、停止和重启，并在系统引导时自动运行适当的服务。通过使用RC Scripts，管理员可以方便地管理系统服务，并确保它们按照预期的方式启动和停止。
+
+不同的Unix-like操作系统可能使用不同的RC系统，例如：
+
+1. SysV Init：这是传统的Unix系统上使用的一种初始化系统。它使用以数字开头的脚本（如`/etc/init.d/`目录中的脚本）来控制服务的启动和停止。
+2. Upstart：这是Ubuntu Linux等发行版中使用的一种初始化系统。它使用基于事件的脚本来管理服务，并提供更高级的功能，如进程监视和自动重启。
+3. systemd：这是许多现代Linux发行版（如Red Hat、CentOS、Fedora和Arch Linux）中使用的默认初始化系统。systemd使用单元文件（unit files）来描述和控制服务。它提供了更强大的功能，如并行启动服务和依赖关系管理。
+
+RC Scripts可以通过编辑相应的脚本文件来配置系统服务的启动顺序、依赖关系和其他选项。管理员可以使用命令行工具（如`service`或`systemctl`）与RC Scripts进行交互，例如启动、停止、重启或查看服务的状态。
+
+需要注意的是，随着操作系统的发展，一些新的初始化系统（如systemd）已经取代了传统的RC Scripts方法，因此具体的实现可能会有所不同。
+
 ### [T1037.005]:Startup Items
+> 中文：启动项
+>
 > External ID: T1037.005
 > STIX ID: attack-pattern--c0dfe7b0-b873-4618-9ff8-53e31f70907f
 > Platforms: ['macOS']
 > Tactics: ['persistence', 'privilege-escalation']
-
 
 **Description: **
  Adversaries may use startup items automatically executed at boot initialization to establish persistence. Startup items execute during the final phase of the boot process and contain shell scripts or other executable files along with configuration information used by the system to determine the execution order for all startup items.(Citation: Startup Items)
@@ -1887,6 +1957,23 @@ Several Unix-like systems have moved to Systemd and deprecated the use of RC scr
 This is technically a deprecated technology (superseded by [Launch Daemon](https://attack.mitre.org/techniques/T1543/004)), and thus the appropriate folder, <code>/Library/StartupItems</code> isn’t guaranteed to exist on the system by default, but does appear to exist by default on macOS Sierra. A startup item is a directory whose executable and configuration property list (plist), <code>StartupParameters.plist</code>, reside in the top-level directory. 
 
 An adversary can create the appropriate folders/files in the StartupItems directory to register their own persistence mechanism.(Citation: Methods of Mac Malware Persistence) Additionally, since StartupItems run during the bootup phase of macOS, they will run as the elevated root user.
+
+攻击者可能会利用在启动初始化时自动执行的启动项来建立持久性。启动项在引导过程的最后阶段执行，并包含与系统使用的配置信息一起的shell脚本或其他可执行文件，以确定所有启动项的执行顺序。（引用：Startup Items）
+
+从技术上讲，这是一种已弃用的技术（已被[Launch Daemon](https://attack.mitre.org/techniques/T1543/004)取代），因此适当的文件夹<code>/Library/StartupItems</code>不能保证默认存在于系统中，但似乎默认存在于macOS Sierra上。启动项是一个目录，其可执行文件和配置属性列表（plist）<code>StartupParameters.plist</code>位于顶级目录中。
+
+攻击者可以在StartupItems目录中创建适当的文件夹/文件以注册自己的持久性机制。（引用：Methods of Mac Malware Persistence）此外，由于启动项在macOS的引导过程中运行，它们将作为提升的root用户运行。
+
+
+
+Startup Items 是指在计算机启动时自动运行的应用程序或服务。当你开机时，操作系统会加载一些预定义的程序和服务，这些程序和服务被称为 Startup Items。它们可以是操作系统自身的组件，也可以是第三方软件安装过程中添加的。
+
+启动项对于提高计算机的启动速度和用户体验非常重要。例如，防病毒软件通常会将自己添加为启动项，以确保在计算机开机后立即开始保护系统。其他常见的启动项包括音频管理程序、即时通讯软件、云存储客户端等。
+
+在不同的操作系统中，配置和管理启动项的方法可能有所不同。在Windows操作系统中，你可以通过"任务管理器"或系统配置工具（msconfig）来查看和管理启动项。在macOS中，你可以使用"系统偏好设置"中的"用户与群组"选项来管理启动项。
+
+管理启动项时，你可以选择禁用某些不需要在启动时自动运行的程序，以加快计算机的启动速度。然而，对于系统关键的程序或服务，尤其是操作系统自身的组件，不建议随意禁用或删除相关的启动项，以免影响系统的正常运行。如果你不确定某个启动项是什么作用，最好先进行一些调查或咨询专业人士的意见。
+
 ## [T1039]:Data from Network Shared Drive
 > External ID: T1039
 > STIX ID: attack-pattern--ae676644-d2d2-41b7-af7e-9bed1b55898c
@@ -3085,6 +3172,8 @@ ICMP communication between hosts is one example.(Citation: Cisco Synful Knock Ev
 
 In order to create or manipulate accounts, the adversary must already have sufficient permissions on systems or the domain. However, account manipulation may also lead to privilege escalation where modifications grant access to additional roles, permissions, or higher-privileged [Valid Accounts](https://attack.mitre.org/techniques/T1078).
 ### [T1098.001]:Additional Cloud Credentials
+> 中文：添加云凭证
+>
 > External ID: T1098.001
 > STIX ID: attack-pattern--8a2f40cf-8325-47f9-96e4-b1ca4c7389bd
 > Platforms: ['IaaS', 'Azure AD', 'SaaS']
@@ -3102,7 +3191,20 @@ Adversaries may also use the <code>CreateAccessKey</code> API in AWS or the <cod
 
 In AWS environments, adversaries with the appropriate permissions may also use the `sts:GetFederationToken` API call to create a temporary set of credentials tied to the permissions of the original user account. These credentials may remain valid for the duration of their lifetime even if the original account’s API credentials are deactivated.
 (Citation: Crowdstrike AWS User Federation Persistence)
+
+攻击者可能向云账户添加攻击者控制的凭证，以保持对环境中受害者账户和实例的持久访问。
+
+例如，攻击者可能会在Azure AD中添加服务主体和应用程序的凭证，除了现有的合法凭证之外。(引用：Microsoft SolarWinds客户指南)(引用：Blue Cloud of Death)(引用：Blue Cloud of Death视频) 这些凭证包括x509密钥和密码。(引用：Microsoft SolarWinds客户指南) 在具备足够权限的情况下，可以通过Azure门户、Azure命令行界面和Azure或Az PowerShell模块等多种方式添加凭证。(引用：Demystifying Azure AD服务主体)
+
+在基础设施即服务（IaaS）环境中，在通过[Cloud Accounts](https://attack.mitre.org/techniques/T1078/004)获取访问权限后，攻击者可以使用AWS中的<code>CreateKeyPair</code>或<code>ImportKeyPair</code> API，或者在GCP中使用<code>gcloud compute os-login ssh-keys add</code>命令来生成或导入自己的SSH密钥。(引用：GCP SSH Key Add) 这样可以在云环境中对实例进行持久访问，而无需进一步使用被入侵的云账户。(引用：Expel IO在AWS中的恶意行为)(引用：Expel Behind the Scenes)
+
+攻击者还可以使用AWS中的<code>CreateAccessKey</code> API或GCP中的<code>gcloud iam service-accounts keys create</code>命令向账户添加访问密钥。如果目标账户与请求账户具有不同的权限，则攻击者还可能能够在环境中提升权限（即[Cloud Accounts](https://attack.mitre.org/techniques/T1078/004)）。(引用：Rhino Security Labs AWS Privilege Escalation)
+
+在AWS环境中，具备适当权限的攻击者还可以使用`sts:GetFederationToken` API调用来创建与原始用户账户权限相关联的临时凭证。即使原始账户的API凭证被停用，这些凭证在其生命周期内仍然有效。(引用：Crowdstrike AWS User Federation Persistence)
+
 ### [T1098.002]:Additional Email Delegate Permissions
+> 中文：添加邮件委派权限
+>
 > External ID: T1098.002
 > STIX ID: attack-pattern--e74de37c-a829-446c-937d-56a44f0e9306
 > Platforms: ['Windows', 'Office 365', 'Google Workspace']
@@ -3117,6 +3219,30 @@ For example, the <code>Add-MailboxPermission</code> [PowerShell](https://attack.
 Adversaries may also assign mailbox folder permissions through individual folder permissions or roles. In Office 365 environments, adversaries may assign the Default or Anonymous user permissions or roles to the Top of Information Store (root), Inbox, or other mailbox folders. By assigning one or both user permissions to a folder, the adversary can utilize any other account in the tenant to maintain persistence to the target user’s mail folders.(Citation: Remediation and Hardening Strategies for Microsoft 365 to Defend Against UNC2452)
 
 This may be used in persistent threat incidents as well as BEC (Business Email Compromise) incidents where an adversary can add [Additional Cloud Roles](https://attack.mitre.org/techniques/T1098/003) to the accounts they wish to compromise. This may further enable use of additional techniques for gaining access to systems. For example, compromised business accounts are often used to send messages to other accounts in the network of the target business while creating inbox rules (ex: [Internal Spearphishing](https://attack.mitre.org/techniques/T1534)), so the messages evade spam/phishing detection mechanisms.(Citation: Bienstock, D. - Defending O365 - 2019)
+
+攻击者可能授予额外的权限级别，以保持对受攻击者控制的电子邮件账户的持久访问。
+
+例如，在本地 Exchange 和基于云的 Office 365 服务中可用的 PowerShell cmdlet <code>Add-MailboxPermission</code>，可以向邮箱添加权限。（引用：Microsoft - Add-MailboxPermission）（引用：FireEye APT35 2018）（引用：Crowdstrike Hiding in Plain Sight 2018）在 Google Workspace 中，可以通过 Google Admin 控制台启用委派，并且用户可以通过他们的 Gmail 设置委派账户。（引用：Gmail Delegation）（引用：Google Ensuring Your Information is Safe）
+
+攻击者还可以通过单个文件夹权限或角色分配邮箱文件夹权限。在 Office 365 环境中，攻击者可以将默认用户或匿名用户的权限或角色分配给信息存储顶部（根目录）、收件箱或其他邮箱文件夹。通过为文件夹分配一个或两个用户权限，攻击者可以利用租户中的任何其他账户来保持对目标用户的邮件文件夹的持久性。（引用：Remediation and Hardening Strategies for Microsoft 365 to Defend Against UNC2452）
+
+这种技术既可以在持久性威胁事件中使用，也可以在商业电子邮件欺诈（BEC）事件中使用，其中攻击者可以向他们希望攻击的账户添加[附加云角色](https://attack.mitre.org/techniques/T1098/003)。这可能进一步启用使用其他技术来获取对系统的访问权限。例如，通常会利用遭到入侵的商业账户向目标企业网络中的其他账户发送消息，同时创建收件箱规则（例如[内部钓鱼](https://attack.mitre.org/techniques/T1534)），以便这些消息能够逃避垃圾邮件/钓鱼检测机制。（引用：Bienstock, D. - Defending O365 - 2019）
+
+Email Delegate Permissions（邮件委派权限）是一种电子邮件服务中的功能，允许用户授权其他人代表自己管理和处理自己的电子邮件。当一个用户将委派权限授予其他人时，被授权的人可以访问并执行特定的邮件操作，如发送、接收、删除或回复邮件。
+
+通过委派权限，用户可以将一部分邮件管理任务交给其他人来完成，这在组织中常见于助理代表主管处理日常邮件，或者在团队合作环境中共享邮件账户。
+
+常见的委派权限包括：
+
+1. 发送邮件：授权人可以让被委派人代表自己发送电子邮件。
+2. 查看邮箱：被委派人可以查看授权人的收件箱和文件夹。
+3. 接收和回复邮件：被委派人可以接收和回复授权人收到的电子邮件。
+4. 删除邮件：被委派人可以删除授权人的电子邮件。
+5. 安排会议：被委派人可以代表授权人安排会议和管理日历。
+6. 设置规则和筛选器：被委派人可以帮助授权人设置邮件规则和筛选器。
+
+委派权限可以提高工作效率和协作，并使多人共享一个邮件账户成为可能。然而，在授予委派权限时，需要谨慎并仔细考虑安全和隐私因素，确保只授权给值得信任的人，并限制他们的权限范围。
+
 ### [T1098.003]:Additional Cloud Roles
 > External ID: T1098.003
 > STIX ID: attack-pattern--2dbbdcd5-92cf-44c0-aea2-fe24783a6bc3
@@ -3133,6 +3259,15 @@ This account modification may immediately follow [Create Account](https://attack
 For example, in Azure AD environments, an adversary with the Application Administrator role can add [Additional Cloud Credentials](https://attack.mitre.org/techniques/T1098/001) to their application's service principal. In doing so the adversary would be able to gain the service principal’s roles and permissions, which may be different from those of the Application Administrator.(Citation: SpecterOps Azure Privilege Escalation) Similarly, in AWS environments, an adversary with appropriate permissions may be able to use the <code>CreatePolicyVersion</code> API to define a new version of an IAM policy or the <code>AttachUserPolicy</code> API to attach an IAM policy with additional or distinct permissions to a compromised user account.(Citation: Rhino Security Labs AWS Privilege Escalation)
 
 Similarly, an adversary with the Azure AD Global Administrator role can toggle the “Access management for Azure resources” option to gain the ability to assign privileged access to Azure subscriptions and virtual machines to Azure AD users, including themselves.(Citation: Azure AD to AD) 
+
+攻击者可以向攻击者控制的云账户添加额外的角色或权限，以保持对租户的持久访问。例如，攻击者可以在基于云的环境中更新 IAM 策略，或者在 Office 365 环境中添加新的全局管理员。（引用：AWS IAM Policies and Permissions）（引用：Google Cloud IAM Policies）（引用：Microsoft Support O365 Add Another Admin，2019 年 10 月）（引用：Microsoft O365 Admin Roles）。具有足够权限的被入侵账户几乎可以无限制地访问数据和设置（包括重置其他管理员密码的能力）。（引用：Expel AWS Attacker）（引用：Microsoft O365 Admin Roles）
+
+此账户修改可能紧随“创建账户”或其他恶意账户活动之后。攻击者还可能修改他们已经入侵的现有“有效账户”。这可能导致特权升级，尤其是如果所添加的角色允许横向移动到其他账户。
+
+例如，在 Azure AD 环境中，具有应用程序管理员角色的攻击者可以向其应用程序的服务主体添加其他云凭据。通过这样做，攻击者将能够获取服务主体的角色和权限，这些角色和权限可能与应用程序管理员不同。（引用：SpecterOps Azure Privilege Escalation）类似地，在 AWS 环境中，具有适当权限的攻击者可以使用 "CreatePolicyVersion" API 来定义 IAM 策略的新版本，或者使用 "AttachUserPolicy" API 将具有其他或不同权限的 IAM 策略附加到被入侵的用户账户。（引用：Rhino Security Labs AWS Privilege Escalation）
+
+同样，具有 Azure AD 全局管理员角色的攻击者可以切换 “Azure 资源的访问管理” 选项，以获得将特权访问分配给 Azure 订阅和虚拟机的能力，包括自己在内的 Azure AD 用户。（引用：Azure AD to AD）
+
 ### [T1098.004]:SSH Authorized Keys
 > External ID: T1098.004
 > STIX ID: attack-pattern--6b57dc31-b814-4a03-8706-28bc20d739c4
@@ -3149,6 +3284,8 @@ Where authorized_keys files are modified via cloud APIs or command line interfac
 
 SSH keys can also be added to accounts on network devices, such as with the `ip ssh pubkey-chain` [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) command.(Citation: cisco_ip_ssh_pubkey_ch_cmd)
 ### [T1098.005]:Device Registration
+> 中文：设备注册
+>
 > External ID: T1098.005
 > STIX ID: attack-pattern--7decb26c-715c-40cf-b7e0-026f7d7cc215
 > Platforms: ['Azure AD', 'Windows', 'SaaS']
@@ -3163,6 +3300,29 @@ MFA systems, such as Duo or Okta, allow users to associate devices with their ac
 Similarly, an adversary with existing access to a network may register a device to Azure AD and/or its device management system, Microsoft Intune, in order to access sensitive data or resources while bypassing conditional access policies.(Citation: AADInternals - Device Registration)(Citation: AADInternals - Conditional Access Bypass)(Citation: Microsoft DEV-0537) 
 
 Devices registered in Azure AD may be able to conduct [Internal Spearphishing](https://attack.mitre.org/techniques/T1534) campaigns via intra-organizational emails, which are less likely to be treated as suspicious by the email client.(Citation: Microsoft - Device Registration) Additionally, an adversary may be able to perform a [Service Exhaustion Flood](https://attack.mitre.org/techniques/T1499/002) on an Azure AD tenant by registering a large number of devices.(Citation: AADInternals - BPRT)
+
+攻击者可能会将设备注册到攻击者控制的帐户中。设备可以在多因素认证（MFA）系统或设备管理系统中进行注册，MFA系统处理网络身份验证，而设备管理系统处理设备访问和合规性。
+
+诸如Duo或Okta之类的MFA系统允许用户将设备与其帐户关联，以完成MFA要求。入侵用户凭据的攻击者可能会注册一个新设备，以绕过初始的MFA要求，并持久访问网络。（引用：CISA MFA PrintNightmare）（引用：DarkReading FireEye SolarWinds）在某些情况下，MFA自助注册过程可能只需要用户名和密码来注册帐户的第一个设备或将设备注册到非活动帐户。（引用：Mandiant APT29 Microsoft 365 2022）
+
+同样，已经能够访问网络的攻击者可能会将设备注册到Azure AD和/或其设备管理系统Microsoft Intune中，以绕过条件访问策略并访问敏感数据或资源。（引用：AADInternals - 设备注册）（引用：AADInternals - 条件访问绕过）（引用：Microsoft DEV-0537）
+
+在Azure AD中注册的设备可以通过组织内部邮件进行[内部钓鱼](https://attack.mitre.org/techniques/T1534)活动，这种活动不太可能被电子邮件客户端视为可疑。（引用：Microsoft - 设备注册）此外，攻击者可能可以通过注册大量设备来对Azure AD租户执行[服务耗尽洪泛](https://attack.mitre.org/techniques/T1499/002)攻击。（引用：AADInternals - BPRT）
+
+
+
+设备注册是指将新设备添加到特定系统或平台的过程。在设备注册过程中，设备的唯一标识符和相关信息被捕获和记录，以便系统可以识别和管理该设备。
+
+设备注册通常发生在各种领域，包括计算机网络、物联网（IoT）、移动设备和软件应用程序等。在这些情况下，设备注册的目的是建立设备与系统之间的信任关系，并使其能够进行通信和交互。
+
+在计算机网络中，设备注册可以涉及将计算机、服务器或其他网络设备连接到局域网或广域网，并通过网络协议获取IP地址和其他网络配置信息。这样，设备就可以通过网络与其他设备进行通信和访问Internet。
+
+在物联网中，设备注册是将物理设备（如传感器、智能家居设备或工业设备）添加到物联网平台的过程。物联网平台可以是一个集中式的云平台，用于管理和监控所有连接的设备，并与它们进行数据交换和控制。
+
+对于移动设备和应用程序，设备注册可能涉及用户在设备上输入其凭据（如用户名和密码）来连接到特定的服务或应用程序。这样，设备就可以使用该服务或应用程序提供的功能和资源。
+
+总之，设备注册是将新设备添加到系统或平台的过程，以建立信任关系并使其能够进行通信和交互。
+
 ## [T1102]:Web Service
 > External ID: T1102
 > STIX ID: attack-pattern--830c9528-df21-472c-8c14-a036bf17d665
@@ -3747,6 +3907,8 @@ Adversaries may create accounts that only have access to specific cloud services
 
 Once an adversary has created a cloud account, they can then manipulate that account to ensure persistence and allow access to additional resources - for example, by adding [Additional Cloud Credentials](https://attack.mitre.org/techniques/T1098/001) or assigning [Additional Cloud Roles](https://attack.mitre.org/techniques/T1098/003).
 ## [T1137]:Office Application Startup
+> 中文: Office 应用启动项
+>
 > External ID: T1137
 > STIX ID: attack-pattern--2c4d4e92-0ccf-4a97-b54c-86d662988a53
 > Platforms: ['Windows', 'Office 365']
@@ -3757,7 +3919,14 @@ Once an adversary has created a cloud account, they can then manipulate that acc
  Adversaries may leverage Microsoft Office-based applications for persistence between startups. Microsoft Office is a fairly common application suite on Windows-based operating systems within an enterprise network. There are multiple mechanisms that can be used with Office for persistence when an Office-based application is started; this can include the use of Office Template Macros and add-ins.
 
 A variety of features have been discovered in Outlook that can be abused to obtain persistence, such as Outlook rules, forms, and Home Page.(Citation: SensePost Ruler GitHub) These persistence mechanisms can work within Outlook or be used through Office 365.(Citation: TechNet O365 Outlook Rules)
+
+攻击者可能利用 Microsoft Office 应用程序启动项实现持久性。Microsoft Office 是企业网络中基于 Windows 的操作系统上相当常见的应用套件。在启动 Office-based 应用程序时，可以使用多种机制来实现 Office 的持久性；这包括使用 Office 模板宏和插件。
+
+已经发现了 Outlook 中可以被滥用以获取持久性的各种功能，例如 Outlook 规则、表单和主页。（引证：SensePost Ruler GitHub）这些持久性机制可以在 Outlook 内部工作，也可以通过 Office 365 使用。（引证：TechNet O365 Outlook Rules）
+
 ### [T1137.001]:Office Template Macros
+> 中文：Office 模板宏
+>
 > External ID: T1137.001
 > STIX ID: attack-pattern--79a47ad0-fc3b-4821-9f01-a026b1ddba21
 > Platforms: ['Windows', 'Office 365']
@@ -3778,12 +3947,24 @@ Excel Personal.xlsb location:<br>
 Adversaries may also change the location of the base template to point to their own by hijacking the application's search order, e.g. Word 2016 will first look for Normal.dotm under <code>C:\Program Files (x86)\Microsoft Office\root\Office16\</code>, or by modifying the GlobalDotName registry key. By modifying the GlobalDotName registry key an adversary can specify an arbitrary location, file name, and file extension to use for the template that will be loaded on application startup. To abuse GlobalDotName, adversaries may first need to register the template as a trusted document or place it in a trusted location.(Citation: GlobalDotName Jun 2019) 
 
 An adversary may need to enable macros to execute unrestricted depending on the system or enterprise security policy on use of macros.
+
+攻击者可能会滥用Microsoft Office模板以在被入侵的系统上获得持久性。Microsoft Office包含一些常见办公应用程序的模板，用于自定义样式。每次应用程序启动时，都会使用应用程序中的基础模板。（引用：Microsoft Change Normal Template）
+
+可以将Office Visual Basic for Applications（VBA）宏（引用：MSDN VBA in Office）插入基础模板，并在相应的Office应用程序启动时执行代码，以达到持久性的目的。已经发现并发布了Word和Excel的示例。默认情况下，Word创建了一个名为Normal.dotm的模板，可以修改该模板以包含恶意宏。Excel默认情况下没有创建模板文件，但可以添加一个模板文件，该文件将自动加载。（引用：enigma0x3 normal.dotm）（引用：Hexacorn Office Template Macros）还可以存储并从远程位置提取共享模板。（引用：GlobalDotName Jun 2019）
+
+Word Normal.dotm位置：<br> <code>C:\Users&lt;username>\AppData\Roaming\Microsoft\Templates\Normal.dotm</code>
+
+Excel Personal.xlsb位置：<br> <code>C:\Users&lt;username>\AppData\Roaming\Microsoft\Excel\XLSTART\PERSONAL.XLSB</code>
+
+攻击者还可以通过劫持应用程序的搜索顺序（例如，Word 2016首先会在<code>C:\Program Files (x86)\Microsoft Office\root\Office16</code>下查找Normal.dotm），或修改GlobalDotName注册表键的位置，来更改基础模板的位置。通过修改GlobalDotName注册表键，攻击者可以指定一个任意的位置、文件名和文件扩展名，用于在应用程序启动时加载的模板。为了滥用GlobalDotName，攻击者可能首先需要将模板注册为可信文档或将其放置在可信位置。（引用：GlobalDotName Jun 2019）
+
+根据系统或企业安全策略对宏的使用，攻击者可能需要启用宏以执行不受限制的操作。
+
 ### [T1137.002]:Office Test
 > External ID: T1137.002
 > STIX ID: attack-pattern--ed7efd4d-ce28-4a19-a8e6-c58011eb2c7a
 > Platforms: ['Windows', 'Office 365']
 > Tactics: ['persistence']
-
 
 **Description: **
  Adversaries may abuse the Microsoft Office "Office Test" Registry key to obtain persistence on a compromised system. An Office Test Registry location exists that allows a user to specify an arbitrary DLL that will be executed every time an Office application is started. This Registry key is thought to be used by Microsoft to load DLLs for testing and debugging purposes while developing Office applications. This Registry key is not created by default during an Office installation.(Citation: Hexacorn Office Test)(Citation: Palo Alto Office Test Sofacy)
@@ -3794,7 +3975,21 @@ There exist user and global Registry keys for the Office Test feature:
 * <code>HKEY_LOCAL_MACHINE\Software\Microsoft\Office test\Special\Perf</code>
 
 Adversaries may add this Registry key and specify a malicious DLL that will be executed whenever an Office application, such as Word or Excel, is started.
+
+攻击者可能滥用Microsoft Office的“Office Test”注册表键来在受损系统上获得持久性。存在一个Office Test注册表位置，允许用户指定一个任意的DLL，在每次启动Office应用程序时都会执行该DLL。据认为，Microsoft在开发Office应用程序时使用此注册表键来加载DLL进行测试和调试。在Office安装过程中，默认情况下不会创建此注册表键。（引用：Hexacorn Office Test）（引用：Palo Alto Office Test Sofacy）
+
+Office Test功能存在用户和全局注册表键：
+
+- HKEY_CURRENT_USER\Software\Microsoft\Office test\Special\Perf
+- HKEY_LOCAL_MACHINE\Software\Microsoft\Office test\Special\Perf
+
+攻击者可以添加这个注册表键，并指定一个恶意的DLL，无论是启动Word还是Excel等Office应用程序时都会执行该DLL。
+
+
+
 ### [T1137.003]:Outlook Forms
+> 中文：Outlook 表单
+>
 > External ID: T1137.003
 > STIX ID: attack-pattern--a9e2cea0-c805-4bf8-9e31-f5f0513a3634
 > Platforms: ['Windows', 'Office 365']
@@ -3805,7 +4000,14 @@ Adversaries may add this Registry key and specify a malicious DLL that will be e
  Adversaries may abuse Microsoft Outlook forms to obtain persistence on a compromised system. Outlook forms are used as templates for presentation and functionality in Outlook messages. Custom Outlook forms can be created that will execute code when a specifically crafted email is sent by an adversary utilizing the same custom Outlook form.(Citation: SensePost Outlook Forms)
 
 Once malicious forms have been added to the user’s mailbox, they will be loaded when Outlook is started. Malicious forms will execute when an adversary sends a specifically crafted email to the user.(Citation: SensePost Outlook Forms)
+
+攻击者可能滥用Microsoft Outlook的表单以获取在受损系统上的持久性。Outlook表单用作Outlook邮件中的演示和功能模板。可以创建自定义Outlook表单，当攻击者使用相同的自定义Outlook表单发送特定构建的电子邮件时，这些表单将执行代码。（引证：SensePost Outlook Forms）
+
+一旦恶意表单被添加到用户的邮箱中，在启动Outlook时它们将被加载。恶意表单将在攻击者向用户发送特定构建的电子邮件时执行。（引证：SensePost Outlook Forms）
+
 ### [T1137.004]:Outlook Home Page
+> 中文：outlook 首页
+>
 > External ID: T1137.004
 > STIX ID: attack-pattern--bf147104-abf9-4221-95d1-e81585859441
 > Platforms: ['Windows', 'Office 365']
@@ -3817,7 +4019,13 @@ Once malicious forms have been added to the user’s mailbox, they will be loade
 
 Once malicious home pages have been added to the user’s mailbox, they will be loaded when Outlook is started. Malicious Home Pages will execute when the right Outlook folder is loaded/reloaded.(Citation: SensePost Outlook Home Page)
 
+攻击者可能滥用Microsoft Outlook的首页功能，在受损系统上获取持久性。Outlook首页是一个传统功能，用于定制Outlook文件夹的展示方式。该功能允许在打开文件夹时加载和呈现内部或外部URL。可以创建恶意HTML页面，当Outlook首页加载时，将执行其中的代码。（引用：SensePost Outlook首页）
+
+一旦恶意主页被添加到用户的邮箱中，它们将在启动Outlook时被加载。当正确的Outlook文件夹被加载/重新加载时，恶意主页将被执行。（引用：SensePost Outlook首页）
+
 ### [T1137.005]:Outlook Rules
+> 中文：outlook 规则
+>
 > External ID: T1137.005
 > STIX ID: attack-pattern--3d1b9d7e-3921-4d25-845a-7d9f15c0da44
 > Platforms: ['Windows', 'Office 365']
@@ -3828,7 +4036,14 @@ Once malicious home pages have been added to the user’s mailbox, they will be 
  Adversaries may abuse Microsoft Outlook rules to obtain persistence on a compromised system. Outlook rules allow a user to define automated behavior to manage email messages. A benign rule might, for example, automatically move an email to a particular folder in Outlook if it contains specific words from a specific sender. Malicious Outlook rules can be created that can trigger code execution when an adversary sends a specifically crafted email to that user.(Citation: SilentBreak Outlook Rules)
 
 Once malicious rules have been added to the user’s mailbox, they will be loaded when Outlook is started. Malicious rules will execute when an adversary sends a specifically crafted email to the user.(Citation: SilentBreak Outlook Rules)
+
+攻击者可能滥用Microsoft Outlook的规则功能，在受损系统上获取持久性。Outlook规则允许用户定义自动化行为来管理电子邮件。一个良性规则的例子是，如果电子邮件中包含特定发件人的特定词语，它会自动将该邮件移动到Outlook中的特定文件夹中。恶意的Outlook规则可以被创建，当攻击者向用户发送特制的电子邮件时，可以触发代码执行。（引用：SilentBreak Outlook规则）
+
+一旦恶意规则被添加到用户的邮箱中，它们将在启动Outlook时加载。当攻击者向用户发送特制的电子邮件时，恶意规则将被执行。（引用：SilentBreak Outlook规则）
+
 ### [T1137.006]:Add-ins
+> 中文：插件
+>
 > External ID: T1137.006
 > STIX ID: attack-pattern--34f1d81d-fe88-4f97-bd3b-a3164536255d
 > Platforms: ['Windows', 'Office 365']
@@ -3839,6 +4054,11 @@ Once malicious rules have been added to the user’s mailbox, they will be loade
  Adversaries may abuse Microsoft Office add-ins to obtain persistence on a compromised system. Office add-ins can be used to add functionality to Office programs. (Citation: Microsoft Office Add-ins) There are different types of add-ins that can be used by the various Office products; including Word/Excel add-in Libraries (WLL/XLL), VBA add-ins, Office Component Object Model (COM) add-ins, automation add-ins, VBA Editor (VBE), Visual Studio Tools for Office (VSTO) add-ins, and Outlook add-ins. (Citation: MRWLabs Office Persistence Add-ins)(Citation: FireEye Mail CDS 2018)
 
 Add-ins can be used to obtain persistence because they can be set to execute code when an Office application starts. 
+
+攻击者可能滥用Microsoft Office插件来在受损系统上获取持久性。Office插件可以用于为Office程序添加功能。（引用：Microsoft Office插件）各种不同类型的插件可供各种Office产品使用，包括Word/Excel插件库（WLL/XLL）、VBA插件、Office Component Object Model（COM）插件、自动化插件、VBA编辑器（VBE）、Visual Studio Tools for Office（VSTO）插件和Outlook插件。（引用：MRWLabs Office持久性插件）（引用：FireEye Mail CDS 2018）
+
+插件可用于获取持久性，因为它们可以在Office应用程序启动时设置为执行代码。
+
 ## [T1140]:Deobfuscate/Decode Files or Information
 > External ID: T1140
 > STIX ID: attack-pattern--3ccef7ae-cb5e-48f6-8302-897105fbf55c
@@ -4033,6 +4253,8 @@ Targeting may be specific to a desired victim set or may be distributed to a bro
 **Description: **
  Adversaries may manipulate hardware components in products prior to receipt by a final consumer for the purpose of data or system compromise. By modifying hardware or firmware in the supply chain, adversaries can insert a backdoor into consumer networks that may be difficult to detect and give the adversary a high degree of control over the system. Hardware backdoors may be inserted into various devices, such as servers, workstations, network infrastructure, or peripherals.
 ## [T1197]:BITS Jobs
+> 中文：BITS作业
+>
 > External ID: T1197
 > STIX ID: attack-pattern--c8e87b83-edbb-48d4-9295-4974897525b7
 > Platforms: ['Windows']
@@ -4047,6 +4269,15 @@ The interface to create and manage BITS jobs is accessible through [PowerShell](
 Adversaries may abuse BITS to download (e.g. [Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105)), execute, and even clean up after running malicious code (e.g. [Indicator Removal](https://attack.mitre.org/techniques/T1070)). BITS tasks are self-contained in the BITS job database, without new files or registry modifications, and often permitted by host firewalls.(Citation: CTU BITS Malware June 2016)(Citation: Mondok Windows PiggyBack BITS May 2007)(Citation: Symantec BITS May 2007) BITS enabled execution may also enable persistence by creating long-standing jobs (the default maximum lifetime is 90 days and extendable) or invoking an arbitrary program when a job completes or errors (including after system reboots).(Citation: PaloAlto UBoatRAT Nov 2017)(Citation: CTU BITS Malware June 2016)
 
 BITS upload functionalities can also be used to perform [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048).(Citation: CTU BITS Malware June 2016)
+
+攻击者可能滥用BITS作业来持久地执行代码和执行各种后台任务。Windows Background Intelligent Transfer Service（BITS）是一种通过[组件对象模型](https://attack.mitre.org/techniques/T1559/001)（COM）公开的低带宽异步文件传输机制。（引用：Microsoft COM）（引用：Microsoft BITS）BITS通常由更新程序、通信工具和其他首选在后台操作的应用程序使用（利用可用的空闲带宽），而不会中断其他网络应用程序。文件传输任务以BITS作业的形式实现，其中包含一个或多个文件操作的队列。
+
+创建和管理BITS作业的接口可通过[PowerShell](https://attack.mitre.org/techniques/T1059/001)和[BITSAdmin](https://attack.mitre.org/software/S0190)工具访问。（引用：Microsoft BITS）（引用：Microsoft BITSAdmin）
+
+攻击者可能滥用BITS来下载（例如[Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105)）、执行甚至在运行恶意代码后清理（例如[Indicator Removal](https://attack.mitre.org/techniques/T1070)）。BITS作业完全包含在BITS作业数据库中，无需新建文件或修改注册表，并且通常被主机防火墙所允许。（引用：CTU BITS Malware June 2016）（引用：Mondok Windows PiggyBack BITS May 2007）（引用：Symantec BITS May 2007）启用BITS执行还可以通过创建长期作业（默认最大生存期为90天且可延长）或在作业完成或错误后调用任意程序来实现持久性（包括系统重新启动后）。（引用：PaloAlto UBoatRAT Nov 2017）（引用：CTU BITS Malware June 2016）
+
+BITS上传功能还可用于执行[利用替代协议的信息泄漏](https://attack.mitre.org/techniques/T1048)。（引用：CTU BITS Malware June 2016）
+
 ## [T1199]:Trusted Relationship
 > 中文：信赖关系
 >
@@ -4199,6 +4430,8 @@ While [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently
 
 Adversaries may also name images a certain way to increase the chance of users mistakenly deploying an instance or container from the image (ex: [Match Legitimate Name or Location](https://attack.mitre.org/techniques/T1036/005)).(Citation: Aqua Security Cloud Native Threat Report June 2021)
 ## [T1205]:Traffic Signaling
+> 中文：流量信号
+>
 > External ID: T1205
 > STIX ID: attack-pattern--451a9977-d255-43c9-b431-66de80130c8c
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
@@ -4215,7 +4448,24 @@ The observation of the signal packets to trigger the communication can be conduc
 On network devices, adversaries may use crafted packets to enable [Network Device Authentication](https://attack.mitre.org/techniques/T1556/004) for standard services offered by the device such as telnet.  Such signaling may also be used to open a closed service port such as telnet, or to trigger module modification of malware implants on the device, adding, removing, or changing malicious capabilities.  Adversaries may use crafted packets to attempt to connect to one or more (open or closed) ports, but may also attempt to connect to a router interface, broadcast, and network address IP on the same port in order to achieve their goals and objectives.(Citation: Cisco Synful Knock Evolution)(Citation: Mandiant - Synful Knock)(Citation: Cisco Blog Legacy Device Attacks)  To enable this traffic signaling on embedded devices, adversaries must first achieve and leverage [Patch System Image](https://attack.mitre.org/techniques/T1601/001) due to the monolithic nature of the architecture.
 
 Adversaries may also use the Wake-on-LAN feature to turn on powered off systems. Wake-on-LAN is a hardware feature that allows a powered down system to be powered on, or woken up, by sending a magic packet to it. Once the system is powered on, it may become a target for lateral movement.(Citation: Bleeping Computer - Ryuk WoL)(Citation: AMD Magic Packet)
+
+攻击者可能使用流量信号来隐藏开放端口或用于持久性或命令与控制的其他恶意功能。流量信号涉及使用必须发送到系统的魔术值或序列以触发特殊响应，例如打开关闭的端口或执行恶意任务。这可以通过发送一系列具有特定特征的数据包来实现，在此之前，可能需要尝试连接到预定义的一系列关闭端口（即[端口敲门](https://attack.mitre.org/techniques/T1205/001)），但也可能涉及异常的标志、特定的字符串或其他独特的特征。在完成序列之后，打开端口可以通过主机防火墙完成，但也可以通过定制软件实现。
+
+攻击者还可以与已经打开的端口进行通信，但只有在传递适当的魔术值时，监听该端口的服务才会响应命令或触发其他恶意功能。
+
+触发通信的信号数据包的观察可以通过不同的方法进行。一种方法最初由Cd00r（引用：Hartrell cd00r 2002）实现，即使用libpcap库来嗅探相关数据包。另一种方法利用原始套接字，使恶意软件能够使用已经被其他程序占用的端口。
+
+在网络设备上，攻击者可能使用精心构造的数据包来启用设备提供的标准服务（如telnet）的[网络设备身份验证](https://attack.mitre.org/techniques/T1556/004)。这种信号也可以用于打开关闭的服务端口，如telnet，或者触发对设备上的恶意植入物进行模块修改，添加、删除或更改恶意功能。攻击者可能使用精心构造的数据包来尝试连接一个或多个（开放或关闭的）端口，还可能尝试连接路由器接口、广播和网络地址IP，以实现其目标和目的。（引用：Cisco Synful Knock Evolution）（引用：Mandiant - Synful Knock）（引用：Cisco Blog Legacy Device Attacks）为了在嵌入式设备上启用这种流量信号，攻击者必须首先实现并利用[修补系统镜像](https://attack.mitre.org/techniques/T1601/001)，因为体系结构的整体性质。
+
+攻击者还可以利用Wake-on-LAN功能启动已关闭的系统。Wake-on-LAN是一种硬件功能，允许通过向系统发送一个魔术数据包来启动已关闭的系统。一旦系统启动，它可能成为横向移动的目标。（引用：Bleeping Computer - Ryuk WoL）（引用：AMD Magic Packet）
+
+> **"魔术值"**
+>
+> "魔术值"是指在系统或程序中具有特殊意义或触发特定行为或功能的特定值或数据序列。它通常被用作一种身份验证或认证形式，以启用特定操作或访问隐藏功能。在所提供的文本背景下，魔术值被发送到系统或服务以启动特定的响应，例如打开关闭的端口或执行恶意任务。
+
 ### [T1205.001]:Port Knocking
+> 中文：端口敲门
+>
 > External ID: T1205.001
 > STIX ID: attack-pattern--8868cb5b-d575-4a60-acb2-07d37389a2fd
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
@@ -4228,7 +4478,16 @@ Adversaries may also use the Wake-on-LAN feature to turn on powered off systems.
 This technique has been observed both for the dynamic opening of a listening port as well as the initiating of a connection to a listening server on a different system.
 
 The observation of the signal packets to trigger the communication can be conducted through different methods. One means, originally implemented by Cd00r (Citation: Hartrell cd00r 2002), is to use the libpcap libraries to sniff for the packets in question. Another method leverages raw sockets, which enables the malware to use ports that are already open for use by other programs.
+
+攻击者可能使用端口敲门技术来隐藏用于持久化或命令与控制的开放端口。为了启用一个端口，攻击者向预定义的一系列关闭的端口发送连接尝试。完成序列后，通常通过基于主机的防火墙来打开一个端口，但也可以通过自定义软件来实现。
+
+这种技术观察到了动态打开监听端口以及在不同系统上启动与监听服务器的连接。
+
+触发通信的信号包的观察可以通过不同的方法进行。一种方法是使用libpcap库来嗅探相关包，最初由Cd00r（引用：Hartrell cd00r 2002）实施。另一种方法利用原始套接字，使恶意软件能够使用已经被其他程序占用的端口。
+
 ### [T1205.002]:Socket Filters
+> 中文：Socket 过滤器
+>
 > External ID: T1205.002
 > STIX ID: attack-pattern--005cc321-08ce-4d17-b1ea-cb5275926520
 > Platforms: ['Linux', 'macOS', 'Windows']
@@ -4241,6 +4500,13 @@ The observation of the signal packets to trigger the communication can be conduc
 To establish a connection, an adversary sends a crafted packet to the targeted host that matches the installed filter criteria.(Citation: haking9 libpcap network sniffing) Adversaries have used these socket filters to trigger the installation of implants, conduct ping backs, and to invoke command shells. Communication with these socket filters may also be used in conjunction with [Protocol Tunneling](https://attack.mitre.org/techniques/T1572).(Citation: exatrack bpf filters passive backdoors)(Citation: Leonardo Turla Penquin May 2020)
 
 Filters can be installed on any Unix-like platform with `libpcap` installed or on Windows hosts using `Winpcap`.  Adversaries may use either `libpcap` with `pcap_setfilter` or the standard library function `setsockopt` with `SO_ATTACH_FILTER` options. Since the socket connection is not active until the packet is received, this behavior may be difficult to detect due to the lack of activity on a host, low CPU overhead, and limited visibility into raw socket usage.
+
+攻击者可能会在网络套接字上附加过滤器，以监视并激活用于持久性或命令与控制的后门。通过提升权限，攻击者可以使用诸如`libpcap`库之类的功能来打开套接字并安装过滤器，以允许或禁止某些类型的数据通过套接字传输。该过滤器可以应用于通过指定的网络接口传递的所有流量（如果未指定，则为每个接口）。当网络接口收到与过滤器条件匹配的数据包时，可以在主机上触发其他操作，例如激活反向shell。
+
+为了建立连接，攻击者向目标主机发送一个符合已安装过滤器条件的精心设计的数据包。（引用：haking9 libpcap network sniffing）攻击者使用这些套接字过滤器触发植入物的安装，进行回捞操作，并调用命令shell。与这些套接字过滤器的通信还可与[协议隧道](https://attack.mitre.org/techniques/T1572)一起使用。（引用：exatrack bpf filters passive backdoors）（引用：Leonardo Turla Penquin May 2020）
+
+过滤器可以安装在任何安装了`libpcap`的类Unix平台上，或者在使用`Winpcap`的Windows主机上。攻击者可以使用`libpcap`和`pcap_setfilter`，或者使用标准库函数`setsockopt`和`SO_ATTACH_FILTER`选项。由于套接字连接在接收到数据包之前是不活动的，因此由于主机上缺乏活动、低CPU开销和对原始套接字使用的可见性有限，可能难以检测到此行为。
+
 ## [T1207]:Rogue Domain Controller
 > External ID: T1207
 > STIX ID: attack-pattern--564998d8-ab3e-4123-93fb-eccaa6b9714a
@@ -5037,11 +5303,12 @@ Adversaries may exploit known or zero-day vulnerabilities to crash applications 
 **Description: **
  Adversaries may abuse legitimate extensible development features of servers to establish persistent access to systems. Enterprise server applications may include features that allow developers to write and install software or scripts to extend the functionality of the main application. Adversaries may install malicious components to extend and abuse server applications.(Citation: volexity_0day_sophos_FW)
 ### [T1505.001]:SQL Stored Procedures
+> 中文：SQL存储过程
+>
 > External ID: T1505.001
 > STIX ID: attack-pattern--f9e9365a-9ca2-4d9c-8e7c-050d73d1101a
 > Platforms: ['Windows', 'Linux']
 > Tactics: ['persistence']
-
 
 **Description: **
  Adversaries may abuse SQL stored procedures to establish persistent access to systems. SQL Stored Procedures are code that can be saved and reused so that database users do not waste time rewriting frequently used SQL queries. Stored procedures can be invoked via SQL statements to the database using the procedure name or via defined events (e.g. when a SQL server application is started/restarted).
@@ -5049,7 +5316,32 @@ Adversaries may exploit known or zero-day vulnerabilities to crash applications 
 Adversaries may craft malicious stored procedures that can provide a persistence mechanism in SQL database servers.(Citation: NetSPI Startup Stored Procedures)(Citation: Kaspersky MSSQL Aug 2019) To execute operating system commands through SQL syntax the adversary may have to enable additional functionality, such as xp_cmdshell for MSSQL Server.(Citation: NetSPI Startup Stored Procedures)(Citation: Kaspersky MSSQL Aug 2019)(Citation: Microsoft xp_cmdshell 2017) 
 
 Microsoft SQL Server can enable common language runtime (CLR) integration. With CLR integration enabled, application developers can write stored procedures using any .NET framework language (e.g. VB .NET, C#, etc.).(Citation: Microsoft CLR Integration 2017) Adversaries may craft or modify CLR assemblies that are linked to stored procedures since these CLR assemblies can be made to execute arbitrary commands.(Citation: NetSPI SQL Server CLR) 
+
+攻击者可能滥用SQL存储过程来建立对系统的持久访问。SQL存储过程是可以保存和重复使用的代码，以便数据库用户不必浪费时间重写经常使用的SQL查询。可以通过SQL语句或定义的事件（例如SQL服务器应用程序启动/重新启动时）调用存储过程。
+
+攻击者可能构造恶意的存储过程，在SQL数据库服务器中提供持久性机制。（引证：NetSPI Startup Stored Procedures）（引证：Kaspersky MSSQL Aug 2019）为了通过SQL语法执行操作系统命令，攻击者可能需要启用其他功能，例如MSSQL Server的xp_cmdshell。（引证：NetSPI Startup Stored Procedures）（引证：Kaspersky MSSQL Aug 2019）（引证：Microsoft xp_cmdshell 2017）
+
+Microsoft SQL Server可以启用公共语言运行时（CLR）集成。启用CLR集成后，应用程序开发人员可以使用任何.NET框架语言（例如VB .NET，C#等）编写存储过程。（引证：Microsoft CLR Integration 2017）攻击者可能构造或修改与存储过程链接的CLR程序集，因为这些CLR程序集可以执行任意命令。（引证：NetSPI SQL Server CLR）
+
+
+
+SQL存储过程（Stored Procedures）是在关系数据库管理系统（RDBMS）中使用的一种编程技术。它们是预先定义的、可重复使用的SQL代码块，存储在数据库中，并可以通过一个名称和参数列表进行调用和执行。
+
+存储过程由SQL语句和控制结构组成，类似于程序中的子例程或函数。它们可以接收输入参数、执行一系列SQL操作，并可以返回输出结果或修改数据库的状态。通过将常用的、经常重复的任务封装为存储过程，可以简化应用程序的开发和维护，并提高数据库的性能和安全性。
+
+以下是一些SQL存储过程的特点和优势：
+
+1. 代码重用：存储过程可以被多个应用程序调用，避免了重复编写相同的代码。
+2. 性能优化：存储过程在数据库服务器上进行编译和缓存，因此可以提高查询和操作的执行速度。
+3. 安全性增强：存储过程可以设定权限，对外部用户隐藏底层表和数据结构，提供更好的数据安全性。
+4. 简化复杂逻辑：存储过程支持条件判断、循环等控制结构，使得复杂的业务逻辑可以在数据库层面实现。
+5. 事务管理：存储过程可以包含多个SQL语句，并可以作为事务的一部分，确保数据一致性和完整性。
+
+SQL存储过程在不同的数据库管理系统中有所差异，例如MySQL使用"CREATE PROCEDURE"语句定义存储过程，而Microsoft SQL Server使用"CREATE PROCEDURE"或"CREATE PROC"语句。存储过程的具体语法和特性应根据所使用的数据库系统来确定。
+
 ### [T1505.002]:Transport Agent
+> 中文：传输代理
+>
 > External ID: T1505.002
 > STIX ID: attack-pattern--35187df2-31ed-43b6-a1f5-2f1d3d58d3f1
 > Platforms: ['Linux', 'Windows']
@@ -5060,6 +5352,11 @@ Microsoft SQL Server can enable common language runtime (CLR) integration. With 
  Adversaries may abuse Microsoft transport agents to establish persistent access to systems. Microsoft Exchange transport agents can operate on email messages passing through the transport pipeline to perform various tasks such as filtering spam, filtering malicious attachments, journaling, or adding a corporate signature to the end of all outgoing emails.(Citation: Microsoft TransportAgent Jun 2016)(Citation: ESET LightNeuron May 2019) Transport agents can be written by application developers and then compiled to .NET assemblies that are subsequently registered with the Exchange server. Transport agents will be invoked during a specified stage of email processing and carry out developer defined tasks. 
 
 Adversaries may register a malicious transport agent to provide a persistence mechanism in Exchange Server that can be triggered by adversary-specified email events.(Citation: ESET LightNeuron May 2019) Though a malicious transport agent may be invoked for all emails passing through the Exchange transport pipeline, the agent can be configured to only carry out specific tasks in response to adversary defined criteria. For example, the transport agent may only carry out an action like copying in-transit attachments and saving them for later exfiltration if the recipient email address matches an entry on a list provided by the adversary. 
+
+攻击者可能滥用Microsoft传输代理以建立对系统的持久访问。Microsoft Exchange传输代理可以在通过传输管道传递的电子邮件上操作，执行各种任务，例如过滤垃圾邮件、过滤恶意附件、记录日志或在所有发出的电子邮件末尾添加企业签名。(引用：Microsoft TransportAgent Jun 2016)(引用：ESET LightNeuron May 2019)传输代理可以由应用程序开发人员编写，并编译为.NET程序集，然后注册到Exchange服务器上。传输代理将在指定的电子邮件处理阶段被调用，并执行开发人员定义的任务。
+
+攻击者可能注册一个恶意传输代理，为Exchange Server提供一种可以由攻击者指定的电子邮件事件触发的持久性机制。(引用：ESET LightNeuron May 2019)虽然恶意传输代理可能会对通过Exchange传输管道传递的所有电子邮件进行调用，但该代理可以配置为仅在响应攻击者定义的条件时执行特定任务。例如，如果收件人的电子邮件地址与攻击者提供的列表中的条目匹配，传输代理可能只执行某个动作，如复制正在传输中的附件并保存它们以备后续渗透。
+
 ### [T1505.003]:Web Shell
 > External ID: T1505.003
 > STIX ID: attack-pattern--5d0d3609-d06d-49e1-b9c9-b544e0c618cb
@@ -5097,7 +5394,15 @@ Adversaries may also install malicious IIS modules to observe and/or modify traf
 [Windows Service](https://attack.mitre.org/techniques/T1543/003)s that are run as a "generic" process (ex: <code>svchost.exe</code>) load the service's DLL file, the location of which is stored in a Registry entry named <code>ServiceDll</code>.(Citation: Microsoft System Services Fundamentals) The <code>termsrv.dll</code> file, typically stored in `%SystemRoot%\System32\`, is the default <code>ServiceDll</code> value for Terminal Services in `HKLM\System\CurrentControlSet\services\TermService\Parameters\`.
 
 Adversaries may modify and/or replace the Terminal Services DLL to enable persistent access to victimized hosts.(Citation: James TermServ DLL) Modifications to this DLL could be done to execute arbitrary payloads (while also potentially preserving normal <code>termsrv.dll</code> functionality) as well as to simply enable abusable features of Terminal Services. For example, an adversary may enable features such as concurrent [Remote Desktop Protocol](https://attack.mitre.org/techniques/T1021/001) sessions by either patching the <code>termsrv.dll</code> file or modifying the <code>ServiceDll</code> value to point to a DLL that provides increased RDP functionality.(Citation: Windows OS Hub RDP)(Citation: RDPWrap Github) On a non-server Windows OS this increased functionality may also enable an adversary to avoid Terminal Services prompts that warn/log out users of a system when a new RDP session is created.
+
+攻击者可能滥用终端服务的组件以实现对系统的持久访问。Microsoft Terminal Services 在某些 Windows Server 操作系统中更名为远程桌面服务（Remote Desktop Services），它允许远程终端连接到主机。终端服务通过 RDP（远程桌面协议）向客户端传输完整的、交互式的图形用户界面。(引用：Microsoft 远程桌面服务)
+
+作为“通用”进程（例如：<code>svchost.exe</code>）运行的[Windows 服务](https://attack.mitre.org/techniques/T1543/003)会加载服务的 DLL 文件，其位置存储在名为<code>ServiceDll</code>的注册表项中。(引用：Microsoft 系统服务基础知识) <code>termsrv.dll</code>文件通常存储在`%SystemRoot%\System32\`中，是 `HKLM\System\CurrentControlSet\services\TermService\Parameters\`下终端服务的默认<code>ServiceDll</code>值。
+
+攻击者可能修改和/或替换终端服务的 DLL 以实现对受害主机的持久访问。(引用：James TermServ DLL) 修改此 DLL 可以执行任意有效负载（同时可能保留正常的<code>termsrv.dll</code>功能），并且可以启用终端服务的可滥用功能。例如，攻击者可以通过修补<code>termsrv.dll</code>文件或修改<code>ServiceDll</code>值以指向提供增强 RDP 功能的 DLL 来启用诸如并发[远程桌面协议](https://attack.mitre.org/techniques/T1021/001)会话等功能。(引用：Windows OS Hub RDP)(引用：RDPWrap Github) 在非服务器 Windows 操作系统上，这种增强功能还可以使攻击者避免终端服务的提示，在创建新的 RDP 会话时不会警告/注销用户。
+
 ## [T1518]:Software Discovery
+
 > External ID: T1518
 > STIX ID: attack-pattern--e3b6daca-e963-4a69-aee6-ed4fd653ad58
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace']
@@ -5122,16 +5427,22 @@ Example commands that can be used to obtain security software information are [n
 
 Adversaries may also utilize cloud APIs to discover the configurations of firewall rules within an environment.(Citation: Expel IO Evil in AWS) For example, the permitted IP ranges, ports or user accounts for the inbound/outbound rules of security groups, virtual firewalls established within AWS for EC2 and/or VPC instances, can be revealed by the <code>DescribeSecurityGroups</code> action with various request parameters. (Citation: DescribeSecurityGroups - Amazon Elastic Compute Cloud)
 ## [T1525]:Implant Internal Image
+> 中文：植入内部镜像
+>
 > External ID: T1525
 > STIX ID: attack-pattern--4fd8a28b-4b3a-4cd6-a8cf-85ba5f824a7f
 > Platforms: ['IaaS', 'Containers']
 > Tactics: ['persistence']
 
-
 **Description: **
  Adversaries may implant cloud or container images with malicious code to establish persistence after gaining access to an environment. Amazon Web Services (AWS) Amazon Machine Images (AMIs), Google Cloud Platform (GCP) Images, and Azure Images as well as popular container runtimes such as Docker can be implanted or backdoored. Unlike [Upload Malware](https://attack.mitre.org/techniques/T1608/001), this technique focuses on adversaries implanting an image in a registry within a victim’s environment. Depending on how the infrastructure is provisioned, this could provide persistent access if the infrastructure provisioning tool is instructed to always use the latest image.(Citation: Rhino Labs Cloud Image Backdoor Technique Sept 2019)
 
 A tool has been developed to facilitate planting backdoors in cloud container images.(Citation: Rhino Labs Cloud Backdoor September 2019) If an adversary has access to a compromised AWS instance, and permissions to list the available container images, they may implant a backdoor such as a [Web Shell](https://attack.mitre.org/techniques/T1505/003).(Citation: Rhino Labs Cloud Image Backdoor Technique Sept 2019)
+
+攻击者可能通过在访问环境后植入恶意代码来在云端或容器镜像中建立持久性。亚马逊网络服务（AWS）的Amazon Machine Images（AMI）、谷歌云平台（GCP）的镜像、Azure镜像以及流行的容器运行时（如Docker）都可能被植入或设置后门。与[上传恶意软件](https://attack.mitre.org/techniques/T1608/001)不同，该技术专注于攻击者在受害者环境中的注册表中植入镜像。根据基础架构的规划方式，如果基础架构规划工具被指示始终使用最新镜像，这可能提供持久性访问。（引用：Rhino Labs Cloud Image Backdoor Technique，2019年9月）
+
+已经开发出一种工具，用于在云容器镜像中安装后门。（引用：Rhino Labs Cloud Backdoor，2019年9月）如果攻击者能够访问受损的AWS实例，并拥有列出可用容器镜像的权限，他们可以植入后门，如[Web Shell](https://attack.mitre.org/techniques/T1505/003)。（引用：Rhino Labs Cloud Image Backdoor Technique，2019年9月）
+
 ## [T1526]:Cloud Service Discovery
 > External ID: T1526
 > STIX ID: attack-pattern--e24fcba8-2557-4442-a139-1ee2f2e784db
@@ -5281,6 +5592,8 @@ There are several examples of malware targeting cookies from web browsers on the
 
 After an adversary acquires a valid cookie, they can then perform a [Web Session Cookie](https://attack.mitre.org/techniques/T1550/004) technique to login to the corresponding web application.
 ## [T1542]:Pre-OS Boot
+> 中文：系统预启动
+>
 > External ID: T1542
 > STIX ID: attack-pattern--7f0ca133-88c4-40c6-a62f-b3083a7fbc2e
 > Platforms: ['Linux', 'Windows', 'Network', 'macOS']
@@ -5291,6 +5604,11 @@ After an adversary acquires a valid cookie, they can then perform a [Web Session
  Adversaries may abuse Pre-OS Boot mechanisms as a way to establish persistence on a system. During the booting process of a computer, firmware and various startup services are loaded before the operating system. These programs control flow of execution before the operating system takes control.(Citation: Wikipedia Booting)
 
 Adversaries may overwrite data in boot drivers or firmware such as BIOS (Basic Input/Output System) and The Unified Extensible Firmware Interface (UEFI) to persist on systems at a layer below the operating system. This can be particularly difficult to detect as malware at this level will not be detected by host software-based defenses.
+
+攻击者可以滥用预启动机制以在系统上建立持久性。在计算机的引导过程中，操作系统之前会加载固件和各种启动服务。这些程序在操作系统接管控制之前控制执行流程。（引用：维基百科引导）
+
+攻击者可能会覆盖引导驱动程序或固件（如BIOS和统一可扩展固件接口UEFI）中的数据，以在操作系统下的层面上实现持久性。这可能特别难以检测，因为在这个级别上的恶意软件不会被主机软件防御机制所检测到。
+
 ### [T1542.001]:System Firmware
 > External ID: T1542.001
 > STIX ID: attack-pattern--16ab6452-c3c1-497c-a47d-206018ca1ada
@@ -5303,6 +5621,8 @@ Adversaries may overwrite data in boot drivers or firmware such as BIOS (Basic I
 
 System firmware like BIOS and (U)EFI underly the functionality of a computer and may be modified by an adversary to perform or assist in malicious activity. Capabilities exist to overwrite the system firmware, which may give sophisticated adversaries a means to install malicious firmware updates as a means of persistence on a system that may be difficult to detect.
 ### [T1542.002]:Component Firmware
+> 中文：组件固件
+>
 > External ID: T1542.002
 > STIX ID: attack-pattern--791481f8-e96a-41be-b089-a088763083d4
 > Platforms: ['Windows', 'Linux', 'macOS']
@@ -5313,7 +5633,14 @@ System firmware like BIOS and (U)EFI underly the functionality of a computer and
  Adversaries may modify component firmware to persist on systems. Some adversaries may employ sophisticated means to compromise computer components and install malicious firmware that will execute adversary code outside of the operating system and main system firmware or BIOS. This technique may be similar to [System Firmware](https://attack.mitre.org/techniques/T1542/001) but conducted upon other system components/devices that may not have the same capability or level of integrity checking.
 
 Malicious component firmware could provide both a persistent level of access to systems despite potential typical failures to maintain access and hard disk re-images, as well as a way to evade host software-based defenses and integrity checks.
+
+攻击者可能会修改组件固件以在系统上持续存在。一些攻击者可能会采用复杂的手段来破坏计算机组件并安装恶意固件，该固件将在操作系统和主系统固件（BIOS）之外执行攻击者的代码。这种技术可能类似于[系统固件](https://attack.mitre.org/techniques/T1542/001)，但是针对其他可能没有相同能力或完整性检查水平的系统组件/设备进行。
+
+恶意组件固件可以提供一种持久访问系统的方式，尽管可能存在维护访问和硬盘重新映像的典型故障，并且可以逃避基于主机软件的防御和完整性检查。
+
 ### [T1542.003]:Bootkit
+> 中文：引导工具包
+>
 > External ID: T1542.003
 > STIX ID: attack-pattern--1b7b1806-7746-41a1-a35d-e48dae25ddba
 > Platforms: ['Linux', 'Windows']
@@ -5326,7 +5653,16 @@ Malicious component firmware could provide both a persistent level of access to 
 A bootkit is a malware variant that modifies the boot sectors of a hard drive, including the Master Boot Record (MBR) and Volume Boot Record (VBR). (Citation: Mandiant M Trends 2016) The MBR is the section of disk that is first loaded after completing hardware initialization by the BIOS. It is the location of the boot loader. An adversary who has raw access to the boot drive may overwrite this area, diverting execution during startup from the normal boot loader to adversary code. (Citation: Lau 2011)
 
 The MBR passes control of the boot process to the VBR. Similar to the case of MBR, an adversary who has raw access to the boot drive may overwrite the VBR to divert execution during startup to adversary code.
+
+攻击者可能使用引导工具包（bootkit）在系统上持久存在。引导工具包位于操作系统下方的一层，除非组织怀疑使用了引导工具包并能够相应地采取行动，否则很难进行完全修复。
+
+引导工具包是一种恶意软件变体，它修改硬盘的引导扇区，包括主引导记录（MBR）和卷引导记录（VBR）。MBR是在BIOS完成硬件初始化后首先加载的磁盘部分，它是引导加载程序的位置。（参考文献：Mandiant M Trends 2016）有权访问引导驱动器的攻击者可以覆盖这个区域，在启动过程中将执行流程从正常的引导加载程序转向攻击者的代码。（参考文献：Lau 2011）
+
+MBR将引导过程的控制权传递给VBR。与MBR的情况类似，有权访问引导驱动器的攻击者可以覆盖VBR，以在启动过程中将执行流程转向攻击者的代码。
+
 ### [T1542.004]:ROMMONkit
+> 中文：ROMMON工具包
+>
 > External ID: T1542.004
 > STIX ID: attack-pattern--a6557c75-798f-42e4-be70-ab4502e0a3bc
 > Platforms: ['Network']
@@ -5336,9 +5672,17 @@ The MBR passes control of the boot process to the VBR. Similar to the case of MB
 **Description: **
  Adversaries may abuse the ROM Monitor (ROMMON) by loading an unauthorized firmware with adversary code to provide persistent access and manipulate device behavior that is difficult to detect. (Citation: Cisco Synful Knock Evolution)(Citation: Cisco Blog Legacy Device Attacks)
 
-
 ROMMON is a Cisco network device firmware that functions as a boot loader, boot image, or boot helper to initialize hardware and software when the platform is powered on or reset. Similar to [TFTP Boot](https://attack.mitre.org/techniques/T1542/005), an adversary may upgrade the ROMMON image locally or remotely (for example, through TFTP) with adversary code and restart the device in order to overwrite the existing ROMMON image. This provides adversaries with the means to update the ROMMON to gain persistence on a system in a way that may be difficult to detect.
+
+攻击者可能滥用ROM Monitor（ROMMON），通过加载未经授权的固件和攻击者代码，提供持久访问并操纵设备行为，这很难被检测到。（引用：思科Synful Knock Evolution）（引用：思科博客Legacy Device Attacks）
+
+ROMMON是思科网络设备的固件，它在平台开机或重置时作为引导加载程序、引导镜像或引导助手来初始化硬件和软件。类似于[TFTP启动](https://attack.mitre.org/techniques/T1542/005)，攻击者可以使用攻击者代码本地或远程（例如通过TFTP）升级ROMMON映像，并重新启动设备以覆盖现有的ROMMON映像。这为攻击者更新ROMMON提供了手段，以在系统上获得持久性，而这种方式可能很难被检测到。
+
+组织应采取强有力的安全措施，例如定期从可信来源更新设备固件，监控对ROMMON的未经授权修改，并使用入侵检测系统来检测与ROMMON篡改相关的任何可疑活动。
+
 ### [T1542.005]:TFTP Boot
+> 中文：TFTP启动
+>
 > External ID: T1542.005
 > STIX ID: attack-pattern--28abec6c-4443-4b03-8206-07f2e264a6b4
 > Platforms: ['Network']
@@ -5349,6 +5693,11 @@ ROMMON is a Cisco network device firmware that functions as a boot loader, boot 
  Adversaries may abuse netbooting to load an unauthorized network device operating system from a Trivial File Transfer Protocol (TFTP) server. TFTP boot (netbooting) is commonly used by network administrators to load configuration-controlled network device images from a centralized management server. Netbooting is one option in the boot sequence and can be used to centralize, manage, and control device images.
 
 Adversaries may manipulate the configuration on the network device specifying use of a malicious TFTP server, which may be used in conjunction with [Modify System Image](https://attack.mitre.org/techniques/T1601) to load a modified image on device startup or reset. The unauthorized image allows adversaries to modify device configuration, add malicious capabilities to the device, and introduce backdoors to maintain control of the network device while minimizing detection through use of a standard functionality. This technique is similar to [ROMMONkit](https://attack.mitre.org/techniques/T1542/004) and may result in the network device running a modified image. (Citation: Cisco Blog Legacy Device Attacks)
+
+攻击者可能会滥用网络引导（netbooting），从Trivial File Transfer Protocol（TFTP）服务器加载未经授权的网络设备操作系统。网络管理员通常使用TFTP引导（netbooting）从集中管理服务器加载受配置控制的网络设备映像。Netbooting是启动顺序中的一种选项，可用于集中管理和控制设备映像。
+
+攻击者可以篡改网络设备上的配置，指定使用恶意TFTP服务器，可能与[Modify System Image](https://attack.mitre.org/techniques/T1601)结合使用，在设备启动或重置时加载修改后的映像。未经授权的映像允许攻击者修改设备配置，向设备添加恶意功能，并引入后门以在最小化检测的情况下维持对网络设备的控制，通过使用标准功能。这种技术类似于[ROMMONkit](https://attack.mitre.org/techniques/T1542/004)，可能导致网络设备运行修改后的映像。（引用：思科博客遗留设备攻击）
+
 ## [T1543]:Create or Modify System Process
 > External ID: T1543
 > STIX ID: attack-pattern--106c0cf6-bf73-4601-9aa8-0945c2715ec5
@@ -5425,6 +5774,8 @@ Adversaries may install a Launch Daemon configured to execute at startup by usin
 
 Additionally, system configuration changes (such as the installation of third party package managing software) may cause folders such as <code>usr/local/bin</code> to become globally writeable. So, it is possible for poor configurations to allow an adversary to modify executables referenced by current Launch Daemon's plist files.(Citation: LaunchDaemon Hijacking)(Citation: sentinelone macos persist Jun 2019)
 ## [T1546]:Event Triggered Execution
+> 中文：事件触发执行
+>
 > External ID: T1546
 > STIX ID: attack-pattern--b6301b64-ef57-4cce-bb0b-77026f14a8db
 > Platforms: ['Linux', 'macOS', 'Windows', 'SaaS', 'IaaS', 'Office 365']
@@ -5437,7 +5788,16 @@ Additionally, system configuration changes (such as the installation of third pa
 Adversaries may abuse these mechanisms as a means of maintaining persistent access to a victim via repeatedly executing malicious code. After gaining access to a victim system, adversaries may create/modify event triggers to point to malicious content that will be executed whenever the event trigger is invoked.(Citation: FireEye WMI 2015)(Citation: Malware Persistence on OS X)(Citation: amnesia malware)
 
 Since the execution can be proxied by an account with higher permissions, such as SYSTEM or service accounts, an adversary may be able to abuse these triggered execution mechanisms to escalate their privileges. 
+
+对手可能利用系统机制来建立持久性和/或提升权限，这些机制会基于特定事件触发执行。各种操作系统都有监视和订阅事件的方法，例如登录或其他用户活动（如运行特定应用程序/二进制文件）。云环境也可能支持各种功能和服务，以监视并在特定云事件发生时被调用。（引用：入侵AWS账号）（引用：Varonis Power Automate数据泄露）（引用：Microsoft DART案例报告001）
+
+对手可能滥用这些机制，通过反复执行恶意代码来持续访问受害者。在获得对受害者系统的访问权限后，对手可以创建/修改事件触发器，指向将在每次调用事件触发器时执行的恶意内容。（引用：FireEye WMI 2015）（引用：OS X上的恶意软件持久化）（引用：遗忘症恶意软件）
+
+由于执行可以由具有较高权限（如SYSTEM或服务账户）的帐户代理，因此对手可能能够滥用这些触发执行机制来提升其权限。
+
 ### [T1546.001]:Change Default File Association
+> 中文：修改默认文件关联
+>
 > External ID: T1546.001
 > STIX ID: attack-pattern--98034fef-d9fb-4667-8dc4-2eab6231724c
 > Platforms: ['Windows']
@@ -5454,7 +5814,20 @@ System file associations are listed under <code>HKEY_CLASSES_ROOT\.[extension]</
 * <code>HKEY_CLASSES_ROOT\txtfile\shell\printto\command</code>
 
 The values of the keys listed are commands that are executed when the handler opens the file extension. Adversaries can modify these values to continually execute arbitrary commands.(Citation: TrendMicro TROJ-FAKEAV OCT 2012)
+
+对手可以通过执行由文件类型关联触发的恶意内容来建立持久性。当打开文件时，会检查用于打开文件的默认程序（也称为文件关联或处理程序）。文件关联选择存储在Windows注册表中，并可以由具有注册表访问权限的用户、管理员或程序进行编辑，或者由使用内置assoc实用程序的管理员进行编辑。（引用：Microsoft Change Default Programs）（引用：Microsoft File Handlers）（引用：Microsoft Assoc Oct 2017）应用程序可以修改给定文件扩展名的文件关联，以在打开具有该扩展名的文件时调用任意程序。
+
+系统文件关联列在<code>HKEY_CLASSES_ROOT.[extension]</code>下，例如<code>HKEY_CLASSES_ROOT.txt</code>。条目指向位于<code>HKEY_CLASSES_ROOT\[handler]</code>处的扩展名处理程序。然后，各种命令以子键列表的形式显示在<code>HKEY_CLASSES_ROOT\[handler]\shell\[action]\command</code>下。例如：
+
+- <code>HKEY_CLASSES_ROOT\txtfile\shell\open\command</code>
+- <code>HKEY_CLASSES_ROOT\txtfile\shell\print\command</code>
+- <code>HKEY_CLASSES_ROOT\txtfile\shell\printto\command</code>
+
+所列键的值是当处理程序打开文件扩展名时执行的命令。对手可以修改这些值以持续执行任意命令。（引用：TrendMicro TROJ-FAKEAV OCT 2012）
+
 ### [T1546.002]:Screensaver
+> 中文：屏幕保护
+>
 > External ID: T1546.002
 > STIX ID: attack-pattern--ce4b7013-640e-48a9-b501-d0025a95f4bf
 > Platforms: ['Windows']
@@ -5472,6 +5845,18 @@ The following screensaver settings are stored in the Registry (<code>HKCU\Contro
 * <code>ScreenSaveTimeout</code> - sets user inactivity timeout before screensaver is executed
 
 Adversaries can use screensaver settings to maintain persistence by setting the screensaver to run malware after a certain timeframe of user inactivity.(Citation: ESET Gazer Aug 2017)
+
+对手可以通过执行由用户不活动触发的恶意内容来建立持久性。屏幕保护程序是在用户不活动一段可配置时间后执行的程序，由以.scr作为文件扩展名的可移植可执行文件（PE文件）组成。（引用：Wikipedia 屏幕保护程序）Windows 屏幕保护程序应用程序scrnsave.scr位于<code>C:\Windows\System32</code>和64位 Windows 系统上的<code>C:\Windows\sysWOW64</code>，以及 Windows 基本安装中包含的屏幕保护程序。
+
+以下屏幕保护程序设置存储在注册表中（<code>HKCU\Control Panel\Desktop</code>），可以进行操纵以实现持久性：
+
+- <code>SCRNSAVE.exe</code> - 设置为恶意 PE 文件路径
+- <code>ScreenSaveActive</code> - 设置为 '1' 以启用屏幕保护程序
+- <code>ScreenSaverIsSecure</code> - 设置为 '0' 以不需要密码解锁
+- <code>ScreenSaveTimeout</code> - 设置用户不活动超时时间，之后执行屏幕保护程序
+
+对手可以利用屏幕保护程序设置来维持持久性，将屏幕保护程序设置为在用户一段时间不活动后运行恶意软件。（引用：ESET Gazer Aug 2017）
+
 ### [T1546.003]:Windows Management Instrumentation Event Subscription
 > External ID: T1546.003
 > STIX ID: attack-pattern--910906dd-8c0a-475a-9cc1-5e029e2fad58
@@ -5499,6 +5884,8 @@ Adversaries may attempt to establish persistence by inserting commands into scri
 
 For macOS, the functionality of this technique is similar but may leverage zsh, the default shell for macOS 10.15+. When the Terminal.app is opened, the application launches a zsh login shell and a zsh interactive shell. The login shell configures the system environment using <code>/etc/profile</code>, <code>/etc/zshenv</code>, <code>/etc/zprofile</code>, and <code>/etc/zlogin</code>.(Citation: ScriptingOSX zsh)(Citation: PersistentJXA_leopitt)(Citation: code_persistence_zsh)(Citation: macOS MS office sandbox escape) The login shell then configures the user environment with <code>~/.zprofile</code> and <code>~/.zlogin</code>. The interactive shell uses the <code>~/.zshrc</code> to configure the user environment. Upon exiting, <code>/etc/zlogout</code> and <code>~/.zlogout</code> are executed. For legacy programs, macOS executes <code>/etc/bashrc</code> on startup.
 ### [T1546.005]:Trap
+> 中文：Trap 命令
+>
 > External ID: T1546.005
 > STIX ID: attack-pattern--63220765-d418-44de-8fae-694b3912317d
 > Platforms: ['macOS', 'Linux']
@@ -5509,6 +5896,11 @@ For macOS, the functionality of this technique is similar but may leverage zsh, 
  Adversaries may establish persistence by executing malicious content triggered by an interrupt signal. The <code>trap</code> command allows programs and shells to specify commands that will be executed upon receiving interrupt signals. A common situation is a script allowing for graceful termination and handling of common keyboard interrupts like <code>ctrl+c</code> and <code>ctrl+d</code>.
 
 Adversaries can use this to register code to be executed when the shell encounters specific interrupts as a persistence mechanism. Trap commands are of the following format <code>trap 'command list' signals</code> where "command list" will be executed when "signals" are received.(Citation: Trap Manual)(Citation: Cyberciti Trap Statements)
+
+对手可以通过执行由中断信号触发的恶意内容来建立持久性。`trap`命令允许程序和Shell指定在接收到中断信号时执行的命令。一个常见的情况是脚本允许优雅地终止并处理常见的键盘中断，例如`ctrl+c`和`ctrl+d`。
+
+对手可以利用这一点将代码注册为持久性机制，以便在Shell遇到特定中断时执行。Trap命令的格式如下：`trap '命令列表' 信号`，其中"命令列表"将在接收到"信号"时执行。（参考文献：Trap手册）（参考文献：Cyberciti Trap语句）
+
 ### [T1546.006]:LC_LOAD_DYLIB Addition
 > External ID: T1546.006
 > STIX ID: attack-pattern--10ff21b9-5a01-4268-a1b5-3b55015f1847
