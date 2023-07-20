@@ -323,32 +323,32 @@ Persistence consists of techniques that adversaries use to keep access to system
 ||[Windows Management Instrumentation Event Subscription](###[T1546.003]:Windows Management Instrumentation Event Subscription)|WMI订阅事件|T1546.003|
 ||[Unix Shell Configuration Modification](###[T1546.004]:Unix Shell Configuration Modification)|Unix Shell Configuration Modification（USCM）|T1546.004|
 ||[Trap](###[T1546.005]:Trap)|Trap 命令|T1546.005|
-||[LC_LOAD_DYLIB Addition](###[T1546.006]:LC_LOAD_DYLIB Addition)||T1546.006|
-||[Netsh Helper DLL](###[T1546.007]:Netsh Helper DLL)||T1546.007|
-||[Accessibility Features](###[T1546.008]:Accessibility Features)||T1546.008|
+||[LC_LOAD_DYLIB Addition](###[T1546.006]:LC_LOAD_DYLIB Addition)|LC_LOAD_DYLIB 添加|T1546.006|
+||[Netsh Helper DLL](###[T1546.007]:Netsh Helper DLL)|Netsh Helper DLL|T1546.007|
+||[Accessibility Features](###[T1546.008]:Accessibility Features)|辅助功能|T1546.008|
 ||[AppCert DLLs](###[T1546.009]:AppCert DLLs)|AppCert DLLs|T1546.009|
 ||[AppInit DLLs](###[T1546.010]:AppInit DLLs)|AppInit DLLs|T1546.010|
-||[Application Shimming](###[T1546.011]:Application Shimming)||T1546.011|
-||[Image File Execution Options Injection](###[T1546.012]:Image File Execution Options Injection)||T1546.012|
-||[PowerShell Profile](###[T1546.013]:PowerShell Profile)||T1546.013|
-||[Emond](###[T1546.014]:Emond)||T1546.014|
-||[Component Object Model Hijacking](###[T1546.015]:Component Object Model Hijacking)||T1546.015|
-||[Installer Packages](###[T1546.016]:Installer Packages)||T1546.016|
-|[Boot or Logon Autostart Execution](##[T1547]:Boot or Logon Autostart Execution)|||T1547|
-||[Registry Run Keys / Startup Folder](###[T1547.001]:Registry Run Keys / Startup Folder)||T1547.001|
-||[Authentication Package](###[T1547.002]:Authentication Package)||T1547.002|
-||[Time Providers](###[T1547.003]:Time Providers)||T1547.003|
-||[Winlogon Helper DLL](###[T1547.004]:Winlogon Helper DLL)||T1547.004|
-||[Security Support Provider](###[T1547.005]:Security Support Provider)||T1547.005|
-||[Kernel Modules and Extensions](###[T1547.006]:Kernel Modules and Extensions)||T1547.006|
-||[Re-opened Applications](###[T1547.007]:Re-opened Applications)||T1547.007|
-||[LSASS Driver](###[T1547.008]:LSASS Driver)||T1547.008|
-||[Shortcut Modification](###[T1547.009]:Shortcut Modification)||T1547.009|
-||[Port Monitors](###[T1547.010]:Port Monitors)||T1547.010|
-||[Print Processors](###[T1547.012]:Print Processors)||T1547.012|
-||[XDG Autostart Entries](###[T1547.013]:XDG Autostart Entries)||T1547.013|
-||[Active Setup](###[T1547.014]:Active Setup)||T1547.014|
-||[Login Items](###[T1547.015]:Login Items)||T1547.015|
+||[Application Shimming](###[T1546.011]:Application Shimming)|应用程序垫片|T1546.011|
+||[Image File Execution Options Injection](###[T1546.012]:Image File Execution Options Injection)|IFEO（[映像劫持](https://baike.baidu.com/item/映像劫持?fromModule=lemma_inlink)）注入|T1546.012|
+||[PowerShell Profile](###[T1546.013]:PowerShell Profile)|PowerShell Profile|T1546.013|
+||[Emond](###[T1546.014]:Emond)|Emond|T1546.014|
+||[Component Object Model Hijacking](###[T1546.015]:Component Object Model Hijacking)|COM(组件对象模型)劫持|T1546.015|
+||[Installer Packages](###[T1546.016]:Installer Packages)|安装包|T1546.016|
+|[Boot or Logon Autostart Execution](##[T1547]:Boot or Logon Autostart Execution)||启动或登录自动执行|T1547|
+||[Registry Run Keys / Startup Folder](###[T1547.001]:Registry Run Keys / Startup Folder)|注册表/自启动文件夹|T1547.001|
+||[Authentication Package](###[T1547.002]:Authentication Package)|身份验证包|T1547.002|
+||[Time Providers](###[T1547.003]:Time Providers)|Time Providers|T1547.003|
+||[Winlogon Helper DLL](###[T1547.004]:Winlogon Helper DLL)|Winlogon Helper DLL|T1547.004|
+||[Security Support Provider](###[T1547.005]:Security Support Provider)|Security Support Provider|T1547.005|
+||[Kernel Modules and Extensions](###[T1547.006]:Kernel Modules and Extensions)|内核模块和扩展|T1547.006|
+||[Re-opened Applications](###[T1547.007]:Re-opened Applications)|重新打开应用|T1547.007|
+||[LSASS Driver](###[T1547.008]:LSASS Driver)|LSASS Driver|T1547.008|
+||[Shortcut Modification](###[T1547.009]:Shortcut Modification)|修改快捷方式|T1547.009|
+||[Port Monitors](###[T1547.010]:Port Monitors)|端口监视器|T1547.010|
+||[Print Processors](###[T1547.012]:Print Processors)|打印处理器|T1547.012|
+||[XDG Autostart Entries](###[T1547.013]:XDG Autostart Entries)|XDG自启动项|T1547.013|
+||[Active Setup](###[T1547.014]:Active Setup)|Active Setup|T1547.014|
+||[Login Items](###[T1547.015]:Login Items)|登录项|T1547.015|
 |[Compromise Client Software Binary](##[T1554]:Compromise Client Software Binary)|||T1554|
 |[Modify Authentication Process](##[T1556]:Modify Authentication Process)|||T1556|
 ||[Domain Controller Authentication](###[T1556.001]:Domain Controller Authentication)||T1556.001|
@@ -5971,6 +5971,8 @@ Similar to Process Injection, these values can be abused to obtain elevated priv
 
 The AppInit DLL functionality is disabled in Windows 8 and later versions when secure boot is enabled. (Citation: AppInit Secure Boot)
 ### [T1546.011]:Application Shimming
+> 中文：应用程序垫片
+>
 > External ID: T1546.011
 > STIX ID: attack-pattern--42fe883a-21ea-4cfb-b94a-78b6476dcc83
 > Platforms: ['Windows']
@@ -5995,7 +5997,34 @@ Custom databases are stored in:
 To keep shims secure, Windows designed them to run in user mode so they cannot modify the kernel and you must have administrator privileges to install a shim. However, certain shims can be used to [Bypass User Account Control](https://attack.mitre.org/techniques/T1548/002) (UAC and RedirectEXE), inject DLLs into processes (InjectDLL), disable Data Execution Prevention (DisableNX) and Structure Exception Handling (DisableSEH), and intercept memory addresses (GetProcAddress).
 
 Utilizing these shims may allow an adversary to perform several malicious acts such as elevate privileges, install backdoors, disable defenses like Windows Defender, etc. (Citation: FireEye Application Shimming) Shims can also be abused to establish persistence by continuously being invoked by affected programs.
+
+对手可以通过执行由应用程序shim触发的恶意内容来建立持久性和/或提升特权。Microsoft Windows应用程序兼容性基础设施/框架（应用程序shim）旨在允许软件在操作系统代码库随时间变化时保持向后兼容性例如，应用程序shimming功能允许开发人员对为Windows XP创建的应程序应用修复，以其能够在Windows 10上运行（引用：弹性进程注入，2017年7月）。
+
+在该框架中，shim被创建为程序（或更具体地，导入地址表）与Windows操作系统之间的缓冲区。执行程序时，将引shim缓存以确定程序是否需要使用shim数据库（.sdb）。如果是这样，shim数据库使用hooking根据需要重定向代码，以便与操作系统进行通信。
+
+默认Windows安程序（sdbinst.exe安装的所有shim的列表保存在以下位置：
+
+- <code>%WINDIR%\AppPatch\sysmain.sdb</code> 和
+- <code>hklm\software\microsoft\windows nt\currentversion\appcompatflags\installedsdb</code>
+
+自定义数据库存储在以下位置：
+
+- <code>%WINDIR%\AppPatch\custom & %WINDIR%\AppPatch\AppPatch64\Custom</code> 和
+- <code>hklm\software\microsoft\windows nt\currentversion\appcompatflags\custom</code>
+
+为了保护shim的安全性，Windows将它们设计为在用户模式下运行，因此它们无法修改内核，并且您必须具有管理员特才能安装shim。然而，某些shim可以用于绕过用户账户控制UAC和RedirectEXE），将DLL注入进程（InjectDLL），禁用数据执行预防（DisableNX）和结构异常处理（DisableSEH），以及拦截内存地址（GetProcAddress）。
+
+用这些shim可能允对手执行多个恶意为，如提升特权、安装后、禁用Windows Defender等（引用：FireEye应用程序shimming）。shim还可以被滥用以建立持久性，通过断被受影的程序调用来实现。
+
+
+
+**应用程序垫片（application shimming）是一种 Windows 应用程序兼容性框架**，Windows 创建该框架是为了允许程序在最初创建它的操作系统以外的版本上运行。由于这个框架，过去在 Windows XP 上运行的大多数应用程序现在都可以在 Windows 10 上运行。
+
+
+
 ### [T1546.012]:Image File Execution Options Injection
+> 中文：IFEO注入
+>
 > External ID: T1546.012
 > STIX ID: attack-pattern--6d4a7fb3-5a24-42be-ae61-6728a2b581f6
 > Platforms: ['Windows']
@@ -6014,6 +6043,21 @@ Similar to [Accessibility Features](https://attack.mitre.org/techniques/T1546/00
 Similar to [Process Injection](https://attack.mitre.org/techniques/T1055), these values may also be abused to obtain privilege escalation by causing a malicious executable to be loaded and run in the context of separate processes on the computer. (Citation: Elastic Process Injection July 2017) Installing IFEO mechanisms may also provide Persistence via continuous triggered invocation.
 
 Malware may also use IFEO to [Impair Defenses](https://attack.mitre.org/techniques/T1562) by registering invalid debuggers that redirect and effectively disable various system and security applications. (Citation: FSecure Hupigon) (Citation: Symantec Ushedix June 2008)
+
+
+
+对手可以通过执行由映像劫持（IFEO）调试器触发的恶意内容来建立持性和/或升权限。IFEO允许开发人员将调试器附加到应用程序上。创建一个进程时，应用程序的IFEO中存在的调试器将被添加应用程序的名称前，从而在调试器下启动新进程（例如：<code>Cdbg\ntsd.exe -g  notepad.exe</code>）。 （用：Microsoft Dev Blog IFEO Mar 2010）
+
+IFEO可以接通过注册表或通过GFlags工具在全局标志设置。 （引用：Microsoft GFlags Mar 7）IFEO在注册表表示为<code>HKLM\SOFTWARE{\Wow6432Node}\Microsoft\Windows\CurrentVersion\Image File Execution Optionsexecutable></code>下的<code>Debugger</code>值，其中<code><executable></code>是调试器所附加的二进文件。 （引用：Microsoft Dev Blog IFEO Mar 2010）
+
+IFEO还可以在指定程序静退出时（即自身或第二非内核模式进程过终止）启动任意视程序。 （引用：Microsoft Silent Process ExitV 2017） （引用：Oddvar Moe IFEO APR 2018）类似于调试器，可以通过GFlags和/或直接修改IFEO和静默进程退出注册表值来启用默退出监视。 <code>H_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit</code>。 （用：Microsoft Silent Process Exit NOV 2017） （引用：Oddvar Moe IFEO APR 2018）
+
+类似于[辅功能特性](https://attack.mitre.org/techniques/T6/008)，在Windows Vista更高版本以及Windows Server 2008及高版本上，可以修改注册表键来将“cmd.exe”或其他提供后门访的程序配置为助功能程序（例如utilman.exe）的“调试器”。修改注册表后，在登录屏幕上按下适当的合键（在键盘或通过[远程桌面协议](https://attack.mitre.org/techniques/T1021/001)连接时）将致以SYSTEM权限执行“调试器”程序。 （引用：Tilbury 2014）
+
+类似[进程注入](https://attack.mitre.org/techniques/T1055)，也可以滥用这些以通过在计算机上的同进程上加载和运行恶意可执行文件来获得权。 （引用：Elastic Process Injection July 2017）安装IFEO机制还可以通过持续发调用来提供持久性。
+
+恶意软件还可以使用IFEO来[破坏防御措](https://attack.mitre.org/techniques/T1562)，通过注册无效的调试器来重向并有效地禁用各种系统和安全应用程序。 （引用：FSecure Hupigon） （引用Symantec Ushedix June 2008）
+
 ### [T1546.013]:PowerShell Profile
 > External ID: T1546.013
 > STIX ID: attack-pattern--0f2c410d-d740-4ed9-abb1-b8f4a7faf6c3
@@ -6042,6 +6086,11 @@ An adversary may also be able to escalate privileges if a script in a PowerShell
 The rule files are in the plist format and define the name, event type, and action to take. Some examples of event types include system startup and user authentication. Examples of actions are to run a system command or send an email. The emond service will not launch if there is no file present in the QueueDirectories path <code>/private/var/db/emondClients</code>, specified in the [Launch Daemon](https://attack.mitre.org/techniques/T1543/004) configuration file at<code>/System/Library/LaunchDaemons/com.apple.emond.plist</code>.(Citation: xorrior emond Jan 2018)(Citation: magnusviri emond Apr 2016)(Citation: sentinelone macos persist Jun 2019)
 
 Adversaries may abuse this service by writing a rule to execute commands when a defined event occurs, such as system start up or user authentication.(Citation: xorrior emond Jan 2018)(Citation: magnusviri emond Apr 2016)(Citation: sentinelone macos persist Jun 2019) Adversaries may also be able to escalate privileges from administrator to root as the emond service is executed with root privileges by the [Launch Daemon](https://attack.mitre.org/techniques/T1543/004) service.
+
+
+
+emond是一个普通的守护进程，每次系统启动时都会由launchd执行，其对于launchd的配置文件和其他系统守护进程在同一个地方：/System/Library/LaunchDaemons/com.apple.emond.plist，该配置文件决定了何时执行emond，并带有LaunchDaemons经常使用的任何期望的选项。 emond.plist配置文件位于/etc/emond.d/目录中。该文件定义了规则路径，UID/GID过滤，错误日志和事件日志路径以及一些其他选项。
+
 ### [T1546.015]:Component Object Model Hijacking
 > External ID: T1546.015
 > STIX ID: attack-pattern--bc0f5e80-91c0-4e04-9fbb-e4e332c85dae
@@ -6137,6 +6186,21 @@ Adversaries can use these configuration locations to execute malware, such as re
  Adversaries may abuse authentication packages to execute DLLs when the system boots. Windows authentication package DLLs are loaded by the Local Security Authority (LSA) process at system start. They provide support for multiple logon processes and multiple security protocols to the operating system.(Citation: MSDN Authentication Packages)
 
 Adversaries can use the autostart mechanism provided by LSA authentication packages for persistence by placing a reference to a binary in the Windows Registry location <code>HKLM\SYSTEM\CurrentControlSet\Control\Lsa\</code> with the key value of <code>"Authentication Packages"=&lt;target binary&gt;</code>. The binary will then be executed by the system when the authentication packages are loaded.
+
+对手可能滥用身份验证包，在系统启动时执行DLL。Windows身份验证包DLL由本地安全机构（LSA）进程在系统启动时加载。他们为操作系统提供多个登录过程和多个安全协议的支持。（引用：MSDN身验证包）
+
+对手可以利用LSA身份验证包提供的自启动机制实现持久性，方法是将一个二进制文件的用放置在Windows注册表位置<code>HKLM\SYSTEM\CurrentControlSet\Control\Lsa</code>中，键为<code>"Authentication Packages"=<目标进制文件></code>。当身份验证包加载时，系统将执行该二进制文件。
+
+身份验证包（Authentication Package）是计算机系统中用于实现用户身份验证的软件模块或库。它提供了一组功能和算法，用于验证用户的身份并确保其访问系统资源的安全性。
+
+身份验证通常用于操作系统、网络服务器和应用程序中，以确保有经过授权的用户可以访问保护的资源。它们通过比较用户提供的凭据（如用户名和密码）与存储在系统中凭据进行匹配验证用户的身份。
+
+不的操作系统和应用程序可能使用不同的身份验证包。常见的身验证包包括Kerberos、NTLM（Windows NT LAN Manager）、LDAP（量级目录访问协议）等。这些身份验证使用各种加密算法和安全协议来保用户凭据的传输和存储，并防止恶意用户的欺骗和未经授权的访问。
+
+总之，身份验证包是计算机系统用于实现用户身份验证的关键组件，它确保只有经过授权的用户可以访问系统资源，从提高系统的安全性。
+
+
+
 ### [T1547.003]:Time Providers
 > External ID: T1547.003
 > STIX ID: attack-pattern--61afc315-860c-4364-825d-0d62b2e91edc
@@ -6206,6 +6270,11 @@ Adversaries can use LKMs and kexts to conduct [Persistence](https://attack.mitre
  Adversaries may modify plist files to automatically run an application when a user logs in. When a user logs out or restarts via the macOS Graphical User Interface (GUI), a prompt is provided to the user with a checkbox to "Reopen windows when logging back in".(Citation: Re-Open windows on Mac) When selected, all applications currently open are added to a property list file named <code>com.apple.loginwindow.[UUID].plist</code> within the <code>~/Library/Preferences/ByHost</code> directory.(Citation: Methods of Mac Malware Persistence)(Citation: Wardle Persistence Chapter) Applications listed in this file are automatically reopened upon the user’s next logon.
 
 Adversaries can establish [Persistence](https://attack.mitre.org/tactics/TA0003) by adding a malicious application path to the <code>com.apple.loginwindow.[UUID].plist</code> file to execute payloads when a user logs in.
+
+对手可能会修改 plist 文件，以便在用户登录时自动运行一个应用程序。当用户通过 macOS 图形用户界面（GUI）注销或重新启时，会向用户提供一个复选框的提示，询是否“重新打开登录时的窗口”。(引用：Re-Open windows on Mac) 当选择该选项时，所有当前开的应用程序都会被添加到名 <code>com.apple.loginwindow.[UUID].plist</code> 的属性列表文件中，该文件位 <code>~/Library/Preferences/ByHost</code> 目录下。(引用：Methods of Mac Malware Persistence)(引用：Wardle Persistence Chapter) 在此文件中出的应用程序将用户下次登录时自动重新打开。
+
+对手可以通过将恶意应用程序路径添加到 <code>com.apple.loginwindow.[UUID].plist</code> 文件中，在用户登录时执行意载荷，从而建立[持久性](https://attack.mitre.org/tactics/TA0003)。
+
 ### [T1547.008]:LSASS Driver
 > External ID: T1547.008
 > STIX ID: attack-pattern--f0589bc3-a6ae-425a-a3d5-5659bfee07f4
@@ -6218,6 +6287,8 @@ Adversaries can establish [Persistence](https://attack.mitre.org/tactics/TA0003)
 
 Adversaries may target LSASS drivers to obtain persistence. By either replacing or adding illegitimate drivers (e.g., [Hijack Execution Flow](https://attack.mitre.org/techniques/T1574)), an adversary can use LSA operations to continuously execute malicious payloads.
 ### [T1547.009]:Shortcut Modification
+> 中文：修改快捷方式
+>
 > External ID: T1547.009
 > STIX ID: attack-pattern--4ab929c6-ee2d-4fb5-aab4-b14be2ed7179
 > Platforms: ['Windows']
@@ -6230,7 +6301,16 @@ Adversaries may target LSASS drivers to obtain persistence. By either replacing 
 Adversaries may abuse shortcuts in the startup folder to execute their tools and achieve persistence.(Citation: Shortcut for Persistence ) Although often used as payloads in an infection chain (e.g. [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001)), adversaries may also create a new shortcut as a means of indirection, while also abusing [Masquerading](https://attack.mitre.org/techniques/T1036) to make the malicious shortcut appear as a legitimate program. Adversaries can also edit the target path or entirely replace an existing shortcut so their malware will be executed instead of the intended legitimate program.
 
 Shortcuts can also be abused to establish persistence by implementing other methods. For example, LNK browser extensions may be modified (e.g. [Browser Extensions](https://attack.mitre.org/techniques/T1176)) to persistently launch malware.
+
+对手可能创建或修改快捷方式，在系统启动或用户登录期间执行程序。快捷方式或符号链接用于引用其他文件或程序，当单或由系统启动程执行快捷方式时，打开或执行这些文件程序。
+
+对手可能滥用启动文件夹中的快捷方式来执行其工具并实现久性。（引用：持久性的快捷方式）尽管常在感染链中用作有效载荷（例如[钓鱼附件](https://attack.mitre.org/techniques/T1566/001)），对手也可以创建一个新的捷方式作为间接段，同时滥用[伪装](https://attack.mitre.org/techniques/T1036)使恶快捷方式看起来像合法程序。对手还可以编辑标路径或完全替现有的快捷方式，以便执行他们的恶意件而不是预期的合法程序。
+
+快捷方式还可以通过实施其他方法滥用以建立持久。例如，LNK浏览器扩展可以被修改（例如[浏览器扩展](https://attack.mitre.org/techniques/T1176)），持续启动恶意件。
+
 ### [T1547.010]:Port Monitors
+> 中文：端口监视器
+>
 > External ID: T1547.010
 > STIX ID: attack-pattern--43881e51-ac74-445b-b4c6-f9f9e9bf23fe
 > Platforms: ['Windows']
@@ -6248,7 +6328,21 @@ The Registry key contains entries for the following:
 * WSD Port
 
 Adversaries can use this technique to load malicious code at startup that will persist on system reboot and execute as SYSTEM.
+
+对手可能使用端口监视器在系统启动时运行对手提供的DLL，以实现持久性或特权升级。可以通过<code>AddMonitor</code> API调用来设置端口监视，以设置要在启动时加载的DLL。（引用：AddMonitor）此DLL可以位于<code>C:\Windows\System32</code>中，并将由打印服务（spoolsv.exe）在启动加载。spoolsv.exe进程在SYSTEM级别权限下运行。（引用：Bloxham）另，如果权限允许为DLL编写完全限路径名，则可以加载任DLL到<code>HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors</code>。
+
+注册表键包含以下条目：
+
+- 本地端
+- 标准TCP/IP端口
+- USB监视器
+- WSD端口
+
+对手可以利用这种技在启动时加载恶代码，以便在系统重启后持久存在并以SYSTEM身份执行。
+
 ### [T1547.012]:Print Processors
+> 中文：打印处理器
+>
 > External ID: T1547.012
 > STIX ID: attack-pattern--2de47683-f398-448f-b947-9abcc3e32fad
 > Platforms: ['Windows']
@@ -6259,7 +6353,14 @@ Adversaries can use this technique to load malicious code at startup that will p
  Adversaries may abuse print processors to run malicious DLLs during system boot for persistence and/or privilege escalation. Print processors are DLLs that are loaded by the print spooler service, spoolsv.exe, during boot. 
 
 Adversaries may abuse the print spooler service by adding print processors that load malicious DLLs at startup. A print processor can be installed through the <code>AddPrintProcessor</code> API call with an account that has <code>SeLoadDriverPrivilege</code> enabled. Alternatively, a print processor can be registered to the print spooler service by adding the <code>HKLM\SYSTEM\\[CurrentControlSet or ControlSet001]\Control\Print\Environments\\[Windows architecture: e.g., Windows x64]\Print Processors\\[user defined]\Driver</code> Registry key that points to the DLL. For the print processor to be correctly installed, it must be located in the system print-processor directory that can be found with the <code>GetPrintProcessorDirectory</code> API call.(Citation: Microsoft AddPrintProcessor May 2018) After the print processors are installed, the print spooler service, which starts during boot, must be restarted in order for them to run.(Citation: ESET PipeMon May 2020) The print spooler service runs under SYSTEM level permissions, therefore print processors installed by an adversary may run under elevated privileges.
+
+对手可能滥用打印处理器在系统启动期间运行恶意DLL以实现持久性和/或权提升。打印处理器是由打印池服务（spoolsv.exe）在启动期间加载的DLL。
+
+对手可以通过添加打印处理来滥用打印服务，在启动时加载恶意DLL。可以使用具有启用了SeLoadDriverPrivilege权限的户通过AddPrintProcessor API用安装打处理器。另外，可以通过添加指向DLL的HKLM\SYSTEM\[CurrentControlSet或Control001]\Control\Print\Environments\[Windows架构：例如Windows x64]\Print Processors\[用户定义] \Driver注册表键来将打印处理器注册到打印池服务。为了正确安装打印处理，它必须位系统打印处理器录中，可以使用GetPrintProcessorDirectory API调用找到该目录。（引用：Microsoft AddPrintProcessor May 2018）安装打印处理器后，必须重新启动在启动时启动的打印池服务才能使其运行。（引用：ESET PipeMon May 0）打印池服务在SYSTEM级别权限下运行，因此手安装的打印处理器可能以提升的特权运行。
+
 ### [T1547.013]:XDG Autostart Entries
+> 中文：XDG自启动项
+>
 > External ID: T1547.013
 > STIX ID: attack-pattern--e0232cb0-ded5-4c2e-9dc7-2893142a5c11
 > Platforms: ['Linux']
@@ -6272,6 +6373,13 @@ Adversaries may abuse the print spooler service by adding print processors that 
 Within an XDG autostart entry file, the <code>Type</code> key specifies if the entry is an application (type 1), link (type 2) or directory (type 3). The <code>Name</code> key indicates an arbitrary name assigned by the creator and the <code>Exec</code> key indicates the application and command line arguments to execute.(Citation: Free Desktop Entry Keys)
 
 Adversaries may use XDG autostart entries to maintain persistence by executing malicious commands and payloads, such as remote access tools, during the startup of a desktop environment. Commands included in XDG autostart entries with execute after user logon in the context of the currently logged on user. Adversaries may also use [Masquerading](https://attack.mitre.org/techniques/T1036) to make XDG autostart entries look as if they are associated with legitimate programs.
+
+对手可能修改XDG自启动条目，在系统启动期间执行程序或命令。符合XDG标准的Linux面环境实现了XDG自启动条目的功能这些条目允许应用程序在用户登录的桌面环境启期间自动启。默认情况下，XDG自启动条目存储在<code>/etc/xdg/autostart</code>或<code>~/.config/autostart</code>目录中，并具有.desktop文件扩展名。（引用：Free Desktop Application Autostart Feb 2006）
+
+在XDG自启动条文件中，<code>Type</code>指定条目是应用程序（类型1）、链接（类型2）还是目录（类型3）。<code>Name</code>键表示创建者分配任意名称，<code>Exec</code>键表示要执行的应用程序命令行参数。（引用：Free Desktop Entry Keys）
+
+对手可以利用XDG自启动条目通过在桌面环境启动期间执行恶意命令和载（例如远程访问工）来维持持久性。包含在XDG自启动条中的命令将在当前登录用户的上下文中用户登录后执行。对手还可以使用伪技术使XDG自启动目看起来与合程序相关联。
+
 ### [T1547.014]:Active Setup
 > External ID: T1547.014
 > STIX ID: attack-pattern--22522668-ddf6-470b-a027-9d6866679f67
@@ -6285,7 +6393,16 @@ Adversaries may use XDG autostart entries to maintain persistence by executing m
 Adversaries may abuse Active Setup by creating a key under <code> HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components\</code> and setting a malicious value for <code>StubPath</code>. This value will serve as the program that will be executed when a user logs into the computer.(Citation: Mandiant Glyer APT 2010)(Citation: Citizenlab Packrat 2015)(Citation: FireEye CFR Watering Hole 2012)(Citation: SECURELIST Bright Star 2015)(Citation: paloalto Tropic Trooper 2016)
 
 Adversaries can abuse these components to execute malware, such as remote access tools, to maintain persistence through system reboots. Adversaries may also use [Masquerading](https://attack.mitre.org/techniques/T1036) to make the Registry entries look as if they are associated with legitimate programs.
+
+对手可以通过向本地计算机的Active Setup添加注册表键来实现持久性。Active Setup是Windows机制，用于在用户登录时执行程序。注册表键中存储的值将在用户登录计算机后执行。（引用：Klein Active Setup 0）这些程序将在用户的上下文中执行，并具有与该帐户关联的权限级别。
+
+对手可以通过<code> HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components</code>下创建一个键，并为<code>StubPath</code>设置恶意值来滥用Active Setup。这个值将作为用户登录计算机时要执行的程序。（引用：Mandiant Glyer APT 0）（引用：izenlab Packrat 2015）引用：FireEye CFR Water Hole 2012）引用：SECURELIST Bright Star 2015）（引用：paloalto Tropic Trooper 2016）
+
+对手可以滥用些组件来执行恶意软件，例如远程访问工具，以在系统重新启动时保持持久性。对手还可以使用伪装技术使注册表目看起来合法程序相关联。
+
 ### [T1547.015]:Login Items
+> 中文：登录项
+>
 > External ID: T1547.015
 > STIX ID: attack-pattern--84601337-6a55-4ad7-9c35-79e0d1ea2ab3
 > Platforms: ['macOS']
@@ -6298,6 +6415,13 @@ Adversaries can abuse these components to execute malware, such as remote access
 Login items installed using the Service Management Framework leverage <code>launchd</code>, are not visible in the System Preferences, and can only be removed by the application that created them.(Citation: Adding Login Items)(Citation: SMLoginItemSetEnabled Schroeder 2013) Login items created using a shared file list are visible in System Preferences, can hide the application when it launches, and are executed through LaunchServices, not launchd, to open applications, documents, or URLs without using Finder.(Citation: Launch Services Apple Developer) Users and applications use login items to configure their user environment to launch commonly used services or applications, such as email, chat, and music applications.
 
 Adversaries can utilize [AppleScript](https://attack.mitre.org/techniques/T1059/002) and [Native API](https://attack.mitre.org/techniques/T1106) calls to create a login item to spawn malicious executables.(Citation: ELC Running at startup) Prior to version 10.5 on macOS, adversaries can add login items by using [AppleScript](https://attack.mitre.org/techniques/T1059/002) to send an Apple events to the “System Events” process, which has an AppleScript dictionary for manipulating login items.(Citation: Login Items AE) Adversaries can use a command such as <code>tell application “System Events” to make login item at end with properties /path/to/executable</code>.(Citation: Startup Items Eclectic)(Citation: hexed osx.dok analysis 2019)(Citation: Add List Remove Login Items Apple Script) This command adds the path of the malicious executable to the login item file list located in <code>~/Library/Application Support/com.apple.backgroundtaskmanagementagent/backgrounditems.btm</code>.(Citation: Startup Items Eclectic) Adversaries can also use login items to launch executables that can be used to control the victim system remotely or as a means to gain privilege escalation by prompting for user credentials.(Citation: objsee mac malware 2017)(Citation: CheckPoint Dok)(Citation: objsee netwire backdoor 2019)
+
+对手可能添加登录项以在用户登录时执行，以获取持久性或提升权限。登录项是应用程序、档、文件夹或服务器连接，在用户登录时动启动。(引用：Open Login Items Apple) 可以通过享文件列表或服务管理框架添加登录项。(引用：Adding Login Items) 使用脚本语言（如AppleScript）可以添加共享文件列表登录项，而服务管理框架使用调用<code>SMLoginItemSetEnabled</code>。
+
+使用服务管理框架安装的登录项利用<code>launchd</code>，在系统偏好设置中不可见，并且只能由创建它们的应用程序删除。(引用：Adding Login Items)(引用：SMLoginItemSetEnabled Schroeder 2013) 使用共享文件列表创建的登录项在系统偏好设置中可见，可以在启动时隐藏应用程序，并通过LaunchServices而不是launchd执行，以打开应用程序文档或URL，而无需使用Finder。(引用：Launch Services Apple Developer) 用户和应用程序使用登录项来配置其用户环境，以启动常用的服务或应用程序，例如电邮件、聊天和乐应用程序。
+
+手可以利用[AppleScript](https://attack.mitre.org/techniques/T9/002)和[Native API](https://attack.mitre.org/techniques/T1106)调用创建登录项以生成恶意可执行文件。(引用：ELC Running at startup) 在macOS的10.5版本之前，对手可以使用[AppleScript](https://attack.mitre.org/techniques/T1059/002)通过向“System Events进程发送Apple事件来添加登录项，该进程具有用于操作登录项的AppleScript字典。(引用：Login Items AE) 对手可以使用类似<code>tell application “System Events” to make login item at end with properties /path/to/executable</code>的命令。(引：Startup Items Eclectic)(用：hexed osx.dok analysis 2019)(引用：Add List Remove Login Items Apple Script) 此命令将恶意可执行文件路径添加到位于<code>~/Library/Application Support/com.apple.backgroundtaskmanagementagent/backgrounditems.btm</code>的登录项文件列表中。(引用：Startup Items Eclectic) 对手还可以使用登录项启动可执行文件以远程控制受害者系统或作为获取权限升的手段，通过提示用户凭据。(用：objsee mac malware 2017)(引用：CheckPoint Dok)(引用objsee netwire backdoor 2019)
+
 ## [T1548]:Abuse Elevation Control Mechanism
 > External ID: T1548
 > STIX ID: attack-pattern--67720091-eee3-4d2d-ae16-8264567f6f5b
