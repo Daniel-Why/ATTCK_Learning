@@ -95,53 +95,53 @@ Acquire Infrastructure技术主要涉及以下方面：
 
 **Techniques:**
 
-| Tech                                                         | Sub-Tech                                                     | 中文             | External ID |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------- | ----------- |
-| [Acquire Infrastructure](##[T1583]:Acquire Infrastructure)   |                                                              | 获取攻击基础设施 | T1583       |
-|                                                              | [Domains](###[T1583.001]:Domains)                            | 域名             | T1583.001   |
-|                                                              | [DNS Server](###[T1583.002]:DNS Server)                      | DNS服务器        | T1583.002   |
-|                                                              | [Virtual Private Server](###[T1583.003]:Virtual Private Server) | 虚拟服务器       | T1583.003   |
-|                                                              | [Server](###[T1583.004]:Server)                              | 服务器           | T1583.004   |
-|                                                              | [Botnet](###[T1583.005]:Botnet)                              | 僵尸网络         | T1583.005   |
-|                                                              | [Web Services](###[T1583.006]:Web Services)                  | Web服务          | T1583.006   |
-|                                                              | [Serverless](###[T1583.007]:Serverless)                      | 无服务器         | T1583.007   |
-|                                                              | [Malvertising](###[T1583.008]:Malvertising)                  | 恶意广告         | T1583.008   |
-| [Compromise Infrastructure](##[T1584]:Compromise Infrastructure) |                                                              | 被攻陷基础设施   | T1584       |
-|                                                              | [Domains](###[T1584.001]:Domains)                            | 域名             | T1584.001   |
-|                                                              | [DNS Server](###[T1584.002]:DNS Server)                      | DNS服务器        | T1584.002   |
-|                                                              | [Virtual Private Server](###[T1584.003]:Virtual Private Server) | 虚拟服务器       | T1584.003   |
-|                                                              | [Server](###[T1584.004]:Server)                              | 服务器           | T1584.004   |
-|                                                              | [Botnet](###[T1584.005]:Botnet)                              | 僵尸网络         | T1584.005   |
-|                                                              | [Web Services](###[T1584.006]:Web Services)                  | Web服务          | T1584.006   |
-|                                                              | [Serverless](###[T1584.007]:Serverless)                      | 无服务器         | T1584.007   |
-| [Establish Accounts](##[T1585]:Establish Accounts)           |                                                              | 建立账户         | T1585       |
-|                                                              | [Social Media Accounts](###[T1585.001]:Social Media Accounts) | 社交媒体账户     | T1585.001   |
-|                                                              | [Email Accounts](###[T1585.002]:Email Accounts)              | Email账户        | T1585.002   |
-|                                                              | [Cloud Accounts](###[T1585.003]:Cloud Accounts)              | 云账户           | T1585.003   |
-| [Compromise Accounts](##[T1586]:Compromise Accounts)         |                                                              | 被攻陷账户       | T1586       |
-|                                                              | [Social Media Accounts](###[T1586.001]:Social Media Accounts) | 社交媒体账户     | T1586.001   |
-|                                                              | [Email Accounts](###[T1586.002]:Email Accounts)              | Email账户        | T1586.002   |
-|                                                              | [Cloud Accounts](###[T1586.003]:Cloud Accounts)              | 云账户           | T1586.003   |
-| [Develop Capabilities](##[T1587]:Develop Capabilities)       |                                                              | 开发能力         | T1587       |
-|                                                              | [Malware](###[T1587.001]:Malware)                            | 恶意软件         | T1587.001   |
-|                                                              | [Code Signing Certificates](###[T1587.002]:Code Signing Certificates) | 代码签名证书     | T1587.002   |
-|                                                              | [Digital Certificates](###[T1587.003]:Digital Certificates)  | 数字证书         | T1587.003   |
-|                                                              | [Exploits](###[T1587.004]:Exploits)                          | 漏洞利用         | T1587.004   |
-| [Obtain Capabilities](##[T1588]:Obtain Capabilities)         |                                                              | 获取能力         | T1588       |
-|                                                              | [Malware](###[T1588.001]:Malware)                            | 恶意软件         | T1588.001   |
-|                                                              | [Tool](###[T1588.002]:Tool)                                  | 工具             | T1588.002   |
-|                                                              | [Code Signing Certificates](###[T1588.003]:Code Signing Certificates) | 代码签名证书     | T1588.003   |
-|                                                              | [Digital Certificates](###[T1588.004]:Digital Certificates)  | 数字证书         | T1588.004   |
-|                                                              | [Exploits](###[T1588.005]:Exploits)                          | 漏洞利用         | T1588.005   |
-|                                                              | [Vulnerabilities](###[T1588.006]:Vulnerabilities)            | 漏洞             | T1588.006   |
-| [Stage Capabilities](##[T1608]:Stage Capabilities)           |                                                              | 分阶段能力       | T1608       |
-|                                                              | [Upload Malware](###[T1608.001]:Upload Malware)              | 上传恶意工具     | T1608.001   |
-|                                                              | [Upload Tool](###[T1608.002]:Upload Tool)                    | 上传工具         | T1608.002   |
-|                                                              | [Install Digital Certificate](###[T1608.003]:Install Digital Certificate) | 安装数字证书     | T1608.003   |
-|                                                              | [Drive-by Target](###[T1608.004]:Drive-by Target)            | 路过式目标       | T1608.004   |
-|                                                              | [Link Target](###[T1608.005]:Link Target)                    | 链接目标         | T1608.005   |
-|                                                              | [SEO Poisoning](###[T1608.006]:SEO Poisoning)                | SEO 毒化         | T1608.006   |
-| [Acquire Access](##[T1650]:Acquire Access)                   |                                                              | 权限获取         | T1650       |
+| Tech                                                         | Sub-Tech                                                     | 中文                 | External ID |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------- | ----------- |
+| [Acquire Infrastructure](##[T1583]:Acquire Infrastructure)   |                                                              | **获取攻击基础设施** | T1583       |
+|                                                              | [Domains](###[T1583.001]:Domains)                            | 域名                 | T1583.001   |
+|                                                              | [DNS Server](###[T1583.002]:DNS Server)                      | DNS服务器            | T1583.002   |
+|                                                              | [Virtual Private Server](###[T1583.003]:Virtual Private Server) | 虚拟服务器           | T1583.003   |
+|                                                              | [Server](###[T1583.004]:Server)                              | 服务器               | T1583.004   |
+|                                                              | [Botnet](###[T1583.005]:Botnet)                              | 僵尸网络             | T1583.005   |
+|                                                              | [Web Services](###[T1583.006]:Web Services)                  | Web服务              | T1583.006   |
+|                                                              | [Serverless](###[T1583.007]:Serverless)                      | 无服务器             | T1583.007   |
+|                                                              | [Malvertising](###[T1583.008]:Malvertising)                  | 恶意广告             | T1583.008   |
+| [Compromise Infrastructure](##[T1584]:Compromise Infrastructure) |                                                              | **被攻陷基础设施**   | T1584       |
+|                                                              | [Domains](###[T1584.001]:Domains)                            | 域名                 | T1584.001   |
+|                                                              | [DNS Server](###[T1584.002]:DNS Server)                      | DNS服务器            | T1584.002   |
+|                                                              | [Virtual Private Server](###[T1584.003]:Virtual Private Server) | 虚拟服务器           | T1584.003   |
+|                                                              | [Server](###[T1584.004]:Server)                              | 服务器               | T1584.004   |
+|                                                              | [Botnet](###[T1584.005]:Botnet)                              | 僵尸网络             | T1584.005   |
+|                                                              | [Web Services](###[T1584.006]:Web Services)                  | Web服务              | T1584.006   |
+|                                                              | [Serverless](###[T1584.007]:Serverless)                      | 无服务器             | T1584.007   |
+| [Establish Accounts](##[T1585]:Establish Accounts)           |                                                              | **建立账户**         | T1585       |
+|                                                              | [Social Media Accounts](###[T1585.001]:Social Media Accounts) | 社交媒体账户         | T1585.001   |
+|                                                              | [Email Accounts](###[T1585.002]:Email Accounts)              | Email账户            | T1585.002   |
+|                                                              | [Cloud Accounts](###[T1585.003]:Cloud Accounts)              | 云账户               | T1585.003   |
+| [Compromise Accounts](##[T1586]:Compromise Accounts)         |                                                              | **被攻陷账户**       | T1586       |
+|                                                              | [Social Media Accounts](###[T1586.001]:Social Media Accounts) | 社交媒体账户         | T1586.001   |
+|                                                              | [Email Accounts](###[T1586.002]:Email Accounts)              | Email账户            | T1586.002   |
+|                                                              | [Cloud Accounts](###[T1586.003]:Cloud Accounts)              | 云账户               | T1586.003   |
+| [Develop Capabilities](##[T1587]:Develop Capabilities)       |                                                              | **开发能力**         | T1587       |
+|                                                              | [Malware](###[T1587.001]:Malware)                            | 恶意软件             | T1587.001   |
+|                                                              | [Code Signing Certificates](###[T1587.002]:Code Signing Certificates) | 代码签名证书         | T1587.002   |
+|                                                              | [Digital Certificates](###[T1587.003]:Digital Certificates)  | 数字证书             | T1587.003   |
+|                                                              | [Exploits](###[T1587.004]:Exploits)                          | 漏洞利用             | T1587.004   |
+| [Obtain Capabilities](##[T1588]:Obtain Capabilities)         |                                                              | **获取能力**         | T1588       |
+|                                                              | [Malware](###[T1588.001]:Malware)                            | 恶意软件             | T1588.001   |
+|                                                              | [Tool](###[T1588.002]:Tool)                                  | 工具                 | T1588.002   |
+|                                                              | [Code Signing Certificates](###[T1588.003]:Code Signing Certificates) | 代码签名证书         | T1588.003   |
+|                                                              | [Digital Certificates](###[T1588.004]:Digital Certificates)  | 数字证书             | T1588.004   |
+|                                                              | [Exploits](###[T1588.005]:Exploits)                          | 漏洞利用             | T1588.005   |
+|                                                              | [Vulnerabilities](###[T1588.006]:Vulnerabilities)            | 漏洞                 | T1588.006   |
+| [Stage Capabilities](##[T1608]:Stage Capabilities)           |                                                              | **分阶段能力**       | T1608       |
+|                                                              | [Upload Malware](###[T1608.001]:Upload Malware)              | 上传恶意工具         | T1608.001   |
+|                                                              | [Upload Tool](###[T1608.002]:Upload Tool)                    | 上传工具             | T1608.002   |
+|                                                              | [Install Digital Certificate](###[T1608.003]:Install Digital Certificate) | 安装数字证书         | T1608.003   |
+|                                                              | [Drive-by Target](###[T1608.004]:Drive-by Target)            | 路过式目标           | T1608.004   |
+|                                                              | [Link Target](###[T1608.005]:Link Target)                    | 链接目标             | T1608.005   |
+|                                                              | [SEO Poisoning](###[T1608.006]:SEO Poisoning)                | SEO 毒化             | T1608.006   |
+| [Acquire Access](##[T1650]:Acquire Access)                   |                                                              | **权限获取**         | T1650       |
 
 
 
@@ -162,22 +162,22 @@ Initial Access consists of techniques that use various entry vectors to gain the
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[Valid Accounts](##[T1078]:Valid Accounts)||有效账户|T1078|
+|[Valid Accounts](##[T1078]:Valid Accounts)||**有效账户**|T1078|
 ||[Default Accounts](###[T1078.001]:Default Accounts)|默认账户|T1078.001|
 ||[Domain Accounts](###[T1078.002]:Domain Accounts)|域账户|T1078.002|
 ||[Local Accounts](###[T1078.003]:Local Accounts)|本地账户|T1078.003|
 ||[Cloud Accounts](###[T1078.004]:Cloud Accounts)|云账户|T1078.004|
-|[Replication Through Removable Media](##[T1091]:Replication Through Removable Media)||通过可移动介质进行复制|T1091|
-|[External Remote Services](##[T1133]:External Remote Services)||外部远程服务|T1133|
-|[Drive-by Compromise](##[T1189]:Drive-by Compromise)||路过式攻击|T1189|
-|[Exploit Public-Facing Application](##[T1190]:Exploit Public-Facing Application)||利用面向公共的应用程序|T1190|
-|[Supply Chain Compromise](##[T1195]:Supply Chain Compromise)||供应链攻击|T1195|
+|[Replication Through Removable Media](##[T1091]:Replication Through Removable Media)||**通过可移动介质进行复制**|T1091|
+|[External Remote Services](##[T1133]:External Remote Services)||**外部远程服务**|T1133|
+|[Drive-by Compromise](##[T1189]:Drive-by Compromise)||**路过式攻击**|T1189|
+|[Exploit Public-Facing Application](##[T1190]:Exploit Public-Facing Application)||**利用面向公共的应用程序**|T1190|
+|[Supply Chain Compromise](##[T1195]:Supply Chain Compromise)||**供应链攻击**|T1195|
 ||[Compromise Software Dependencies and Development Tools](###[T1195.001]:Compromise Software Dependencies and Development Tools)|攻击软件依赖和开发工具|T1195.001|
 ||[Compromise Software Supply Chain](###[T1195.002]:Compromise Software Supply Chain)|攻击软件供应链|T1195.002|
 ||[Compromise Hardware Supply Chain](###[T1195.003]:Compromise Hardware Supply Chain)|攻击硬件供应链|T1195.003|
-|[Trusted Relationship](##[T1199]:Trusted Relationship)||信赖关系|T1199|
-|[Hardware Additions](##[T1200]:Hardware Additions)|| 增加硬件               |T1200|
-|[Phishing](##[T1566]:Phishing)||钓鱼|T1566|
+|[Trusted Relationship](##[T1199]:Trusted Relationship)||**信赖关系**|T1199|
+|[Hardware Additions](##[T1200]:Hardware Additions)|| **增加硬件**           |T1200|
+|[Phishing](##[T1566]:Phishing)||**钓鱼**|T1566|
 ||[Spearphishing Attachment](###[T1566.001]:Spearphishing Attachment)|钓鱼附件|T1566.001|
 ||[Spearphishing Link](###[T1566.002]:Spearphishing Link)|钓鱼链接|T1566.002|
 ||[Spearphishing via Service](###[T1566.003]:Spearphishing via Service)|钓鱼服务|T1566.003|
@@ -202,14 +202,14 @@ Execution consists of techniques that result in adversary-controlled code runnin
 
 | Tech                                                         | Sub-Tech                                                     | 中文                  | External ID |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------- | ----------- |
-| [Windows Management Instrumentation](##[T1047]:Windows Management Instrumentation) |                                                              | WMI                   | T1047       |
-| [Scheduled Task/Job](##[T1053]:Scheduled Task/Job)           |                                                              | 计划任务              | T1053       |
+| [Windows Management Instrumentation](##[T1047]:Windows Management Instrumentation) |                                                              | **WMI**               | T1047       |
+| [Scheduled Task/Job](##[T1053]:Scheduled Task/Job)           |                                                              | **计划任务**          | T1053       |
 |                                                              | [At](###[T1053.002]:At)                                      | AT                    | T1053.002   |
 |                                                              | [Cron](###[T1053.003]:Cron)                                  | corn                  | T1053.003   |
 |                                                              | [Scheduled Task](###[T1053.005]:Scheduled Task)              | 计划任务              | T1053.005   |
 |                                                              | [Systemd Timers](###[T1053.006]:Systemd Timers)              | systemd定时器         | T1053.006   |
 |                                                              | [Container Orchestration Job](###[T1053.007]:Container Orchestration Job) | 容器编排作业          | T1053.007   |
-| [Command and Scripting Interpreter](##[T1059]:Command and Scripting Interpreter) |                                                              | 命令和脚本解释器      | T1059       |
+| [Command and Scripting Interpreter](##[T1059]:Command and Scripting Interpreter) |                                                              | **命令和脚本解释器**  | T1059       |
 |                                                              | [PowerShell](###[T1059.001]:PowerShell)                      | PowerShell            | T1059.001   |
 |                                                              | [AppleScript](###[T1059.002]:AppleScript)                    | AppleScript           | T1059.002   |
 |                                                              | [Windows Command Shell](###[T1059.003]:Windows Command Shell) | Windows Command Shell | T1059.003   |
@@ -219,25 +219,25 @@ Execution consists of techniques that result in adversary-controlled code runnin
 |                                                              | [JavaScript](###[T1059.007]:JavaScript)                      | JavaScript            | T1059.007   |
 |                                                              | [Network Device CLI](###[T1059.008]:Network Device CLI)      | 网络设备 CLI          | T1059.008   |
 |                                                              | [Cloud API](###[T1059.009]:Cloud API)                        | 云 API                | T1059.009   |
-| [Software Deployment Tools](##[T1072]:Software Deployment Tools) |                                                              | 软件开发工具          | T1072       |
-| [Native API](##[T1106]:Native API)                           |                                                              | 原生API               | T1106       |
-| [Shared Modules](##[T1129]:Shared Modules)                   |                                                              | 共享模组              | T1129       |
-| [Exploitation for Client Execution](##[T1203]:Exploitation for Client Execution) |                                                              | 利用客户端执行        | T1203       |
-| [User Execution](##[T1204]:User Execution)                   |                                                              | 用户执行              | T1204       |
+| [Software Deployment Tools](##[T1072]:Software Deployment Tools) |                                                              | **软件开发工具**      | T1072       |
+| [Native API](##[T1106]:Native API)                           |                                                              | **原生API**           | T1106       |
+| [Shared Modules](##[T1129]:Shared Modules)                   |                                                              | **共享模组**          | T1129       |
+| [Exploitation for Client Execution](##[T1203]:Exploitation for Client Execution) |                                                              | **利用客户端执行**    | T1203       |
+| [User Execution](##[T1204]:User Execution)                   |                                                              | **用户执行**          | T1204       |
 |                                                              | [Malicious Link](###[T1204.001]:Malicious Link)              | 恶意链接              | T1204.001   |
 |                                                              | [Malicious File](###[T1204.002]:Malicious File)              | 恶意文件              | T1204.002   |
 |                                                              | [Malicious Image](###[T1204.003]:Malicious Image)            | 恶意图片              | T1204.003   |
-| [Inter-Process Communication](##[T1559]:Inter-Process Communication) |                                                              | 进程间通信(IPC)       | T1559       |
+| [Inter-Process Communication](##[T1559]:Inter-Process Communication) |                                                              | **进程间通信(IPC)**   | T1559       |
 |                                                              | [Component Object Model](###[T1559.001]:Component Object Model) | 组件对象模型(COM)     | T1559.001   |
 |                                                              | [Dynamic Data Exchange](###[T1559.002]:Dynamic Data Exchange) | 动态数据交换(DDE)     | T1559.002   |
 |                                                              | [XPC Services](###[T1559.003]:XPC Services)                  | XPC服务               | T1559.003   |
-| [System Services](##[T1569]:System Services)                 |                                                              | 系统服务              | T1569       |
+| [System Services](##[T1569]:System Services)                 |                                                              | **系统服务**          | T1569       |
 |                                                              | [Launchctl](###[T1569.001]:Launchctl)                        | -- | T1569.001 |
 |                                                              | [Service Execution](###[T1569.002]:Service Execution)        | 服务执行              | T1569.002   |
-| [Container Administration Command](##[T1609]:Container Administration Command) |                                                              | 容器管理服务 | T1609       |
-| [Deploy Container](##[T1610]:Deploy Container)               |                                                              | 部署容器 | T1610       |
-| [Serverless Execution](##[T1648]:Serverless Execution)       |                                                              | 无服务执行 | T1648       |
-| [Cloud Administration Command](##[T1651]:Cloud Administration Command) |                                                              | 云管理服务 | T1651       |
+| [Container Administration Command](##[T1609]:Container Administration Command) |                                                              | **容器管理服务** | T1609       |
+| [Deploy Container](##[T1610]:Deploy Container)               |                                                              | **部署容器** | T1610       |
+| [Serverless Execution](##[T1648]:Serverless Execution)       |                                                              | **无服务执行** | T1648       |
+| [Cloud Administration Command](##[T1651]:Cloud Administration Command) |                                                              | **云管理服务** | T1651       |
 
 
 
@@ -349,29 +349,29 @@ Persistence consists of techniques that adversaries use to keep access to system
 ||[XDG Autostart Entries](###[T1547.013]:XDG Autostart Entries)|XDG自启动项|T1547.013|
 ||[Active Setup](###[T1547.014]:Active Setup)|Active Setup|T1547.014|
 ||[Login Items](###[T1547.015]:Login Items)|登录项|T1547.015|
-|[Compromise Client Software Binary](##[T1554]:Compromise Client Software Binary)|||T1554|
-|[Modify Authentication Process](##[T1556]:Modify Authentication Process)|||T1556|
-||[Domain Controller Authentication](###[T1556.001]:Domain Controller Authentication)||T1556.001|
-||[Password Filter DLL](###[T1556.002]:Password Filter DLL)||T1556.002|
-||[Pluggable Authentication Modules](###[T1556.003]:Pluggable Authentication Modules)||T1556.003|
-||[Network Device Authentication](###[T1556.004]:Network Device Authentication)||T1556.004|
-||[Reversible Encryption](###[T1556.005]:Reversible Encryption)||T1556.005|
-||[Multi-Factor Authentication](###[T1556.006]:Multi-Factor Authentication)||T1556.006|
-||[Hybrid Identity](###[T1556.007]:Hybrid Identity)||T1556.007|
-||[Network Provider DLL](###[T1556.008]:Network Provider DLL)||T1556.008|
-|[Hijack Execution Flow](##[T1574]:Hijack Execution Flow)|||T1574|
-||[DLL Search Order Hijacking](###[T1574.001]:DLL Search Order Hijacking)||T1574.001|
-||[DLL Side-Loading](###[T1574.002]:DLL Side-Loading)||T1574.002|
-||[Dylib Hijacking](###[T1574.004]:Dylib Hijacking)||T1574.004|
-||[Executable Installer File Permissions Weakness](###[T1574.005]:Executable Installer File Permissions Weakness)||T1574.005|
-||[Dynamic Linker Hijacking](###[T1574.006]:Dynamic Linker Hijacking)||T1574.006|
-||[Path Interception by PATH Environment Variable](###[T1574.007]:Path Interception by PATH Environment Variable)||T1574.007|
-||[Path Interception by Search Order Hijacking](###[T1574.008]:Path Interception by Search Order Hijacking)||T1574.008|
-||[Path Interception by Unquoted Path](###[T1574.009]:Path Interception by Unquoted Path)||T1574.009|
-||[Services File Permissions Weakness](###[T1574.010]:Services File Permissions Weakness)||T1574.010|
-||[Services Registry Permissions Weakness](###[T1574.011]:Services Registry Permissions Weakness)||T1574.011|
-||[COR_PROFILER](###[T1574.012]:COR_PROFILER)||T1574.012|
-||[KernelCallbackTable](###[T1574.013]:KernelCallbackTable)||T1574.013|
+|[Compromise Client Software Binary](##[T1554]:Compromise Client Software Binary)||入侵客户端软件二进制文件|T1554|
+|[Modify Authentication Process](##[T1556]:Modify Authentication Process)||修改身份认证过程|T1556|
+||[Domain Controller Authentication](###[T1556.001]:Domain Controller Authentication)|域控制器身份验证|T1556.001|
+||[Password Filter DLL](###[T1556.002]:Password Filter DLL)|密码过滤DLL|T1556.002|
+||[Pluggable Authentication Modules](###[T1556.003]:Pluggable Authentication Modules)|可插拔验证模块(Pluggable Authentication Module, PAM)|T1556.003|
+||[Network Device Authentication](###[T1556.004]:Network Device Authentication)|网络设备身份验证|T1556.004|
+||[Reversible Encryption](###[T1556.005]:Reversible Encryption)|可逆加密|T1556.005|
+||[Multi-Factor Authentication](###[T1556.006]:Multi-Factor Authentication)|多因子身份认证|T1556.006|
+||[Hybrid Identity](###[T1556.007]:Hybrid Identity)|混合身份|T1556.007|
+||[Network Provider DLL](###[T1556.008]:Network Provider DLL)|Network Provider DLL|T1556.008|
+|[Hijack Execution Flow](##[T1574]:Hijack Execution Flow)||劫持执行流|T1574|
+||[DLL Search Order Hijacking](###[T1574.001]:DLL Search Order Hijacking)|DLL 搜索顺序劫持|T1574.001|
+||[DLL Side-Loading](###[T1574.002]:DLL Side-Loading)|DLL侧加载|T1574.002|
+||[Dylib Hijacking](###[T1574.004]:Dylib Hijacking)|Dylib 劫持|T1574.004|
+||[Executable Installer File Permissions Weakness](###[T1574.005]:Executable Installer File Permissions Weakness)|可执行安装程序文件权限弱点|T1574.005|
+||[Dynamic Linker Hijacking](###[T1574.006]:Dynamic Linker Hijacking)|动态连接器劫持|T1574.006|
+||[Path Interception by PATH Environment Variable](###[T1574.007]:Path Interception by PATH Environment Variable)|PATH环境变量的路径拦截|T1574.007|
+||[Path Interception by Search Order Hijacking](###[T1574.008]:Path Interception by Search Order Hijacking)|搜索顺序劫持的路径拦截|T1574.008|
+||[Path Interception by Unquoted Path](###[T1574.009]:Path Interception by Unquoted Path)|未引用路径的路径拦截|T1574.009|
+||[Services File Permissions Weakness](###[T1574.010]:Services File Permissions Weakness)|服务文件权限弱点|T1574.010|
+||[Services Registry Permissions Weakness](###[T1574.011]:Services Registry Permissions Weakness)|服务注册权限弱点|T1574.011|
+||[COR_PROFILER](###[T1574.012]:COR_PROFILER)|COR_PROFILER环境变量劫持|T1574.012|
+||[KernelCallbackTable](###[T1574.013]:KernelCallbackTable)|内核回调注入|T1574.013|
 
 > 备注：
 >
@@ -403,41 +403,52 @@ Privilege Escalation consists of techniques that adversaries use to gain higher-
 
 These techniques often overlap with Persistence techniques, as OS features that let an adversary persist can execute in an elevated context.  
 
+攻击者正在尝试获取更高级别的权限。
+
+特权提升包括攻击者用于在系统或网络上获取更高级别权限的技术。攻击者通常可以使用无特权访问进入和探索网络，但需要提升权限才能实现其目标。常见的方法是利用系统的弱点、错误配置和漏洞。特权提升的示例包括：
+
+- 系统/根级别
+- 本地管理员
+- 具有类似管理员访问权限的用户帐户
+- 具有访问特定系统或执行特定功能的用户帐户
+
+这些技术与持久性技术经常重叠，因为允许攻击者持久存在的操作系统功能可以在提升的上下文中执行。
+
 **Techinques:**
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[Boot or Logon Initialization Scripts](##[T1037]:Boot or Logon Initialization Scripts)|||T1037|
-||[Logon Script (Windows)](###[T1037.001]:Logon Script (Windows))||T1037.001|
-||[Login Hook](###[T1037.002]:Login Hook)||T1037.002|
-||[Network Logon Script](###[T1037.003]:Network Logon Script)||T1037.003|
-||[RC Scripts](###[T1037.004]:RC Scripts)||T1037.004|
-||[Startup Items](###[T1037.005]:Startup Items)||T1037.005|
-|[Scheduled Task/Job](##[T1053]:Scheduled Task/Job)|||T1053|
-||[At](###[T1053.002]:At)||T1053.002|
-||[Cron](###[T1053.003]:Cron)||T1053.003|
-||[Scheduled Task](###[T1053.005]:Scheduled Task)||T1053.005|
-||[Systemd Timers](###[T1053.006]:Systemd Timers)||T1053.006|
-||[Container Orchestration Job](###[T1053.007]:Container Orchestration Job)||T1053.007|
-|[Process Injection](##[T1055]:Process Injection)|||T1055|
-||[Dynamic-link Library Injection](###[T1055.001]:Dynamic-link Library Injection)||T1055.001|
-||[Portable Executable Injection](###[T1055.002]:Portable Executable Injection)||T1055.002|
-||[Thread Execution Hijacking](###[T1055.003]:Thread Execution Hijacking)||T1055.003|
-||[Asynchronous Procedure Call](###[T1055.004]:Asynchronous Procedure Call)||T1055.004|
-||[Thread Local Storage](###[T1055.005]:Thread Local Storage)||T1055.005|
-||[Ptrace System Calls](###[T1055.008]:Ptrace System Calls)||T1055.008|
-||[Proc Memory](###[T1055.009]:Proc Memory)||T1055.009|
-||[Extra Window Memory Injection](###[T1055.011]:Extra Window Memory Injection)||T1055.011|
-||[Process Hollowing](###[T1055.012]:Process Hollowing)||T1055.012|
-||[Process Doppelgänging](###[T1055.013]:Process Doppelgänging)||T1055.013|
-||[VDSO Hijacking](###[T1055.014]:VDSO Hijacking)||T1055.014|
-||[ListPlanting](###[T1055.015]:ListPlanting)||T1055.015|
+|[Boot or Logon Initialization Scripts](##[T1037]:Boot or Logon Initialization Scripts)||启动或登录初始化脚本|T1037|
+||[Logon Script (Windows)](###[T1037.001]:Logon Script (Windows))|登录脚本（Windows）|T1037.001|
+||[Login Hook](###[T1037.002]:Login Hook)|登录钩子|T1037.002|
+||[Network Logon Script](###[T1037.003]:Network Logon Script)|网络登录脚本|T1037.003|
+||[RC Scripts](###[T1037.004]:RC Scripts)|RC 脚本|T1037.004|
+||[Startup Items](###[T1037.005]:Startup Items)|启动项|T1037.005|
+|[Scheduled Task/Job](##[T1053]:Scheduled Task/Job)||计划任务|T1053|
+||[At](###[T1053.002]:At)|AT|T1053.002|
+||[Cron](###[T1053.003]:Cron)|Cron|T1053.003|
+||[Scheduled Task](###[T1053.005]:Scheduled Task)|计划任务|T1053.005|
+||[Systemd Timers](###[T1053.006]:Systemd Timers)|systemd定时器|T1053.006|
+||[Container Orchestration Job](###[T1053.007]:Container Orchestration Job)|容器编排作业|T1053.007|
+|[Process Injection](##[T1055]:Process Injection)||进程注入|T1055|
+||[Dynamic-link Library Injection](###[T1055.001]:Dynamic-link Library Injection)|DLL动态注入|T1055.001|
+||[Portable Executable Injection](###[T1055.002]:Portable Executable Injection)|可移植可执行文件注入|T1055.002|
+||[Thread Execution Hijacking](###[T1055.003]:Thread Execution Hijacking)|线程执行劫持|T1055.003|
+||[Asynchronous Procedure Call](###[T1055.004]:Asynchronous Procedure Call)|异步过程调用|T1055.004|
+||[Thread Local Storage](###[T1055.005]:Thread Local Storage)|线程本地存储|T1055.005|
+||[Ptrace System Calls](###[T1055.008]:Ptrace System Calls)|ptrace系统调用|T1055.008|
+||[Proc Memory](###[T1055.009]:Proc Memory)|Proc内存|T1055.009|
+||[Extra Window Memory Injection](###[T1055.011]:Extra Window Memory Injection)|额外窗口内存注入|T1055.011|
+||[Process Hollowing](###[T1055.012]:Process Hollowing)|傀儡进程|T1055.012|
+||[Process Doppelgänging](###[T1055.013]:Process Doppelgänging)|Process Doppelgänging|T1055.013|
+||[VDSO Hijacking](###[T1055.014]:VDSO Hijacking)|VDSO 劫持|T1055.014|
+||[ListPlanting](###[T1055.015]:ListPlanting)|列表种植|T1055.015|
 |[Exploitation for Privilege Escalation](##[T1068]:Exploitation for Privilege Escalation)|||T1068|
-|[Valid Accounts](##[T1078]:Valid Accounts)|||T1078|
-||[Default Accounts](###[T1078.001]:Default Accounts)||T1078.001|
-||[Domain Accounts](###[T1078.002]:Domain Accounts)||T1078.002|
-||[Local Accounts](###[T1078.003]:Local Accounts)||T1078.003|
-||[Cloud Accounts](###[T1078.004]:Cloud Accounts)||T1078.004|
+|[Valid Accounts](##[T1078]:Valid Accounts)||有效账户|T1078|
+||[Default Accounts](###[T1078.001]:Default Accounts)|默认账户|T1078.001|
+||[Domain Accounts](###[T1078.002]:Domain Accounts)|域账户|T1078.002|
+||[Local Accounts](###[T1078.003]:Local Accounts)|本地账户|T1078.003|
+||[Cloud Accounts](###[T1078.004]:Cloud Accounts)|云账户|T1078.004|
 |[Access Token Manipulation](##[T1134]:Access Token Manipulation)|||T1134|
 ||[Token Impersonation/Theft](###[T1134.001]:Token Impersonation/Theft)||T1134.001|
 ||[Create Process with Token](###[T1134.002]:Create Process with Token)||T1134.002|
@@ -1876,6 +1887,8 @@ Boot or Logon Initialization Scripts（启动或登录初始化脚本）是在�
 
 Adversaries may use these scripts to maintain persistence on a single system. Depending on the access configuration of the logon scripts, either local credentials or an administrator account may be necessary. 
 ### [T1037.002]:Login Hook
+> 中文：登录钩子
+>
 > External ID: T1037.002
 > STIX ID: attack-pattern--43ba2b05-cf72-4b6c-8243-03a4aba41ee0
 > Platforms: ['macOS']
@@ -1888,6 +1901,13 @@ Adversaries may use these scripts to maintain persistence on a single system. De
 Adversaries can add or insert a path to a malicious script in the <code>com.apple.loginwindow.plist</code> file, using the <code>LoginHook</code> or <code>LogoutHook</code> key-value pair. The malicious script is executed upon the next user login. If a login hook already exists, adversaries can add additional commands to an existing login hook. There can be only one login and logout hook on a system at a time.(Citation: S1 macOs Persistence)(Citation: Wardle Persistence Chapter)
 
 **Note:** Login hooks were deprecated in 10.11 version of macOS in favor of [Launch Daemon](https://attack.mitre.org/techniques/T1543/004) and [Launch Agent](https://attack.mitre.org/techniques/T1543/001) 
+
+对手可能会使用登录钩子（Login Hook）来建立持久性，该钩子在用户登录时执行。登录钩子是一个plist文件，它指向一个特定的脚本，在用户登录时以root权限执行。该plist文件位于`/Library/Preferences/com.apple.loginwindow.plist`文件中，并可以使用`defaults`命令行工具进行修改。当用户注销时，此行为也适用于注销钩子，可以执行一个脚本。所有的钩子都需要管理员权限来修改或创建钩子。（引用：Login Scripts Apple Dev）（引用：LoginWindowScripts Apple Dev）
+
+对手可以在`com.apple.loginwindow.plist`文件中添加或插入恶意脚本的路径，使用`LoginHook`或`LogoutHook`键值对。恶意脚本将在下一次用户登录时执行。如果已经存在一个登录钩子，对手可以向现有的登录钩子添加额外的命令。系统上一次只能存在一个登录和注销钩子。（引用：S1 macOs Persistence）（引用：Wardle Persistence Chapter）
+
+**注意：**从macOS 10.11版本开始，登录钩子已被弃用，而改用[Launch Daemon](https://attack.mitre.org/techniques/T1543/004)和[Launch Agent](https://attack.mitre.org/techniques/T1543/001)。
+
 ### [T1037.003]:Network Logon Script
 > External ID: T1037.003
 > STIX ID: attack-pattern--c63a348e-ffc2-486a-b9d9-d7f11ec54d99
@@ -2222,6 +2242,8 @@ Another variation of this method, often referred to as Module Stomping/Overloadi
 
 Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via DLL injection may also evade detection from security products since the execution is masked under a legitimate process. 
 ### [T1055.002]:Portable Executable Injection
+> 中文：可移植可执行文件注入
+>
 > External ID: T1055.002
 > STIX ID: attack-pattern--806a49c4-970d-43f9-9acc-ac0ee11e6662
 > Platforms: ['Windows']
@@ -2234,12 +2256,18 @@ Running code in the context of another process may allow access to the process's
 PE injection is commonly performed by copying code (perhaps without a file on disk) into the virtual address space of the target process before invoking it via a new thread. The write can be performed with native Windows API calls such as <code>VirtualAllocEx</code> and <code>WriteProcessMemory</code>, then invoked with <code>CreateRemoteThread</code> or additional code (ex: shellcode). The displacement of the injected code does introduce the additional requirement for functionality to remap memory references. (Citation: Elastic Process Injection July 2017) 
 
 Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via PE injection may also evade detection from security products since the execution is masked under a legitimate process. 
+
+攻击者可能会注入可移植可执行文件（PE）到进程中，以逃避基于进程的防御措施，并有可能提升权限。PE注入是一种在独立实时进程的地址空间中执行任意代码的方法。
+
+PE注入通常通过将代码（可能没有磁盘上的文件）复制到目标进程的虚拟地址空间中，在启动新线程时调用它来执行。可以使用原生的Windows API调用，如`VirtualAllocEx`和`WriteProcessMemory`进行写入，然后使用`CreateRemoteThread`或其他代码（例如shellcode）来调用。注入代码的位移引入了重新映射内存引用功能的额外要求。（参考文献：《弹性进程注入》2017年7月）
+
+在另一个进程的上下文中运行代码可能允许访问该进程的内存、系统/网络资源，并且可能具有提升的权限。通过PE注入执行的代码也可能逃避安全产品的检测，因为执行是伪装在合法进程下进行的。
+
 ### [T1055.003]:Thread Execution Hijacking
 > External ID: T1055.003
 > STIX ID: attack-pattern--41d9846c-f6af-4302-a654-24bba2729bc6
 > Platforms: ['Windows']
 > Tactics: ['defense-evasion', 'privilege-escalation']
-
 
 **Description: **
  Adversaries may inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges. Thread Execution Hijacking is a method of executing arbitrary code in the address space of a separate live process. 
@@ -2249,12 +2277,22 @@ Thread Execution Hijacking is commonly performed by suspending an existing proce
 This is very similar to [Process Hollowing](https://attack.mitre.org/techniques/T1055/012) but targets an existing process rather than creating a process in a suspended state.  
 
 Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via Thread Execution Hijacking may also evade detection from security products since the execution is masked under a legitimate process. 
+
+对手可能会将恶意代码注入到劫持的进程中，以逃避基于进程的防御措施，并有可能提升权限。线程执行劫持是一种在另一个活动进程的地址空间中执行任意代码的方法。
+
+线程执行劫持通常通过挂起现有进程，然后取消映射/清空其内存来实现，然后可以用恶意代码或DLL的路径替换它。首先使用本机Windows API调用（例如<code>OpenThread</code>）创建对现有受害者进程的句柄。此时可以挂起进程，然后通过<code>SuspendThread </code>、<code>VirtualAllocEx</code>、<code>WriteProcessMemory</code>、<code>SetThreadContext</code>和<code>ResumeThread</code>依次写入、重新对齐注入的代码并恢复进程。(引用：Elastic Process Injection July 2017)
+
+这与[进程空洞化](https://attack.mitre.org/techniques/T1055/012)非常相似，但目标是现有进程而不是创建一个处于挂起状态的进程。
+
+在另一个进程的上下文中运行代码可能允许访问该进程的内存、系统/网络资源，并有可能获取提升的权限。通过线程执行劫持进行执行也可能逃避安全产品的检测，因为执行过程被伪装成合法进程的操作。
+
 ### [T1055.004]:Asynchronous Procedure Call
+> 中文：异步过程调用
+>
 > External ID: T1055.004
 > STIX ID: attack-pattern--7c0f17c9-1af6-4628-9cbd-9e45482dd605
 > Platforms: ['Windows']
 > Tactics: ['defense-evasion', 'privilege-escalation']
-
 
 **Description: **
  Adversaries may inject malicious code into processes via the asynchronous procedure call (APC) queue in order to evade process-based defenses as well as possibly elevate privileges. APC injection is a method of executing arbitrary code in the address space of a separate live process. 
@@ -2264,6 +2302,19 @@ APC injection is commonly performed by attaching malicious code to the APC Queue
 A variation of APC injection, dubbed "Early Bird injection", involves creating a suspended process in which malicious code can be written and executed before the process' entry point (and potentially subsequent anti-malware hooks) via an APC. (Citation: CyberBit Early Bird Apr 2018) AtomBombing (Citation: ENSIL AtomBombing Oct 2016) is another variation that utilizes APCs to invoke malicious code previously written to the global atom table.(Citation: Microsoft Atom Table)
 
 Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via APC injection may also evade detection from security products since the execution is masked under a legitimate process. 
+
+对手可能通过异步过程调用（APC）队列将恶意代码注入进程，以逃避基于进程的防御措施，同时可能提升权限。APC注入是一种在单独的活动进程的地址空间中执行任意代码的方法。
+
+APC注入通常是通过将恶意代码附加到进程线程的APC队列（引用：Microsoft APC）来执行的。当线程进入可更改状态时，排队的APC函数会被执行（引用：Microsoft APC）。首先使用原生Windows API调用（例如<code>OpenThread</code>）创建一个对现有受害进程的句柄。此时，可以使用<code>QueueUserAPC</code>来调用一个函数（例如指向恶意DLL的<code>LoadLibraryA</code>）。
+
+APC注入的变体之一被称为“Early Bird注入”，它涉及创建一个暂停的进程，在该进程的入口点之前（以及潜在的反恶意软件钩子）通过APC写入和执行恶意代码。（引用：CyberBit Early Bird Apr 2018）AtomBombing（引用：ENSIL AtomBombing Oct 2016）是另一种利用APC调用以前写入全局原子表的恶意代码的变体。（引用：Microsoft Atom Table）
+
+在另一个进程的上下文中运行代码可能允许访问该进程的内存、系统/网络资源，并可能提升权限。通过APC注入执行的代码也可能会逃避安全产品的检测，因为执行是在一个合法进程的伪装下进行的。
+
+> 参考：
+>
+> - https://blog.csdn.net/weixin_46539164/article/details/124469406
+
 ### [T1055.005]:Thread Local Storage
 > External ID: T1055.005
 > STIX ID: attack-pattern--e49ee9d2-0d98-44ef-85e5-5d3100065744
@@ -2293,6 +2344,8 @@ Ptrace system call injection may not be possible targeting processes that are no
 
 Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via ptrace system call injection may also evade detection from security products since the execution is masked under a legitimate process. 
 ### [T1055.009]:Proc Memory
+> 中文：Proc内存
+>
 > External ID: T1055.009
 > STIX ID: attack-pattern--d201d4cc-214d-4a74-a1ba-b3fa09fd4591
 > Platforms: ['Linux']
@@ -2307,7 +2360,20 @@ Proc memory injection involves enumerating the memory of a process via the /proc
 Other techniques such as [Dynamic Linker Hijacking](https://attack.mitre.org/techniques/T1574/006) may be used to populate a target process with more available gadgets. Similar to [Process Hollowing](https://attack.mitre.org/techniques/T1055/012), proc memory injection may target child processes (such as a backgrounded copy of sleep).(Citation: GDS Linux Injection) 
 
 Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via proc memory injection may also evade detection from security products since the execution is masked under a legitimate process. 
+
+
+
+对手可能会通过/proc文件系统将恶意代码注入到进程中，以逃避基于进程的防御措施，并可能提升权限。/proc内存注入是一种在单独的活动进程地址空间中执行任意代码的方法。
+
+/proc内存注入涉及通过/proc文件系统（/proc/[pid]）枚举进程的内存，然后利用可用的gadget/指令构建返回导向编程（ROP）有效载荷。每个运行的进程都有自己的目录，包括内存映射。/proc内存注入通常通过使用/proc文件系统提供的内存映射来覆盖目标进程的堆栈进行操作。此信息可以用于枚举偏移量（包括堆栈）和gadget（或程序内部可用于构建恶意有效载荷的指令），这些在进程内存保护（如地址空间布局随机化-ASLR）下通常是隐藏的。枚举完成后，可以使用dd命令覆盖/proc/[pid]/maps中的目标进程内存映射。(引用：Uninformed Needle)(引用：GDS Linux Injection)(引用：DD Man)
+
+其他技术，如动态链接器劫持，可以用于向目标进程填充更多可用的gadget。类似于进程空壳化，/proc内存注入可能会针对子进程（例如后台运行的sleep的副本）进行操作。(引用：GDS Linux Injection)
+
+在另一个进程的上下文中运行代码可以允许访问该进程的内存、系统/网络资源，并可能获得提升的权限。通过/proc内存注入执行的代码也可能逃避安全产品的检测，因为执行被伪装成合法进程的操作。
+
 ### [T1055.011]:Extra Window Memory Injection
+> 中文：额外窗口内存注入
+>
 > External ID: T1055.011
 > STIX ID: attack-pattern--0042a9f5-f053-4769-b3ef-9ad018dfa298
 > Platforms: ['Windows']
@@ -2324,12 +2390,24 @@ Although small, the EWM is large enough to store a 32-bit pointer and is often u
 Execution granted through EWM injection may allow access to both the target process's memory and possibly elevated privileges. Writing payloads to shared sections also avoids the use of highly monitored API calls such as <code>WriteProcessMemory</code> and <code>CreateRemoteThread</code>.(Citation: Elastic Process Injection July 2017) More sophisticated malware samples may also potentially bypass protection mechanisms such as data execution prevention (DEP) by triggering a combination of windows procedures and other system functions that will rewrite the malicious payload inside an executable portion of the target process.  (Citation: MalwareTech Power Loader Aug 2013) (Citation: WeLiveSecurity Gapz and Redyms Mar 2013)
 
 Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via EWM injection may also evade detection from security products since the execution is masked under a legitimate process. 
+
+对手可能通过额外窗口内存（EWM）向进程注入恶意代码，以逃避基于进程的防御，并有可能提升权限。EWM注入是一种在单独的活动进程的地址空间中执行任意代码的方法。
+
+在创建窗口之前，基于图形的Windows进程必须注册一个窗口类，该类规定了窗口的外观和行为（通过窗口过程来处理数据的输入/输出的函数）。创建新窗口类的注册可以包括对每个该类实例分配的内存附加40字节的EWM的请求。这个EWM用于存储特定于该窗口的数据，并具有特定的应用程序编程接口（API）函数来设置和获取其值。
+
+尽管较小，但EWM足够大，可以存储32位指针，并且通常用于指向窗口过程。恶意软件可能会利用这个内存位置作为攻击链的一部分，该攻击链包括将代码写入进程内存的共享部分，在EWM中放置指向该代码的指针，然后通过将执行控制返回到进程的EWM中的地址来调用执行。
+
+通过EWM注入获得的执行权可能允许访问目标进程的内存和可能的提升的权限。将有效载荷写入共享区段还避免了使用高度监视的API调用，如<code>WriteProcessMemory</code>和<code>CreateRemoteThread</code>。更复杂的恶意软件样本还可能通过触发一系列窗口过程和其他系统函数来绕过数据执行预防（DEP）等保护机制，将恶意有效载荷重写到目标进程的可执行部分。
+
+在另一个进程的上下文中运行代码可能允许访问该进程的内存、系统/网络资源，并有可能提升权限。通过EWM注入的执行还可以逃避安全产品的检测，因为执行是伪装在合法进程下进行的。
+
 ### [T1055.012]:Process Hollowing
+> 中文：傀儡进程
+>
 > External ID: T1055.012
 > STIX ID: attack-pattern--b200542e-e877-4395-875b-cf1a44537ca4
 > Platforms: ['Windows']
 > Tactics: ['defense-evasion', 'privilege-escalation']
-
 
 **Description: **
  Adversaries may inject malicious code into suspended and hollowed processes in order to evade process-based defenses. Process hollowing is a method of executing arbitrary code in the address space of a separate live process.  
@@ -2337,6 +2415,17 @@ Running code in the context of another process may allow access to the process's
 Process hollowing is commonly performed by creating a process in a suspended state then unmapping/hollowing its memory, which can then be replaced with malicious code. A victim process can be created with native Windows API calls such as <code>CreateProcess</code>, which includes a flag to suspend the processes primary thread. At this point the process can be unmapped using APIs calls such as <code>ZwUnmapViewOfSection</code> or <code>NtUnmapViewOfSection</code>  before being written to, realigned to the injected code, and resumed via <code>VirtualAllocEx</code>, <code>WriteProcessMemory</code>, <code>SetThreadContext</code>, then <code>ResumeThread</code> respectively.(Citation: Leitch Hollowing)(Citation: Elastic Process Injection July 2017)
 
 This is very similar to [Thread Local Storage](https://attack.mitre.org/techniques/T1055/005) but creates a new process rather than targeting an existing process. This behavior will likely not result in elevated privileges since the injected process was spawned from (and thus inherits the security context) of the injecting process. However, execution via process hollowing may also evade detection from security products since the execution is masked under a legitimate process. 
+
+对手可以将恶意代码注入到挂起和空心的进程中，以逃避基于进程的防御措施。进程空心化是一种在单独的活动进程的地址空间中执行任意代码的方法。
+
+通常通过创建一个挂起状态的进程，然后解除映射/空心化其内存来执行进程空心化，然后可以用恶意代码替换它。可以使用本机的Windows API调用，如<code>CreateProcess</code>来创建受害者进程，该调用包含一个标志以挂起进程的主线程。此时，可以使用<code>ZwUnmapViewOfSection</code>或<code>NtUnmapViewOfSection</code>等API调用将进程解除映射，然后通过<code>VirtualAllocEx</code>、<code>WriteProcessMemory</code>、<code>SetThreadContext</code>和<code>ResumeThread</code>依次进行写入、重新对齐到注入的代码，并恢复执行。(引用文献: Leitch Hollowing)(引用文献: Elastic Process Injection July 2017)
+
+这与[Thread Local Storage](https://attack.mitre.org/techniques/T1055/005)非常相似，但创建了一个新的进程而不是针对现有进程。由于被注入的进程是从注入进程生成的（因此继承了安全上下文），所以这种行为可能不会导致提升的权限。然而，通过进程空心化进行执行还可以规避安全产品的检测，因为执行被掩盖在合法进程下。
+
+> 参考：
+>
+> - https://forum.butian.net/share/2100
+
 ### [T1055.013]:Process Doppelgänging
 > External ID: T1055.013
 > STIX ID: attack-pattern--7007935a-a8a7-4c0b-bd98-4e85be8ed197
@@ -2361,7 +2450,27 @@ Process Doppelgänging is implemented in 4 steps (Citation: BlackHat Process Dop
 * Animate – Create a process from the tainted section of memory and initiate execution.
 
 This behavior will likely not result in elevated privileges since the injected process was spawned from (and thus inherits the security context) of the injecting process. However, execution via process doppelgänging may evade detection from security products since the execution is masked under a legitimate process. 
+
+攻击者可以利用 Process Doppelgänging 在进程中注入恶意代码，以逃避基于进程的防御，并有可能提升权限。Process Doppelgänging 是一种在单独的活动进程的地址空间中执行任意代码的方法。
+
+Windows 事务式 NTFS（Transactional NTFS，TxF）是在 Vista 中引入的一种执行安全文件操作的方法。为了确保数据完整性，TxF 仅允许一个事务句柄同时对文件进行写操作。在写句柄事务终止之前，所有其他句柄都与写入程序隔离，并且只能读取在打开句柄时存在的文件的已提交版本。为了避免损坏，在写事务过程中，如果系统或应用程序发生故障，TxF 将自动回滚操作。
+
+尽管被弃用，但截至 Windows 10，TxF 应用程序编程接口（API）仍然可用。
+
+攻击者可能滥用 TxF 来执行无文件的 Process Injection 的变体。类似于 Process Hollowing，Process Doppelgänging 包括替换合法进程的内存，从而执行恶意代码而能够逃避防御和检测。Process Doppelgänging 还使用 TxF 来避免使用高度监控的 API 函数，如 NtUnmapViewOfSection、VirtualProtectEx 和 SetThreadContext。
+
+Process Doppelgänging 分为以下 4 个步骤：
+
+- Transact（事务）：使用合法可执行文件创建一个 TxF 事务，然后用恶意代码覆盖该文件。这些更改将在事务的上下文中进行隔离，并且只能在该事务的上下文中看到。
+- Load（加载）：创建一个共享内存段并加载恶意可执行文件。
+- Rollback（回滚）：撤销对原始可执行文件的更改，有效地从文件系统中删除恶意代码。
+- Animate（启动）：从受污染的内存段创建一个进程，并开始执行。
+
+由于注入的进程是从注入进程生成的（因此继承了安全上下文），这种行为可能不会导致权限提升。然而，通过 Process Doppelgänging 执行的操作可能会逃避安全产品的检测，因为执行过程被伪装成合法进程的行为。
+
 ### [T1055.014]:VDSO Hijacking
+> 中文：VDSO 劫持
+>
 > External ID: T1055.014
 > STIX ID: attack-pattern--98be40f2-c86b-4ade-b6fc-4964932040e5
 > Platforms: ['Linux']
@@ -2374,7 +2483,16 @@ This behavior will likely not result in elevated privileges since the injected p
 VDSO hijacking involves redirecting calls to dynamically linked shared libraries. Memory protections may prevent writing executable code to a process via [Ptrace System Calls](https://attack.mitre.org/techniques/T1055/008). However, an adversary may hijack the syscall interface code stubs mapped into a process from the vdso shared object to execute syscalls to open and map a malicious shared object. This code can then be invoked by redirecting the execution flow of the process via patched memory address references stored in a process' global offset table (which store absolute addresses of mapped library functions).(Citation: ELF Injection May 2009)(Citation: Backtrace VDSO)(Citation: VDSO Aug 2005)(Citation: Syscall 2014)
 
 Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via VDSO hijacking may also evade detection from security products since the execution is masked under a legitimate process.  
+
+对手可能通过VDSO劫持将恶意代码注入进程中，以逃避基于进程的防御措施，并有可能提升权限。虚拟动态共享对象（vdso）劫持是一种在单独的活动进程地址空间中执行任意代码的方法。
+
+VDSO劫持涉及重定向对动态链接共享库的调用。内存保护机制可能会阻止通过[Ptrace系统调用](https://attack.mitre.org/techniques/T1055/008)向进程中写入可执行代码。然而，对手可以劫持从vdso共享对象映射到进程中的系统调用接口代码存根，以执行打开和映射恶意共享对象的系统调用。然后，通过修改存储在进程全局偏移表中的修补内存地址引用，可以调用该代码，这些引用存储了映射库函数的绝对地址。(引用: ELF Injection May 2009)(引用: Backtrace VDSO)(引用: VDSO Aug 2005)(引用: Syscall 2014)
+
+在另一个进程的上下文中运行代码可能允许访问该进程的内存、系统/网络资源，并有可能获得提升的权限。通过VDSO劫持进行执行还可以逃避安全产品的检测，因为执行过程被伪装成合法进程的操作。
+
 ### [T1055.015]:ListPlanting
+> 中文：列表种植
+>
 > External ID: T1055.015
 > STIX ID: attack-pattern--eb2cb5cb-ae87-4de0-8c35-da2a17aafb99
 > Platforms: ['Windows']
@@ -2391,6 +2509,17 @@ ListPlanting (a form of message-passing "shatter attack") may be performed by co
 Some variations of ListPlanting may allocate memory in the target process but then use window messages to copy the payload, to avoid the use of the highly monitored <code>WriteProcessMemory</code> function. For example, an adversary can use the <code>PostMessage</code> and/or <code>SendMessage</code> API functions to send <code>LVM_SETITEMPOSITION</code> and <code>LVM_GETITEMPOSITION</code> messages, effectively copying a payload 2 bytes at a time to the allocated memory.(Citation: ESET InvisiMole June 2020) 
 
 Finally, the payload is triggered by sending the <code>LVM_SORTITEMS</code> message to the <code>SysListView32</code> child of the process window, with the payload within the newly allocated buffer passed and executed as the <code>ListView_SortItems</code> callback.
+
+对手可能滥用列表视图控件，将恶意代码注入劫持的进程中，以逃避基于进程的防御措施，并有可能提升权限。ListPlanting是一种在单独的实时进程地址空间中执行任意代码的方法。通过ListPlanting执行的代码也可能会逃避安全产品的检测，因为执行过程被伪装在一个合法的进程下。
+
+列表视图控件是用于显示项目集合的用户界面窗口。(引用：Microsoft列表视图控件) 应用程序的列表视图设置信息存储在进程内存中的<SysListView32>控件中。
+
+ListPlanting（一种消息传递的"shatter攻击"形式）可以通过将代码复制到使用列表视图控件的进程的虚拟地址空间中，然后将该代码用作自定义回调来对列出的项目进行排序。(引用：Modexp Windows进程注入) 对手必须先将代码复制到目标进程的内存空间中，可以通过直接获取受害进程窗口的<SysListView32>子项的句柄（通过Windows API调用如FindWindow和/或EnumWindows），或者其他进程注入方法来完成。
+
+ListPlanting的一些变体可能会在目标进程中分配内存，然后使用窗口消息来复制有效载荷，以避免使用高度监控的WriteProcessMemory函数。例如，对手可以使用PostMessage和/或SendMessage API函数发送LVM_SETITEMPOSITION和LVM_GETITEMPOSITION消息，以每次将有效载荷复制2个字节到分配的内存中。(引用：ESET InvisiMole 2020年6月)
+
+最后，通过向进程窗口的<SysListView32>子项发送LVM_SORTITEMS消息，触发有效载荷在新分配的缓冲区中传递并执行作为ListView_SortItems回调函数
+
 ## [T1056]:Input Capture
 > External ID: T1056
 > STIX ID: attack-pattern--bb5a00de-e086-4859-a231-fa793f6797e2
@@ -5789,11 +5918,11 @@ Adversaries may abuse these mechanisms as a means of maintaining persistent acce
 
 Since the execution can be proxied by an account with higher permissions, such as SYSTEM or service accounts, an adversary may be able to abuse these triggered execution mechanisms to escalate their privileges. 
 
-对手可能利用系统机制来建立持久性和/或提升权限，这些机制会基于特定事件触发执行。各种操作系统都有监视和订阅事件的方法，例如登录或其他用户活动（如运行特定应用程序/二进制文件）。云环境也可能支持各种功能和服务，以监视并在特定云事件发生时被调用。（引用：入侵AWS账号）（引用：Varonis Power Automate数据泄露）（引用：Microsoft DART案例报告001）
+攻击者可能利用系统机制来建立持久性和/或提升权限，这些机制会基于特定事件触发执行。各种操作系统都有监视和订阅事件的方法，例如登录或其他用户活动（如运行特定应用程序/二进制文件）。云环境也可能支持各种功能和服务，以监视并在特定云事件发生时被调用。（引用：入侵AWS账号）（引用：Varonis Power Automate数据泄露）（引用：Microsoft DART案例报告001）
 
-对手可能滥用这些机制，通过反复执行恶意代码来持续访问受害者。在获得对受害者系统的访问权限后，对手可以创建/修改事件触发器，指向将在每次调用事件触发器时执行的恶意内容。（引用：FireEye WMI 2015）（引用：OS X上的恶意软件持久化）（引用：遗忘症恶意软件）
+攻击者可能滥用这些机制，通过反复执行恶意代码来持续访问受害者。在获得对受害者系统的访问权限后，攻击者可以创建/修改事件触发器，指向将在每次调用事件触发器时执行的恶意内容。（引用：FireEye WMI 2015）（引用：OS X上的恶意软件持久化）（引用：遗忘症恶意软件）
 
-由于执行可以由具有较高权限（如SYSTEM或服务账户）的帐户代理，因此对手可能能够滥用这些触发执行机制来提升其权限。
+由于执行可以由具有较高权限（如SYSTEM或服务账户）的帐户代理，因此攻击者可能能够滥用这些触发执行机制来提升其权限。
 
 ### [T1546.001]:Change Default File Association
 > 中文：修改默认文件关联
@@ -5815,7 +5944,7 @@ System file associations are listed under <code>HKEY_CLASSES_ROOT\.[extension]</
 
 The values of the keys listed are commands that are executed when the handler opens the file extension. Adversaries can modify these values to continually execute arbitrary commands.(Citation: TrendMicro TROJ-FAKEAV OCT 2012)
 
-对手可以通过执行由文件类型关联触发的恶意内容来建立持久性。当打开文件时，会检查用于打开文件的默认程序（也称为文件关联或处理程序）。文件关联选择存储在Windows注册表中，并可以由具有注册表访问权限的用户、管理员或程序进行编辑，或者由使用内置assoc实用程序的管理员进行编辑。（引用：Microsoft Change Default Programs）（引用：Microsoft File Handlers）（引用：Microsoft Assoc Oct 2017）应用程序可以修改给定文件扩展名的文件关联，以在打开具有该扩展名的文件时调用任意程序。
+攻击者可以通过执行由文件类型关联触发的恶意内容来建立持久性。当打开文件时，会检查用于打开文件的默认程序（也称为文件关联或处理程序）。文件关联选择存储在Windows注册表中，并可以由具有注册表访问权限的用户、管理员或程序进行编辑，或者由使用内置assoc实用程序的管理员进行编辑。（引用：Microsoft Change Default Programs）（引用：Microsoft File Handlers）（引用：Microsoft Assoc Oct 2017）应用程序可以修改给定文件扩展名的文件关联，以在打开具有该扩展名的文件时调用任意程序。
 
 系统文件关联列在<code>HKEY_CLASSES_ROOT.[extension]</code>下，例如<code>HKEY_CLASSES_ROOT.txt</code>。条目指向位于<code>HKEY_CLASSES_ROOT\[handler]</code>处的扩展名处理程序。然后，各种命令以子键列表的形式显示在<code>HKEY_CLASSES_ROOT\[handler]\shell\[action]\command</code>下。例如：
 
@@ -5823,7 +5952,7 @@ The values of the keys listed are commands that are executed when the handler op
 - <code>HKEY_CLASSES_ROOT\txtfile\shell\print\command</code>
 - <code>HKEY_CLASSES_ROOT\txtfile\shell\printto\command</code>
 
-所列键的值是当处理程序打开文件扩展名时执行的命令。对手可以修改这些值以持续执行任意命令。（引用：TrendMicro TROJ-FAKEAV OCT 2012）
+所列键的值是当处理程序打开文件扩展名时执行的命令。攻击者可以修改这些值以持续执行任意命令。（引用：TrendMicro TROJ-FAKEAV OCT 2012）
 
 ### [T1546.002]:Screensaver
 > 中文：屏幕保护
@@ -5846,7 +5975,7 @@ The following screensaver settings are stored in the Registry (<code>HKCU\Contro
 
 Adversaries can use screensaver settings to maintain persistence by setting the screensaver to run malware after a certain timeframe of user inactivity.(Citation: ESET Gazer Aug 2017)
 
-对手可以通过执行由用户不活动触发的恶意内容来建立持久性。屏幕保护程序是在用户不活动一段可配置时间后执行的程序，由以.scr作为文件扩展名的可移植可执行文件（PE文件）组成。（引用：Wikipedia 屏幕保护程序）Windows 屏幕保护程序应用程序scrnsave.scr位于<code>C:\Windows\System32</code>和64位 Windows 系统上的<code>C:\Windows\sysWOW64</code>，以及 Windows 基本安装中包含的屏幕保护程序。
+攻击者可以通过执行由用户不活动触发的恶意内容来建立持久性。屏幕保护程序是在用户不活动一段可配置时间后执行的程序，由以.scr作为文件扩展名的可移植可执行文件（PE文件）组成。（引用：Wikipedia 屏幕保护程序）Windows 屏幕保护程序应用程序scrnsave.scr位于<code>C:\Windows\System32</code>和64位 Windows 系统上的<code>C:\Windows\sysWOW64</code>，以及 Windows 基本安装中包含的屏幕保护程序。
 
 以下屏幕保护程序设置存储在注册表中（<code>HKCU\Control Panel\Desktop</code>），可以进行操纵以实现持久性：
 
@@ -5855,7 +5984,7 @@ Adversaries can use screensaver settings to maintain persistence by setting the 
 - <code>ScreenSaverIsSecure</code> - 设置为 '0' 以不需要密码解锁
 - <code>ScreenSaveTimeout</code> - 设置用户不活动超时时间，之后执行屏幕保护程序
 
-对手可以利用屏幕保护程序设置来维持持久性，将屏幕保护程序设置为在用户一段时间不活动后运行恶意软件。（引用：ESET Gazer Aug 2017）
+攻击者可以利用屏幕保护程序设置来维持持久性，将屏幕保护程序设置为在用户一段时间不活动后运行恶意软件。（引用：ESET Gazer Aug 2017）
 
 ### [T1546.003]:Windows Management Instrumentation Event Subscription
 > External ID: T1546.003
@@ -5897,9 +6026,9 @@ For macOS, the functionality of this technique is similar but may leverage zsh, 
 
 Adversaries can use this to register code to be executed when the shell encounters specific interrupts as a persistence mechanism. Trap commands are of the following format <code>trap 'command list' signals</code> where "command list" will be executed when "signals" are received.(Citation: Trap Manual)(Citation: Cyberciti Trap Statements)
 
-对手可以通过执行由中断信号触发的恶意内容来建立持久性。`trap`命令允许程序和Shell指定在接收到中断信号时执行的命令。一个常见的情况是脚本允许优雅地终止并处理常见的键盘中断，例如`ctrl+c`和`ctrl+d`。
+攻击者可以通过执行由中断信号触发的恶意内容来建立持久性。`trap`命令允许程序和Shell指定在接收到中断信号时执行的命令。一个常见的情况是脚本允许优雅地终止并处理常见的键盘中断，例如`ctrl+c`和`ctrl+d`。
 
-对手可以利用这一点将代码注册为持久性机制，以便在Shell遇到特定中断时执行。Trap命令的格式如下：`trap '命令列表' 信号`，其中"命令列表"将在接收到"信号"时执行。（参考文献：Trap手册）（参考文献：Cyberciti Trap语句）
+攻击者可以利用这一点将代码注册为持久性机制，以便在Shell遇到特定中断时执行。Trap命令的格式如下：`trap '命令列表' 信号`，其中"命令列表"将在接收到"信号"时执行。（参考文献：Trap手册）（参考文献：Cyberciti Trap语句）
 
 ### [T1546.006]:LC_LOAD_DYLIB Addition
 > External ID: T1546.006
@@ -5998,7 +6127,7 @@ To keep shims secure, Windows designed them to run in user mode so they cannot m
 
 Utilizing these shims may allow an adversary to perform several malicious acts such as elevate privileges, install backdoors, disable defenses like Windows Defender, etc. (Citation: FireEye Application Shimming) Shims can also be abused to establish persistence by continuously being invoked by affected programs.
 
-对手可以通过执行由应用程序shim触发的恶意内容来建立持久性和/或提升特权。Microsoft Windows应用程序兼容性基础设施/框架（应用程序shim）旨在允许软件在操作系统代码库随时间变化时保持向后兼容性例如，应用程序shimming功能允许开发人员对为Windows XP创建的应程序应用修复，以其能够在Windows 10上运行（引用：弹性进程注入，2017年7月）。
+攻击者可以通过执行由应用程序shim触发的恶意内容来建立持久性和/或提升特权。Microsoft Windows应用程序兼容性基础设施/框架（应用程序shim）旨在允许软件在操作系统代码库随时间变化时保持向后兼容性例如，应用程序shimming功能允许开发人员对为Windows XP创建的应程序应用修复，以其能够在Windows 10上运行（引用：弹性进程注入，2017年7月）。
 
 在该框架中，shim被创建为程序（或更具体地，导入地址表）与Windows操作系统之间的缓冲区。执行程序时，将引shim缓存以确定程序是否需要使用shim数据库（.sdb）。如果是这样，shim数据库使用hooking根据需要重定向代码，以便与操作系统进行通信。
 
@@ -6014,7 +6143,7 @@ Utilizing these shims may allow an adversary to perform several malicious acts s
 
 为了保护shim的安全性，Windows将它们设计为在用户模式下运行，因此它们无法修改内核，并且您必须具有管理员特才能安装shim。然而，某些shim可以用于绕过用户账户控制UAC和RedirectEXE），将DLL注入进程（InjectDLL），禁用数据执行预防（DisableNX）和结构异常处理（DisableSEH），以及拦截内存地址（GetProcAddress）。
 
-用这些shim可能允对手执行多个恶意为，如提升特权、安装后、禁用Windows Defender等（引用：FireEye应用程序shimming）。shim还可以被滥用以建立持久性，通过断被受影的程序调用来实现。
+用这些shim可能允攻击者执行多个恶意为，如提升特权、安装后、禁用Windows Defender等（引用：FireEye应用程序shimming）。shim还可以被滥用以建立持久性，通过断被受影的程序调用来实现。
 
 
 
@@ -6046,7 +6175,7 @@ Malware may also use IFEO to [Impair Defenses](https://attack.mitre.org/techniqu
 
 
 
-对手可以通过执行由映像劫持（IFEO）调试器触发的恶意内容来建立持性和/或升权限。IFEO允许开发人员将调试器附加到应用程序上。创建一个进程时，应用程序的IFEO中存在的调试器将被添加应用程序的名称前，从而在调试器下启动新进程（例如：<code>Cdbg\ntsd.exe -g  notepad.exe</code>）。 （用：Microsoft Dev Blog IFEO Mar 2010）
+攻击者可以通过执行由映像劫持（IFEO）调试器触发的恶意内容来建立持性和/或升权限。IFEO允许开发人员将调试器附加到应用程序上。创建一个进程时，应用程序的IFEO中存在的调试器将被添加应用程序的名称前，从而在调试器下启动新进程（例如：<code>Cdbg\ntsd.exe -g  notepad.exe</code>）。 （用：Microsoft Dev Blog IFEO Mar 2010）
 
 IFEO可以接通过注册表或通过GFlags工具在全局标志设置。 （引用：Microsoft GFlags Mar 7）IFEO在注册表表示为<code>HKLM\SOFTWARE{\Wow6432Node}\Microsoft\Windows\CurrentVersion\Image File Execution Optionsexecutable></code>下的<code>Debugger</code>值，其中<code><executable></code>是调试器所附加的二进文件。 （引用：Microsoft Dev Blog IFEO Mar 2010）
 
@@ -6187,9 +6316,9 @@ Adversaries can use these configuration locations to execute malware, such as re
 
 Adversaries can use the autostart mechanism provided by LSA authentication packages for persistence by placing a reference to a binary in the Windows Registry location <code>HKLM\SYSTEM\CurrentControlSet\Control\Lsa\</code> with the key value of <code>"Authentication Packages"=&lt;target binary&gt;</code>. The binary will then be executed by the system when the authentication packages are loaded.
 
-对手可能滥用身份验证包，在系统启动时执行DLL。Windows身份验证包DLL由本地安全机构（LSA）进程在系统启动时加载。他们为操作系统提供多个登录过程和多个安全协议的支持。（引用：MSDN身验证包）
+攻击者可能滥用身份验证包，在系统启动时执行DLL。Windows身份验证包DLL由本地安全机构（LSA）进程在系统启动时加载。他们为操作系统提供多个登录过程和多个安全协议的支持。（引用：MSDN身验证包）
 
-对手可以利用LSA身份验证包提供的自启动机制实现持久性，方法是将一个二进制文件的用放置在Windows注册表位置<code>HKLM\SYSTEM\CurrentControlSet\Control\Lsa</code>中，键为<code>"Authentication Packages"=<目标进制文件></code>。当身份验证包加载时，系统将执行该二进制文件。
+攻击者可以利用LSA身份验证包提供的自启动机制实现持久性，方法是将一个二进制文件的用放置在Windows注册表位置<code>HKLM\SYSTEM\CurrentControlSet\Control\Lsa</code>中，键为<code>"Authentication Packages"=<目标进制文件></code>。当身份验证包加载时，系统将执行该二进制文件。
 
 身份验证包（Authentication Package）是计算机系统中用于实现用户身份验证的软件模块或库。它提供了一组功能和算法，用于验证用户的身份并确保其访问系统资源的安全性。
 
@@ -6271,9 +6400,9 @@ Adversaries can use LKMs and kexts to conduct [Persistence](https://attack.mitre
 
 Adversaries can establish [Persistence](https://attack.mitre.org/tactics/TA0003) by adding a malicious application path to the <code>com.apple.loginwindow.[UUID].plist</code> file to execute payloads when a user logs in.
 
-对手可能会修改 plist 文件，以便在用户登录时自动运行一个应用程序。当用户通过 macOS 图形用户界面（GUI）注销或重新启时，会向用户提供一个复选框的提示，询是否“重新打开登录时的窗口”。(引用：Re-Open windows on Mac) 当选择该选项时，所有当前开的应用程序都会被添加到名 <code>com.apple.loginwindow.[UUID].plist</code> 的属性列表文件中，该文件位 <code>~/Library/Preferences/ByHost</code> 目录下。(引用：Methods of Mac Malware Persistence)(引用：Wardle Persistence Chapter) 在此文件中出的应用程序将用户下次登录时自动重新打开。
+攻击者可能会修改 plist 文件，以便在用户登录时自动运行一个应用程序。当用户通过 macOS 图形用户界面（GUI）注销或重新启时，会向用户提供一个复选框的提示，询是否“重新打开登录时的窗口”。(引用：Re-Open windows on Mac) 当选择该选项时，所有当前开的应用程序都会被添加到名 <code>com.apple.loginwindow.[UUID].plist</code> 的属性列表文件中，该文件位 <code>~/Library/Preferences/ByHost</code> 目录下。(引用：Methods of Mac Malware Persistence)(引用：Wardle Persistence Chapter) 在此文件中出的应用程序将用户下次登录时自动重新打开。
 
-对手可以通过将恶意应用程序路径添加到 <code>com.apple.loginwindow.[UUID].plist</code> 文件中，在用户登录时执行意载荷，从而建立[持久性](https://attack.mitre.org/tactics/TA0003)。
+攻击者可以通过将恶意应用程序路径添加到 <code>com.apple.loginwindow.[UUID].plist</code> 文件中，在用户登录时执行意载荷，从而建立[持久性](https://attack.mitre.org/tactics/TA0003)。
 
 ### [T1547.008]:LSASS Driver
 > External ID: T1547.008
@@ -6302,9 +6431,9 @@ Adversaries may abuse shortcuts in the startup folder to execute their tools and
 
 Shortcuts can also be abused to establish persistence by implementing other methods. For example, LNK browser extensions may be modified (e.g. [Browser Extensions](https://attack.mitre.org/techniques/T1176)) to persistently launch malware.
 
-对手可能创建或修改快捷方式，在系统启动或用户登录期间执行程序。快捷方式或符号链接用于引用其他文件或程序，当单或由系统启动程执行快捷方式时，打开或执行这些文件程序。
+攻击者可能创建或修改快捷方式，在系统启动或用户登录期间执行程序。快捷方式或符号链接用于引用其他文件或程序，当单或由系统启动程执行快捷方式时，打开或执行这些文件程序。
 
-对手可能滥用启动文件夹中的快捷方式来执行其工具并实现久性。（引用：持久性的快捷方式）尽管常在感染链中用作有效载荷（例如[钓鱼附件](https://attack.mitre.org/techniques/T1566/001)），对手也可以创建一个新的捷方式作为间接段，同时滥用[伪装](https://attack.mitre.org/techniques/T1036)使恶快捷方式看起来像合法程序。对手还可以编辑标路径或完全替现有的快捷方式，以便执行他们的恶意件而不是预期的合法程序。
+攻击者可能滥用启动文件夹中的快捷方式来执行其工具并实现久性。（引用：持久性的快捷方式）尽管常在感染链中用作有效载荷（例如[钓鱼附件](https://attack.mitre.org/techniques/T1566/001)），攻击者也可以创建一个新的捷方式作为间接段，同时滥用[伪装](https://attack.mitre.org/techniques/T1036)使恶快捷方式看起来像合法程序。攻击者还可以编辑标路径或完全替现有的快捷方式，以便执行他们的恶意件而不是预期的合法程序。
 
 快捷方式还可以通过实施其他方法滥用以建立持久。例如，LNK浏览器扩展可以被修改（例如[浏览器扩展](https://attack.mitre.org/techniques/T1176)），持续启动恶意件。
 
@@ -6329,7 +6458,7 @@ The Registry key contains entries for the following:
 
 Adversaries can use this technique to load malicious code at startup that will persist on system reboot and execute as SYSTEM.
 
-对手可能使用端口监视器在系统启动时运行对手提供的DLL，以实现持久性或特权升级。可以通过<code>AddMonitor</code> API调用来设置端口监视，以设置要在启动时加载的DLL。（引用：AddMonitor）此DLL可以位于<code>C:\Windows\System32</code>中，并将由打印服务（spoolsv.exe）在启动加载。spoolsv.exe进程在SYSTEM级别权限下运行。（引用：Bloxham）另，如果权限允许为DLL编写完全限路径名，则可以加载任DLL到<code>HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors</code>。
+攻击者可能使用端口监视器在系统启动时运行攻击者提供的DLL，以实现持久性或特权升级。可以通过<code>AddMonitor</code> API调用来设置端口监视，以设置要在启动时加载的DLL。（引用：AddMonitor）此DLL可以位于<code>C:\Windows\System32</code>中，并将由打印服务（spoolsv.exe）在启动加载。spoolsv.exe进程在SYSTEM级别权限下运行。（引用：Bloxham）另，如果权限允许为DLL编写完全限路径名，则可以加载任DLL到<code>HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors</code>。
 
 注册表键包含以下条目：
 
@@ -6338,7 +6467,7 @@ Adversaries can use this technique to load malicious code at startup that will p
 - USB监视器
 - WSD端口
 
-对手可以利用这种技在启动时加载恶代码，以便在系统重启后持久存在并以SYSTEM身份执行。
+攻击者可以利用这种技在启动时加载恶代码，以便在系统重启后持久存在并以SYSTEM身份执行。
 
 ### [T1547.012]:Print Processors
 > 中文：打印处理器
@@ -6354,9 +6483,9 @@ Adversaries can use this technique to load malicious code at startup that will p
 
 Adversaries may abuse the print spooler service by adding print processors that load malicious DLLs at startup. A print processor can be installed through the <code>AddPrintProcessor</code> API call with an account that has <code>SeLoadDriverPrivilege</code> enabled. Alternatively, a print processor can be registered to the print spooler service by adding the <code>HKLM\SYSTEM\\[CurrentControlSet or ControlSet001]\Control\Print\Environments\\[Windows architecture: e.g., Windows x64]\Print Processors\\[user defined]\Driver</code> Registry key that points to the DLL. For the print processor to be correctly installed, it must be located in the system print-processor directory that can be found with the <code>GetPrintProcessorDirectory</code> API call.(Citation: Microsoft AddPrintProcessor May 2018) After the print processors are installed, the print spooler service, which starts during boot, must be restarted in order for them to run.(Citation: ESET PipeMon May 2020) The print spooler service runs under SYSTEM level permissions, therefore print processors installed by an adversary may run under elevated privileges.
 
-对手可能滥用打印处理器在系统启动期间运行恶意DLL以实现持久性和/或权提升。打印处理器是由打印池服务（spoolsv.exe）在启动期间加载的DLL。
+攻击者可能滥用打印处理器在系统启动期间运行恶意DLL以实现持久性和/或权提升。打印处理器是由打印池服务（spoolsv.exe）在启动期间加载的DLL。
 
-对手可以通过添加打印处理来滥用打印服务，在启动时加载恶意DLL。可以使用具有启用了SeLoadDriverPrivilege权限的户通过AddPrintProcessor API用安装打处理器。另外，可以通过添加指向DLL的HKLM\SYSTEM\[CurrentControlSet或Control001]\Control\Print\Environments\[Windows架构：例如Windows x64]\Print Processors\[用户定义] \Driver注册表键来将打印处理器注册到打印池服务。为了正确安装打印处理，它必须位系统打印处理器录中，可以使用GetPrintProcessorDirectory API调用找到该目录。（引用：Microsoft AddPrintProcessor May 2018）安装打印处理器后，必须重新启动在启动时启动的打印池服务才能使其运行。（引用：ESET PipeMon May 0）打印池服务在SYSTEM级别权限下运行，因此手安装的打印处理器可能以提升的特权运行。
+攻击者可以通过添加打印处理来滥用打印服务，在启动时加载恶意DLL。可以使用具有启用了SeLoadDriverPrivilege权限的户通过AddPrintProcessor API用安装打处理器。另外，可以通过添加指向DLL的HKLM\SYSTEM\[CurrentControlSet或Control001]\Control\Print\Environments\[Windows架构：例如Windows x64]\Print Processors\[用户定义] \Driver注册表键来将打印处理器注册到打印池服务。为了正确安装打印处理，它必须位系统打印处理器录中，可以使用GetPrintProcessorDirectory API调用找到该目录。（引用：Microsoft AddPrintProcessor May 2018）安装打印处理器后，必须重新启动在启动时启动的打印池服务才能使其运行。（引用：ESET PipeMon May 0）打印池服务在SYSTEM级别权限下运行，因此手安装的打印处理器可能以提升的特权运行。
 
 ### [T1547.013]:XDG Autostart Entries
 > 中文：XDG自启动项
@@ -6374,11 +6503,11 @@ Within an XDG autostart entry file, the <code>Type</code> key specifies if the e
 
 Adversaries may use XDG autostart entries to maintain persistence by executing malicious commands and payloads, such as remote access tools, during the startup of a desktop environment. Commands included in XDG autostart entries with execute after user logon in the context of the currently logged on user. Adversaries may also use [Masquerading](https://attack.mitre.org/techniques/T1036) to make XDG autostart entries look as if they are associated with legitimate programs.
 
-对手可能修改XDG自启动条目，在系统启动期间执行程序或命令。符合XDG标准的Linux面环境实现了XDG自启动条目的功能这些条目允许应用程序在用户登录的桌面环境启期间自动启。默认情况下，XDG自启动条目存储在<code>/etc/xdg/autostart</code>或<code>~/.config/autostart</code>目录中，并具有.desktop文件扩展名。（引用：Free Desktop Application Autostart Feb 2006）
+攻击者可能修改XDG自启动条目，在系统启动期间执行程序或命令。符合XDG标准的Linux面环境实现了XDG自启动条目的功能这些条目允许应用程序在用户登录的桌面环境启期间自动启。默认情况下，XDG自启动条目存储在<code>/etc/xdg/autostart</code>或<code>~/.config/autostart</code>目录中，并具有.desktop文件扩展名。（引用：Free Desktop Application Autostart Feb 2006）
 
 在XDG自启动条文件中，<code>Type</code>指定条目是应用程序（类型1）、链接（类型2）还是目录（类型3）。<code>Name</code>键表示创建者分配任意名称，<code>Exec</code>键表示要执行的应用程序命令行参数。（引用：Free Desktop Entry Keys）
 
-对手可以利用XDG自启动条目通过在桌面环境启动期间执行恶意命令和载（例如远程访问工）来维持持久性。包含在XDG自启动条中的命令将在当前登录用户的上下文中用户登录后执行。对手还可以使用伪技术使XDG自启动目看起来与合程序相关联。
+攻击者可以利用XDG自启动条目通过在桌面环境启动期间执行恶意命令和载（例如远程访问工）来维持持久性。包含在XDG自启动条中的命令将在当前登录用户的上下文中用户登录后执行。攻击者还可以使用伪技术使XDG自启动目看起来与合程序相关联。
 
 ### [T1547.014]:Active Setup
 > External ID: T1547.014
@@ -6394,11 +6523,11 @@ Adversaries may abuse Active Setup by creating a key under <code> HKLM\SOFTWARE\
 
 Adversaries can abuse these components to execute malware, such as remote access tools, to maintain persistence through system reboots. Adversaries may also use [Masquerading](https://attack.mitre.org/techniques/T1036) to make the Registry entries look as if they are associated with legitimate programs.
 
-对手可以通过向本地计算机的Active Setup添加注册表键来实现持久性。Active Setup是Windows机制，用于在用户登录时执行程序。注册表键中存储的值将在用户登录计算机后执行。（引用：Klein Active Setup 0）这些程序将在用户的上下文中执行，并具有与该帐户关联的权限级别。
+攻击者可以通过向本地计算机的Active Setup添加注册表键来实现持久性。Active Setup是Windows机制，用于在用户登录时执行程序。注册表键中存储的值将在用户登录计算机后执行。（引用：Klein Active Setup 0）这些程序将在用户的上下文中执行，并具有与该帐户关联的权限级别。
 
-对手可以通过<code> HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components</code>下创建一个键，并为<code>StubPath</code>设置恶意值来滥用Active Setup。这个值将作为用户登录计算机时要执行的程序。（引用：Mandiant Glyer APT 0）（引用：izenlab Packrat 2015）引用：FireEye CFR Water Hole 2012）引用：SECURELIST Bright Star 2015）（引用：paloalto Tropic Trooper 2016）
+攻击者可以通过<code> HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components</code>下创建一个键，并为<code>StubPath</code>设置恶意值来滥用Active Setup。这个值将作为用户登录计算机时要执行的程序。（引用：Mandiant Glyer APT 0）（引用：izenlab Packrat 2015）引用：FireEye CFR Water Hole 2012）引用：SECURELIST Bright Star 2015）（引用：paloalto Tropic Trooper 2016）
 
-对手可以滥用些组件来执行恶意软件，例如远程访问工具，以在系统重新启动时保持持久性。对手还可以使用伪装技术使注册表目看起来合法程序相关联。
+攻击者可以滥用些组件来执行恶意软件，例如远程访问工具，以在系统重新启动时保持持久性。攻击者还可以使用伪装技术使注册表目看起来合法程序相关联。
 
 ### [T1547.015]:Login Items
 > 中文：登录项
@@ -6416,11 +6545,11 @@ Login items installed using the Service Management Framework leverage <code>laun
 
 Adversaries can utilize [AppleScript](https://attack.mitre.org/techniques/T1059/002) and [Native API](https://attack.mitre.org/techniques/T1106) calls to create a login item to spawn malicious executables.(Citation: ELC Running at startup) Prior to version 10.5 on macOS, adversaries can add login items by using [AppleScript](https://attack.mitre.org/techniques/T1059/002) to send an Apple events to the “System Events” process, which has an AppleScript dictionary for manipulating login items.(Citation: Login Items AE) Adversaries can use a command such as <code>tell application “System Events” to make login item at end with properties /path/to/executable</code>.(Citation: Startup Items Eclectic)(Citation: hexed osx.dok analysis 2019)(Citation: Add List Remove Login Items Apple Script) This command adds the path of the malicious executable to the login item file list located in <code>~/Library/Application Support/com.apple.backgroundtaskmanagementagent/backgrounditems.btm</code>.(Citation: Startup Items Eclectic) Adversaries can also use login items to launch executables that can be used to control the victim system remotely or as a means to gain privilege escalation by prompting for user credentials.(Citation: objsee mac malware 2017)(Citation: CheckPoint Dok)(Citation: objsee netwire backdoor 2019)
 
-对手可能添加登录项以在用户登录时执行，以获取持久性或提升权限。登录项是应用程序、档、文件夹或服务器连接，在用户登录时动启动。(引用：Open Login Items Apple) 可以通过享文件列表或服务管理框架添加登录项。(引用：Adding Login Items) 使用脚本语言（如AppleScript）可以添加共享文件列表登录项，而服务管理框架使用调用<code>SMLoginItemSetEnabled</code>。
+攻击者可能添加登录项以在用户登录时执行，以获取持久性或提升权限。登录项是应用程序、档、文件夹或服务器连接，在用户登录时动启动。(引用：Open Login Items Apple) 可以通过享文件列表或服务管理框架添加登录项。(引用：Adding Login Items) 使用脚本语言（如AppleScript）可以添加共享文件列表登录项，而服务管理框架使用调用<code>SMLoginItemSetEnabled</code>。
 
 使用服务管理框架安装的登录项利用<code>launchd</code>，在系统偏好设置中不可见，并且只能由创建它们的应用程序删除。(引用：Adding Login Items)(引用：SMLoginItemSetEnabled Schroeder 2013) 使用共享文件列表创建的登录项在系统偏好设置中可见，可以在启动时隐藏应用程序，并通过LaunchServices而不是launchd执行，以打开应用程序文档或URL，而无需使用Finder。(引用：Launch Services Apple Developer) 用户和应用程序使用登录项来配置其用户环境，以启动常用的服务或应用程序，例如电邮件、聊天和乐应用程序。
 
-手可以利用[AppleScript](https://attack.mitre.org/techniques/T9/002)和[Native API](https://attack.mitre.org/techniques/T1106)调用创建登录项以生成恶意可执行文件。(引用：ELC Running at startup) 在macOS的10.5版本之前，对手可以使用[AppleScript](https://attack.mitre.org/techniques/T1059/002)通过向“System Events进程发送Apple事件来添加登录项，该进程具有用于操作登录项的AppleScript字典。(引用：Login Items AE) 对手可以使用类似<code>tell application “System Events” to make login item at end with properties /path/to/executable</code>的命令。(引：Startup Items Eclectic)(用：hexed osx.dok analysis 2019)(引用：Add List Remove Login Items Apple Script) 此命令将恶意可执行文件路径添加到位于<code>~/Library/Application Support/com.apple.backgroundtaskmanagementagent/backgrounditems.btm</code>的登录项文件列表中。(引用：Startup Items Eclectic) 对手还可以使用登录项启动可执行文件以远程控制受害者系统或作为获取权限升的手段，通过提示用户凭据。(用：objsee mac malware 2017)(引用：CheckPoint Dok)(引用objsee netwire backdoor 2019)
+手可以利用[AppleScript](https://attack.mitre.org/techniques/T9/002)和[Native API](https://attack.mitre.org/techniques/T1106)调用创建登录项以生成恶意可执行文件。(引用：ELC Running at startup) 在macOS的10.5版本之前，攻击者可以使用[AppleScript](https://attack.mitre.org/techniques/T1059/002)通过向“System Events进程发送Apple事件来添加登录项，该进程具有用于操作登录项的AppleScript字典。(引用：Login Items AE) 攻击者可以使用类似<code>tell application “System Events” to make login item at end with properties /path/to/executable</code>的命令。(引：Startup Items Eclectic)(用：hexed osx.dok analysis 2019)(引用：Add List Remove Login Items Apple Script) 此命令将恶意可执行文件路径添加到位于<code>~/Library/Application Support/com.apple.backgroundtaskmanagementagent/backgrounditems.btm</code>的登录项文件列表中。(引用：Startup Items Eclectic) 攻击者还可以使用登录项启动可执行文件以远程控制受害者系统或作为获取权限升的手段，通过提示用户凭据。(用：objsee mac malware 2017)(引用：CheckPoint Dok)(引用objsee netwire backdoor 2019)
 
 ## [T1548]:Abuse Elevation Control Mechanism
 > External ID: T1548
@@ -6800,6 +6929,8 @@ Adversaries may modify code signing policies in a number of ways, including thro
 
 To gain access to kernel memory to modify variables related to signature checks, such as modifying <code>g_CiOptions</code> to disable Driver Signature Enforcement, adversaries may conduct [Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068) using a signed, but vulnerable driver.(Citation: Unit42 AcidBox June 2020)(Citation: GitHub Turla Driver Loader)
 ## [T1554]:Compromise Client Software Binary
+> 中文：入侵客户端软件二进制文件
+>
 > External ID: T1554
 > STIX ID: attack-pattern--960c3c86-1480-4d72-b4e0-8c242e84a5c5
 > Platforms: ['Linux', 'macOS', 'Windows']
@@ -6810,6 +6941,11 @@ To gain access to kernel memory to modify variables related to signature checks,
  Adversaries may modify client software binaries to establish persistent access to systems. Client software enables users to access services provided by a server. Common client software types are SSH clients, FTP clients, email clients, and web browsers.
 
 Adversaries may make modifications to client software binaries to carry out malicious tasks when those applications are in use. For example, an adversary may copy source code for the client software, add a backdoor, compile for the target, and replace the legitimate application binary (or support files) with the backdoored one. Since these applications may be routinely executed by the user, the adversary can leverage this for persistent access to the host.
+
+攻击者可能修改客户端软件二进制文件以建立对系统的持久访问。客户端软件允许用户访问服务器提供的服务。常见的客户端软件类型包括SSH客户端、FTP客户端、电子邮件客户端和Web浏览器。
+
+攻击者可能对客户端软件二进制文件进行修改，以在使用这些应用程序时执行恶意任务。例如，攻击者可能复制客户端软件的源代码，添加后门，为目标编译，并替换合法的应用程序二进制文件（或支持文件）为带有后门的文件。由于这些应用程序可能经常由用户执行，攻击者可以利用这一点实现对主机的持久访问。
+
 ## [T1555]:Credentials from Password Stores
 > External ID: T1555
 > STIX ID: attack-pattern--3fc9b85a-2862-4363-a64d-d692e3ffbee0
@@ -6892,6 +7028,8 @@ Password recovery tools may also obtain plain text passwords from the Credential
 Adversaries may acquire user credentials from password managers by extracting the master password and/or plain-text credentials from memory.(Citation: FoxIT Wocao December 2019)(Citation: Github KeeThief) Adversaries may extract credentials from memory via [Exploitation for Credential Access](https://attack.mitre.org/techniques/T1212).(Citation: NVD CVE-2019-3610)
  Adversaries may also try brute forcing via [Password Guessing](https://attack.mitre.org/techniques/T1110/001) to obtain the master password of a password manager.(Citation: Cyberreason Anchor December 2019)
 ## [T1556]:Modify Authentication Process
+> 中文：修改身份认证机制
+>
 > External ID: T1556
 > STIX ID: attack-pattern--f4c1826f-a322-41cd-9557-562100848c84
 > Platforms: ['Windows', 'Linux', 'macOS', 'Network', 'Azure AD', 'Google Workspace', 'IaaS', 'Office 365', 'SaaS']
@@ -6902,6 +7040,13 @@ Adversaries may acquire user credentials from password managers by extracting th
  Adversaries may modify authentication mechanisms and processes to access user credentials or enable otherwise unwarranted access to accounts. The authentication process is handled by mechanisms, such as the Local Security Authentication Server (LSASS) process and the Security Accounts Manager (SAM) on Windows, pluggable authentication modules (PAM) on Unix-based systems, and authorization plugins on MacOS systems, responsible for gathering, storing, and validating credentials. By modifying an authentication process, an adversary may be able to authenticate to a service or system without using [Valid Accounts](https://attack.mitre.org/techniques/T1078).
 
 Adversaries may maliciously modify a part of this process to either reveal credentials or bypass authentication mechanisms. Compromised credentials or access may be used to bypass access controls placed on various resources on systems within the network and may even be used for persistent access to remote systems and externally available services, such as VPNs, Outlook Web Access and remote desktop.
+
+攻击者可能会修改身份验证机制和流程以访问用户凭据或激活对账户的未授权访问。身份验证过程由各种机制处理，例如Windows上的本地安全认证服务器（LSASS）进程和安全账户管理器（SAM），基于Unix的系统上的可插拔身份验证模块（PAM），以及MacOS系统上的授权插件，负责收集、存储和验证凭据。通过修改身份验证过程，攻击者可能能够在不使用[有效账户](https://attack.mitre.org/techniques/T1078)的情况下对服务或系统进行身份验证。
+
+攻击者可能恶意修改这个过程的某个部分，以揭示凭据或绕过身份验证机制。被入侵的凭证或访问权限可用于绕过网络中系统上施加的各种资源的访问控制，并且甚至可以用于对远程系统和外部可用服务（如VPN、Outlook Web Access和远程桌面）进行持久访问。
+
+
+
 ### [T1556.001]:Domain Controller Authentication
 > External ID: T1556.001
 > STIX ID: attack-pattern--d4b96d2c-1032-4b22-9235-2b5b649d0605
@@ -7976,6 +8121,8 @@ Adversaries may also directly modify the search order via DLL redirection, which
 
 If a search order-vulnerable program is configured to run at a higher privilege level, then the adversary-controlled DLL that is loaded will also be executed at the higher level. In this case, the technique could be used for privilege escalation from user to administrator or SYSTEM or from administrator to SYSTEM, depending on the program. Programs that fall victim to path hijacking may appear to behave normally because malicious DLLs may be configured to also load the legitimate DLLs they were meant to replace.
 ### [T1574.002]:DLL Side-Loading
+> 中文：DLL侧加载
+>
 > External ID: T1574.002
 > STIX ID: attack-pattern--e64c62cf-9cd7-4a14-94ec-cdaac43ab44b
 > Platforms: ['Windows']
