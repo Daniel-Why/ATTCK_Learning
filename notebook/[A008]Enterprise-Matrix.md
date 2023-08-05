@@ -431,7 +431,7 @@ These techniques often overlap with Persistence techniques, as OS features that 
 ||[Systemd Timers](###[T1053.006]:Systemd Timers)|systemd定时器|T1053.006|
 ||[Container Orchestration Job](###[T1053.007]:Container Orchestration Job)|容器编排作业|T1053.007|
 |[Process Injection](##[T1055]:Process Injection)||进程注入|T1055|
-||[Dynamic-link Library Injection](###[T1055.001]:Dynamic-link Library Injection)|DLL动态注入|T1055.001|
+||[Dynamic-link Library Injection](###[T1055.001]:Dynamic-link Library Injection)|DLL注入|T1055.001|
 ||[Portable Executable Injection](###[T1055.002]:Portable Executable Injection)|可移植可执行文件注入|T1055.002|
 ||[Thread Execution Hijacking](###[T1055.003]:Thread Execution Hijacking)|线程执行劫持|T1055.003|
 ||[Asynchronous Procedure Call](###[T1055.004]:Asynchronous Procedure Call)|异步过程调用|T1055.004|
@@ -439,7 +439,7 @@ These techniques often overlap with Persistence techniques, as OS features that 
 ||[Ptrace System Calls](###[T1055.008]:Ptrace System Calls)|ptrace系统调用|T1055.008|
 ||[Proc Memory](###[T1055.009]:Proc Memory)|Proc内存|T1055.009|
 ||[Extra Window Memory Injection](###[T1055.011]:Extra Window Memory Injection)|额外窗口内存注入|T1055.011|
-||[Process Hollowing](###[T1055.012]:Process Hollowing)|傀儡进程|T1055.012|
+||[Process Hollowing](###[T1055.012]:Process Hollowing)|进程空心化|T1055.012|
 ||[Process Doppelgänging](###[T1055.013]:Process Doppelgänging)|Process Doppelgänging|T1055.013|
 ||[VDSO Hijacking](###[T1055.014]:VDSO Hijacking)|VDSO 劫持|T1055.014|
 ||[ListPlanting](###[T1055.015]:ListPlanting)|列表种植|T1055.015|
@@ -449,78 +449,77 @@ These techniques often overlap with Persistence techniques, as OS features that 
 ||[Domain Accounts](###[T1078.002]:Domain Accounts)|域账户|T1078.002|
 ||[Local Accounts](###[T1078.003]:Local Accounts)|本地账户|T1078.003|
 ||[Cloud Accounts](###[T1078.004]:Cloud Accounts)|云账户|T1078.004|
-|[Access Token Manipulation](##[T1134]:Access Token Manipulation)|||T1134|
-||[Token Impersonation/Theft](###[T1134.001]:Token Impersonation/Theft)||T1134.001|
-||[Create Process with Token](###[T1134.002]:Create Process with Token)||T1134.002|
-||[Make and Impersonate Token](###[T1134.003]:Make and Impersonate Token)||T1134.003|
-||[Parent PID Spoofing](###[T1134.004]:Parent PID Spoofing)||T1134.004|
-||[SID-History Injection](###[T1134.005]:SID-History Injection)||T1134.005|
-|[Domain Policy Modification](##[T1484]:Domain Policy Modification)|||T1484|
-||[Group Policy Modification](###[T1484.001]:Group Policy Modification)||T1484.001|
-||[Domain Trust Modification](###[T1484.002]:Domain Trust Modification)||T1484.002|
-|[Create or Modify System Process](##[T1543]:Create or Modify System Process)|||T1543|
-||[Launch Agent](###[T1543.001]:Launch Agent)||T1543.001|
-||[Systemd Service](###[T1543.002]:Systemd Service)||T1543.002|
-||[Windows Service](###[T1543.003]:Windows Service)||T1543.003|
-||[Launch Daemon](###[T1543.004]:Launch Daemon)||T1543.004|
-|[Event Triggered Execution](##[T1546]:Event Triggered Execution)|||T1546|
-||[Change Default File Association](###[T1546.001]:Change Default File Association)||T1546.001|
-||[Screensaver](###[T1546.002]:Screensaver)||T1546.002|
-||[Windows Management Instrumentation Event Subscription](###[T1546.003]:Windows Management Instrumentation Event Subscription)||T1546.003|
-||[Unix Shell Configuration Modification](###[T1546.004]:Unix Shell Configuration Modification)||T1546.004|
-||[Trap](###[T1546.005]:Trap)||T1546.005|
-||[LC_LOAD_DYLIB Addition](###[T1546.006]:LC_LOAD_DYLIB Addition)||T1546.006|
-||[Netsh Helper DLL](###[T1546.007]:Netsh Helper DLL)||T1546.007|
-||[Accessibility Features](###[T1546.008]:Accessibility Features)||T1546.008|
-||[AppCert DLLs](###[T1546.009]:AppCert DLLs)||T1546.009|
-||[AppInit DLLs](###[T1546.010]:AppInit DLLs)||T1546.010|
-||[Application Shimming](###[T1546.011]:Application Shimming)||T1546.011|
-||[Image File Execution Options Injection](###[T1546.012]:Image File Execution Options Injection)||T1546.012|
-||[PowerShell Profile](###[T1546.013]:PowerShell Profile)||T1546.013|
-||[Emond](###[T1546.014]:Emond)||T1546.014|
-||[Component Object Model Hijacking](###[T1546.015]:Component Object Model Hijacking)||T1546.015|
-||[Installer Packages](###[T1546.016]:Installer Packages)||T1546.016|
-|[Boot or Logon Autostart Execution](##[T1547]:Boot or Logon Autostart Execution)|||T1547|
-||[Registry Run Keys / Startup Folder](###[T1547.001]:Registry Run Keys / Startup Folder)||T1547.001|
-||[Authentication Package](###[T1547.002]:Authentication Package)||T1547.002|
-||[Time Providers](###[T1547.003]:Time Providers)||T1547.003|
-||[Winlogon Helper DLL](###[T1547.004]:Winlogon Helper DLL)||T1547.004|
-||[Security Support Provider](###[T1547.005]:Security Support Provider)||T1547.005|
-||[Kernel Modules and Extensions](###[T1547.006]:Kernel Modules and Extensions)||T1547.006|
-||[Re-opened Applications](###[T1547.007]:Re-opened Applications)||T1547.007|
-||[LSASS Driver](###[T1547.008]:LSASS Driver)||T1547.008|
-||[Shortcut Modification](###[T1547.009]:Shortcut Modification)||T1547.009|
-||[Port Monitors](###[T1547.010]:Port Monitors)||T1547.010|
-||[Print Processors](###[T1547.012]:Print Processors)||T1547.012|
-||[XDG Autostart Entries](###[T1547.013]:XDG Autostart Entries)||T1547.013|
-||[Active Setup](###[T1547.014]:Active Setup)||T1547.014|
-||[Login Items](###[T1547.015]:Login Items)||T1547.015|
-|[Abuse Elevation Control Mechanism](##[T1548]:Abuse Elevation Control Mechanism)|||T1548|
-||[Setuid and Setgid](###[T1548.001]:Setuid and Setgid)||T1548.001|
-||[Bypass User Account Control](###[T1548.002]:Bypass User Account Control)||T1548.002|
-||[Sudo and Sudo Caching](###[T1548.003]:Sudo and Sudo Caching)||T1548.003|
-||[Elevated Execution with Prompt](###[T1548.004]:Elevated Execution with Prompt)||T1548.004|
-|[Hijack Execution Flow](##[T1574]:Hijack Execution Flow)|||T1574|
-||[DLL Search Order Hijacking](###[T1574.001]:DLL Search Order Hijacking)||T1574.001|
-||[DLL Side-Loading](###[T1574.002]:DLL Side-Loading)||T1574.002|
-||[Dylib Hijacking](###[T1574.004]:Dylib Hijacking)||T1574.004|
-||[Executable Installer File Permissions Weakness](###[T1574.005]:Executable Installer File Permissions Weakness)||T1574.005|
-||[Dynamic Linker Hijacking](###[T1574.006]:Dynamic Linker Hijacking)||T1574.006|
-||[Path Interception by PATH Environment Variable](###[T1574.007]:Path Interception by PATH Environment Variable)||T1574.007|
-||[Path Interception by Search Order Hijacking](###[T1574.008]:Path Interception by Search Order Hijacking)||T1574.008|
-||[Path Interception by Unquoted Path](###[T1574.009]:Path Interception by Unquoted Path)||T1574.009|
-||[Services File Permissions Weakness](###[T1574.010]:Services File Permissions Weakness)||T1574.010|
-||[Services Registry Permissions Weakness](###[T1574.011]:Services Registry Permissions Weakness)||T1574.011|
-||[COR_PROFILER](###[T1574.012]:COR_PROFILER)||T1574.012|
-||[KernelCallbackTable](###[T1574.013]:KernelCallbackTable)||T1574.013|
-|[Escape to Host](##[T1611]:Escape to Host)|||T1611|
+|[Access Token Manipulation](##[T1134]:Access Token Manipulation)||访问令牌操作|T1134|
+||[Token Impersonation/Theft](###[T1134.001]:Token Impersonation/Theft)|令牌模拟/窃取|T1134.001|
+||[Create Process with Token](###[T1134.002]:Create Process with Token)|创建带Token的进程|T1134.002|
+||[Make and Impersonate Token](###[T1134.003]:Make and Impersonate Token)|制作并模拟令牌|T1134.003|
+||[Parent PID Spoofing](###[T1134.004]:Parent PID Spoofing)|父进程PID欺骗|T1134.004|
+||[SID-History Injection](###[T1134.005]:SID-History Injection)|SID 历史注入|T1134.005|
+|[Domain Policy Modification](##[T1484]:Domain Policy Modification)||修改域策略|T1484|
+||[Group Policy Modification](###[T1484.001]:Group Policy Modification)|修改组策略|T1484.001|
+||[Domain Trust Modification](###[T1484.002]:Domain Trust Modification)|修改域信任|T1484.002|
+|[Create or Modify System Process](##[T1543]:Create or Modify System Process)||创建或修改系统进程|T1543|
+||[Launch Agent](###[T1543.001]:Launch Agent)|启动Agent|T1543.001|
+||[Systemd Service](###[T1543.002]:Systemd Service)|Systemd 服务|T1543.002|
+||[Windows Service](###[T1543.003]:Windows Service)|Windows服务|T1543.003|
+||[Launch Daemon](###[T1543.004]:Launch Daemon)|启动 Daemon|T1543.004|
+|[Event Triggered Execution](##[T1546]:Event Triggered Execution)||事件触发执行|T1546|
+||[Change Default File Association](###[T1546.001]:Change Default File Association)|更改默认文件关联|T1546.001|
+||[Screensaver](###[T1546.002]:Screensaver)|屏幕保护|T1546.002|
+||[Windows Management Instrumentation Event Subscription](###[T1546.003]:Windows Management Instrumentation Event Subscription)|WMI订阅事件|T1546.003|
+||[Unix Shell Configuration Modification](###[T1546.004]:Unix Shell Configuration Modification)|Unix Shell Configuration Modification (USCM)|T1546.004|
+||[Trap](###[T1546.005]:Trap)|Trap 命令|T1546.005|
+||[LC_LOAD_DYLIB Addition](###[T1546.006]:LC_LOAD_DYLIB Addition)|LC LOAD DYLIB 添加|T1546.006|
+||[Netsh Helper DLL](###[T1546.007]:Netsh Helper DLL)|Netsh Helper DLL|T1546.007|
+||[Accessibility Features](###[T1546.008]:Accessibility Features)|辅助功能|T1546.008|
+||[AppCert DLLs](###[T1546.009]:AppCert DLLs)|AppCert DLLs|T1546.009|
+||[AppInit DLLs](###[T1546.010]:AppInit DLLs)|Applnit DLLs|T1546.010|
+||[Application Shimming](###[T1546.011]:Application Shimming)|应用程序垫片|T1546.011|
+||[Image File Execution Options Injection](###[T1546.012]:Image File Execution Options Injection)|IFEO（[映像劫持](https://baike.baidu.com/item/映像劫持?fromModule=lemma_inlink)）注入|T1546.012|
+||[PowerShell Profile](###[T1546.013]:PowerShell Profile)|PowerShell Profile|T1546.013|
+||[Emond](###[T1546.014]:Emond)|Emond|T1546.014|
+||[Component Object Model Hijacking](###[T1546.015]:Component Object Model Hijacking)|COM(组件对象模型)劫持|T1546.015|
+||[Installer Packages](###[T1546.016]:Installer Packages)|安装包|T1546.016|
+|[Boot or Logon Autostart Execution](##[T1547]:Boot or Logon Autostart Execution)||启动或登录自动执行|T1547|
+||[Registry Run Keys / Startup Folder](###[T1547.001]:Registry Run Keys / Startup Folder)|注册表/自启动文件夹|T1547.001|
+||[Authentication Package](###[T1547.002]:Authentication Package)|身份验证包|T1547.002|
+||[Time Providers](###[T1547.003]:Time Providers)|Time Providers|T1547.003|
+||[Winlogon Helper DLL](###[T1547.004]:Winlogon Helper DLL)|Winlogon Helper DLL|T1547.004|
+||[Security Support Provider](###[T1547.005]:Security Support Provider)|Security Support Provider|T1547.005|
+||[Kernel Modules and Extensions](###[T1547.006]:Kernel Modules and Extensions)|内核模块和扩展|T1547.006|
+||[Re-opened Applications](###[T1547.007]:Re-opened Applications)|重新打开应用|T1547.007|
+||[LSASS Driver](###[T1547.008]:LSASS Driver)|LSASS Driver|T1547.008|
+||[Shortcut Modification](###[T1547.009]:Shortcut Modification)|修改快捷方式|T1547.009|
+||[Port Monitors](###[T1547.010]:Port Monitors)|端口监视器|T1547.010|
+||[Print Processors](###[T1547.012]:Print Processors)|打印处理器|T1547.012|
+||[XDG Autostart Entries](###[T1547.013]:XDG Autostart Entries)|XDG自启动项|T1547.013|
+||[Active Setup](###[T1547.014]:Active Setup)|Active Setup|T1547.014|
+||[Login Items](###[T1547.015]:Login Items)|登录项|T1547.015|
+|[Abuse Elevation Control Mechanism](##[T1548]:Abuse Elevation Control Mechanism)||滥用权限提升控制机制|T1548|
+||[Setuid and Setgid](###[T1548.001]:Setuid and Setgid)|setuid和setgid|T1548.001|
+||[Bypass User Account Control](###[T1548.002]:Bypass User Account Control)|绕过用户账户控制(UAC)|T1548.002|
+||[Sudo and Sudo Caching](###[T1548.003]:Sudo and Sudo Caching)|Sudo 和 Sudo缓存|T1548.003|
+||[Elevated Execution with Prompt](###[T1548.004]:Elevated Execution with Prompt)|通过提示提升执行权|T1548.004|
+|[Hijack Execution Flow](##[T1574]:Hijack Execution Flow)||劫持执行流|T1574|
+||[DLL Search Order Hijacking](###[T1574.001]:DLL Search Order Hijacking)|DLL 搜索顺序劫持|T1574.001|
+||[DLL Side-Loading](###[T1574.002]:DLL Side-Loading)|DLL侧加载|T1574.002|
+||[Dylib Hijacking](###[T1574.004]:Dylib Hijacking)|Dylib 劫持|T1574.004|
+||[Executable Installer File Permissions Weakness](###[T1574.005]:Executable Installer File Permissions Weakness)|可执行安装程序文件权限弱点|T1574.005|
+||[Dynamic Linker Hijacking](###[T1574.006]:Dynamic Linker Hijacking)|动态连接器劫持|T1574.006|
+||[Path Interception by PATH Environment Variable](###[T1574.007]:Path Interception by PATH Environment Variable)|PATH环境变量的路径拦截|T1574.007|
+||[Path Interception by Search Order Hijacking](###[T1574.008]:Path Interception by Search Order Hijacking)|搜索顺序劫持的路径拦截|T1574.008|
+||[Path Interception by Unquoted Path](###[T1574.009]:Path Interception by Unquoted Path)|未引鑫庚用路径的路径拦截|T1574.009|
+||[Services File Permissions Weakness](###[T1574.010]:Services File Permissions Weakness)|服务文件权限弱点|T1574.010|
+||[Services Registry Permissions Weakness](###[T1574.011]:Services Registry Permissions Weakness)|服务注册权限弱点|T1574.011|
+||[COR_PROFILER](###[T1574.012]:COR_PROFILER)|COR PROFILER环境变量劫持|T1574.012|
+||[KernelCallbackTable](###[T1574.013]:KernelCallbackTable)|内核回调注入|T1574.013|
+|[Escape to Host](##[T1611]:Escape to Host)||逃逸至主机|T1611|
 
 
 
 ## [TA0005]:Defense Evasion
 > External ID: TA0005
 > STIX ID: x-mitre-tactic--78b23412-0651-46d7-a540-170a1ce8bd5a
-
 
 **Description: **
  The adversary is trying to avoid being detected.
@@ -531,189 +530,189 @@ Defense Evasion consists of techniques that adversaries use to avoid detection t
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[Direct Volume Access](##[T1006]:Direct Volume Access)|||T1006|
-|[Rootkit](##[T1014]:Rootkit)|||T1014|
-|[Obfuscated Files or Information](##[T1027]:Obfuscated Files or Information)|||T1027|
-||[Binary Padding](###[T1027.001]:Binary Padding)||T1027.001|
-||[Software Packing](###[T1027.002]:Software Packing)||T1027.002|
-||[Steganography](###[T1027.003]:Steganography)||T1027.003|
-||[Compile After Delivery](###[T1027.004]:Compile After Delivery)||T1027.004|
-||[Indicator Removal from Tools](###[T1027.005]:Indicator Removal from Tools)||T1027.005|
-||[HTML Smuggling](###[T1027.006]:HTML Smuggling)||T1027.006|
-||[Dynamic API Resolution](###[T1027.007]:Dynamic API Resolution)||T1027.007|
-||[Stripped Payloads](###[T1027.008]:Stripped Payloads)||T1027.008|
-||[Embedded Payloads](###[T1027.009]:Embedded Payloads)||T1027.009|
-||[Command Obfuscation](###[T1027.010]:Command Obfuscation)||T1027.010|
-||[Fileless Storage](###[T1027.011]:Fileless Storage)||T1027.011|
-|[Masquerading](##[T1036]:Masquerading)|||T1036|
-||[Invalid Code Signature](###[T1036.001]:Invalid Code Signature)||T1036.001|
-||[Right-to-Left Override](###[T1036.002]:Right-to-Left Override)||T1036.002|
-||[Rename System Utilities](###[T1036.003]:Rename System Utilities)||T1036.003|
-||[Masquerade Task or Service](###[T1036.004]:Masquerade Task or Service)||T1036.004|
-||[Match Legitimate Name or Location](###[T1036.005]:Match Legitimate Name or Location)||T1036.005|
-||[Space after Filename](###[T1036.006]:Space after Filename)||T1036.006|
-||[Double File Extension](###[T1036.007]:Double File Extension)||T1036.007|
-||[Masquerade File Type](###[T1036.008]:Masquerade File Type)||T1036.008|
-|[Process Injection](##[T1055]:Process Injection)|||T1055|
-||[Dynamic-link Library Injection](###[T1055.001]:Dynamic-link Library Injection)||T1055.001|
-||[Portable Executable Injection](###[T1055.002]:Portable Executable Injection)||T1055.002|
-||[Thread Execution Hijacking](###[T1055.003]:Thread Execution Hijacking)||T1055.003|
-||[Asynchronous Procedure Call](###[T1055.004]:Asynchronous Procedure Call)||T1055.004|
-||[Thread Local Storage](###[T1055.005]:Thread Local Storage)||T1055.005|
-||[Ptrace System Calls](###[T1055.008]:Ptrace System Calls)||T1055.008|
-||[Proc Memory](###[T1055.009]:Proc Memory)||T1055.009|
-||[Extra Window Memory Injection](###[T1055.011]:Extra Window Memory Injection)||T1055.011|
-||[Process Hollowing](###[T1055.012]:Process Hollowing)||T1055.012|
-||[Process Doppelgänging](###[T1055.013]:Process Doppelgänging)||T1055.013|
-||[VDSO Hijacking](###[T1055.014]:VDSO Hijacking)||T1055.014|
-||[ListPlanting](###[T1055.015]:ListPlanting)||T1055.015|
-|[Indicator Removal](##[T1070]:Indicator Removal)|||T1070|
-||[Clear Windows Event Logs](###[T1070.001]:Clear Windows Event Logs)||T1070.001|
-||[Clear Linux or Mac System Logs](###[T1070.002]:Clear Linux or Mac System Logs)||T1070.002|
-||[Clear Command History](###[T1070.003]:Clear Command History)||T1070.003|
-||[File Deletion](###[T1070.004]:File Deletion)||T1070.004|
-||[Network Share Connection Removal](###[T1070.005]:Network Share Connection Removal)||T1070.005|
-||[Timestomp](###[T1070.006]:Timestomp)||T1070.006|
-||[Clear Network Connection History and Configurations](###[T1070.007]:Clear Network Connection History and Configurations)||T1070.007|
-||[Clear Mailbox Data](###[T1070.008]:Clear Mailbox Data)||T1070.008|
-||[Clear Persistence](###[T1070.009]:Clear Persistence)||T1070.009|
-|[Valid Accounts](##[T1078]:Valid Accounts)|||T1078|
-||[Default Accounts](###[T1078.001]:Default Accounts)||T1078.001|
-||[Domain Accounts](###[T1078.002]:Domain Accounts)||T1078.002|
-||[Local Accounts](###[T1078.003]:Local Accounts)||T1078.003|
-||[Cloud Accounts](###[T1078.004]:Cloud Accounts)||T1078.004|
-|[Modify Registry](##[T1112]:Modify Registry)|||T1112|
-|[Trusted Developer Utilities Proxy Execution](##[T1127]:Trusted Developer Utilities Proxy Execution)|||T1127|
-||[MSBuild](###[T1127.001]:MSBuild)||T1127.001|
-|[Access Token Manipulation](##[T1134]:Access Token Manipulation)|||T1134|
-||[Token Impersonation/Theft](###[T1134.001]:Token Impersonation/Theft)||T1134.001|
-||[Create Process with Token](###[T1134.002]:Create Process with Token)||T1134.002|
-||[Make and Impersonate Token](###[T1134.003]:Make and Impersonate Token)||T1134.003|
-||[Parent PID Spoofing](###[T1134.004]:Parent PID Spoofing)||T1134.004|
-||[SID-History Injection](###[T1134.005]:SID-History Injection)||T1134.005|
-|[Deobfuscate/Decode Files or Information](##[T1140]:Deobfuscate/Decode Files or Information)|||T1140|
-|[BITS Jobs](##[T1197]:BITS Jobs)|||T1197|
-|[Indirect Command Execution](##[T1202]:Indirect Command Execution)|||T1202|
-|[Traffic Signaling](##[T1205]:Traffic Signaling)|||T1205|
-||[Port Knocking](###[T1205.001]:Port Knocking)||T1205.001|
-||[Socket Filters](###[T1205.002]:Socket Filters)||T1205.002|
-|[Rogue Domain Controller](##[T1207]:Rogue Domain Controller)|||T1207|
-|[Exploitation for Defense Evasion](##[T1211]:Exploitation for Defense Evasion)|||T1211|
-|[System Script Proxy Execution](##[T1216]:System Script Proxy Execution)|||T1216|
-||[PubPrn](###[T1216.001]:PubPrn)||T1216.001|
-|[System Binary Proxy Execution](##[T1218]:System Binary Proxy Execution)|||T1218|
-||[Compiled HTML File](###[T1218.001]:Compiled HTML File)||T1218.001|
-||[Control Panel](###[T1218.002]:Control Panel)||T1218.002|
-||[CMSTP](###[T1218.003]:CMSTP)||T1218.003|
-||[InstallUtil](###[T1218.004]:InstallUtil)||T1218.004|
-||[Mshta](###[T1218.005]:Mshta)||T1218.005|
-||[Msiexec](###[T1218.007]:Msiexec)||T1218.007|
-||[Odbcconf](###[T1218.008]:Odbcconf)||T1218.008|
-||[Regsvcs/Regasm](###[T1218.009]:Regsvcs/Regasm)||T1218.009|
-||[Regsvr32](###[T1218.010]:Regsvr32)||T1218.010|
-||[Rundll32](###[T1218.011]:Rundll32)||T1218.011|
-||[Verclsid](###[T1218.012]:Verclsid)||T1218.012|
-||[Mavinject](###[T1218.013]:Mavinject)||T1218.013|
-||[MMC](###[T1218.014]:MMC)||T1218.014|
-|[XSL Script Processing](##[T1220]:XSL Script Processing)|||T1220|
-|[Template Injection](##[T1221]:Template Injection)|||T1221|
-|[File and Directory Permissions Modification](##[T1222]:File and Directory Permissions Modification)|||T1222|
-||[Windows File and Directory Permissions Modification](###[T1222.001]:Windows File and Directory Permissions Modification)||T1222.001|
-||[Linux and Mac File and Directory Permissions Modification](###[T1222.002]:Linux and Mac File and Directory Permissions Modification)||T1222.002|
-|[Execution Guardrails](##[T1480]:Execution Guardrails)|||T1480|
-||[Environmental Keying](###[T1480.001]:Environmental Keying)||T1480.001|
-|[Domain Policy Modification](##[T1484]:Domain Policy Modification)|||T1484|
-||[Group Policy Modification](###[T1484.001]:Group Policy Modification)||T1484.001|
-||[Domain Trust Modification](###[T1484.002]:Domain Trust Modification)||T1484.002|
-|[Virtualization/Sandbox Evasion](##[T1497]:Virtualization/Sandbox Evasion)|||T1497|
-||[System Checks](###[T1497.001]:System Checks)||T1497.001|
-||[User Activity Based Checks](###[T1497.002]:User Activity Based Checks)||T1497.002|
-||[Time Based Evasion](###[T1497.003]:Time Based Evasion)||T1497.003|
-|[Unused/Unsupported Cloud Regions](##[T1535]:Unused/Unsupported Cloud Regions)|||T1535|
-|[Pre-OS Boot](##[T1542]:Pre-OS Boot)|||T1542|
-||[System Firmware](###[T1542.001]:System Firmware)||T1542.001|
-||[Component Firmware](###[T1542.002]:Component Firmware)||T1542.002|
-||[Bootkit](###[T1542.003]:Bootkit)||T1542.003|
-||[ROMMONkit](###[T1542.004]:ROMMONkit)||T1542.004|
-||[TFTP Boot](###[T1542.005]:TFTP Boot)||T1542.005|
-|[Abuse Elevation Control Mechanism](##[T1548]:Abuse Elevation Control Mechanism)|||T1548|
-||[Setuid and Setgid](###[T1548.001]:Setuid and Setgid)||T1548.001|
-||[Bypass User Account Control](###[T1548.002]:Bypass User Account Control)||T1548.002|
-||[Sudo and Sudo Caching](###[T1548.003]:Sudo and Sudo Caching)||T1548.003|
-||[Elevated Execution with Prompt](###[T1548.004]:Elevated Execution with Prompt)||T1548.004|
-|[Use Alternate Authentication Material](##[T1550]:Use Alternate Authentication Material)|||T1550|
-||[Application Access Token](###[T1550.001]:Application Access Token)||T1550.001|
-||[Pass the Hash](###[T1550.002]:Pass the Hash)||T1550.002|
-||[Pass the Ticket](###[T1550.003]:Pass the Ticket)||T1550.003|
-||[Web Session Cookie](###[T1550.004]:Web Session Cookie)||T1550.004|
-|[Subvert Trust Controls](##[T1553]:Subvert Trust Controls)|||T1553|
-||[Gatekeeper Bypass](###[T1553.001]:Gatekeeper Bypass)||T1553.001|
-||[Code Signing](###[T1553.002]:Code Signing)||T1553.002|
-||[SIP and Trust Provider Hijacking](###[T1553.003]:SIP and Trust Provider Hijacking)||T1553.003|
-||[Install Root Certificate](###[T1553.004]:Install Root Certificate)||T1553.004|
-||[Mark-of-the-Web Bypass](###[T1553.005]:Mark-of-the-Web Bypass)||T1553.005|
-||[Code Signing Policy Modification](###[T1553.006]:Code Signing Policy Modification)||T1553.006|
-|[Modify Authentication Process](##[T1556]:Modify Authentication Process)|||T1556|
-||[Domain Controller Authentication](###[T1556.001]:Domain Controller Authentication)||T1556.001|
-||[Password Filter DLL](###[T1556.002]:Password Filter DLL)||T1556.002|
-||[Pluggable Authentication Modules](###[T1556.003]:Pluggable Authentication Modules)||T1556.003|
-||[Network Device Authentication](###[T1556.004]:Network Device Authentication)||T1556.004|
-||[Reversible Encryption](###[T1556.005]:Reversible Encryption)||T1556.005|
-||[Multi-Factor Authentication](###[T1556.006]:Multi-Factor Authentication)||T1556.006|
-||[Hybrid Identity](###[T1556.007]:Hybrid Identity)||T1556.007|
-||[Network Provider DLL](###[T1556.008]:Network Provider DLL)||T1556.008|
-|[Impair Defenses](##[T1562]:Impair Defenses)|||T1562|
-||[Disable or Modify Tools](###[T1562.001]:Disable or Modify Tools)||T1562.001|
-||[Disable Windows Event Logging](###[T1562.002]:Disable Windows Event Logging)||T1562.002|
-||[Impair Command History Logging](###[T1562.003]:Impair Command History Logging)||T1562.003|
-||[Disable or Modify System Firewall](###[T1562.004]:Disable or Modify System Firewall)||T1562.004|
-||[Indicator Blocking](###[T1562.006]:Indicator Blocking)||T1562.006|
-||[Disable or Modify Cloud Firewall](###[T1562.007]:Disable or Modify Cloud Firewall)||T1562.007|
-||[Disable Cloud Logs](###[T1562.008]:Disable Cloud Logs)||T1562.008|
-||[Safe Mode Boot](###[T1562.009]:Safe Mode Boot)||T1562.009|
-||[Downgrade Attack](###[T1562.010]:Downgrade Attack)||T1562.010|
-||[Spoof Security Alerting](###[T1562.011]:Spoof Security Alerting)||T1562.011|
-|[Hide Artifacts](##[T1564]:Hide Artifacts)|||T1564|
-||[Hidden Files and Directories](###[T1564.001]:Hidden Files and Directories)||T1564.001|
-||[Hidden Users](###[T1564.002]:Hidden Users)||T1564.002|
-||[Hidden Window](###[T1564.003]:Hidden Window)||T1564.003|
-||[NTFS File Attributes](###[T1564.004]:NTFS File Attributes)||T1564.004|
-||[Hidden File System](###[T1564.005]:Hidden File System)||T1564.005|
-||[Run Virtual Instance](###[T1564.006]:Run Virtual Instance)||T1564.006|
-||[VBA Stomping](###[T1564.007]:VBA Stomping)||T1564.007|
-||[Email Hiding Rules](###[T1564.008]:Email Hiding Rules)||T1564.008|
-||[Resource Forking](###[T1564.009]:Resource Forking)||T1564.009|
-||[Process Argument Spoofing](###[T1564.010]:Process Argument Spoofing)||T1564.010|
-|[Hijack Execution Flow](##[T1574]:Hijack Execution Flow)|||T1574|
-||[DLL Search Order Hijacking](###[T1574.001]:DLL Search Order Hijacking)||T1574.001|
-||[DLL Side-Loading](###[T1574.002]:DLL Side-Loading)||T1574.002|
-||[Dylib Hijacking](###[T1574.004]:Dylib Hijacking)||T1574.004|
-||[Executable Installer File Permissions Weakness](###[T1574.005]:Executable Installer File Permissions Weakness)||T1574.005|
-||[Dynamic Linker Hijacking](###[T1574.006]:Dynamic Linker Hijacking)||T1574.006|
-||[Path Interception by PATH Environment Variable](###[T1574.007]:Path Interception by PATH Environment Variable)||T1574.007|
-||[Path Interception by Search Order Hijacking](###[T1574.008]:Path Interception by Search Order Hijacking)||T1574.008|
-||[Path Interception by Unquoted Path](###[T1574.009]:Path Interception by Unquoted Path)||T1574.009|
-||[Services File Permissions Weakness](###[T1574.010]:Services File Permissions Weakness)||T1574.010|
-||[Services Registry Permissions Weakness](###[T1574.011]:Services Registry Permissions Weakness)||T1574.011|
-||[COR_PROFILER](###[T1574.012]:COR_PROFILER)||T1574.012|
-||[KernelCallbackTable](###[T1574.013]:KernelCallbackTable)||T1574.013|
-|[Modify Cloud Compute Infrastructure](##[T1578]:Modify Cloud Compute Infrastructure)|||T1578|
-||[Create Snapshot](###[T1578.001]:Create Snapshot)||T1578.001|
-||[Create Cloud Instance](###[T1578.002]:Create Cloud Instance)||T1578.002|
-||[Delete Cloud Instance](###[T1578.003]:Delete Cloud Instance)||T1578.003|
-||[Revert Cloud Instance](###[T1578.004]:Revert Cloud Instance)||T1578.004|
-|[Network Boundary Bridging](##[T1599]:Network Boundary Bridging)|||T1599|
-||[Network Address Translation Traversal](###[T1599.001]:Network Address Translation Traversal)||T1599.001|
-|[Weaken Encryption](##[T1600]:Weaken Encryption)|||T1600|
-||[Reduce Key Space](###[T1600.001]:Reduce Key Space)||T1600.001|
-||[Disable Crypto Hardware](###[T1600.002]:Disable Crypto Hardware)||T1600.002|
-|[Modify System Image](##[T1601]:Modify System Image)|||T1601|
-||[Patch System Image](###[T1601.001]:Patch System Image)||T1601.001|
-||[Downgrade System Image](###[T1601.002]:Downgrade System Image)||T1601.002|
-|[Deploy Container](##[T1610]:Deploy Container)|||T1610|
-|[Build Image on Host](##[T1612]:Build Image on Host)|||T1612|
-|[Reflective Code Loading](##[T1620]:Reflective Code Loading)|||T1620|
-|[Debugger Evasion](##[T1622]:Debugger Evasion)|||T1622|
+|[Direct Volume Access](##[T1006]:Direct Volume Access)||直接访问卷|T1006|
+|[Rootkit](##[T1014]:Rootkit)||Rootkit|T1014|
+|[Obfuscated Files or Information](##[T1027]:Obfuscated Files or Information)||混淆的文件或信息|T1027|
+||[Binary Padding](###[T1027.001]:Binary Padding)|二进制填充|T1027.001|
+||[Software Packing](###[T1027.002]:Software Packing)|软件打包|T1027.002|
+||[Steganography](###[T1027.003]:Steganography)|信息隐写|T1027.003|
+||[Compile After Delivery](###[T1027.004]:Compile After Delivery)|分发后再编译|T1027.004|
+||[Indicator Removal from Tools](###[T1027.005]:Indicator Removal from Tools)|移除工具的特征指标|T1027.005|
+||[HTML Smuggling](###[T1027.006]:HTML Smuggling)|HTML Smuggling|T1027.006|
+||[Dynamic API Resolution](###[T1027.007]:Dynamic API Resolution)|动态API解析|T1027.007|
+||[Stripped Payloads](###[T1027.008]:Stripped Payloads)|剥离载荷|T1027.008|
+||[Embedded Payloads](###[T1027.009]:Embedded Payloads)|嵌入载荷|T1027.009|
+||[Command Obfuscation](###[T1027.010]:Command Obfuscation)|命令混淆|T1027.010|
+||[Fileless Storage](###[T1027.011]:Fileless Storage)|无文件存储|T1027.011|
+|[Masquerading](##[T1036]:Masquerading)||伪装|T1036|
+||[Invalid Code Signature](###[T1036.001]:Invalid Code Signature)|无效代码签名|T1036.001|
+||[Right-to-Left Override](###[T1036.002]:Right-to-Left Override)|RTLO|T1036.002|
+||[Rename System Utilities](###[T1036.003]:Rename System Utilities)|重命名系统工具|T1036.003|
+||[Masquerade Task or Service](###[T1036.004]:Masquerade Task or Service)|伪装任务或服务|T1036.004|
+||[Match Legitimate Name or Location](###[T1036.005]:Match Legitimate Name or Location)|匹配合法文件或资源的名称或位置|T1036.005|
+||[Space after Filename](###[T1036.006]:Space after Filename)|文件名后加空格|T1036.006|
+||[Double File Extension](###[T1036.007]:Double File Extension)|双重扩展|T1036.007|
+||[Masquerade File Type](###[T1036.008]:Masquerade File Type)|伪装文件类型|T1036.008|
+|[Process Injection](##[T1055]:Process Injection)||进程注入|T1055|
+||[Dynamic-link Library Injection](###[T1055.001]:Dynamic-link Library Injection)|DLL注入|T1055.001|
+||[Portable Executable Injection](###[T1055.002]:Portable Executable Injection)|可移植可执行文件注入|T1055.002|
+||[Thread Execution Hijacking](###[T1055.003]:Thread Execution Hijacking)|线程执行劫持|T1055.003|
+||[Asynchronous Procedure Call](###[T1055.004]:Asynchronous Procedure Call)|异步过程调用|T1055.004|
+||[Thread Local Storage](###[T1055.005]:Thread Local Storage)|线程本地存储|T1055.005|
+||[Ptrace System Calls](###[T1055.008]:Ptrace System Calls)|ptrace系统调用|T1055.008|
+||[Proc Memory](###[T1055.009]:Proc Memory)|Proc内存|T1055.009|
+||[Extra Window Memory Injection](###[T1055.011]:Extra Window Memory Injection)|额外窗口内存注入|T1055.011|
+||[Process Hollowing](###[T1055.012]:Process Hollowing)|进程空心化|T1055.012|
+||[Process Doppelgänging](###[T1055.013]:Process Doppelgänging)|Process Doppelgänging|T1055.013|
+||[VDSO Hijacking](###[T1055.014]:VDSO Hijacking)|VDSO劫持|T1055.014|
+||[ListPlanting](###[T1055.015]:ListPlanting)|列表种植|T1055.015|
+|[Indicator Removal](##[T1070]:Indicator Removal)||移除指标|T1070|
+||[Clear Windows Event Logs](###[T1070.001]:Clear Windows Event Logs)|清空Windows事件日志|T1070.001|
+||[Clear Linux or Mac System Logs](###[T1070.002]:Clear Linux or Mac System Logs)|清空Linux 或 Mac 系统日志|T1070.002|
+||[Clear Command History](###[T1070.003]:Clear Command History)|清空命令历史记录|T1070.003|
+||[File Deletion](###[T1070.004]:File Deletion)|删除文件|T1070.004|
+||[Network Share Connection Removal](###[T1070.005]:Network Share Connection Removal)|移除网络共享连接|T1070.005|
+||[Timestomp](###[T1070.006]:Timestomp)|修改文件的时间属性|T1070.006|
+||[Clear Network Connection History and Configurations](###[T1070.007]:Clear Network Connection History and Configurations)|清空网络连接历史记录和配置|T1070.007|
+||[Clear Mailbox Data](###[T1070.008]:Clear Mailbox Data)|清空邮箱数据|T1070.008|
+||[Clear Persistence](###[T1070.009]:Clear Persistence)|清空持久化设置|T1070.009|
+|[Valid Accounts](##[T1078]:Valid Accounts)||有效账户|T1078|
+||[Default Accounts](###[T1078.001]:Default Accounts)|默认账户|T1078.001|
+||[Domain Accounts](###[T1078.002]:Domain Accounts)|域账号|T1078.002|
+||[Local Accounts](###[T1078.003]:Local Accounts)|本地账户|T1078.003|
+||[Cloud Accounts](###[T1078.004]:Cloud Accounts)|云账户|T1078.004|
+|[Modify Registry](##[T1112]:Modify Registry)||修改注册表|T1112|
+|[Trusted Developer Utilities Proxy Execution](##[T1127]:Trusted Developer Utilities Proxy Execution)||信任研发工具代理执行|T1127|
+||[MSBuild](###[T1127.001]:MSBuild)|MSBuild|T1127.001|
+|[Access Token Manipulation](##[T1134]:Access Token Manipulation)||访问令牌操作|T1134|
+||[Token Impersonation/Theft](###[T1134.001]:Token Impersonation/Theft)|令牌模拟/窃取|T1134.001|
+||[Create Process with Token](###[T1134.002]:Create Process with Token)|创建带Token的进程|T1134.002|
+||[Make and Impersonate Token](###[T1134.003]:Make and Impersonate Token)|创建和模拟令牌|T1134.003|
+||[Parent PID Spoofing](###[T1134.004]:Parent PID Spoofing)|父进程PID欺骗|T1134.004|
+||[SID-History Injection](###[T1134.005]:SID-History Injection)|SID历史注入|T1134.005|
+|[Deobfuscate/Decode Files or Information](##[T1140]:Deobfuscate/Decode Files or Information)||反混淆/解码文件或信息|T1140|
+|[BITS Jobs](##[T1197]:BITS Jobs)||BITS作业|T1197|
+|[Indirect Command Execution](##[T1202]:Indirect Command Execution)||间接执行命令|T1202|
+|[Traffic Signaling](##[T1205]:Traffic Signaling)||流量信号|T1205|
+||[Port Knocking](###[T1205.001]:Port Knocking)|端口敲门|T1205.001|
+||[Socket Filters](###[T1205.002]:Socket Filters)|Socket过滤器|T1205.002|
+|[Rogue Domain Controller](##[T1207]:Rogue Domain Controller)||恶意域控制器|T1207|
+|[Exploitation for Defense Evasion](##[T1211]:Exploitation for Defense Evasion)||利用防御逃逸漏洞|T1211|
+|[System Script Proxy Execution](##[T1216]:System Script Proxy Execution)||系统脚本代理执行|T1216|
+||[PubPrn](###[T1216.001]:PubPrn)|PubPrn|T1216.001|
+|[System Binary Proxy Execution](##[T1218]:System Binary Proxy Execution)||系统二进制文件代理执行|T1218|
+||[Compiled HTML File](###[T1218.001]:Compiled HTML File)|编译后的HTLM文件|T1218.001|
+||[Control Panel](###[T1218.002]:Control Panel)|控制面板|T1218.002|
+||[CMSTP](###[T1218.003]:CMSTP)|CMSTP|T1218.003|
+||[InstallUtil](###[T1218.004]:InstallUtil)|InstallUtil|T1218.004|
+||[Mshta](###[T1218.005]:Mshta)|Mshta|T1218.005|
+||[Msiexec](###[T1218.007]:Msiexec)|Msiexec|T1218.007|
+||[Odbcconf](###[T1218.008]:Odbcconf)|Odbcconf|T1218.008|
+||[Regsvcs/Regasm](###[T1218.009]:Regsvcs/Regasm)|Regsvcs/Tegasm|T1218.009|
+||[Regsvr32](###[T1218.010]:Regsvr32)|Regsvr32|T1218.010|
+||[Rundll32](###[T1218.011]:Rundll32)|Rundll32|T1218.011|
+||[Verclsid](###[T1218.012]:Verclsid)|Verclsid|T1218.012|
+||[Mavinject](###[T1218.013]:Mavinject)|Mavinject|T1218.013|
+||[MMC](###[T1218.014]:MMC)|MMC|T1218.014|
+|[XSL Script Processing](##[T1220]:XSL Script Processing)||XSL 脚本执行|T1220|
+|[Template Injection](##[T1221]:Template Injection)||模板注入|T1221|
+|[File and Directory Permissions Modification](##[T1222]:File and Directory Permissions Modification)||修改文件和目录的权限|T1222|
+||[Windows File and Directory Permissions Modification](###[T1222.001]:Windows File and Directory Permissions Modification)|修改Windows文件和目录权限|T1222.001|
+||[Linux and Mac File and Directory Permissions Modification](###[T1222.002]:Linux and Mac File and Directory Permissions Modification)|修改Linux和文件和目录权限|T1222.002|
+|[Execution Guardrails](##[T1480]:Execution Guardrails)||执行保护措施|T1480|
+||[Environmental Keying](###[T1480.001]:Environmental Keying)|环境关键化|T1480.001|
+|[Domain Policy Modification](##[T1484]:Domain Policy Modification)||修改域策略|T1484|
+||[Group Policy Modification](###[T1484.001]:Group Policy Modification)|修改组策略|T1484.001|
+||[Domain Trust Modification](###[T1484.002]:Domain Trust Modification)|修改域信任|T1484.002|
+|[Virtualization/Sandbox Evasion](##[T1497]:Virtualization/Sandbox Evasion)||虚拟化/沙箱逃避|T1497|
+||[System Checks](###[T1497.001]:System Checks)|系统检测|T1497.001|
+||[User Activity Based Checks](###[T1497.002]:User Activity Based Checks)|基于用户活动检测|T1497.002|
+||[Time Based Evasion](###[T1497.003]:Time Based Evasion)|基于时间的检测|T1497.003|
+|[Unused/Unsupported Cloud Regions](##[T1535]:Unused/Unsupported Cloud Regions)||未使用的/不支持的云区域|T1535|
+|[Pre-OS Boot](##[T1542]:Pre-OS Boot)||系统预启动|T1542|
+||[System Firmware](###[T1542.001]:System Firmware)|系统固件|T1542.001|
+||[Component Firmware](###[T1542.002]:Component Firmware)|组件固件|T1542.002|
+||[Bootkit](###[T1542.003]:Bootkit)|引导工具包|T1542.003|
+||[ROMMONkit](###[T1542.004]:ROMMONkit)|ROMMON工具包|T1542.004|
+||[TFTP Boot](###[T1542.005]:TFTP Boot)|TFTP启动|T1542.005|
+|[Abuse Elevation Control Mechanism](##[T1548]:Abuse Elevation Control Mechanism)||滥用权限提升控制机制|T1548|
+||[Setuid and Setgid](###[T1548.001]:Setuid and Setgid)|setuid和setgid|T1548.001|
+||[Bypass User Account Control](###[T1548.002]:Bypass User Account Control)|绕过用户账户控制(UAC)|T1548.002|
+||[Sudo and Sudo Caching](###[T1548.003]:Sudo and Sudo Caching)|Sudo 和 Sudo缓存|T1548.003|
+||[Elevated Execution with Prompt](###[T1548.004]:Elevated Execution with Prompt)|通过提示提升执行权|T1548.004|
+|[Use Alternate Authentication Material](##[T1550]:Use Alternate Authentication Material)||使用备用的身份认证材料|T1550|
+||[Application Access Token](###[T1550.001]:Application Access Token)|应用访问令牌|T1550.001|
+||[Pass the Hash](###[T1550.002]:Pass the Hash)|密码哈希|T1550.002|
+||[Pass the Ticket](###[T1550.003]:Pass the Ticket)|密码票据|T1550.003|
+||[Web Session Cookie](###[T1550.004]:Web Session Cookie)|Web Session Cookie|T1550.004|
+|[Subvert Trust Controls](##[T1553]:Subvert Trust Controls)||破坏信任控制|T1553|
+||[Gatekeeper Bypass](###[T1553.001]:Gatekeeper Bypass)|gatekeeper绕过|T1553.001|
+||[Code Signing](###[T1553.002]:Code Signing)|代码签名|T1553.002|
+||[SIP and Trust Provider Hijacking](###[T1553.003]:SIP and Trust Provider Hijacking)|SIP和Trust Provider劫持|T1553.003|
+||[Install Root Certificate](###[T1553.004]:Install Root Certificate)|安卓根证书|T1553.004|
+||[Mark-of-the-Web Bypass](###[T1553.005]:Mark-of-the-Web Bypass)|MOTW绕过|T1553.005|
+||[Code Signing Policy Modification](###[T1553.006]:Code Signing Policy Modification)|修改代码签名策略|T1553.006|
+|[Modify Authentication Process](##[T1556]:Modify Authentication Process)||修改身份认证过程|T1556|
+||[Domain Controller Authentication](###[T1556.001]:Domain Controller Authentication)|域控制器身份验证|T1556.001|
+||[Password Filter DLL](###[T1556.002]:Password Filter DLL)|密码过滤DLL|T1556.002|
+||[Pluggable Authentication Modules](###[T1556.003]:Pluggable Authentication Modules)|可插拔验证模块(Pluggable Authentication Module, PAM)|T1556.003|
+||[Network Device Authentication](###[T1556.004]:Network Device Authentication)|网络设备身份验证|T1556.004|
+||[Reversible Encryption](###[T1556.005]:Reversible Encryption)|可逆加密|T1556.005|
+||[Multi-Factor Authentication](###[T1556.006]:Multi-Factor Authentication)|多因子身份认证|T1556.006|
+||[Hybrid Identity](###[T1556.007]:Hybrid Identity)|混合身份|T1556.007|
+||[Network Provider DLL](###[T1556.008]:Network Provider DLL)|Network Provider DLL|T1556.008|
+|[Impair Defenses](##[T1562]:Impair Defenses)||削弱防御|T1562|
+||[Disable or Modify Tools](###[T1562.001]:Disable or Modify Tools)|禁用或修改工具|T1562.001|
+||[Disable Windows Event Logging](###[T1562.002]:Disable Windows Event Logging)|禁用Windows事件日志|T1562.002|
+||[Impair Command History Logging](###[T1562.003]:Impair Command History Logging)|削弱命令历史记录能力|T1562.003|
+||[Disable or Modify System Firewall](###[T1562.004]:Disable or Modify System Firewall)|禁用或修改系统防火墙|T1562.004|
+||[Indicator Blocking](###[T1562.006]:Indicator Blocking)|阻止捕获指标|T1562.006|
+||[Disable or Modify Cloud Firewall](###[T1562.007]:Disable or Modify Cloud Firewall)|禁用或修改云防火墙|T1562.007|
+||[Disable Cloud Logs](###[T1562.008]:Disable Cloud Logs)|禁用云日志|T1562.008|
+||[Safe Mode Boot](###[T1562.009]:Safe Mode Boot)|安全模式启动|T1562.009|
+||[Downgrade Attack](###[T1562.010]:Downgrade Attack)|降级攻击|T1562.010|
+||[Spoof Security Alerting](###[T1562.011]:Spoof Security Alerting)|欺骗安全警报|T1562.011|
+|[Hide Artifacts](##[T1564]:Hide Artifacts)||隐藏痕迹|T1564|
+||[Hidden Files and Directories](###[T1564.001]:Hidden Files and Directories)|隐藏文件和目录|T1564.001|
+||[Hidden Users](###[T1564.002]:Hidden Users)|隐藏用户|T1564.002|
+||[Hidden Window](###[T1564.003]:Hidden Window)|隐藏窗口|T1564.003|
+||[NTFS File Attributes](###[T1564.004]:NTFS File Attributes)|NTFS 文件属性|T1564.004|
+||[Hidden File System](###[T1564.005]:Hidden File System)|隐藏文件系统|T1564.005|
+||[Run Virtual Instance](###[T1564.006]:Run Virtual Instance)|运行虚拟实例|T1564.006|
+||[VBA Stomping](###[T1564.007]:VBA Stomping)|VBA Stomping|T1564.007|
+||[Email Hiding Rules](###[T1564.008]:Email Hiding Rules)|邮件隐藏规则|T1564.008|
+||[Resource Forking](###[T1564.009]:Resource Forking)|资源分支|T1564.009|
+||[Process Argument Spoofing](###[T1564.010]:Process Argument Spoofing)|进程参数欺骗|T1564.010|
+|[Hijack Execution Flow](##[T1574]:Hijack Execution Flow)||劫持执行流|T1574|
+||[DLL Search Order Hijacking](###[T1574.001]:DLL Search Order Hijacking)|DLL 搜索顺序劫持|T1574.001|
+||[DLL Side-Loading](###[T1574.002]:DLL Side-Loading)|DLL侧加载|T1574.002|
+||[Dylib Hijacking](###[T1574.004]:Dylib Hijacking)|Dylib 劫持|T1574.004|
+||[Executable Installer File Permissions Weakness](###[T1574.005]:Executable Installer File Permissions Weakness)|可执行安装程序文件权限弱点|T1574.005|
+||[Dynamic Linker Hijacking](###[T1574.006]:Dynamic Linker Hijacking)|动态连接器劫持|T1574.006|
+||[Path Interception by PATH Environment Variable](###[T1574.007]:Path Interception by PATH Environment Variable)|PATH环境变量的路径拦截|T1574.007|
+||[Path Interception by Search Order Hijacking](###[T1574.008]:Path Interception by Search Order Hijacking)|搜索顺序劫持的路径拦截|T1574.008|
+||[Path Interception by Unquoted Path](###[T1574.009]:Path Interception by Unquoted Path)|未引用路径的路径拦截|T1574.009|
+||[Services File Permissions Weakness](###[T1574.010]:Services File Permissions Weakness)|服务文件权限弱点|T1574.010|
+||[Services Registry Permissions Weakness](###[T1574.011]:Services Registry Permissions Weakness)|服务注册权限弱点|T1574.011|
+||[COR_PROFILER](###[T1574.012]:COR_PROFILER)|COR_PROFILER环境变量劫 持|T1574.012|
+||[KernelCallbackTable](###[T1574.013]:KernelCallbackTable)|内核回调注入|T1574.013|
+|[Modify Cloud Compute Infrastructure](##[T1578]:Modify Cloud Compute Infrastructure)||修改云计算基础设施|T1578|
+||[Create Snapshot](###[T1578.001]:Create Snapshot)|创建快照|T1578.001|
+||[Create Cloud Instance](###[T1578.002]:Create Cloud Instance)|创建云实例|T1578.002|
+||[Delete Cloud Instance](###[T1578.003]:Delete Cloud Instance)|删除云实例|T1578.003|
+||[Revert Cloud Instance](###[T1578.004]:Revert Cloud Instance)|恢复云实例|T1578.004|
+|[Network Boundary Bridging](##[T1599]:Network Boundary Bridging)||桥接网络边界|T1599|
+||[Network Address Translation Traversal](###[T1599.001]:Network Address Translation Traversal)|网络地址转换穿越|T1599.001|
+|[Weaken Encryption](##[T1600]:Weaken Encryption)||削弱加密|T1600|
+||[Reduce Key Space](###[T1600.001]:Reduce Key Space)|减小密钥大小|T1600.001|
+||[Disable Crypto Hardware](###[T1600.002]:Disable Crypto Hardware)|禁用加密硬件|T1600.002|
+|[Modify System Image](##[T1601]:Modify System Image)||修改系统镜像|T1601|
+||[Patch System Image](###[T1601.001]:Patch System Image)|为系统镜像打补丁|T1601.001|
+||[Downgrade System Image](###[T1601.002]:Downgrade System Image)|降级系统镜像|T1601.002|
+|[Deploy Container](##[T1610]:Deploy Container)||部署容器|T1610|
+|[Build Image on Host](##[T1612]:Build Image on Host)||在主机上创建镜像|T1612|
+|[Reflective Code Loading](##[T1620]:Reflective Code Loading)||反射加载代码|T1620|
+|[Debugger Evasion](##[T1622]:Debugger Evasion)||调试器逃避|T1622|
 
 ## [TA0006]:Credential Access
 > External ID: TA0006
@@ -1291,13 +1290,22 @@ Adversaries may do this using a [Command and Scripting Interpreter](https://atta
 > External ID: T1006
 > STIX ID: attack-pattern--0c8ab3eb-df48-4b9c-ace7-beacaac81cc5
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may directly access a volume to bypass file access controls and file system monitoring. Windows allows programs to have direct access to logical volumes. Programs with direct access may read and write files directly from the drive by analyzing file system data structures. This technique bypasses Windows file access controls as well as file system monitoring tools. (Citation: Hakobyan 2009)
 
 Utilities, such as NinjaCopy, exist to perform these actions in PowerShell. (Citation: Github PowerSploit Ninjacopy)
+
+Direct Volume Access（直接卷访问）是一种技术或功能，允许用户或程序直接读取和写入存储介质上的数据，而无需通过操作系统的文件系统接口。一般情况下，用户和程序会通过操作系统提供的文件系统接口（如文件系统调用）来访问存储介质上的数据，这样可以实现数据的管理和组织。然而，Direct Volume Access 可以绕过文件系统接口，直接对存储介质上的原始数据进行操作。
+
+使用 Direct Volume Access，用户或程序可以绕过文件系统层直接读取和写入磁盘、分区或卷上的数据块，无需考虑文件系统的结构。这种直接访问的优势在于可以更高效地读写数据，尤其是在处理大型文件或进行数据恢复、低级磁盘操作等场景时。
+
+然而，Direct Volume Access 也具有一定的挑战和风险。由于绕过了文件系统接口，直接访问存储介质上的数据可能会导致数据的不一致性或损坏，尤其在没有正确处理文件系统元数据和数据一致性的情况下。此外，由于直接访问磁盘或分区的权限较高，需要足够的权限和谨慎操作，以避免误操作或滥用。
+
+Direct Volume Access 在某些特定的场景中非常有用，例如进行数据恢复、低级磁盘分析、操作系统或文件系统开发等。然而，对于一般用户和大多数应用程序来说，直接访问存储介质的需求相对较少，因为通过文件系统接口进行数据操作通常更加安全和方便。
+
 ## [T1007]:System Service Discovery
 > External ID: T1007
 > STIX ID: attack-pattern--322bad5a-1c49-4d23-ab79-76d641794afa
@@ -1366,13 +1374,18 @@ The Registry contains a significant amount of information about the operating sy
 > External ID: T1014
 > STIX ID: attack-pattern--0f20e3cb-245b-4a61-8a91-2d93f7cb0e9b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may use rootkits to hide the presence of programs, files, network connections, services, drivers, and other system components. Rootkits are programs that hide the existence of malware by intercepting/hooking and modifying operating system API calls that supply system information. (Citation: Symantec Windows Rootkits) 
 
 Rootkits or rootkit enabling functionality may reside at the user or kernel level in the operating system or lower, to include a hypervisor, Master Boot Record, or [System Firmware](https://attack.mitre.org/techniques/T1542/001). (Citation: Wikipedia Rootkit) Rootkits have been seen for Windows, Linux, and Mac OS X systems. (Citation: CrowdStrike Linux Rootkit) (Citation: BlackHat Mac OSX Rootkit)
+
+攻击者可能使用Rootkit来隐藏程序、文件、网络连接、服务、驱动程序和其他系统组件的存在。Rootkit是一种通过拦截/挂钩并修改操作系统API调用来提供系统信息的程序，以隐藏恶意软件的存在。(文献引用：Symantec Windows Rootkits)
+
+Rootkit或Rootkit启用功能可能驻留在操作系统的用户层或内核层，甚至更低层，包括虚拟化管理程序、主引导记录或系统固件。 (文献引用：Wikipedia Rootkit) 已经发现了用于Windows、Linux和Mac OS X系统的Rootkit。(文献引用：CrowdStrike Linux Rootkit) (文献引用：BlackHat Mac OSX Rootkit)
+
 ## [T1016]:System Network Configuration Discovery
 > External ID: T1016
 > STIX ID: attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0
@@ -1551,11 +1564,12 @@ In some cases, adversaries may be able to authenticate to these services via [Ap
 
 Some adversaries may also use [Automated Collection](https://attack.mitre.org/techniques/T1119) on removable media.
 ## [T1027]:Obfuscated Files or Information
+> 中文：混淆文件或信息
+>
 > External ID: T1027
 > STIX ID: attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This is common behavior that can be used across different platforms and the network to evade defenses. 
@@ -1565,11 +1579,28 @@ Payloads may be compressed, archived, or encrypted in order to avoid detection. 
 Portions of files can also be encoded to hide the plain-text strings that would otherwise help defenders with discovery. (Citation: Linux/Cdorked.A We Live Security Analysis) Payloads may also be split into separate, seemingly benign files that only reveal malicious functionality when reassembled. (Citation: Carbon Black Obfuscation Sept 2016)
 
 Adversaries may also abuse [Command Obfuscation](https://attack.mitre.org/techniques/T1027/010) to obscure commands executed from payloads or directly via [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059). Environment variables, aliases, characters, and other platform/language specific semantics can be used to evade signature based detections and application control mechanisms. (Citation: FireEye Obfuscation June 2017) (Citation: FireEye Revoke-Obfuscation July 2017)(Citation: PaloAlto EncodedCommand March 2017) 
+
+攻击者可能试图通过在系统内或传输过程中对可执行文件或文件进行加密、编码或其他混淆操作，以使其难以发现或分析。这是一种常见的行为，可以在不同平台和网络上使用，以规避防御措施。
+
+为了避免被检测，恶意载荷可能会被压缩、归档或加密。这些载荷可以在初始访问或后续过程中使用，以减轻检测。有时需要用户采取行动来打开和对文件或信息进行解混淆/解码，以进行用户执行。用户可能还需要输入密码才能打开由攻击者提供的带密码保护的压缩/加密文件。(文献引用：Volexity PowerDuke November 2016) 攻击者还可以使用压缩或归档的脚本，例如JavaScript。
+
+文件的部分内容也可以进行编码，以隐藏原本可以帮助防御者发现的明文字符串。恶意载荷也可以拆分为多个看似无害的文件，只有在重新组装时才会显露恶意功能。(文献引用：Carbon Black Obfuscation Sept 2016)
+
+攻击者还可能滥用命令混淆来掩盖从载荷执行的命令，或直接通过命令和脚本解释器执行。可以使用环境变量、别名、字符和其他特定于平台/语言的语义来规避基于签名的检测和应用程序控制机制。(文献引用：FireEye Obfuscation June 2017) (文献引用：FireEye Revoke-Obfuscation July 2017)(文献引用：PaloAlto EncodedCommand March 2017)
+
+Obfuscated Files or Information（混淆文件或信息）是指经过某种技术手段隐藏、变换或加密的文件或数据，旨在隐藏其真实内容和用途。混淆文件或信息通常是恶意软件或攻击者在攻击过程中使用的一种技术手段，用来逃避检测、分析和防御。
+
+混淆的目的是使文件或信息变得难以理解和分析，以干扰安全工具或人员对其真实目的的识别。通过使用各种技术，如加密、编码、压缩、随机化、重命名等，混淆可以改变文件或信息的结构、格式、命名和内容，使其在外观上和内部结构上都变得复杂和模糊。
+
+混淆文件或信息可用于隐藏恶意软件的代码、配置文件、命令和控制通道，以及其他与攻击有关的数据。混淆还可以在恶意软件传播、取得持久性、绕过防御措施、隐藏攻击活动或窃取敏感信息等过程中发挥重要作用。
+
+安全团队和研究人员在处理混淆文件或信息时，需要进行逆向工程、解码或解密操作，以还原其原始内容和功能。这有助于获取对恶意软件的深入理解、检测和分析其行为，以及开发相应的防御措施来应对混淆技术的威胁。
+
 ### [T1027.001]:Binary Padding
 > External ID: T1027.001
 > STIX ID: attack-pattern--5bfccc3f-2326-4112-86cc-c1ece9d8a2b5
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1580,7 +1611,7 @@ Binary padding effectively changes the checksum of the file and can also be used
 > External ID: T1027.002
 > STIX ID: attack-pattern--deb98323-e13f-4b0c-8d94-175379069062
 > Platforms: ['macOS', 'Windows', 'Linux']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1591,7 +1622,7 @@ Utilities used to perform software packing are called packers. Example packers a
 > External ID: T1027.003
 > STIX ID: attack-pattern--c2e147a9-d1a8-4074-811a-d8789202d916
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1601,21 +1632,27 @@ Utilities used to perform software packing are called packers. Example packers a
 
 By the end of 2017, a threat group used <code>Invoke-PSImage</code> to hide [PowerShell](https://attack.mitre.org/techniques/T1059/001) commands in an image file (.png) and execute the code on a victim's system. In this particular case the [PowerShell](https://attack.mitre.org/techniques/T1059/001) code downloaded another obfuscated script to gather intelligence from the victim's machine and communicate it back to the adversary.(Citation: McAfee Malicious Doc Targets Pyeongchang Olympics)  
 ### [T1027.004]:Compile After Delivery
+> 中文：交付后再编辑
+>
 > External ID: T1027.004
 > STIX ID: attack-pattern--c726e0a2-a57a-4b7b-a973-d0f013246617
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may attempt to make payloads difficult to discover and analyze by delivering files to victims as uncompiled code. Text-based source code files may subvert analysis and scrutiny from protections targeting executables/binaries. These payloads will need to be compiled before execution; typically via native utilities such as csc.exe or GCC/MinGW.(Citation: ClearSky MuddyWater Nov 2018)
 
 Source code payloads may also be encrypted, encoded, and/or embedded within other files, such as those delivered as a [Phishing](https://attack.mitre.org/techniques/T1566). Payloads may also be delivered in formats unrecognizable and inherently benign to the native OS (ex: EXEs on macOS/Linux) before later being (re)compiled into a proper executable binary with a bundled compiler and execution framework.(Citation: TrendMicro WindowsAppMac)
+
+攻击者可能尝试通过将文件以未编译的代码形式交付给受害者，使恶意载荷难以被发现和分析。基于文本的源代码文件可以规避针对可执行文件/二进制文件的保护措施的分析和检查。这些载荷在执行之前需要进行编译，通常使用诸如csc.exe或GCC/MinGW等本地工具。(文献引用：ClearSky MuddyWater Nov 2018)
+
+源代码载荷还可以经过加密、编码和/或嵌入在其他文件中，例如作为[钓鱼](https://attack.mitre.org/techniques/T1566)攻击的一部分交付。这些载荷还可以以本地操作系统无法识别且天然无害的格式（例如，在macOS/Linux上的EXE文件）交付给受害者，然后再使用捆绑的编译器和执行框架重新编译成合适的可执行二进制文件。(文献引用：TrendMicro WindowsAppMac)
+
 ### [T1027.005]:Indicator Removal from Tools
 > External ID: T1027.005
 > STIX ID: attack-pattern--b0533c6e-8fea-4788-874f-b799cacc4b92
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1626,7 +1663,7 @@ A good example of this is when malware is detected with a file signature and qua
 > External ID: T1027.006
 > STIX ID: attack-pattern--d4dc46e3-5ba5-45b9-8204-010867cacfcb
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1635,11 +1672,18 @@ A good example of this is when malware is detected with a file signature and qua
 Adversaries may deliver payloads to victims that bypass security controls through HTML Smuggling by abusing JavaScript Blobs and/or HTML5 download attributes. Security controls such as web content filters may not identify smuggled malicious files inside of HTML/JS files, as the content may be based on typically benign MIME types such as <code>text/plain</code> and/or <code>text/html</code>. Malicious files or data can be obfuscated and hidden inside of HTML files through Data URLs and/or JavaScript Blobs and can be deobfuscated when they reach the victim (i.e. [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140)), potentially bypassing content filters.
 
 For example, JavaScript Blobs can be abused to dynamically generate malicious files in the victim machine and may be dropped to disk by abusing JavaScript functions such as <code>msSaveBlob</code>.(Citation: HTML Smuggling Menlo Security 2020)(Citation: MSTIC NOBELIUM May 2021)(Citation: Outlflank HTML Smuggling 2018)(Citation: nccgroup Smuggling HTA 2017)
+
+攻击者可能通过将恶意载荷隐藏在看似无害的HTML文件中，来绕过内容过滤器，将数据和文件偷运过去。HTML文档可以存储称为JavaScript Blobs的大型二进制对象（表示原始字节的不可变数据），可以稍后构建为类似文件的对象。数据还可以存储在数据URL中，该URL可以将媒体类型或MIME文件嵌入到HTML文档中。HTML5还引入了一个下载属性，可用于启动文件下载。(文献引用：HTML Smuggling Menlo Security 2020)(文献引用：Outlflank HTML Smuggling 2018)
+
+攻击者可能通过滥用JavaScript Blobs和/或HTML5下载属性将恶意载荷传递给受害者，从而绕过安全控制，进行HTML走私。诸如Web内容过滤器之类的安全控制可能无法识别HTML/JS文件中的隐藏恶意文件，因为内容可能基于通常无害的MIME类型，如<code>text/plain</code>和/或<code>text/html</code>。恶意文件或数据可以通过数据URL和/或JavaScript Blobs隐藏在HTML文件中，并在达到受害者时解混淆（即[解混淆/解码文件或信息](https://attack.mitre.org/techniques/T1140)），从而可能绕过内容过滤器。
+
+例如，攻击者可以滥用JavaScript Blobs来动态生成受害者机器上的恶意文件，并通过滥用<code>msSaveBlob</code>等JavaScript函数将其写入磁盘。(文献引用：HTML Smuggling Menlo Security 2020)(文献引用：MSTIC NOBELIUM May 2021)(文献引用：Outlflank HTML Smuggling 2018)(文献引用：nccgroup Smuggling HTA 2017)
+
 ### [T1027.007]:Dynamic API Resolution
 > External ID: T1027.007
 > STIX ID: attack-pattern--ea4c2f9c-9df1-477c-8c42-6da1118f2ac4
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1654,18 +1698,30 @@ Various methods may be used to obfuscate malware calls to API functions. For exa
 > External ID: T1027.008
 > STIX ID: attack-pattern--2f41939b-54c3-41d6-8f8b-35f1ec18ed97
 > Platforms: ['macOS', 'Linux', 'Windows']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may attempt to make a payload difficult to analyze by removing symbols, strings, and other human readable information. Scripts and executables may contain variables names and other strings that help developers document code functionality. Symbols are often created by an operating system’s `linker` when executable payloads are compiled. Reverse engineers use these symbols and strings to analyze code and to identify functionality in payloads.(Citation: Mandiant golang stripped binaries explanation)(Citation: intezer stripped binaries elf files 2018)
 
 Adversaries may use stripped payloads in order to make malware analysis more difficult. For example, compilers and other tools may provide features to remove or obfuscate strings and symbols. Adversaries have also used stripped payload formats, such as run-only AppleScripts, a compiled and stripped version of [AppleScript](https://attack.mitre.org/techniques/T1059/002), to evade detection and analysis. The lack of human-readable information may directly hinder detection and analysis of payloads.(Citation: SentinelLabs reversing run-only applescripts 2021)
+
+攻击者可能会尝试通过移除符号、字符串和其他可读的信息，使载荷难以进行分析。脚本和可执行文件可能包含变量名和其他字符串，这些有助于开发人员记录代码功能。在编译可执行载荷时，操作系统的链接器常常会生成这些符号。逆向工程师使用这些符号和字符串来分析代码并识别载荷的功能。(文献引用：Mandiant golang stripped binaries explanation)(文献引用：intezer stripped binaries elf files 2018)
+
+攻击者可能使用剥离的载荷来增加恶意软件分析的难度。例如，编译器和其他工具可能提供了删除或混淆字符串和符号的功能。攻击者还使用了剥离的载荷格式，例如只能运行的AppleScripts，这是编译和剥离了的[AppleScript](https://attack.mitre.org/techniques/T1059/002)的版本，以规避检测和分析。缺乏可读信息可能直接阻碍对载荷的检测和分析。(文献引用：SentinelLabs reversing run-only applescripts 2021)
+
+
+
+剥离的载荷是指被剥离了某些元素或特征的恶意载荷或文件，以使它们看起来更不可疑或能够逃避安全机制的检测。当载荷被"剥离"时，意味着已经移除或修改了多余的或可识别的属性，例如元数据、注释或可识别的字符串，以使载荷更难以分析或检测。
+
+剥离载荷的目的可以是使其体积更小，减小被检测的机会，或者去除可识别的标记，以将载荷与特定的攻击者或组织联系起来。通过剥离不必要的信息，攻击者旨在使载荷与合法文件混淆或绕过安全措施，提高成功利用或渗透的机会。
+
+然而，即使是剥离的载荷，高级安全工具和分析技术仍然可以检测和发现其中的恶意内容。因此，安全专业人员不断提升防御能力，采用基于行为的分析和机器学习等技术来识别和应对威胁。
+
 ### [T1027.009]:Embedded Payloads
 > External ID: T1027.009
 > STIX ID: attack-pattern--0533ab23-3f7d-463f-9bd8-634d27e4dee1
 > Platforms: ['macOS', 'Windows', 'Linux']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1676,11 +1732,16 @@ Adversaries may embed payloads in various file formats to hide payloads.(Citatio
 For example, adversaries have been observed embedding payloads within or as an overlay of an otherwise benign binary.(Citation: Securelist Dtrack2) Adversaries have also been observed nesting payloads (such as executables and run-only scripts) inside a file of the same format.(Citation: SentinelLabs reversing run-only applescripts 2021) 
 
 Embedded content may also be used as [Process Injection](https://attack.mitre.org/techniques/T1055) payloads used to infect benign system processes.(Citation: Trend Micro) These embedded then injected payloads may be used as part of the modules of malware designed to provide specific features such as encrypting C2 communications in support of an orchestrator module. For example, an embedded module may be injected into default browsers, allowing adversaries to then communicate via the network.(Citation: Malware Analysis Report ComRAT)
+
+
+
+嵌入式载荷是指恶意的或隐藏的代码、文件或数据有意地嵌入到另一个文件或载体对象中。嵌入式载荷通常被隐藏在载体的结构或内容中，使其在没有适当分析的情况下很难被检测到。 嵌入式载荷的形式因攻击者使用的技术而异。例如，在恶意软件背景下，攻击者可能会将恶意代码隐藏在诸如PDF、Microsoft Office文档或HTML文件等良性文档中。载荷可以嵌入到文件的不同元素中，如宏、脚本或对象标签，使其在打开或与文件交互时执行。 这些嵌入式载荷旨在利用漏洞、执行恶意操作或建立进一步入侵的立足点。嵌入技术为安全分析人员和工具增加了额外的复杂性，以识别和应对威胁。 检测和分析嵌入式载荷通常需要使用专业工具和技术来提取和检查隐藏的内容。文件扫描、完整性检查和代码分析等安全措施有助于检测和防止执行嵌入的恶意载荷。
+
 ### [T1027.010]:Command Obfuscation
 > External ID: T1027.010
 > STIX ID: attack-pattern--d511a6f6-4a33-41d5-bc95-c343875d1377
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1695,7 +1756,7 @@ Tools such as <code>Invoke-Obfuscation</code> and <code>Invoke-DOSfucation</code
 > External ID: T1027.011
 > STIX ID: attack-pattern--02c5abff-30bf-4703-ab92-1f6072fae939
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1706,6 +1767,17 @@ Similar to fileless in-memory behaviors such as [Reflective Code Loading](https:
 Adversaries may use fileless storage to conceal various types of stored data, including payloads/shellcode (potentially being used as part of [Persistence](https://attack.mitre.org/tactics/TA0003)) and collected data not yet exfiltrated from the victim (e.g., [Local Data Staging](https://attack.mitre.org/techniques/T1074/001)). Adversaries also often encrypt, encode, splice, or otherwise obfuscate this fileless data when stored.
 
 Some forms of fileless storage activity may indirectly create artifacts in the file system, but in central and otherwise difficult to inspect formats such as the WMI (e.g., `%SystemRoot%\System32\Wbem\Repository`) or Registry (e.g., `%SystemRoot%\System32\Config`) physical files.(Citation: Microsoft Fileless) 
+
+
+
+无文件存储，也称为无文件持久化，是攻击者使用的一种技术，用于在系统内存中存储和执行恶意代码或载荷，而无需将其保存到文件系统中。在基于文件的攻击中，恶意软件通常依赖文件和磁盘存储来实现持久化和执行。然而，无文件存储通过利用现有的系统组件和内存来绕过传统的方法。
+
+在无文件存储中，恶意代码主要驻留在内存空间中，并可能利用合法进程、注册表键或其他系统资源来建立持久性并执行其预定功能。该代码可能被注入到合法进程、脚本解释器，甚至通过利用技术直接注入到内存中。
+
+通过避免传统基于文件的指标，无文件存储技术使得传统的杀毒软件和端点安全解决方案更难检测和缓解威胁。由于没有可疑文件或基于磁盘的痕迹，恶意活动可能是瞬时的，更难以归因或调查。
+
+检测和缓解无文件存储攻击通常需要先进的安全解决方案，专注于行为分析、异常检测和基于内存的扫描。这些技术可以帮助识别和阻止恶意代码，同时确保系统内存和进程的安全性。
+
 ## [T1029]:Scheduled Transfer
 > External ID: T1029
 > STIX ID: attack-pattern--4eeaf8a9-c86b-4954-a663-9555fb406466
@@ -1743,7 +1815,7 @@ On network devices, [Network Device CLI](https://attack.mitre.org/techniques/T10
 > External ID: T1036
 > STIX ID: attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0
 > Platforms: ['Linux', 'macOS', 'Windows', 'Containers']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1754,7 +1826,7 @@ Renaming abusable system utilities to evade security monitoring is also a form o
 > External ID: T1036.001
 > STIX ID: attack-pattern--b4b7458f-81f2-4d38-84be-1c5ba0167a52
 > Platforms: ['macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1762,21 +1834,28 @@ Renaming abusable system utilities to evade security monitoring is also a form o
 
 Unlike [Code Signing](https://attack.mitre.org/techniques/T1553/002), this activity will not result in a valid signature.
 ### [T1036.002]:Right-to-Left Override
+> 中文：RTLO
+>
 > External ID: T1036.002
 > STIX ID: attack-pattern--77eae145-55db-4519-8ae5-77b0c7215d69
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may abuse the right-to-left override (RTLO or RLO) character (U+202E) to disguise a string and/or file name to make it appear benign. RTLO is a non-printing Unicode character that causes the text that follows it to be displayed in reverse. For example, a Windows screensaver executable named <code>March 25 \u202Excod.scr</code> will display as <code>March 25 rcs.docx</code>. A JavaScript file named <code>photo_high_re\u202Egnp.js</code> will be displayed as <code>photo_high_resj.png</code>.(Citation: Infosecinstitute RTLO Technique)
 
 Adversaries may abuse the RTLO character as a means of tricking a user into executing what they think is a benign file type. A common use of this technique is with [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001)/[Malicious File](https://attack.mitre.org/techniques/T1204/002) since it can trick both end users and defenders if they are not aware of how their tools display and render the RTLO character. Use of the RTLO character has been seen in many targeted intrusion attempts and criminal activity.(Citation: Trend Micro PLEAD RTLO)(Citation: Kaspersky RTLO Cyber Crime) RTLO can be used in the Windows Registry as well, where regedit.exe displays the reversed characters but the command line tool reg.exe does not by default.
+
+攻击者可能滥用右至左覆盖（RTLO或RLO）字符（U+202E）来掩盖字符串和/或文件名，使其看起来是良性的。RTLO是一个非打印的Unicode字符，会导致其后的文本以相反的顺序显示。例如，一个名为<code>March 25 \u202Excod.scr</code>的Windows屏幕保护程序可显示为<code>March 25 rcs.docx</code>。一个名为<code>photo_high_re\u202Egnp.js</code>的JavaScript文件将显示为<code>photo_high_resj.png</code>。(引用：Infosecinstitute RTLO Technique)
+
+攻击者可能滥用RTLO字符来欺骗用户执行他们认为是良性文件类型的文件。这种技术常用于[针对性钓鱼附件](https://attack.mitre.org/techniques/T1566/001)/[恶意文件](https://attack.mitre.org/techniques/T1204/002)，因为如果用户和防御者不了解其工具如何显示和渲染RTLO字符，它可以欺骗二者。RTLO字符的使用已在许多有针对性的入侵尝试和犯罪活动中被观察到。(引用：Trend Micro PLEAD RTLO)(引用：Kaspersky RTLO Cyber Crime) RTLO也可以在Windows注册表中使用，其中regedit.exe会显示反转的字符，但命令行工具reg.exe默认情况下不会显示。
+
 ### [T1036.003]:Rename System Utilities
 > External ID: T1036.003
 > STIX ID: attack-pattern--bd5b58a4-a52d-4a29-bc0d-3f1d3968eb6b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1785,7 +1864,7 @@ Adversaries may abuse the RTLO character as a means of tricking a user into exec
 > External ID: T1036.004
 > STIX ID: attack-pattern--7bdca9d5-d500-4d7d-8c52-5fd47baf4c0c
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1793,21 +1872,30 @@ Adversaries may abuse the RTLO character as a means of tricking a user into exec
 
 Tasks or services contain other fields, such as a description, that adversaries may attempt to make appear legitimate.(Citation: Palo Alto Shamoon Nov 2016)(Citation: Fysbis Dr Web Analysis)
 ### [T1036.005]:Match Legitimate Name or Location
+> 中文：匹配合法文件或资源的名称或位置
+>
 > External ID: T1036.005
 > STIX ID: attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2
 > Platforms: ['Linux', 'macOS', 'Windows', 'Containers']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may match or approximate the name or location of legitimate files or resources when naming/placing them. This is done for the sake of evading defenses and observation. This may be done by placing an executable in a commonly trusted directory (ex: under System32) or giving it the name of a legitimate, trusted program (ex: svchost.exe). In containerized environments, this may also be done by creating a resource in a namespace that matches the naming convention of a container pod or cluster. Alternatively, a file or container image name given may be a close approximation to legitimate programs/images or something innocuous.
 
 Adversaries may also use the same icon of the file they are trying to mimic.
+
+攻击者可能会在命名或放置恶意文件或资源时匹配或近似合法文件或资源的名称或位置。这样做是为了规避防御和监视。他们可能会将可执行文件放置在一个常被信任的目录下（例如：System32）或者给它命名为一个合法的、被信任的程序的名称（例如：svchost.exe）。在容器化环境中，他们也可以通过创建与容器Pod或集群的命名约定相匹配的命名空间中的资源来实现。此外，他们给出的文件或容器映像名称可能与合法的程序/映像或一些无害的东西非常接近。
+
+攻击者还可能使用与他们试图模仿的文件相同的图标。
+
 ### [T1036.006]:Space after Filename
+> 中文：文件名后加空格
+>
 > External ID: T1036.006
 > STIX ID: attack-pattern--e51137a5-1cdc-499e-911a-abaedaa5ac86
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1816,11 +1904,20 @@ Adversaries may also use the same icon of the file they are trying to mimic.
 For example, if there is a Mach-O executable file called <code>evil.bin</code>, when it is double clicked by a user, it will launch Terminal.app and execute. If this file is renamed to <code>evil.txt</code>, then when double clicked by a user, it will launch with the default text editing application (not executing the binary). However, if the file is renamed to <code>evil.txt </code> (note the space at the end), then when double clicked by a user, the true file type is determined by the OS and handled appropriately and the binary will be executed (Citation: Mac Backdoors are back).
 
 Adversaries can use this feature to trick users into double clicking benign-looking files of any format and ultimately executing something malicious.
+
+攻击者可以通过更改文件的扩展名来隐藏程序的真实文件类型。对于某些文件类型（特别是不适用于.app扩展名），在文件名末尾添加一个空格会改变操作系统处理该文件的方式。
+
+例如，如果有一个名为<code>evil.bin</code>的Mach-O可执行文件，当用户双击它时，它将启动Terminal.app并执行。如果将此文件重命名为<code>evil.txt</code>，那么当用户双击它时，它将使用默认的文本编辑应用程序启动（不执行二进制文件）。然而，如果将文件重命名为<code>evil.txt </code>（注意末尾的空格），那么当用户双击它时，操作系统将根据真实文件类型进行适当处理，并执行二进制文件（引用：Mac Backdoors are back）。
+
+攻击者可以利用这个特性来欺骗用户双击看似良性的任何格式的文件，并最终执行一些恶意操作。
+
 ### [T1036.007]:Double File Extension
+> 中文：双重扩展
+>
 > External ID: T1036.007
 > STIX ID: attack-pattern--11f29a39-0942-4d62-92b6-fe236cf3066e
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -1829,11 +1926,18 @@ Adversaries can use this feature to trick users into double clicking benign-look
 Adversaries may abuse double extensions to attempt to conceal dangerous file types of payloads. A very common usage involves tricking a user into opening what they think is a benign file type but is actually executable code. Such files often pose as email attachments and allow an adversary to gain [Initial Access](https://attack.mitre.org/tactics/TA0001) into a user’s system via [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001) then [User Execution](https://attack.mitre.org/techniques/T1204). For example, an executable file attachment named <code>Evil.txt.exe</code> may display as <code>Evil.txt</code> to a user. The user may then view it as a benign text file and open it, inadvertently executing the hidden malware.(Citation: SOCPrime DoubleExtension)
 
 Common file types, such as text files (.txt, .doc, etc.) and image files (.jpg, .gif, etc.) are typically used as the first extension to appear benign. Executable extensions commonly regarded as dangerous, such as .exe, .lnk, .hta, and .scr, often appear as the second extension and true file type.
+
+攻击者可能滥用文件名中的双重扩展作为伪装真实文件类型的手段。文件名可能包含第二个文件类型的扩展名，而只有第一个扩展名会在某些视图中显示（例如：<code>File.txt.exe</code>在某些视图中可能只显示为<code>File.txt</code>）。但是，第二个扩展名才是确定文件如何打开和执行的真实文件类型。真实的文件扩展名可能被操作系统在文件浏览器（例如：explorer.exe）中隐藏，以及在使用与系统策略相关或类似的软件中隐藏。(引用：PCMag DoubleExtension)(引用：SOCPrime DoubleExtension)
+
+攻击者可能滥用双重扩展来试图隐藏具有危险的文件类型或载荷。其中一种常见用法包括欺骗用户打开他们认为是无害文件类型实际上是可执行代码的文件。此类文件经常冒充电子邮件附件，并允许攻击者通过[针对性钓鱼附件](https://attack.mitre.org/techniques/T1566/001)来获得对用户系统的[初始访问](https://attack.mitre.org/tactics/TA0001)，然后进行[用户执行](https://attack.mitre.org/techniques/T1204)的攻击。例如，一个名为<code>Evil.txt.exe</code>的可执行文件附件可能显示给用户为<code>Evil.txt</code>。用户可能会将其视为无害的文本文件并打开它，无意中执行隐藏的恶意软件。(引用：SOCPrime DoubleExtension)
+
+常见的文件类型，如文本文件（.txt、.doc等）和图像文件（.jpg、.gif等），通常被用作表面上无害的第一个扩展。被普遍认为危险的可执行扩展名，例如.exe、.lnk、.hta和.scr，则经常出现作为第二个扩展和真实文件类型。
+
 ### [T1036.008]:Masquerade File Type
 > External ID: T1036.008
 > STIX ID: attack-pattern--208884f1-7b83-4473-ac22-4e1cf6c41471
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may masquerade malicious payloads as legitimate files through changes to the payload's formatting, including the file’s signature, extension, and contents. Various file types have a typical standard format, including how they are encoded and organized. For example, a file’s signature (also known as header or magic bytes) is the beginning bytes of a file and is often used to identify the file’s type. For example, the header of a JPEG file,  is <code> 0xFF 0xD8</code> and the file extension is either `.JPE`, `.JPEG` or `.JPG`. 
@@ -1849,8 +1953,7 @@ Polygot files, which are files that have multiple different file types and that 
 > External ID: T1037
 > STIX ID: attack-pattern--03259939-0b57-482f-8eb5-87c0e0d54334
 > Platforms: ['macOS', 'Windows', 'Linux']
-> Tactics: ['persistence', 'privilege-escalation']
-
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may use scripts automatically executed at boot or logon initialization to establish persistence. Initialization scripts can be used to perform administrative functions, which may often execute other programs or send information to an internal logging server. These scripts can vary based on operating system and whether applied locally or remotely.  
@@ -1879,7 +1982,7 @@ Boot or Logon Initialization Scripts（启动或登录初始化脚本）是在�
 > External ID: T1037.001
 > STIX ID: attack-pattern--eb125d40-0b2d-41ac-a71a-3229241c2cd3
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -1892,7 +1995,7 @@ Adversaries may use these scripts to maintain persistence on a single system. De
 > External ID: T1037.002
 > STIX ID: attack-pattern--43ba2b05-cf72-4b6c-8243-03a4aba41ee0
 > Platforms: ['macOS']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -1912,7 +2015,7 @@ Adversaries can add or insert a path to a malicious script in the <code>com.appl
 > External ID: T1037.003
 > STIX ID: attack-pattern--c63a348e-ffc2-486a-b9d9-d7f11ec54d99
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -1928,7 +2031,7 @@ Adversaries may use these scripts to maintain persistence on a network. Dependin
 > External ID: T1037.004
 > STIX ID: attack-pattern--dca670cf-eeec-438f-8185-fd959d9ef211
 > Platforms: ['macOS', 'Linux']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may establish persistence by modifying RC scripts which are executed during a Unix-like system’s startup. These files allow system administrators to map and start custom services at startup for different run levels. RC scripts require root privileges to modify.
@@ -1969,7 +2072,7 @@ RC Scripts可以通过编辑相应的脚本文件来配置系统服务的启动�
 > External ID: T1037.005
 > STIX ID: attack-pattern--c0dfe7b0-b873-4618-9ff8-53e31f70907f
 > Platforms: ['macOS']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may use startup items automatically executed at boot initialization to establish persistence. Startup items execute during the final phase of the boot process and contain shell scripts or other executable files along with configuration information used by the system to determine the execution order for all startup items.(Citation: Startup Items)
@@ -2140,7 +2243,7 @@ Utilities and commands that acquire this information include [netstat](https://a
 > External ID: T1053
 > STIX ID: attack-pattern--35dd844a-b219-4e2b-a6bb-efa9a75995a9
 > Platforms: ['Windows', 'Linux', 'macOS', 'Containers']
-> Tactics: ['execution', 'persistence', 'privilege-escalation']
+> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2151,7 +2254,7 @@ Adversaries may use task scheduling to execute programs at system startup or on 
 > External ID: T1053.002
 > STIX ID: attack-pattern--f3d95a1f-bba2-44ce-9af7-37866cd63fd0
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['execution', 'persistence', 'privilege-escalation']
+> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may abuse the [at](https://attack.mitre.org/software/S0110) utility to perform task scheduling for initial or recurring execution of malicious code. The [at](https://attack.mitre.org/software/S0110) utility exists as an executable within Windows, Linux, and macOS for scheduling tasks at a specified time and date. Although deprecated in favor of [Scheduled Task](https://attack.mitre.org/techniques/T1053/005)'s [schtasks](https://attack.mitre.org/software/S0111) in Windows environments, using [at](https://attack.mitre.org/software/S0110) requires that the Task Scheduler service be running, and the user to be logged on as a member of the local Administrators group.
@@ -2165,7 +2268,7 @@ In Linux environments, adversaries may also abuse [at](https://attack.mitre.org/
 > External ID: T1053.003
 > STIX ID: attack-pattern--2acf44aa-542f-4366-b4eb-55ef5747759c
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['execution', 'persistence', 'privilege-escalation']
+> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2176,7 +2279,7 @@ An adversary may use <code>cron</code> in Linux or Unix environments to execute 
 > External ID: T1053.005
 > STIX ID: attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9
 > Platforms: ['Windows']
-> Tactics: ['execution', 'persistence', 'privilege-escalation']
+> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2191,7 +2294,7 @@ Adversaries may also create "hidden" scheduled tasks (i.e. [Hide Artifacts](http
 > External ID: T1053.006
 > STIX ID: attack-pattern--a542bac9-7bc1-4da7-9a09-96f69e23cc21
 > Platforms: ['Linux']
-> Tactics: ['execution', 'persistence', 'privilege-escalation']
+> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2204,7 +2307,7 @@ An adversary may use systemd timers to execute malicious code at system startup 
 > External ID: T1053.007
 > STIX ID: attack-pattern--1126cab1-c700-412f-a510-61f4937bb096
 > Platforms: ['Containers']
-> Tactics: ['execution', 'persistence', 'privilege-escalation']
+> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2215,7 +2318,7 @@ In Kubernetes, a CronJob may be used to schedule a Job that runs one or more con
 > External ID: T1055
 > STIX ID: attack-pattern--43e7dc91-05b2-474c-b9ac-2ed4fe101f4d
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2228,7 +2331,7 @@ More sophisticated samples may perform multiple process injections to segment mo
 > External ID: T1055.001
 > STIX ID: attack-pattern--f4599aa0-4f85-4a32-80ea-fc39dc965945
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2247,7 +2350,7 @@ Running code in the context of another process may allow access to the process's
 > External ID: T1055.002
 > STIX ID: attack-pattern--806a49c4-970d-43f9-9acc-ac0ee11e6662
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2267,7 +2370,7 @@ PE注入通常通过将代码（可能没有磁盘上的文件）复制到目标
 > External ID: T1055.003
 > STIX ID: attack-pattern--41d9846c-f6af-4302-a654-24bba2729bc6
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges. Thread Execution Hijacking is a method of executing arbitrary code in the address space of a separate live process. 
@@ -2292,7 +2395,7 @@ Running code in the context of another process may allow access to the process's
 > External ID: T1055.004
 > STIX ID: attack-pattern--7c0f17c9-1af6-4628-9cbd-9e45482dd605
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may inject malicious code into processes via the asynchronous procedure call (APC) queue in order to evade process-based defenses as well as possibly elevate privileges. APC injection is a method of executing arbitrary code in the address space of a separate live process. 
@@ -2319,7 +2422,7 @@ APC注入的变体之一被称为“Early Bird注入”，它涉及创建一个�
 > External ID: T1055.005
 > STIX ID: attack-pattern--e49ee9d2-0d98-44ef-85e5-5d3100065744
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2332,7 +2435,7 @@ Running code in the context of another process may allow access to the process's
 > External ID: T1055.008
 > STIX ID: attack-pattern--ea016b56-ae0e-47fe-967a-cc0ad51af67f
 > Platforms: ['Linux']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2349,7 +2452,7 @@ Running code in the context of another process may allow access to the process's
 > External ID: T1055.009
 > STIX ID: attack-pattern--d201d4cc-214d-4a74-a1ba-b3fa09fd4591
 > Platforms: ['Linux']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2377,7 +2480,7 @@ Running code in the context of another process may allow access to the process's
 > External ID: T1055.011
 > STIX ID: attack-pattern--0042a9f5-f053-4769-b3ef-9ad018dfa298
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2407,7 +2510,7 @@ Running code in the context of another process may allow access to the process's
 > External ID: T1055.012
 > STIX ID: attack-pattern--b200542e-e877-4395-875b-cf1a44537ca4
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may inject malicious code into suspended and hollowed processes in order to evade process-based defenses. Process hollowing is a method of executing arbitrary code in the address space of a separate live process.  
@@ -2426,11 +2529,25 @@ This is very similar to [Thread Local Storage](https://attack.mitre.org/techniqu
 >
 > - https://forum.butian.net/share/2100
 
+进程空心化（Process Hollowing）是攻击者用于将恶意代码注入到合法进程中、并清空其原始内容的一种技术。该技术涉及创建合法进程的新实例，然后用恶意软件替换其可执行代码。原始进程充当掩护，伪装恶意活动，逃避安全工具的检测。
+
+进程空心化技术通常包括以下步骤：
+
+1. 攻击者创建合法进程的新实例，通常是系统进程或受信任的应用程序。
+2. 为新进程分配内存空间。
+3. 替换合法进程映像的内容为攻击者的恶意代码，同时保留进程的头部、句柄和内存结构。
+4. 将合法进程的入口点重定向到开始执行注入的恶意代码。
+5. 空心化的进程继续执行，给人以正常运行的假象，同时进行恶意活动。
+
+通过使用进程空心化，攻击者利用合法进程所拥有的信任和特权，使其可以绕过监控或限制可疑进程行为的安全措施。借助这种技术，恶意软件可以躲避检测，因为恶意代码存在于一个看似合法的进程中，使安全解决方案更难以区分良性和恶意活动。
+
+进程空心化常用于高级持续性威胁（APT）和有针对性的攻击。它对防御者构成挑战，因为很难检测和防御，需要采用行为分析、内存扫描和异常检测等先进技术来有效识别和应对此类攻击。
+
 ### [T1055.013]:Process Doppelgänging
 > External ID: T1055.013
 > STIX ID: attack-pattern--7007935a-a8a7-4c0b-bd98-4e85be8ed197
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2474,7 +2591,7 @@ Process Doppelgänging 分为以下 4 个步骤：
 > External ID: T1055.014
 > STIX ID: attack-pattern--98be40f2-c86b-4ade-b6fc-4964932040e5
 > Platforms: ['Linux']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2496,7 +2613,7 @@ VDSO劫持涉及重定向对动态链接共享库的调用。内存保护机制�
 > External ID: T1055.015
 > STIX ID: attack-pattern--eb2cb5cb-ae87-4de0-8c35-da2a17aafb99
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2733,7 +2850,7 @@ With proper permissions (often via use of credentials such as [Application Acces
 > External ID: T1068
 > STIX ID: attack-pattern--b21c3b2d-02e6-45b1-980b-e69051040839
 > Platforms: ['Linux', 'macOS', 'Windows', 'Containers']
-> Tactics: ['privilege-escalation']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2794,7 +2911,7 @@ Adversaries may attempt to list ACLs for objects to determine the owner and othe
 > External ID: T1070
 > STIX ID: attack-pattern--799ace7f-e227-4411-baa0-8868704f2a69
 > Platforms: ['Linux', 'macOS', 'Windows', 'Containers', 'Network', 'Office 365', 'Google Workspace']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -2805,7 +2922,7 @@ Removal of these indicators may interfere with event collection, reporting, or o
 > External ID: T1070.001
 > STIX ID: attack-pattern--6495ae23-3ab4-43c5-a94f-5638a2c31fd2
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -2822,7 +2939,7 @@ These logs may also be cleared through other mechanisms, such as the event viewe
 > External ID: T1070.002
 > STIX ID: attack-pattern--2bce5b30-7014-4a5d-ade7-12913fe6ac36
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -2840,7 +2957,7 @@ These logs may also be cleared through other mechanisms, such as the event viewe
 > External ID: T1070.003
 > STIX ID: attack-pattern--3aef9463-9a7a-43ba-8957-a867e07c1e6a
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -2861,7 +2978,7 @@ Adversaries may run the PowerShell command <code>Clear-History</code> to flush t
 > External ID: T1070.004
 > STIX ID: attack-pattern--d63a3fb8-9452-4e9d-a60a-54be68d5998c
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -2872,7 +2989,7 @@ There are tools available from the host operating system to perform cleanup, but
 > External ID: T1070.005
 > STIX ID: attack-pattern--a750a9f6-0bde-4bb3-9aae-1e2786e9780c
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -2881,18 +2998,23 @@ There are tools available from the host operating system to perform cleanup, but
 > External ID: T1070.006
 > STIX ID: attack-pattern--47f2d673-ca62-47e9-929b-1b0be9657611
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may modify file time attributes to hide new or changes to existing files. Timestomping is a technique that modifies the timestamps of a file (the modify, access, create, and change times), often to mimic files that are in the same folder. This is done, for example, on files that have been modified or created by the adversary so that they do not appear conspicuous to forensic investigators or file analysis tools.
 
 Timestomping may be used along with file name [Masquerading](https://attack.mitre.org/techniques/T1036) to hide malware and tools.(Citation: WindowsIR Anti-Forensic Techniques)
+
+攻击者可能修改文件的时间属性，以隐藏新文件或对现有文件的更改。Timestomping是一种技术，用于修改文件的时间戳（修改、访问、创建和更改时间），通常是为了模仿位于同一文件夹中的其他文件。例如，对于由攻击者修改或创建的文件，通过修改时间属性可以使它们在取证调查员或文件分析工具面前不引人注目。
+
+Timestomping可能与文件名称伪装一起使用，以隐藏恶意软件和工具。(引用：WindowsIR Anti-Forensic Techniques)
+
 ### [T1070.007]:Clear Network Connection History and Configurations
 > External ID: T1070.007
 > STIX ID: attack-pattern--3975dbb5-0e1e-4f5b-bae1-cf2ab84b46dc
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -2911,7 +3033,7 @@ Malicious network connections may also require changes to network configuration 
 > External ID: T1070.008
 > STIX ID: attack-pattern--438c967d-3996-4870-bfc2-3954752a1927
 > Platforms: ['Linux', 'macOS', 'Windows', 'Office 365', 'Google Workspace']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -2924,7 +3046,7 @@ Adversaries may also remove emails and metadata/headers indicative of spam or su
 > External ID: T1070.009
 > STIX ID: attack-pattern--d2c4e5ea-dbdf-4113-805a-b1e2a337fb33
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -3040,7 +3162,7 @@ By staging data on one system prior to Exfiltration, adversaries can minimize th
 > External ID: T1078
 > STIX ID: attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers', 'Network']
-> Tactics: ['defense-evasion', 'persistence', 'privilege-escalation', 'initial-access']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', 'initial-access']
 
 
 **Description: **
@@ -3053,7 +3175,7 @@ The overlap of permissions for local, domain, and cloud accounts across a networ
 > External ID: T1078.001
 > STIX ID: attack-pattern--6151cbea-819b-455a-9fa6-99a1cc58797d
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers']
-> Tactics: ['defense-evasion', 'persistence', 'privilege-escalation', 'initial-access']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', 'initial-access']
 
 
 **Description: **
@@ -3064,7 +3186,7 @@ Default accounts are not limited to client machines, rather also include account
 > External ID: T1078.002
 > STIX ID: attack-pattern--c3d4bdd9-2cfe-4a80-9d0c-07a29ecdce8f
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion', 'persistence', 'privilege-escalation', 'initial-access']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', 'initial-access']
 
 
 **Description: **
@@ -3075,7 +3197,7 @@ Adversaries may compromise domain accounts, some with a high level of privileges
 > External ID: T1078.003
 > STIX ID: attack-pattern--fdc47f44-dd32-4b99-af5f-209f556f63c2
 > Platforms: ['Linux', 'macOS', 'Windows', 'Containers']
-> Tactics: ['defense-evasion', 'persistence', 'privilege-escalation', 'initial-access']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', 'initial-access']
 
 
 **Description: **
@@ -3086,7 +3208,7 @@ Local Accounts may also be abused to elevate privileges and harvest credentials 
 > External ID: T1078.004
 > STIX ID: attack-pattern--f232fa7a-025c-4d43-abc7-318e81a73d65
 > Platforms: ['Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Google Workspace']
-> Tactics: ['defense-evasion', 'persistence', 'privilege-escalation', 'initial-access']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', 'initial-access']
 
 
 **Description: **
@@ -3293,7 +3415,7 @@ ICMP communication between hosts is one example.(Citation: Cisco Synful Knock Ev
 > External ID: T1098
 > STIX ID: attack-pattern--a10641f4-87b4-45a3-a906-92a149cb2c27
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'SaaS', 'Network']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -3306,7 +3428,7 @@ In order to create or manipulate accounts, the adversary must already have suffi
 > External ID: T1098.001
 > STIX ID: attack-pattern--8a2f40cf-8325-47f9-96e4-b1ca4c7389bd
 > Platforms: ['IaaS', 'Azure AD', 'SaaS']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -3337,7 +3459,7 @@ In AWS environments, adversaries with the appropriate permissions may also use t
 > External ID: T1098.002
 > STIX ID: attack-pattern--e74de37c-a829-446c-937d-56a44f0e9306
 > Platforms: ['Windows', 'Office 365', 'Google Workspace']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -3376,7 +3498,7 @@ Email Delegate Permissions（邮件委派权限）是一种电子邮件服务中
 > External ID: T1098.003
 > STIX ID: attack-pattern--2dbbdcd5-92cf-44c0-aea2-fe24783a6bc3
 > Platforms: ['Office 365', 'IaaS', 'SaaS', 'Google Workspace', 'Azure AD']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -3401,7 +3523,7 @@ Similarly, an adversary with the Azure AD Global Administrator role can toggle t
 > External ID: T1098.004
 > STIX ID: attack-pattern--6b57dc31-b814-4a03-8706-28bc20d739c4
 > Platforms: ['Linux', 'macOS', 'IaaS', 'Network']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -3418,7 +3540,7 @@ SSH keys can also be added to accounts on network devices, such as with the `ip 
 > External ID: T1098.005
 > STIX ID: attack-pattern--7decb26c-715c-40cf-b7e0-026f7d7cc215
 > Platforms: ['Azure AD', 'Windows', 'SaaS']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -3678,7 +3800,7 @@ Other methods of MFA may be intercepted and used by an adversary to authenticate
 > External ID: T1112
 > STIX ID: attack-pattern--57340c81-c025-4189-8fa0-fc7ede51bae4
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -3817,22 +3939,25 @@ In macOS, there are a few different malware samples that record the user's webca
 > External ID: T1127
 > STIX ID: attack-pattern--ff25900d-76d5-449b-a351-8824e62fc81b
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may take advantage of trusted developer utilities to proxy execution of malicious payloads. There are many utilities used for software development related tasks that can be used to execute code in various forms to assist in development, debugging, and reverse engineering.(Citation: engima0x3 DNX Bypass)(Citation: engima0x3 RCSI Bypass)(Citation: Exploit Monday WinDbg)(Citation: LOLBAS Tracker) These utilities may often be signed with legitimate certificates that allow them to execute on a system and proxy execution of malicious code through a trusted process that effectively bypasses application control solutions.
+
 ### [T1127.001]:MSBuild
 > External ID: T1127.001
 > STIX ID: attack-pattern--c92e3d68-2349-49e4-a341-7edca2deff96
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may use MSBuild to proxy execution of code through a trusted Windows utility. MSBuild.exe (Microsoft Build Engine) is a software build platform used by Visual Studio. It handles XML formatted project files that define requirements for loading and building various platforms and configurations.(Citation: MSDN MSBuild)
 
 Adversaries can abuse MSBuild to proxy execution of malicious code. The inline task capability of MSBuild that was introduced in .NET version 4 allows for C# or Visual Basic code to be inserted into an XML project file.(Citation: MSDN MSBuild)(Citation: Microsoft MSBuild Inline Tasks 2017) MSBuild will compile and execute the inline task. MSBuild.exe is a signed Microsoft binary, so when it is used this way it can execute arbitrary code and bypass application control defenses that are configured to allow MSBuild.exe execution.(Citation: LOLBAS Msbuild)
+
+攻击者可能利用受信任的开发人员工具来代理执行恶意载荷。有许多用于软件开发相关任务的实用工具，可以用于以各种形式执行代码，以在开发、调试和逆向工程中辅助使用。(引用：engima0x3 DNX Bypass)(引用：engima0x3 RCSI Bypass)(引用：Exploit Monday WinDbg)(引用：LOLBAS Tracker) 这些工具通常使用合法证书签名，允许它们在系统上执行，并通过受信任的进程代理执行恶意代码，从而有效地绕过应用程序控制解决方案。
+
 ## [T1129]:Shared Modules
 > External ID: T1129
 > STIX ID: attack-pattern--0a5231ec-41af-4a35-83d0-6bdf11f28c65
@@ -3887,7 +4012,7 @@ Adversaries may use this functionality as a way to execute arbitrary payloads on
 > External ID: T1133
 > STIX ID: attack-pattern--10d51417-ee35-4589-b1ff-b6df1c334e8d
 > Platforms: ['Windows', 'Linux', 'Containers', 'macOS']
-> Tactics: ['persistence', 'initial-access']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', 'initial-access']
 
 **Description: **
  Adversaries may leverage external-facing remote services to initially access and/or persist within a network. Remote services such as VPNs, Citrix, and other access mechanisms allow users to connect to internal enterprise network resources from external locations. There are often remote service gateways that manage connections and credential authentication for these services. Services such as [Windows Remote Management](https://attack.mitre.org/techniques/T1021/006) and [VNC](https://attack.mitre.org/techniques/T1021/005) can also be used externally.(Citation: MacOS VNC software for Remote Desktop)
@@ -3908,7 +4033,7 @@ Access may also be gained through an exposed service that doesn’t require auth
 > External ID: T1134
 > STIX ID: attack-pattern--dcaa092b-7de9-4a21-977f-7fcb77e89c48
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -3918,11 +4043,12 @@ An adversary can use built-in Windows API functions to copy access tokens from e
 
 Any standard user can use the <code>runas</code> command, and the Windows API functions, to create impersonation tokens; it does not require access to an administrator account. There are also other mechanisms, such as Active Directory fields, that can be used to modify access tokens.
 ### [T1134.001]:Token Impersonation/Theft
+> 中文：令牌模拟/窃取
+>
 > External ID: T1134.001
 > STIX ID: attack-pattern--86850eff-2729-40c3-b85e-c4af26da4a2d
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may duplicate then impersonate another user's existing token to escalate privileges and bypass access controls. For example, an adversary can duplicate an existing token using `DuplicateToken` or `DuplicateTokenEx`. The token can then be used with `ImpersonateLoggedOnUser` to allow the calling thread to impersonate a logged on user's security context, or with `SetThreadToken` to assign the impersonated token to a thread.
@@ -3930,12 +4056,20 @@ Any standard user can use the <code>runas</code> command, and the Windows API fu
 An adversary may perform [Token Impersonation/Theft](https://attack.mitre.org/techniques/T1134/001) when they have a specific, existing process they want to assign the duplicated token to. For example, this may be useful for when the target user has a non-network logon session on the system.
 
 When an adversary would instead use a duplicated token to create a new process rather than attaching to an existing process, they can additionally [Create Process with Token](https://attack.mitre.org/techniques/T1134/002) using `CreateProcessWithTokenW` or `CreateProcessAsUserW`. [Token Impersonation/Theft](https://attack.mitre.org/techniques/T1134/001) is also distinct from [Make and Impersonate Token](https://attack.mitre.org/techniques/T1134/003) in that it refers to duplicating an existing token, rather than creating a new one.
+
+对手可能会复制并冒充另一个用户的现有令牌，以升级权限并绕过访问控制。例如，对手可以使用 `DuplicateToken` 或 `DuplicateTokenEx` 来复制现有的令牌。然后可以使用 `ImpersonateLoggedOnUser` 将令牌用于调用线程，以模拟已登录用户的安全上下文，或者使用 `SetThreadToken` 将模拟的令牌分配给线程。
+
+当对手在具体存在的进程上分配复制的令牌时，可能会执行 [Token Impersonation/Theft](https://attack.mitre.org/techniques/T1134/001)。例如，当目标用户在系统上具有非网络登录会话时，这可能很有用。
+
+如果对手不是将复制的令牌附加到现有进程上，而是用它来创建一个新进程，则可以使用 `CreateProcessWithTokenW` 或 `CreateProcessAsUserW` 进一步执行 [Create Process with Token](https://attack.mitre.org/techniques/T1134/002)。[Token Impersonation/Theft](https://attack.mitre.org/techniques/T1134/001) 与 [Make and Impersonate Token](https://attack.mitre.org/techniques/T1134/003) 不同，因为前者是指复制现有令牌，而不是创建新令牌。
+
+
+
 ### [T1134.002]:Create Process with Token
 > External ID: T1134.002
 > STIX ID: attack-pattern--677569f9-a8b0-459e-ab24-7f18091fa7bf
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may create a new process with an existing token to escalate privileges and bypass access controls. Processes can be created with the token and resulting security context of another user using features such as <code>CreateProcessWithTokenW</code> and <code>runas</code>.(Citation: Microsoft RunAs)
@@ -3944,21 +4078,27 @@ Creating processes with a token not associated with the current user may require
 
 While this technique is distinct from [Token Impersonation/Theft](https://attack.mitre.org/techniques/T1134/001), the techniques can be used in conjunction where a token is duplicated and then used to create a new process.
 ### [T1134.003]:Make and Impersonate Token
+> 中文：创建和模拟令牌
+>
 > External ID: T1134.003
 > STIX ID: attack-pattern--8cdeb020-e31e-4f88-a582-f53dcfbda819
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may make new tokens and impersonate users to escalate privileges and bypass access controls. For example, if an adversary has a username and password but the user is not logged onto the system the adversary can then create a logon session for the user using the `LogonUser` function. The function will return a copy of the new session's access token and the adversary can use `SetThreadToken` to assign the token to a thread.
 
 This behavior is distinct from [Token Impersonation/Theft](https://attack.mitre.org/techniques/T1134/001) in that this refers to creating a new user token instead of stealing or duplicating an existing one.
+
+对手可能会创建新的令牌并冒充用户，以升级权限并绕过访问控制。例如，如果对手拥有用户名和密码，但用户未登录系统，则对手可以使用 `LogonUser` 函数为用户创建一个登录会话。该函数将返回新会话的访问令牌副本，对手可以使用 `SetThreadToken` 将令牌分配给线程。
+
+这种行为与 [Token Impersonation/Theft](https://attack.mitre.org/techniques/T1134/001) 不同，因为它是指创建新的用户令牌，而不是窃取或复制现有令牌。
+
 ### [T1134.004]:Parent PID Spoofing
 > External ID: T1134.004
 > STIX ID: attack-pattern--93591901-3172-4e94-abf8-6034ab26f44a
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -3968,16 +4108,22 @@ Adversaries may abuse these mechanisms to evade defenses, such as those blocking
 
 Explicitly assigning the PPID may also enable elevated privileges given appropriate access rights to the parent process. For example, an adversary in a privileged user context (i.e. administrator) may spawn a new process and assign the parent as a process running as SYSTEM (such as <code>lsass.exe</code>), causing the new process to be elevated via the inherited access token.(Citation: XPNSec PPID Nov 2017)
 ### [T1134.005]:SID-History Injection
+> 中文：SID 历史注入
+>
 > External ID: T1134.005
 > STIX ID: attack-pattern--b7dc639b-24cd-482d-a7f1-8897eda21023
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may use SID-History Injection to escalate privileges and bypass access controls. The Windows security identifier (SID) is a unique value that identifies a user or group account. SIDs are used by Windows security in both security descriptors and access tokens. (Citation: Microsoft SID) An account can hold additional SIDs in the SID-History Active Directory attribute (Citation: Microsoft SID-History Attribute), allowing inter-operable account migration between domains (e.g., all values in SID-History are included in access tokens).
 
 With Domain Administrator (or equivalent) rights, harvested or well-known SID values (Citation: Microsoft Well Known SIDs Jun 2017) may be inserted into SID-History to enable impersonation of arbitrary users/groups such as Enterprise Administrators. This manipulation may result in elevated access to local resources and/or access to otherwise inaccessible domains via lateral movement techniques such as [Remote Services](https://attack.mitre.org/techniques/T1021), [SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002), or [Windows Remote Management](https://attack.mitre.org/techniques/T1021/006).
+
+对手可能会使用 SID-History Injection（SID 历史注入）来升级权限并绕过访问控制。Windows 安全标识符（SID）是用于标识用户或组帐户的唯一值。SID 在 Windows 安全中被用于安全描述符和访问令牌中。账户可以在 SID-History（SID 历史）Active Directory 属性中包含额外的 SID，从而实现域间的账户迁移（例如，SID-History 中的所有值都会包含在访问令牌中）。
+
+在拥有域管理员（或等同）权限的情况下，可以将获取的或广为人知的 SID 值插入到 SID-History 中，从而可以冒充任意用户/组，如企业管理员。此操作可能导致对本地资源的提升访问权限，或通过横向移动技术（如 [Remote Services](https://attack.mitre.org/techniques/T1021)、[SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002) 或 [Windows Remote Management](https://attack.mitre.org/techniques/T1021/006)）访问本来无法访问的域。
+
 ## [T1135]:Network Share Discovery
 > External ID: T1135
 > STIX ID: attack-pattern--3489cfc5-640f-4bb3-a103-9137b97de79f
@@ -3993,7 +4139,7 @@ File sharing over a Windows network occurs over the SMB protocol. (Citation: Wik
 > External ID: T1136
 > STIX ID: attack-pattern--e01be9c5-e763-4caf-aeb7-000b416aef67
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Network']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4004,7 +4150,7 @@ Accounts may be created on the local system or within a domain or cloud tenant. 
 > External ID: T1136.001
 > STIX ID: attack-pattern--635cbe30-392d-4e27-978e-66774357c762
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4015,7 +4161,7 @@ Such accounts may be used to establish secondary credentialed access that do not
 > External ID: T1136.002
 > STIX ID: attack-pattern--7610cada-1499-41a4-b3dd-46467b68d177
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4026,7 +4172,7 @@ Such accounts may be used to establish secondary credentialed access that do not
 > External ID: T1136.003
 > STIX ID: attack-pattern--a009cb25-4801-4116-9105-80a91cf15c1b
 > Platforms: ['Azure AD', 'Office 365', 'IaaS', 'Google Workspace', 'SaaS']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4041,7 +4187,7 @@ Once an adversary has created a cloud account, they can then manipulate that acc
 > External ID: T1137
 > STIX ID: attack-pattern--2c4d4e92-0ccf-4a97-b54c-86d662988a53
 > Platforms: ['Windows', 'Office 365']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4059,7 +4205,7 @@ A variety of features have been discovered in Outlook that can be abused to obta
 > External ID: T1137.001
 > STIX ID: attack-pattern--79a47ad0-fc3b-4821-9f01-a026b1ddba21
 > Platforms: ['Windows', 'Office 365']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4093,7 +4239,7 @@ Excel Personal.xlsb位置：<br> <code>C:\Users&lt;username>\AppData\Roaming\Mic
 > External ID: T1137.002
 > STIX ID: attack-pattern--ed7efd4d-ce28-4a19-a8e6-c58011eb2c7a
 > Platforms: ['Windows', 'Office 365']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 **Description: **
  Adversaries may abuse the Microsoft Office "Office Test" Registry key to obtain persistence on a compromised system. An Office Test Registry location exists that allows a user to specify an arbitrary DLL that will be executed every time an Office application is started. This Registry key is thought to be used by Microsoft to load DLLs for testing and debugging purposes while developing Office applications. This Registry key is not created by default during an Office installation.(Citation: Hexacorn Office Test)(Citation: Palo Alto Office Test Sofacy)
@@ -4122,7 +4268,7 @@ Office Test功能存在用户和全局注册表键：
 > External ID: T1137.003
 > STIX ID: attack-pattern--a9e2cea0-c805-4bf8-9e31-f5f0513a3634
 > Platforms: ['Windows', 'Office 365']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4140,7 +4286,7 @@ Once malicious forms have been added to the user’s mailbox, they will be loade
 > External ID: T1137.004
 > STIX ID: attack-pattern--bf147104-abf9-4221-95d1-e81585859441
 > Platforms: ['Windows', 'Office 365']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4158,7 +4304,7 @@ Once malicious home pages have been added to the user’s mailbox, they will be 
 > External ID: T1137.005
 > STIX ID: attack-pattern--3d1b9d7e-3921-4d25-845a-7d9f15c0da44
 > Platforms: ['Windows', 'Office 365']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4176,7 +4322,7 @@ Once malicious rules have been added to the user’s mailbox, they will be loade
 > External ID: T1137.006
 > STIX ID: attack-pattern--34f1d81d-fe88-4f97-bd3b-a3164536255d
 > Platforms: ['Windows', 'Office 365']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4192,7 +4338,7 @@ Add-ins can be used to obtain persistence because they can be set to execute cod
 > External ID: T1140
 > STIX ID: attack-pattern--3ccef7ae-cb5e-48f6-8302-897105fbf55c
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4205,7 +4351,7 @@ Sometimes a user's action may be required to open it for deobfuscation or decryp
 > External ID: T1176
 > STIX ID: attack-pattern--389735f1-f21c-4208-b8f0-f8031e7169b8
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4387,7 +4533,7 @@ Targeting may be specific to a desired victim set or may be distributed to a bro
 > External ID: T1197
 > STIX ID: attack-pattern--c8e87b83-edbb-48d4-9295-4974897525b7
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'persistence']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -4459,16 +4605,23 @@ Password policies can be set and discovered on Windows, Linux, and macOS systems
 
 Password policies can be discovered in cloud environments using available APIs such as <code>GetAccountPasswordPolicy</code> in AWS (Citation: AWS GetPasswordPolicy).
 ## [T1202]:Indirect Command Execution
+> 中文：间接执行命令
+>
 > External ID: T1202
 > STIX ID: attack-pattern--3b0e52ce-517a-4614-a523-1bd5deef6c5e
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may abuse utilities that allow for command execution to bypass security restrictions that limit the use of command-line interpreters. Various Windows utilities may be used to execute commands, possibly without invoking [cmd](https://attack.mitre.org/software/S0106). For example, [Forfiles](https://attack.mitre.org/software/S0193), the Program Compatibility Assistant (pcalua.exe), components of the Windows Subsystem for Linux (WSL), as well as other utilities may invoke the execution of programs and commands from a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059), Run window, or via scripts. (Citation: VectorSec ForFiles Aug 2017) (Citation: Evi1cg Forfiles Nov 2017)
 
 Adversaries may abuse these features for [Defense Evasion](https://attack.mitre.org/tactics/TA0005), specifically to perform arbitrary execution while subverting detections and/or mitigation controls (such as Group Policy) that limit/prevent the usage of [cmd](https://attack.mitre.org/software/S0106) or file extensions more commonly associated with malicious payloads.
+
+攻击者可能滥用允许执行命令的实用工具，以绕过限制使用命令行解释器的安全限制。各种Windows实用工具可以用于执行命令，可能无需调用[cmd](https://attack.mitre.org/software/S0106)。(引用：VectorSec ForFiles Aug 2017)(引用：Evi1cg Forfiles Nov 2017) 例如，[Forfiles](https://attack.mitre.org/software/S0193)、程序兼容性助手（pcalua.exe）、Windows子系统组件（WSL）以及其他实用工具可以从[命令和脚本解释器](https://attack.mitre.org/techniques/T1059)、运行窗口或脚本中调用程序和命令的执行。
+
+攻击者可能滥用这些功能进行[防御规避](https://attack.mitre.org/tactics/TA0005)，特别是在规避检测和/或缓解控制（如组策略）的同时执行任意执行操作，这些控制限制/防止使用与恶意载荷更常见相关的[cmd](https://attack.mitre.org/software/S0106)或文件扩展名。
+
 ## [T1203]:Exploitation for Client Execution
 > 中文：客户端可执行程序利用
 >
@@ -4564,7 +4717,7 @@ Adversaries may also name images a certain way to increase the chance of users m
 > External ID: T1205
 > STIX ID: attack-pattern--451a9977-d255-43c9-b431-66de80130c8c
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['defense-evasion', 'persistence', 'command-and-control']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', 'command-and-control']
 
 
 **Description: **
@@ -4598,7 +4751,7 @@ Adversaries may also use the Wake-on-LAN feature to turn on powered off systems.
 > External ID: T1205.001
 > STIX ID: attack-pattern--8868cb5b-d575-4a60-acb2-07d37389a2fd
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['defense-evasion', 'persistence', 'command-and-control']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', 'command-and-control']
 
 
 **Description: **
@@ -4620,8 +4773,7 @@ The observation of the signal packets to trigger the communication can be conduc
 > External ID: T1205.002
 > STIX ID: attack-pattern--005cc321-08ce-4d17-b1ea-cb5275926520
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion', 'persistence', 'command-and-control']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', 'command-and-control']
 
 **Description: **
  Adversaries may attach filters to a network socket to monitor then activate backdoors used for persistence or command and control. With elevated permissions, adversaries can use features such as the `libpcap` library to open sockets and install filters to allow or disallow certain types of data to come through the socket. The filter may apply to all traffic passing through the specified network interface (or every interface if not specified). When the network interface receives a packet matching the filter criteria, additional actions can be triggered on the host, such as activation of a reverse shell.
@@ -4637,11 +4789,12 @@ Filters can be installed on any Unix-like platform with `libpcap` installed or o
 过滤器可以安装在任何安装了`libpcap`的类Unix平台上，或者在使用`Winpcap`的Windows主机上。攻击者可以使用`libpcap`和`pcap_setfilter`，或者使用标准库函数`setsockopt`和`SO_ATTACH_FILTER`选项。由于套接字连接在接收到数据包之前是不活动的，因此由于主机上缺乏活动、低CPU开销和对原始套接字使用的可见性有限，可能难以检测到此行为。
 
 ## [T1207]:Rogue Domain Controller
+> 中文：恶意域控制器
+>
 > External ID: T1207
 > STIX ID: attack-pattern--564998d8-ab3e-4123-93fb-eccaa6b9714a
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may register a rogue Domain Controller to enable manipulation of Active Directory data. DCShadow may be used to create a rogue Domain Controller (DC). DCShadow is a method of manipulating Active Directory (AD) data, including objects and schemas, by registering (or reusing an inactive registration) and simulating the behavior of a DC. (Citation: DCShadow Blog) Once registered, a rogue DC may be able to inject and replicate changes into AD infrastructure for any domain object, including credentials and keys.
@@ -4649,6 +4802,13 @@ Filters can be installed on any Unix-like platform with `libpcap` installed or o
 Registering a rogue DC involves creating a new server and nTDSDSA objects in the Configuration partition of the AD schema, which requires Administrator privileges (either Domain or local to the DC) or the KRBTGT hash. (Citation: Adsecurity Mimikatz Guide)
 
 This technique may bypass system logging and security monitors such as security information and event management (SIEM) products (since actions taken on a rogue DC may not be reported to these sensors). (Citation: DCShadow Blog) The technique may also be used to alter and delete replication and other associated metadata to obstruct forensic analysis. Adversaries may also utilize this technique to perform [SID-History Injection](https://attack.mitre.org/techniques/T1134/005) and/or manipulate AD objects (such as accounts, access control lists, schemas) to establish backdoors for Persistence. (Citation: DCShadow Blog)
+
+攻击者可能注册一个恶意域控制器，以便操纵Active Directory（AD）数据。DCShadow可以用于创建一个恶意域控制器（DC）。DCShadow是一种通过注册（或重新使用未活动的注册）并模拟域控制器行为来操纵Active Directory（AD）数据（包括对象和架构）的方法。(引用：DCShadow Blog) 注册完成后，恶意DC可能能够将更改注入并复制到任何域对象中，包括凭据和密钥。
+
+注册恶意DC涉及在AD模式的配置分区中创建新的服务器和nTDSDSA对象，这需要管理员权限（域的管理员或DC本地管理员）或KRBTGT哈希值。(引用：Adsecurity Mimikatz Guide)
+
+此技术可能绕过系统日志记录和安全监视器，如安全信息和事件管理（SIEM）产品（因为在恶意DC上执行的操作可能不会报告给这些传感器）。(引用：DCShadow Blog) 这种技术还可以用于更改和删除复制和其他相关元数据，以阻碍取证分析。攻击者还可以利用此技术执行[SID-History Injection](https://attack.mitre.org/techniques/T1134/005)，或操纵AD对象（如账户、访问控制列表、架构）来建立持久性的后门。(引用：DCShadow Blog)
+
 ## [T1210]:Exploitation of Remote Services
 > External ID: T1210
 > STIX ID: attack-pattern--9db0cf3a-a3c9-4012-8268-123b9db6fd82
@@ -4668,7 +4828,7 @@ Depending on the permissions level of the vulnerable remote service an adversary
 > External ID: T1211
 > STIX ID: attack-pattern--fe926152-f431-4baf-956c-4ad3cb0bf23b
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4762,7 +4922,7 @@ Once adversaries gain access to a victim network or a private code repository, t
 > External ID: T1216
 > STIX ID: attack-pattern--f6fe9070-7a65-49ea-ae72-76292f42cebe
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4771,7 +4931,7 @@ Once adversaries gain access to a victim network or a private code repository, t
 > External ID: T1216.001
 > STIX ID: attack-pattern--09cd431f-eaf4-4d2a-acaf-2a7acfe7ed58
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4797,7 +4957,7 @@ Specific storage locations vary based on platform and/or application, but browse
 > External ID: T1218
 > STIX ID: attack-pattern--457c7820-d331-465a-915e-42f85500ccc4
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4808,7 +4968,7 @@ Similarly, on Linux systems adversaries may abuse trusted binaries such as <code
 > External ID: T1218.001
 > STIX ID: attack-pattern--a6937325-9321-4e2e-bb2b-3ed2d40b2a9d
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4819,7 +4979,7 @@ A custom CHM file containing embedded payloads could be delivered to a victim th
 > External ID: T1218.002
 > STIX ID: attack-pattern--4ff5d6a8-c062-4c68-a778-36fc5edd564f
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4834,7 +4994,7 @@ Adversaries may also rename malicious DLL files (.dll) with Control Panel file e
 > External ID: T1218.003
 > STIX ID: attack-pattern--4cbc6a62-9e34-4f94-8a19-5c1a11392a49
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4847,7 +5007,7 @@ CMSTP.exe can also be abused to [Bypass User Account Control](https://attack.mit
 > External ID: T1218.004
 > STIX ID: attack-pattern--2cd950a6-16c4-404a-aa01-044322395107
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4858,7 +5018,7 @@ InstallUtil may also be used to bypass application control through use of attrib
 > External ID: T1218.005
 > STIX ID: attack-pattern--840a987a-99bd-4a80-a5c9-0cb2baa6cade
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4875,7 +5035,7 @@ Mshta.exe can be used to bypass application control solutions that do not accoun
 > External ID: T1218.007
 > STIX ID: attack-pattern--365be77f-fc0e-42ee-bac8-4faf806d9336
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4886,7 +5046,7 @@ Adversaries may abuse msiexec.exe to launch local or network accessible MSI file
 > External ID: T1218.008
 > STIX ID: attack-pattern--6e3bd510-6b33-41a4-af80-2d80f3ee0071
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4898,7 +5058,7 @@ Adversaries may abuse odbcconf.exe to bypass application control solutions that 
 > External ID: T1218.009
 > STIX ID: attack-pattern--c48a67ee-b657-45c1-91bf-6cdbe27205f8
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4909,7 +5069,7 @@ Both utilities may be used to bypass application control through use of attribut
 > External ID: T1218.010
 > STIX ID: attack-pattern--b97f1d35-4249-4486-a6b5-ee60ccf24fab
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4922,7 +5082,7 @@ Regsvr32.exe can also be leveraged to register a COM Object used to establish pe
 > External ID: T1218.011
 > STIX ID: attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4939,7 +5099,7 @@ Additionally, adversaries may use [Masquerading](https://attack.mitre.org/techni
 > External ID: T1218.012
 > STIX ID: attack-pattern--808e6329-ca91-4b87-ac2d-8eadc5f8f327
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4950,8 +5110,7 @@ Adversaries may abuse verclsid.exe to execute malicious payloads. This may be ac
 > External ID: T1218.013
 > STIX ID: attack-pattern--1bae753e-8e52-4055-a66d-2ead90303ca9
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may abuse mavinject.exe to proxy execution of malicious code. Mavinject.exe is the Microsoft Application Virtualization Injector, a Windows utility that can inject code into external processes as part of Microsoft Application Virtualization (App-V).(Citation: LOLBAS Mavinject)
@@ -4963,7 +5122,7 @@ In addition to [Dynamic-link Library Injection](https://attack.mitre.org/techniq
 > External ID: T1218.014
 > STIX ID: attack-pattern--ffbcfdb0-de22-4106-9ed3-fc23c8a01407
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -4991,7 +5150,7 @@ Admin tools such as TeamViewer have been used by several groups targeting instit
 > External ID: T1220
 > STIX ID: attack-pattern--ebbe170d-aa74-4946-8511-9921243415a3
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -5011,11 +5170,32 @@ Command-line examples:(Citation: XSL Bypass Mar 2019)(Citation: LOLBAS Wmic)
 
 * Local File: <code>wmic process list /FORMAT:evil[.]xsl</code>
 * Remote File: <code>wmic os get /FORMAT:”https[:]//example[.]com/evil[.]xsl”</code>
+
+攻击者可以通过将脚本嵌入XSL文件中来绕过应用程序控制并模糊代码执行。Extensible Stylesheet Language（XSL）文件通常用于描述XML文件中的数据处理和呈现。为了支持复杂操作，XSL标准包括对各种语言嵌入脚本的支持。(引用：Microsoft XSLT Script Mar 2017)
+
+攻击者可能滥用这个功能来执行任意文件，同时可能绕过应用程序控制。与[Trusted Developer Utilities Proxy Execution](https://attack.mitre.org/techniques/T1127)类似，Microsoft的通用行转换实用程序二进制文件（msxsl.exe）(引用：Microsoft msxsl.exe) 可以安装和用于执行嵌入在本地或远程（URL引用）XSL文件中的恶意JavaScript。(引用：Penetration Testing Lab MSXSL July 2017) 由于msxsl.exe不会默认安装，攻击者可能需要将其与投放的文件一起打包。（引用：Reaqta MSXSL Spearphishing MAR 201Msxsl.exe接收两个主要参数，一个是XML源文件，一个是XSL样式表。由于XSL文件是有效的XML，攻击者可以调用相同的XSL文件两次。在使用msxsl.exe时，攻击者还可以给XML/XSL文件任意的文件扩展名。（引用：XSL Bypass Mar 2019）
+
+命令行示例：（引用：Penetration Testing Lab MSXSL July 2017）（引用：XSL Bypass Mar 2019）
+
+- <code>msxsl.exe customers[.]xml script[.]xsl</code>
+- <code>msxsl.exe script[.]xsl script[.]xsl</code>
+- <code>msxsl.exe script[.]jpeg script[.]jpeg</code>
+
+这个技术的另一个变种被称为"Squiblytwo"，它涉及使用[Windows管理仪器](https://attack.mitre.org/techniques/T1047)在XSL文件中调用JScript或VBScript。（引用：LOLBAS Wmic）这个技术也可以执行本地/远程脚本，并且与其[Regsvr32](https://attack.mitre.org/techniques/T1218/010)/ "Squiblydoo"对应项类Msxsl.exe接收两个主要参数，一个是XML源文件，一个是XSL样式表。由于XSL文件是有效的XML，攻击者可以调用相同的XSL文件两次。在使用msxsl.exe时，攻击者还可以给XML/XSL文件任意的文件扩展名。（引用：XSL Bypass Mar 2019）
+
+命令行示例：（引用：Penetration Testing Lab MSXSL July 2017）（引用：XSL Bypass Mar 2019）
+
+- <code>msxsl.exe customers[.]xml script[.]xsl</code>
+- <code>msxsl.exe script[.]xsl script[.]xsl</code>
+- <code>msxsl.exe script[.]jpeg script[.]jpeg</code>
+
+
+
 ## [T1221]:Template Injection
 > External ID: T1221
 > STIX ID: attack-pattern--dc31fe1e-d722-49da-8f5f-92c7b5aff534
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -5032,7 +5212,7 @@ This technique may also enable [Forced Authentication](https://attack.mitre.org/
 > External ID: T1222
 > STIX ID: attack-pattern--65917ae0-b854-4139-83fe-bf2441cf0196
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -5045,7 +5225,7 @@ Adversaries may also change permissions of symbolic links. For example, malware 
 > External ID: T1222.001
 > STIX ID: attack-pattern--34e793de-0274-4982-9c1a-246ed1c19dee
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -5058,7 +5238,7 @@ Adversaries can interact with the DACLs using built-in Windows commands, such as
 > External ID: T1222.002
 > STIX ID: attack-pattern--09b130a2-a77e-4af0-a361-f46f9aad1345
 > Platforms: ['macOS', 'Linux']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -5071,19 +5251,25 @@ Adversarial may use these commands to make themselves the owner of files and dir
 > External ID: T1480
 > STIX ID: attack-pattern--853c4192-4311-43e1-bfbb-b11b14911852
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may use execution guardrails to constrain execution or actions based on adversary supplied and environment specific conditions that are expected to be present on the target. Guardrails ensure that a payload only executes against an intended target and reduces collateral damage from an adversary’s campaign.(Citation: FireEye Kevin Mandia Guardrails) Values an adversary can provide about a target system or environment to use as guardrails may include specific network share names, attached physical devices, files, joined Active Directory (AD) domains, and local/external IP addresses.(Citation: FireEye Outlook Dec 2019)
 
 Guardrails can be used to prevent exposure of capabilities in environments that are not intended to be compromised or operated within. This use of guardrails is distinct from typical [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497). While use of [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497) may involve checking for known sandbox values and continuing with execution only if there is no match, the use of guardrails will involve checking for an expected target-specific value and only continuing with execution if there is such a match.
+
+攻击者可能使用执行保护措施来限制根据攻击者提供和环境特定条件的执行或操作，这些条件预计会存在于目标系统上。保护措施确保有效载荷只针对预期目标执行，并减少来自攻击者活动的附带伤害。(引用：FireEye Kevin Mandia Guardrails) 攻击者可以提供关于目标系统或环境的值作为保护措施，用于限制有效载荷的执行。这些值可能包括特定的网络共享名称、连接的物理设备、文件、加入的Active Directory (AD)域和本地/外部IP地址。(引用：FireEye Outlook Dec 2019)
+
+保护措施可以用于防止在不打算侵犯或操作的环境中暴露能力。这种使用保护措施的方式与典型的[虚拟化/沙箱逃避](https://attack.mitre.org/techniques/T1497)不同。虽然使用[虚拟化/沙箱逃避](https://attack.mitre.org/techniques/T1497)可能涉及检查已知的沙箱值，并只有在没有匹配时才继续执行，但使用保护措施将涉及检查预期的目标特定值，并只在存在这样的匹配时才继续执行。
+
 ### [T1480.001]:Environmental Keying
+> 中文：环境关键化
+>
 > External ID: T1480.001
 > STIX ID: attack-pattern--f244b8dd-af6c-4391-a497-fc03627ce995
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may environmentally key payloads or other features of malware to evade defenses and constraint execution to a specific target environment. Environmental keying uses cryptography to constrain execution or actions based on adversary supplied environment specific conditions that are expected to be present on the target. Environmental keying is an implementation of [Execution Guardrails](https://attack.mitre.org/techniques/T1480) that utilizes cryptographic techniques for deriving encryption/decryption keys from specific types of values in a given computing environment.(Citation: EK Clueless Agents)
@@ -5093,6 +5279,15 @@ Values can be derived from target-specific elements and used to generate a decry
 Similar to [Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027), adversaries may use environmental keying to help protect their TTPs and evade detection. Environmental keying may be used to deliver an encrypted payload to the target that will use target-specific values to decrypt the payload before execution.(Citation: Kaspersky Gauss Whitepaper)(Citation: EK Impeding Malware Analysis)(Citation: Environmental Keyed HTA)(Citation: Ebowla: Genetic Malware)(Citation: Demiguise Guardrail Router Logo) By utilizing target-specific values to decrypt the payload the adversary can avoid packaging the decryption key with the payload or sending it over a potentially monitored network connection. Depending on the technique for gathering target-specific values, reverse engineering of the encrypted payload can be exceptionally difficult.(Citation: Kaspersky Gauss Whitepaper) This can be used to prevent exposure of capabilities in environments that are not intended to be compromised or operated within.
 
 Like other [Execution Guardrails](https://attack.mitre.org/techniques/T1480), environmental keying can be used to prevent exposure of capabilities in environments that are not intended to be compromised or operated within. This activity is distinct from typical [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497). While use of [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497) may involve checking for known sandbox values and continuing with execution only if there is no match, the use of environmental keying will involve checking for an expected target-specific value that must match for decryption and subsequent execution to be successful.
+
+攻击者可能对有效载荷或恶意软件的其他特征进行环境关键化，以逃避防御并将执行限制在特定的目标环境中。环境关键化使用密码学技术，根据攻击者提供的环境特定条件（预计会存在于目标环境中）来限制执行或操作。环境关键化是[执行保护措施](https://attack.mitre.org/techniques/T1480)的一种实现，它利用密码学技术从给定的计算环境中的特定类型的值中派生加密/解密密钥。(引用：EK Clueless Agents)
+
+可以从特定于目标的元素中派生值，并用于生成用于解密加密有效载荷的解密密钥。目标特定值可以来自特定的网络共享、物理设备、软件/软件版本、文件、加入的AD域、系统时间和本地/外部IP地址。(引用：Kaspersky Gauss Whitepaper)(引用：Proofpoint Router Malvertising)(引用：EK Impeding Malware Analysis)(引用：Environmental Keyed HTA)(引用：Ebowla: Genetic Malware) 通过从目标特定的环境值生成解密密钥，环境关键化可以使沙箱检测、反病毒检测、信息众包和逆向工程变得困难。(引用：Kaspersky Gauss Whitepaper)(引用：Ebowla: Genetic Malware) 这些困难可以减缓事件响应过程，并帮助攻击者隐藏他们的战术、技术和程序 (TTPs)。
+
+与[混淆文件或信息](https://attack.mitre.org/techniques/T1027)类似，攻击者可能利用环境关键化来保护他们的战术、技术和程序（TTPs），以逃避检测。环境关键化可以用于向目标传递一个加密的有效载荷，该有效载荷将使用目标特定值在执行之前解密。(引用：Kaspersky Gauss Whitepaper)(引用：EK Impeding Malware Analysis)(引用：Environmental Keyed HTA)(引用：Ebowla: Genetic Malware)(引用：Demiguise Guardrail Router Logo) 通过利用目标特定值来解密有效载荷，攻击者可以避免将解密密钥与有效载荷捆绑在一起，或者通过潜在受监控的网络连接发送解密密钥。根据收集目标特定值的技术，对加密有效载荷进行逆向工程可能非常困难。(引用：Kaspersky Gauss Whitepaper) 这可以用于防止在不打算侵犯或操作的环境中暴露能力。
+
+与其他[执行保护措施](https://attack.mitre.org/techniques/T1480)类似，环境关键化可以用于防止在不打算侵犯或操作的环境中暴露能力。这种活动与典型的[虚拟化/沙箱逃避](https://attack.mitre.org/techniques/T1497)不同。虚拟化/沙箱逃避可能涉及检查已知的沙箱值，并且只有在没有匹配项时才继续执行，而环境关键化将涉及检查预期的目标特定值，只有当解密和后续执行成功时才会匹配。
+
 ## [T1482]:Domain Trust Discovery
 > External ID: T1482
 > STIX ID: attack-pattern--767dbf9e-df3f-45cb-8998-4903ab5f80c0
@@ -5106,7 +5301,7 @@ Like other [Execution Guardrails](https://attack.mitre.org/techniques/T1480), en
 > External ID: T1484
 > STIX ID: attack-pattern--ebb42bbe-62d7-47d7-a55f-3b08b61d792d
 > Platforms: ['Windows', 'Azure AD']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -5119,7 +5314,7 @@ Adversaries may temporarily modify domain policy, carry out a malicious action(s
 > External ID: T1484.001
 > STIX ID: attack-pattern--5d2be8b9-d24c-4e98-83bf-2f5f79477163
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -5134,7 +5329,7 @@ For example, publicly available scripts such as <code>New-GPOImmediateTask</code
 > External ID: T1484.002
 > STIX ID: attack-pattern--24769ab5-14bd-4f4e-a752-cfb185da53ee
 > Platforms: ['Windows', 'Azure AD']
-> Tactics: ['defense-evasion', 'privilege-escalation']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -5263,7 +5458,7 @@ Adversaries may also use malware that leverages a system's network bandwidth as 
 > External ID: T1497
 > STIX ID: attack-pattern--82caa33e-d11a-433a-94ea-9b5a5fbef81d
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['defense-evasion', 'discovery']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'discovery']
 
 
 **Description: **
@@ -5276,7 +5471,7 @@ Adversaries may use several methods to accomplish [Virtualization/Sandbox Evasio
 > External ID: T1497.001
 > STIX ID: attack-pattern--29be378d-262d-4e99-b00d-852d573628e6
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion', 'discovery']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'discovery']
 
 
 **Description: **
@@ -5293,7 +5488,7 @@ Hardware checks, such as the presence of the fan, temperature, and audio devices
 > External ID: T1497.002
 > STIX ID: attack-pattern--91541e7e-b969-40c6-bbd8-1b5352ec2938
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion', 'discovery']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'discovery']
 
 
 **Description: **
@@ -5304,7 +5499,7 @@ Adversaries may search for user activity on the host based on variables such as 
 > External ID: T1497.003
 > STIX ID: attack-pattern--4bed873f-0b7d-41d4-b93a-b6905d1f90b0
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion', 'discovery']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'discovery']
 
 
 **Description: **
@@ -5426,7 +5621,7 @@ Adversaries may exploit known or zero-day vulnerabilities to crash applications 
 > External ID: T1505
 > STIX ID: attack-pattern--d456de47-a16f-4e46-8980-e67478a12dcb
 > Platforms: ['Windows', 'Linux', 'macOS', 'Network']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -5437,7 +5632,7 @@ Adversaries may exploit known or zero-day vulnerabilities to crash applications 
 > External ID: T1505.001
 > STIX ID: attack-pattern--f9e9365a-9ca2-4d9c-8e7c-050d73d1101a
 > Platforms: ['Windows', 'Linux']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 **Description: **
  Adversaries may abuse SQL stored procedures to establish persistent access to systems. SQL Stored Procedures are code that can be saved and reused so that database users do not waste time rewriting frequently used SQL queries. Stored procedures can be invoked via SQL statements to the database using the procedure name or via defined events (e.g. when a SQL server application is started/restarted).
@@ -5474,7 +5669,7 @@ SQL存储过程在不同的数据库管理系统中有所差异，例如MySQL使
 > External ID: T1505.002
 > STIX ID: attack-pattern--35187df2-31ed-43b6-a1f5-2f1d3d58d3f1
 > Platforms: ['Linux', 'Windows']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -5490,7 +5685,7 @@ Adversaries may register a malicious transport agent to provide a persistence me
 > External ID: T1505.003
 > STIX ID: attack-pattern--5d0d3609-d06d-49e1-b9c9-b544e0c618cb
 > Platforms: ['Linux', 'Windows', 'macOS', 'Network']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -5501,7 +5696,7 @@ In addition to a server-side script, a Web shell may have a client interface pro
 > External ID: T1505.004
 > STIX ID: attack-pattern--b46a801b-fd98-491c-a25a-bca25d6e3001
 > Platforms: ['Windows']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -5514,7 +5709,7 @@ Adversaries may also install malicious IIS modules to observe and/or modify traf
 > External ID: T1505.005
 > STIX ID: attack-pattern--379809f6-2fac-42c1-bd2e-e9dee70b27f8
 > Platforms: ['Windows']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -5561,7 +5756,7 @@ Adversaries may also utilize cloud APIs to discover the configurations of firewa
 > External ID: T1525
 > STIX ID: attack-pattern--4fd8a28b-4b3a-4cd6-a8cf-85ba5f824a7f
 > Platforms: ['IaaS', 'Containers']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 **Description: **
  Adversaries may implant cloud or container images with malicious code to establish persistence after gaining access to an environment. Amazon Web Services (AWS) Amazon Machine Images (AMIs), Google Cloud Platform (GCP) Images, and Azure Images as well as popular container runtimes such as Docker can be implanted or backdoored. Unlike [Upload Malware](https://attack.mitre.org/techniques/T1608/001), this technique focuses on adversaries implanting an image in a registry within a victim’s environment. Depending on how the infrastructure is provisioned, this could provide persistent access if the infrastructure provisioning tool is instructed to always use the latest image.(Citation: Rhino Labs Cloud Image Backdoor Technique Sept 2019)
@@ -5667,11 +5862,12 @@ Adversaries may leverage [Spearphishing Attachment](https://attack.mitre.org/tec
 
 There have been notable incidents where internal spearphishing has been used. The Eye Pyramid campaign used phishing emails with malicious attachments for lateral movement between victims, compromising nearly 18,000 email accounts in the process.(Citation: Trend Micro When Phishing Starts from the Inside 2017) The Syrian Electronic Army (SEA) compromised email accounts at the Financial Times (FT) to steal additional account credentials. Once FT learned of the campaign and began warning employees of the threat, the SEA sent phishing emails mimicking the Financial Times IT department and were able to compromise even more users.(Citation: THE FINANCIAL TIMES LTD 2019.)
 ## [T1535]:Unused/Unsupported Cloud Regions
+> 中文：未使用的/不支持的云区域
+>
 > External ID: T1535
 > STIX ID: attack-pattern--59bd0dec-f8b2-4b9a-9141-37a1e6899761
 > Platforms: ['IaaS']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may create cloud instances in unused geographic service regions in order to evade detection. Access is usually obtained through compromising accounts used to manage cloud infrastructure.
@@ -5681,6 +5877,15 @@ Cloud service providers often provide infrastructure throughout the world in ord
 A variation on this behavior takes advantage of differences in functionality across cloud regions. An adversary could utilize regions which do not support advanced detection services in order to avoid detection of their activity.
 
 An example of adversary use of unused AWS regions is to mine cryptocurrency through [Resource Hijacking](https://attack.mitre.org/techniques/T1496), which can cost organizations substantial amounts of money over time depending on the processing power used.(Citation: CloudSploit - Unused AWS Regions)
+
+攻击者可能在未使用的地理服务区域中创建云实例，以逃避检测。通常，他们会通过 compromsing 用于管理云基础结构的帐户来获得访问权限。
+
+云服务提供商通常在全球范围内提供基础设施，以改善性能、提供冗余，并允许客户满足合规要求。通常情况下，客户只会使用其中的一部分地区，并且可能不会主动监控其他地区。如果攻击者在一个未使用的地区创建资源，他们可能能够在未被发现的情况下进行操作。
+
+这种行为的一个变种利用了云的不同地区之间的功能差异。攻击者可以利用不支持高级检测服务的区域，以避免检测其活动。
+
+攻击者在未使用的AWS地区中进行资源劫持是一种例子，他们可以通过[资源劫持](https://attack.mitre.org/techniques/T1496)来挖掘加密货币，这可能会在一段时间内耗费组织大量的资金，具体取决于使用的处理能力。(引用：CloudSploit - Unused AWS Regions)
+
 ## [T1537]:Transfer Data to Cloud Account
 > External ID: T1537
 > STIX ID: attack-pattern--d4bdbdea-eaec-4071-b4f9-5105e12ea4b6
@@ -5726,7 +5931,7 @@ After an adversary acquires a valid cookie, they can then perform a [Web Session
 > External ID: T1542
 > STIX ID: attack-pattern--7f0ca133-88c4-40c6-a62f-b3083a7fbc2e
 > Platforms: ['Linux', 'Windows', 'Network', 'macOS']
-> Tactics: ['defense-evasion', 'persistence']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -5742,7 +5947,7 @@ Adversaries may overwrite data in boot drivers or firmware such as BIOS (Basic I
 > External ID: T1542.001
 > STIX ID: attack-pattern--16ab6452-c3c1-497c-a47d-206018ca1ada
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -5755,7 +5960,7 @@ System firmware like BIOS and (U)EFI underly the functionality of a computer and
 > External ID: T1542.002
 > STIX ID: attack-pattern--791481f8-e96a-41be-b089-a088763083d4
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['persistence', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -5773,7 +5978,7 @@ Malicious component firmware could provide both a persistent level of access to 
 > External ID: T1542.003
 > STIX ID: attack-pattern--1b7b1806-7746-41a1-a35d-e48dae25ddba
 > Platforms: ['Linux', 'Windows']
-> Tactics: ['persistence', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -5795,7 +6000,7 @@ MBR将引导过程的控制权传递给VBR。与MBR的情况类似，有权访�
 > External ID: T1542.004
 > STIX ID: attack-pattern--a6557c75-798f-42e4-be70-ab4502e0a3bc
 > Platforms: ['Network']
-> Tactics: ['defense-evasion', 'persistence']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -5815,7 +6020,7 @@ ROMMON是思科网络设备的固件，它在平台开机或重置时作为引�
 > External ID: T1542.005
 > STIX ID: attack-pattern--28abec6c-4443-4b03-8206-07f2e264a6b4
 > Platforms: ['Network']
-> Tactics: ['defense-evasion', 'persistence']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -5831,7 +6036,7 @@ Adversaries may manipulate the configuration on the network device specifying us
 > External ID: T1543
 > STIX ID: attack-pattern--106c0cf6-bf73-4601-9aa8-0945c2715ec5
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -5844,7 +6049,7 @@ Services, daemons, or agents may be created with administrator privileges but ex
 > External ID: T1543.001
 > STIX ID: attack-pattern--d10cbd34-42e3-45c0-84d2-535a09849584
 > Platforms: ['macOS']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -5857,7 +6062,7 @@ Adversaries may install a new Launch Agent that executes at login by placing a .
 > External ID: T1543.002
 > STIX ID: attack-pattern--dfefe2ed-4389-4318-8762-f0272b350a1b
 > Platforms: ['Linux']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -5878,7 +6083,7 @@ The `.service` file’s `User` directive can be used to run service as a specifi
 > External ID: T1543.003
 > STIX ID: attack-pattern--2959d63f-73fd-46a1-abd2-109d7dcede32
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -5893,7 +6098,7 @@ Services may be created with administrator privileges but are executed under SYS
 > External ID: T1543.004
 > STIX ID: attack-pattern--573ad264-1371-4ae0-8482-d2673b719dba
 > Platforms: ['macOS']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -5908,7 +6113,7 @@ Additionally, system configuration changes (such as the installation of third pa
 > External ID: T1546
 > STIX ID: attack-pattern--b6301b64-ef57-4cce-bb0b-77026f14a8db
 > Platforms: ['Linux', 'macOS', 'Windows', 'SaaS', 'IaaS', 'Office 365']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -5930,7 +6135,7 @@ Since the execution can be proxied by an account with higher permissions, such a
 > External ID: T1546.001
 > STIX ID: attack-pattern--98034fef-d9fb-4667-8dc4-2eab6231724c
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -5960,7 +6165,7 @@ The values of the keys listed are commands that are executed when the handler op
 > External ID: T1546.002
 > STIX ID: attack-pattern--ce4b7013-640e-48a9-b501-d0025a95f4bf
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -5990,7 +6195,7 @@ Adversaries can use screensaver settings to maintain persistence by setting the 
 > External ID: T1546.003
 > STIX ID: attack-pattern--910906dd-8c0a-475a-9cc1-5e029e2fad58
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6003,7 +6208,7 @@ WMI subscription execution is proxied by the WMI Provider Host process (WmiPrvSe
 > External ID: T1546.004
 > STIX ID: attack-pattern--b63a34e8-0a61-4c97-a23b-bf8a2ed812e2
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6018,7 +6223,7 @@ For macOS, the functionality of this technique is similar but may leverage zsh, 
 > External ID: T1546.005
 > STIX ID: attack-pattern--63220765-d418-44de-8fae-694b3912317d
 > Platforms: ['macOS', 'Linux']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6034,7 +6239,7 @@ Adversaries can use this to register code to be executed when the shell encounte
 > External ID: T1546.006
 > STIX ID: attack-pattern--10ff21b9-5a01-4268-a1b5-3b55015f1847
 > Platforms: ['macOS']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6045,7 +6250,7 @@ Adversaries may modify Mach-O binary headers to load and execute malicious dylib
 > External ID: T1546.007
 > STIX ID: attack-pattern--f63fe421-b1d1-45c0-b8a7-02cd16ff2bed
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6056,7 +6261,7 @@ Adversaries can use netsh.exe helper DLLs to trigger execution of arbitrary code
 > External ID: T1546.008
 > STIX ID: attack-pattern--70e52b04-2a0c-4cea-9d18-7149f1df9dc5
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6079,7 +6284,7 @@ Other accessibility features exist that may also be leveraged in a similar fashi
 > External ID: T1546.009
 > STIX ID: attack-pattern--7d57b371-10c2-45e5-b3cc-83a8fb380e4c
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6090,7 +6295,7 @@ Similar to [Process Injection](https://attack.mitre.org/techniques/T1055), this 
 > External ID: T1546.010
 > STIX ID: attack-pattern--cc89ecbd-3d33-4a41-bcca-001e702d18fd
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6105,7 +6310,7 @@ The AppInit DLL functionality is disabled in Windows 8 and later versions when s
 > External ID: T1546.011
 > STIX ID: attack-pattern--42fe883a-21ea-4cfb-b94a-78b6476dcc83
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6157,7 +6362,7 @@ Utilizing these shims may allow an adversary to perform several malicious acts s
 > External ID: T1546.012
 > STIX ID: attack-pattern--6d4a7fb3-5a24-42be-ae61-6728a2b581f6
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6191,7 +6396,7 @@ IFEO还可以在指定程序静退出时（即自身或第二非内核模式进�
 > External ID: T1546.013
 > STIX ID: attack-pattern--0f2c410d-d740-4ed9-abb1-b8f4a7faf6c3
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6206,7 +6411,7 @@ An adversary may also be able to escalate privileges if a script in a PowerShell
 > External ID: T1546.014
 > STIX ID: attack-pattern--9c45eaa3-8604-4780-8988-b5074dbb9ecd
 > Platforms: ['macOS']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6224,7 +6429,7 @@ emond是一个普通的守护进程，每次系统启动时都会由launchd执�
 > External ID: T1546.015
 > STIX ID: attack-pattern--bc0f5e80-91c0-4e04-9fbb-e4e332c85dae
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6235,7 +6440,7 @@ Adversaries can use the COM system to insert malicious code that can be executed
 > External ID: T1546.016
 > STIX ID: attack-pattern--da051493-ae9c-4b1b-9760-c009c46c9b56
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['privilege-escalation', 'persistence']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -6250,7 +6455,7 @@ For Windows, the Microsoft Installer services uses `.msi` files to manage the in
 > External ID: T1547
 > STIX ID: attack-pattern--1ecb2399-e8ba-4f6b-8ba7-5c27d49405cf
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6261,7 +6466,7 @@ Since some boot or logon autostart programs run with higher privileges, an adver
 > External ID: T1547.001
 > STIX ID: attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6308,7 +6513,7 @@ Adversaries can use these configuration locations to execute malware, such as re
 > External ID: T1547.002
 > STIX ID: attack-pattern--b8cfed42-6a8a-4989-ad72-541af74475ec
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6334,7 +6539,7 @@ Adversaries can use the autostart mechanism provided by LSA authentication packa
 > External ID: T1547.003
 > STIX ID: attack-pattern--61afc315-860c-4364-825d-0d62b2e91edc
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6347,7 +6552,7 @@ Adversaries may abuse this architecture to establish persistence, specifically b
 > External ID: T1547.004
 > STIX ID: attack-pattern--6836813e-8ec8-4375-b459-abb388cb1a35
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6364,7 +6569,7 @@ Adversaries may take advantage of these features to repeatedly execute malicious
 > External ID: T1547.005
 > STIX ID: attack-pattern--5095a853-299c-4876-abd7-ac0050fb5462
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6375,7 +6580,7 @@ The SSP configuration is stored in two Registry keys: <code>HKLM\SYSTEM\CurrentC
 > External ID: T1547.006
 > STIX ID: attack-pattern--a1b52199-c8c5-438a-9ded-656f1d0888c6
 > Platforms: ['macOS', 'Linux']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6392,7 +6597,7 @@ Adversaries can use LKMs and kexts to conduct [Persistence](https://attack.mitre
 > External ID: T1547.007
 > STIX ID: attack-pattern--e5cc9e7a-e61a-46a1-b869-55fb6eab058e
 > Platforms: ['macOS']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6408,7 +6613,7 @@ Adversaries can establish [Persistence](https://attack.mitre.org/tactics/TA0003)
 > External ID: T1547.008
 > STIX ID: attack-pattern--f0589bc3-a6ae-425a-a3d5-5659bfee07f4
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6421,7 +6626,7 @@ Adversaries may target LSASS drivers to obtain persistence. By either replacing 
 > External ID: T1547.009
 > STIX ID: attack-pattern--4ab929c6-ee2d-4fb5-aab4-b14be2ed7179
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6443,7 +6648,7 @@ Shortcuts can also be abused to establish persistence by implementing other meth
 > External ID: T1547.010
 > STIX ID: attack-pattern--43881e51-ac74-445b-b4c6-f9f9e9bf23fe
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6475,7 +6680,7 @@ Adversaries can use this technique to load malicious code at startup that will p
 > External ID: T1547.012
 > STIX ID: attack-pattern--2de47683-f398-448f-b947-9abcc3e32fad
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6493,7 +6698,7 @@ Adversaries may abuse the print spooler service by adding print processors that 
 > External ID: T1547.013
 > STIX ID: attack-pattern--e0232cb0-ded5-4c2e-9dc7-2893142a5c11
 > Platforms: ['Linux']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6513,7 +6718,7 @@ Adversaries may use XDG autostart entries to maintain persistence by executing m
 > External ID: T1547.014
 > STIX ID: attack-pattern--22522668-ddf6-470b-a027-9d6866679f67
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6535,7 +6740,7 @@ Adversaries can abuse these components to execute malware, such as remote access
 > External ID: T1547.015
 > STIX ID: attack-pattern--84601337-6a55-4ad7-9c35-79e0d1ea2ab3
 > Platforms: ['macOS']
-> Tactics: ['persistence', 'privilege-escalation']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -6552,19 +6757,23 @@ Adversaries can utilize [AppleScript](https://attack.mitre.org/techniques/T1059/
 手可以利用[AppleScript](https://attack.mitre.org/techniques/T9/002)和[Native API](https://attack.mitre.org/techniques/T1106)调用创建登录项以生成恶意可执行文件。(引用：ELC Running at startup) 在macOS的10.5版本之前，攻击者可以使用[AppleScript](https://attack.mitre.org/techniques/T1059/002)通过向“System Events进程发送Apple事件来添加登录项，该进程具有用于操作登录项的AppleScript字典。(引用：Login Items AE) 攻击者可以使用类似<code>tell application “System Events” to make login item at end with properties /path/to/executable</code>的命令。(引：Startup Items Eclectic)(用：hexed osx.dok analysis 2019)(引用：Add List Remove Login Items Apple Script) 此命令将恶意可执行文件路径添加到位于<code>~/Library/Application Support/com.apple.backgroundtaskmanagementagent/backgrounditems.btm</code>的登录项文件列表中。(引用：Startup Items Eclectic) 攻击者还可以使用登录项启动可执行文件以远程控制受害者系统或作为获取权限升的手段，通过提示用户凭据。(用：objsee mac malware 2017)(引用：CheckPoint Dok)(引用objsee netwire backdoor 2019)
 
 ## [T1548]:Abuse Elevation Control Mechanism
+> 中文：滥用权限提升控制机制
+>
 > External ID: T1548
 > STIX ID: attack-pattern--67720091-eee3-4d2d-ae16-8264567f6f5b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['privilege-escalation', 'defense-evasion']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may circumvent mechanisms designed to control elevate privileges to gain higher-level permissions. Most modern systems contain native elevation control mechanisms that are intended to limit privileges that a user can perform on a machine. Authorization has to be granted to specific users in order to perform tasks that can be considered of higher risk. An adversary can perform several methods to take advantage of built-in control mechanisms in order to escalate privileges on a system.
 ### [T1548.001]:Setuid and Setgid
+> 中文：setuid和setgid
+>
 > External ID: T1548.001
 > STIX ID: attack-pattern--6831414d-bb70-42b7-8030-d4e06b2660c9
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['privilege-escalation', 'defense-evasion']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -6575,11 +6784,22 @@ Instead of creating an entry in the sudoers file, which must be done by root, an
 Adversaries can use this mechanism on their own malware to make sure they're able to execute in elevated contexts in the future.(Citation: OSX Keydnap malware) This abuse is often part of a "shell escape" or other actions to bypass an execution environment with restricted permissions.
 
 Alternatively, adversaries may choose to find and target vulnerable binaries with the setuid or setgid bits already enabled (i.e. [File and Directory Discovery](https://attack.mitre.org/techniques/T1083)). The setuid and setguid bits are indicated with an "s" instead of an "x" when viewing a file's attributes via <code>ls -l</code>. The <code>find</code> command can also be used to search for such files. For example, <code>find / -perm +4000 2>/dev/null</code> can be used to find files with setuid set and <code>find / -perm +2000 2>/dev/null</code> may be used for setgid. Binaries that have these bits set may then be abused by adversaries.(Citation: GTFOBins Suid)
+
+攻击者可以滥用应用程序的配置，其中应用程序的 setuid 或 setgid 位被设置，以便在不同的用户上下文中运行代码（可能是更高特权的用户上下文）。在 Linux 或 macOS 上，当应用程序二进制文件的 setuid 或 setgid 位被设置时，该应用程序将分别以所属用户或组的权限运行。（文献引用：setuid man 页）通常情况下，应用程序在当前用户的上下文中运行，而不管哪个用户或组拥有该应用程序。然而，有些情况下，程序需要以提升的上下文中执行才能正常运行，但运行它们的用户可能没有具体所需的特权。
+
+用户可以通过指定自己的应用程序设置 setuid 或 setgid 标志，而无需在 sudoers 文件中创建条目（即 [Linux 和 Mac 文件与目录权限修改](https://attack.mitre.org/techniques/T1222/002)）。通过位掩码，chmod 命令可以设置这些位，例如 chmod 4777 [file] 或通过简写形式 chmod u+s [file] 来设置 setuid 位。这将启用 setuid 位。要启用 setgid 位，可以使用 chmod 2775 和 chmod g+s。
+
+攻击者可以将此机制应用于自己的恶意软件，以确保以后能够在提升的上下文中执行。（文献引用：OSX Keydnap 恶意软件）这种滥用通常是“shell escape”或其他绕过具有受限权限的执行环境的行为的一部分。
+
+或者，攻击者可以选择寻找并针对已启用 setuid 或 setgid 位的易受攻击的二进制文件（即 [文件与目录发现](https://attack.mitre.org/techniques/T1083)）。通过 <code>ls -l</code> 查看文件属性时，setuid 和 setgid 位以 "s" 而不是 "x" 表示。find 命令也可用于搜索此类文件。例如，find / -perm +4000 2>/dev/null 可用于查找已设置 setuid 的文件，find / -perm +2000 2>/dev/null 可用于查找已设置 setgid 的文件。具有这些位设置的二进制文件可能会被攻击者滥用（文献引用：GTFOBins Suid）。
+
 ### [T1548.002]:Bypass User Account Control
+> 中文：绕过用户账户控制(UAC)
+>
 > External ID: T1548.002
 > STIX ID: attack-pattern--120d5519-3098-4e1c-9191-2aa61232f073
 > Platforms: ['Windows']
-> Tactics: ['privilege-escalation', 'defense-evasion']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -6592,11 +6812,24 @@ Many methods have been discovered to bypass UAC. The Github readme page for UACM
 * <code>eventvwr.exe</code> can auto-elevate and execute a specified binary or script.(Citation: enigma0x3 Fileless UAC Bypass)(Citation: Fortinet Fareit)
 
 Another bypass is possible through some lateral movement techniques if credentials for an account with administrator privileges are known, since UAC is a single system security mechanism, and the privilege or integrity of a process running on one system will be unknown on remote systems and default to high integrity.(Citation: SANS UAC Bypass)
+
+攻击者可以绕过UAC机制来提升系统上的进程特权。Windows用户账户控制（UAC）允许程序提升其特权级别（以完整性级别从低到高进行跟踪），以在管理员级别权限下执行任务，可能需要提示用户确认。对用户的影响范围从在高强制执行下拒绝操作到允许用户执行操作（如果他们在本地管理员组中并通过提示点击确认），或者允许他们输入管理员密码以完成操作。（文献引用：TechNet How UAC Works）
+
+如果计算机的UAC保护级别设置为除最高级别以外的任何级别，某些Windows程序可以在不通过UAC通知框提示用户的情况下提升特权或执行某些提升的[组件对象模型](https://attack.mitre.org/1559/001)对象。（文献引用：TechNet Inside UAC）（文献引用：MSDN COM Elevation）其中一个例子是使用[Rundll32](https://attack.mitre.org/techniques/T1218/011)加载一个特制的DLL，该DLL加载了一个自动提升的组件对象模型，并在受保护的目录中执行文件操作，这通常需要提升访问权限。恶意软件也可以注入到受信任的进程中，以获取提升的特权而不提示用户。（文献引用：Davidson Windows）
+
+已经发现了许多绕过UAC的方法。UACME的Github自述页面包含了一份广泛的方法列表（文献引用：Github UACMe），这些方法已经被发现并实施，但可能并非绕过的综合性列表。还有其他绕过方法定期被发现并在野外使用，例如：
+
+- <code>eventvwr.exe</code>可以自动提升特权并执行指定的二进制文件或脚本。（文献引用：enigma0x3 Fileless UAC Bypass）（文献引用：Fortinet Fareit）
+
+通过一些横向移动技术，如果有具有管理员权限的帐户的凭据已知，则可能进行另一种绕过，因为UAC是一个单一系统的安全机制，在远程系统上运行的进程的特权或完整性将是未知的，并且默认为高完整性。（文献引用：SANS UAC Bypass）
+
 ### [T1548.003]:Sudo and Sudo Caching
+> 中文：Sudo和Sudo缓存
+>
 > External ID: T1548.003
 > STIX ID: attack-pattern--1365fe3b-0f50-455d-b4da-266ce31c23b0
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['privilege-escalation', 'defense-evasion']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -6609,11 +6842,22 @@ The sudoers file, <code>/etc/sudoers</code>, describes which users can run which
 Adversaries can also abuse poor configurations of these mechanisms to escalate privileges without needing the user's password. For example, <code>/var/db/sudo</code>'s timestamp can be monitored to see if it falls within the <code>timestamp_timeout</code> range. If it does, then malware can execute sudo commands without needing to supply the user's password. Additional, if <code>tty_tickets</code> is disabled, adversaries can do this from any tty for that user.
 
 In the wild, malware has disabled <code>tty_tickets</code> to potentially make scripting easier by issuing <code>echo \'Defaults !tty_tickets\' >> /etc/sudoers</code>.(Citation: cybereason osx proton) In order for this change to be reflected, the malware also issued <code>killall Terminal</code>. As of macOS Sierra, the sudoers file has <code>tty_tickets</code> enabled by default.
+
+在Linux和MacOS系统中，sudo（有时也被称为"superuser do"）允许用户以提升的权限从终端执行命令，并控制谁可以在系统上执行这些命令。 sudo命令“允许系统管理员委托权限，以赋予某些用户（或用户组）以root或其他用户的身份运行某些（或全部）命令的能力，同时提供这些命令及其参数的审计跟踪。”（引用：sudo手册页2018年）由于sudo是为系统管理员设计的，所以它具有一些有用的配置功能，例如<code>timestamp_timeout</code>，它表示在一次<code>sudo</code>实例之间的时间间隔（以分钟为单位），在此时间内它不会要求重新输入密码。这是因为sudo具有一段时间内缓存凭据的功能。 Sudo在<code>/var/db/sudo</code>位置创建（或更改）一个文件，其中包含上次运行sudo的时间戳，用于确定超时时间。此外，还有一个<code>tty_tickets</code>变量，它将每个新的tty（终端会话）与其他终端会话隔离。这意味着，例如，一个tty的sudo超时不会影响另一个tty（您将不得不再次输入密码）。
+
+sudoers文件<code>/etc/sudoers</code>描述了哪些用户可以从哪些终端运行哪些命令。它还描述了哪些命令用户可以作为其他用户或用户组运行。这提供了最小权限原则，使用户在大部分时间内以最低可能的权限运行，并仅在需要时提升其他用户或权限，通常需要输入密码。然而，sudoers文件还可以规定何时不提示用户输入密码，例如通过类似于<code>user1 ALL=(ALL) NOPASSWD: ALL</code>的行。（引用：OSX.Dok恶意软件）需要提升的权限才能编辑此文件。
+
+对手还可以滥用这些机制的不良配置来提升权限而无需用户的密码。例如，可以监视<code>/var/db/sudo</code>的时间戳，以查看是否在<code>timestamp_timeout</code>范围内。如果是，则恶意软件可以在不需要提供用户密码的情况下执行sudo命令。此外，如果禁用了<code>tty_tickets</code>，则对手可以从该用户的任何tty执行此操作。
+
+在实际使用中，恶意软件已经禁用了<code>tty_tickets</code>，以便通过发出<code>echo 'Defaults !tty_tickets' >> /etc/sudoers</code>来简化脚本编写过程。（引用：cybereason osx proton）为了使此更改生效，恶意软件还发出了<code>killall Terminal</code>。截至macOS Sierra，sudoers文件默认启用<code>tty_tickets</code>。
+
 ### [T1548.004]:Elevated Execution with Prompt
+> 中文：通过提示提升执行权限
+>
 > External ID: T1548.004
 > STIX ID: attack-pattern--b84903f0-c7d5-435d-a69e-de47cc3578c0
 > Platforms: ['macOS']
-> Tactics: ['privilege-escalation', 'defense-evasion']
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -6622,11 +6866,20 @@ In the wild, malware has disabled <code>tty_tickets</code> to potentially make s
 Although this API is deprecated, it still fully functions in the latest releases of macOS. When calling this API, the user will be prompted to enter their credentials but no checks on the origin or integrity of the program are made. The program calling the API may also load world writable files which can be modified to perform malicious behavior with elevated privileges.
 
 Adversaries may abuse <code>AuthorizationExecuteWithPrivileges</code> to obtain root privileges in order to install malicious software on victims and install persistence mechanisms.(Citation: Death by 1000 installers; it's all broken!)(Citation: Carbon Black Shlayer Feb 2019)(Citation: OSX Coldroot RAT) This technique may be combined with [Masquerading](https://attack.mitre.org/techniques/T1036) to trick the user into granting escalated privileges to malicious code.(Citation: Death by 1000 installers; it's all broken!)(Citation: Carbon Black Shlayer Feb 2019) This technique has also been shown to work by modifying legitimate programs present on the machine that make use of this API.(Citation: Death by 1000 installers; it's all broken!)
+
+攻击者可能利用`AuthorizationExecuteWithPrivileges` API来通过提示用户输入凭据来提升特权。（文献引用：AppleDocs AuthorizationExecuteWithPrivileges）该API的目的是为应用程序开发人员提供一种以root权限执行操作的简单方法，例如应用程序安装或更新。此API不验证请求root权限的程序是否来自可信源或是否被恶意修改。
+
+尽管该API已被弃用，但在最新版本的macOS中仍然完全可用。调用此API时，用户将被提示输入其凭据，但不会检查程序的来源或完整性。调用API的程序还可以加载可由使用提升权限进行恶意行为的所有用户写入的文件。
+
+攻击者可以滥用`AuthorizationExecuteWithPrivileges`来获取root权限，以便在受害者上安装恶意软件并安装持久性机制。（文献引用：Death by 1000 installers; it's all broken!）（文献引用：Carbon Black Shlayer Feb 2019）（文献引用：OSX Coldroot RAT）此技术可以与[伪装](https://attack.mitre.org/techniques/T1036)结合使用，以欺骗用户授予恶意代码提升的特权。（文献引用：Death by 1000 installers; it's all broken!）（文献引用：Carbon Black Shlayer Feb 2019）已经证明此技术还可通过修改机器上使用此API的合法程序来工作。（文献引用：Death by 1000 installers; it's all broken!）
+
 ## [T1550]:Use Alternate Authentication Material
+> 中文：使用备用的身份认证材料
+>
 > External ID: T1550
 > STIX ID: attack-pattern--51a14c76-dd3b-440b-9c20-2bf91d25a814
 > Platforms: ['Windows', 'Office 365', 'SaaS', 'Google Workspace', 'IaaS', 'Containers']
-> Tactics: ['defense-evasion', 'lateral-movement']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'lateral-movement']
 
 
 **Description: **
@@ -6636,11 +6889,17 @@ Authentication processes generally require a valid identity (e.g., username) alo
 
 Caching alternate authentication material allows the system to verify an identity has successfully authenticated without asking the user to reenter authentication factor(s). Because the alternate authentication must be maintained by the system—either in memory or on disk—it may be at risk of being stolen through [Credential Access](https://attack.mitre.org/tactics/TA0006) techniques. By stealing alternate authentication material, adversaries are able to bypass system access controls and authenticate to systems without knowing the plaintext password or any additional authentication factors.
 
+攻击者可以使用备用的身份验证材料，如密码哈希、Kerberos票据和应用访问令牌，以在环境中进行横向移动并绕过正常的系统访问控制。
+
+身份验证过程通常需要一个有效的身份（例如用户名），以及一个或多个身份验证因素（例如密码、PIN码、物理智能卡、令牌生成器等）。备用的身份验证材料是在用户或应用程序成功使用有效的身份和所需的身份验证因素进行身份验证后，系统正常生成的。备用的身份验证材料也可以在身份创建过程中生成。(引用：NIST Authentication)(引用：NIST MFA)
+
+缓存备用的身份验证材料使系统能够验证一个身份是否成功进行身份验证，而无需要求用户重新输入身份验证因素。因为备用的身份验证材料必须由系统来维护 - 不论是在内存中还是磁盘上 - 因此它可能面临通过[凭据访问](https://attack.mitre.org/tactics/TA0006)技术窃取的风险。通过窃取备用的身份验证材料，攻击者能够绕过系统访问控制，对系统进行身份验证，而不需要知道明文密码或任何其他身份验证因素。
+
 ### [T1550.001]:Application Access Token
 > External ID: T1550.001
 > STIX ID: attack-pattern--f005e783-57d4-4837-88ad-dbe7faee1c51
 > Platforms: ['Office 365', 'SaaS', 'Google Workspace', 'Containers', 'IaaS', 'Azure AD']
-> Tactics: ['defense-evasion', 'lateral-movement']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'lateral-movement']
 
 
 **Description: **
@@ -6659,7 +6918,7 @@ Direct API access through a token negates the effectiveness of a second authenti
 > External ID: T1550.002
 > STIX ID: attack-pattern--e624264c-033a-424d-9fd7-fc9c3bbdb03e
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'lateral-movement']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'lateral-movement']
 
 
 **Description: **
@@ -6672,7 +6931,7 @@ Adversaries may also use stolen password hashes to "overpass the hash." Similar 
 > External ID: T1550.003
 > STIX ID: attack-pattern--7b211ac6-c815-4189-93a9-ab415deca926
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion', 'lateral-movement']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'lateral-movement']
 
 
 **Description: **
@@ -6689,7 +6948,7 @@ Adversaries may also create a valid Kerberos ticket using other user information
 > External ID: T1550.004
 > STIX ID: attack-pattern--c3c8c916-2f3c-4e71-94b2-240bdfc996f0
 > Platforms: ['Office 365', 'SaaS', 'Google Workspace', 'IaaS']
-> Tactics: ['defense-evasion', 'lateral-movement']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'lateral-movement']
 
 
 **Description: **
@@ -6819,21 +7078,27 @@ An adversary may access the Docker API to collect logs that contain credentials 
 
 Rather than accessing the stored chat logs (i.e., [Credentials In Files](https://attack.mitre.org/techniques/T1552/001)), adversaries may directly access credentials within these services on the user endpoint, through servers hosting the services, or through administrator portals for cloud hosted services. Adversaries may also compromise integration tools like Slack Workflows to automatically search through messages to extract user credentials. These credentials may then be abused to perform follow-on activities such as lateral movement or privilege escalation (Citation: Slack Security Risks).
 ## [T1553]:Subvert Trust Controls
+> 中文：破坏信任控制
+>
 > External ID: T1553
 > STIX ID: attack-pattern--b83e166d-13d7-4b52-8677-dff90c548fd7
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may undermine security controls that will either warn users of untrusted activity or prevent execution of untrusted programs. Operating systems and security products may contain mechanisms to identify programs or websites as possessing some level of trust. Examples of such features would include a program being allowed to run because it is signed by a valid code signing certificate, a program prompting the user with a warning because it has an attribute set from being downloaded from the Internet, or getting an indication that you are about to connect to an untrusted site.
 
 Adversaries may attempt to subvert these trust mechanisms. The method adversaries use will depend on the specific mechanism they seek to subvert. Adversaries may conduct [File and Directory Permissions Modification](https://attack.mitre.org/techniques/T1222) or [Modify Registry](https://attack.mitre.org/techniques/T1112) in support of subverting these controls.(Citation: SpectorOps Subverting Trust Sept 2017) Adversaries may also create or steal code signing certificates to acquire trust on target systems.(Citation: Securelist Digital Certificates)(Citation: Symantec Digital Certificates) 
+
+攻击者可能会破坏安全控制，以警告用户不可信的活动，或阻止执行不可信的程序。操作系统和安全产品可能包含识别程序或网站具有某种程度的信任的机制。例如，一个程序允许运行，是因为它由有效的代码签名证书签署；一个程序提示用户警告，因为它具有通过互联网下载的属性；或者收到一个指示将要连接到不受信任的站点的提示。
+
+攻击者可能会试图破坏这些信任机制。攻击者使用的方法将取决于他们试图破坏的具体机制。攻击者可能进行[文件和目录权限修改](https://attack.mitre.org/techniques/T1222)或[修改注册表](https://attack.mitre.org/techniques/T1112)来支持破坏这些控制。(引用：SpectorOps Subverting Trust Sept 2017) 攻击者还可能创建或窃取代码签名证书以在目标系统上获得信任。(引用：Securelist Digital Certificates)(引用：Symantec Digital Certificates)
+
 ### [T1553.001]:Gatekeeper Bypass
 > External ID: T1553.001
 > STIX ID: attack-pattern--31a0a2ac-c67c-4a7e-b9ed-6a96477d4e8e
 > Platforms: ['macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -6853,10 +7118,12 @@ Adversaries can subvert one or multiple security controls within Gatekeeper chec
 
 Applications and files loaded onto the system from a USB flash drive, optical disk, external hard drive, from a drive shared over the local network, or using the curl command may not set the quarantine flag. Additionally, it is possible to avoid setting the quarantine flag using [Drive-by Compromise](https://attack.mitre.org/techniques/T1189).
 ### [T1553.002]:Code Signing
+> 中文：代码签名
+>
 > External ID: T1553.002
 > STIX ID: attack-pattern--32901740-b42c-4fdd-bc02-345b5dc57082
 > Platforms: ['macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -6865,11 +7132,14 @@ Applications and files loaded onto the system from a USB flash drive, optical di
 Code signing to verify software on first run can be used on modern Windows and macOS systems. It is not used on Linux due to the decentralized nature of the platform. (Citation: Wikipedia Code Signing)(Citation: EclecticLightChecksonEXECodeSigning)
 
 Code signing certificates may be used to bypass security policies that require signed code to execute on a system. 
+
+攻击者可能会创建、获取或窃取代码签名材料来对其恶意软件或工具进行签名。代码签名提供了对二进制文件的开发者身份的认证，以及对二进制文件未被篡改的保证。(引用：Wikipedia Code Signing) 在操作中使用的证书可能是由攻击者创建、获取或窃取的。(引用：Securelist Digital Certificates)(引用：Symantec Digital Certificates) 与[无效的代码签名](https://attack.mitre.org/techniques/T1036/001)不同，这种活动将产生一个有效的签名。 在现代的Windows和macOS系统中，可以使用代码签名来在首次运行时验证软件。这在Linux中没有使用，因为该平台的分散特性。(引用：Wikipedia Code Signing)(引用：EclecticLightChecksonEXECodeSigning) 代码签名证书可以用于绕过要求系统上执行已签名代码的安全策略。
+
 ### [T1553.003]:SIP and Trust Provider Hijacking
 > External ID: T1553.003
 > STIX ID: attack-pattern--543fceb5-cb92-40cb-aacf-6913d4db58bc
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -6889,7 +7159,7 @@ Hijacking SIP or trust provider components can also enable persistent code execu
 > External ID: T1553.004
 > STIX ID: attack-pattern--c615231b-f253-4f58-9d47-d5b4cbdb6839
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -6903,21 +7173,26 @@ Root certificates (and their associated chains) can also be cloned and reinstall
 
 In macOS, the Ay MaMi malware uses <code>/usr/bin/security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain /path/to/malicious/cert</code> to install a malicious certificate as a trusted root certificate into the system keychain.(Citation: objective-see ay mami 2018)
 ### [T1553.005]:Mark-of-the-Web Bypass
+> 中文：MOTW绕过
+>
 > External ID: T1553.005
 > STIX ID: attack-pattern--7e7c2fba-7cca-486c-9582-4c1bb2851961
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may abuse specific file formats to subvert Mark-of-the-Web (MOTW) controls. In Windows, when files are downloaded from the Internet, they are tagged with a hidden NTFS Alternate Data Stream (ADS) named <code>Zone.Identifier</code> with a specific value known as the MOTW.(Citation: Microsoft Zone.Identifier 2020) Files that are tagged with MOTW are protected and cannot perform certain actions. For example, starting in MS Office 10, if a MS Office file has the MOTW, it will open in Protected View. Executables tagged with the MOTW will be processed by Windows Defender SmartScreen that compares files with an allowlist of well-known executables. If the file is not known/trusted, SmartScreen will prevent the execution and warn the user not to run it.(Citation: Beek Use of VHD Dec 2020)(Citation: Outflank MotW 2020)(Citation: Intezer Russian APT Dec 2020)
 
 Adversaries may abuse container files such as compressed/archive (.arj, .gzip) and/or disk image (.iso, .vhd) file formats to deliver malicious payloads that may not be tagged with MOTW. Container files downloaded from the Internet will be marked with MOTW but the files within may not inherit the MOTW after the container files are extracted and/or mounted. MOTW is a NTFS feature and many container files do not support NTFS alternative data streams. After a container file is extracted and/or mounted, the files contained within them may be treated as local files on disk and run without protections.(Citation: Beek Use of VHD Dec 2020)(Citation: Outflank MotW 2020)
+
+攻击者可能滥用特定的文件格式来破坏Mark-of-the-Web（MOTW）控制。在Windows系统中，当从互联网下载文件时，它们会被标记为带有隐藏的NTFS备用数据流（Alternate Data Stream，ADS）的<code>Zone.Identifier</code>，并具有特定的MOTW值。(引用：Microsoft Zone.Identifier 2020) 带有MOTW标记的文件受到保护，无法执行某些操作。例如，从MS Office 10开始，如果一个MS Office文件具有MOTW标识，它将在受保护视图中打开。带有MOTW标识的可执行文件将由Windows Defender SmartScreen处理，它会将文件与已知的允许列表中的知名可执行文件进行比较。如果文件未知或不受信任，SmartScreen将阻止其执行，并警告用户不要运行它。(引用：Beek Use of VHD Dec 2020)(引用：Outflank MotW 2020)(引用：Intezer Russian APT Dec 2020) 攻击者可能滥用容器文件，如压缩/归档文件（.arj，.gzip）和/或磁盘映像（.iso，.vhd）文件格式，以传递可能未被标记为MOTW的恶意有效载荷。从互联网下载的容器文件将带有MOTW标记，但其中的文件在容器文件被提取和/或挂载后可能不会继承MOTW。MOTW是NTFS的一个特性，而许多容器文件不支持NTFS备用数据流。在容器文件被提取和/或挂载后，其中包含的文件可能被视为本地磁盘上的文件，并且可以在没有保护措施的情况下运行。(引用：Beek Use of VHD Dec 2020)(引用：Outflank MotW 2020)
+
 ### [T1553.006]:Code Signing Policy Modification
 > External ID: T1553.006
 > STIX ID: attack-pattern--565275d5-fcc3-4b66-b4e7-928e4cac6b8c
 > Platforms: ['Windows', 'macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -6934,7 +7209,7 @@ To gain access to kernel memory to modify variables related to signature checks,
 > External ID: T1554
 > STIX ID: attack-pattern--960c3c86-1480-4d72-b4e0-8c242e84a5c5
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['persistence']
+> Tactics: ['[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7033,7 +7308,7 @@ Adversaries may acquire user credentials from password managers by extracting th
 > External ID: T1556
 > STIX ID: attack-pattern--f4c1826f-a322-41cd-9557-562100848c84
 > Platforms: ['Windows', 'Linux', 'macOS', 'Network', 'Azure AD', 'Google Workspace', 'IaaS', 'Office 365', 'SaaS']
-> Tactics: ['credential-access', 'defense-evasion', 'persistence']
+> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7051,7 +7326,7 @@ Adversaries may maliciously modify a part of this process to either reveal crede
 > External ID: T1556.001
 > STIX ID: attack-pattern--d4b96d2c-1032-4b22-9235-2b5b649d0605
 > Platforms: ['Windows']
-> Tactics: ['credential-access', 'defense-evasion', 'persistence']
+> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7062,7 +7337,7 @@ Malware may be used to inject false credentials into the authentication process 
 > External ID: T1556.002
 > STIX ID: attack-pattern--3731fbcd-0e43-47ae-ae6c-d15e510f0d42
 > Platforms: ['Windows']
-> Tactics: ['credential-access', 'defense-evasion', 'persistence']
+> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7075,7 +7350,7 @@ Adversaries can register malicious password filters to harvest credentials from 
 > External ID: T1556.003
 > STIX ID: attack-pattern--06c00069-771a-4d57-8ef5-d3718c1a8771
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['credential-access', 'defense-evasion', 'persistence']
+> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7088,7 +7363,7 @@ Malicious modifications to the PAM system may also be abused to steal credential
 > External ID: T1556.004
 > STIX ID: attack-pattern--fa44a152-ac48-441e-a524-dd7b04b8adcd
 > Platforms: ['Network']
-> Tactics: ['credential-access', 'defense-evasion', 'persistence']
+> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7099,7 +7374,7 @@ Malicious modifications to the PAM system may also be abused to steal credential
 > External ID: T1556.005
 > STIX ID: attack-pattern--d50955c2-272d-4ac8-95da-10c29dda1c48
 > Platforms: ['Windows']
-> Tactics: ['credential-access', 'defense-evasion', 'persistence']
+> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7119,7 +7394,7 @@ An adversary may set this property at various scopes through Local Group Policy 
 > External ID: T1556.006
 > STIX ID: attack-pattern--b4409cd8-0da9-46e1-a401-a241afd4d1cc
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Google Workspace', 'Linux', 'macOS']
-> Tactics: ['credential-access', 'defense-evasion', 'persistence']
+> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7134,7 +7409,7 @@ Depending on the scope, goals, and privileges of the adversary, MFA defenses may
 > External ID: T1556.007
 > STIX ID: attack-pattern--54ca26f3-c172-4231-93e5-ccebcac2161f
 > Platforms: ['Windows', 'Azure AD', 'SaaS', 'Google Workspace', 'Office 365', 'IaaS']
-> Tactics: ['credential-access', 'defense-evasion', 'persistence']
+> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7155,7 +7430,7 @@ In some cases, adversaries may be able to modify the hybrid identity authenticat
 > External ID: T1556.008
 > STIX ID: attack-pattern--90c4a591-d02d-490b-92aa-619d9701ac04
 > Platforms: ['Windows']
-> Tactics: ['credential-access', 'defense-evasion', 'persistence']
+> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7472,10 +7747,12 @@ On a network devices, adversaries may reformat the file system using [Network De
 
 To maximize impact on the target organization, malware designed for destroying disk structures may have worm-like features to propagate across a network by leveraging other techniques like [Valid Accounts](https://attack.mitre.org/techniques/T1078), [OS Credential Dumping](https://attack.mitre.org/techniques/T1003), and [SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002).(Citation: Symantec Shamoon 2012)(Citation: FireEye Shamoon Nov 2016)(Citation: Palo Alto Shamoon Nov 2016)(Citation: Kaspersky StoneDrill 2017)
 ## [T1562]:Impair Defenses
+> 中文：削弱防御
+>
 > External ID: T1562
 > STIX ID: attack-pattern--3d333250-30e4-4a82-9edc-756c68afc529
 > Platforms: ['Windows', 'Office 365', 'IaaS', 'Linux', 'macOS', 'Containers', 'Network']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7484,11 +7761,18 @@ To maximize impact on the target organization, malware designed for destroying d
 Adversaries may also impair routine operations that contribute to defensive hygiene, such as blocking users from logging out of a computer or stopping it from being shut down. These restrictions can further enable malicious operations as well as the continued propagation of incidents.(Citation: Emotet shutdown)
 
 Adversaries could also target event aggregation and analysis mechanisms, or otherwise disrupt these procedures by altering other system components.
+
+攻击者可能会恶意修改受害者环境的组件，以阻碍或禁用防御机制。这不仅涉及破坏防范性防御措施，如防火墙和反病毒软件，还包括防御者用来审计活动和识别恶意行为的检测能力。这可能涉及本地防御措施以及用户和管理员安装的其他功能。
+
+攻击者还可以干扰与防御卫生有关的常规操作，例如阻止用户注销计算机或阻止其关机。这些限制不仅可能促使恶意操作，还会导致事件的持续传播。(引用：Emotet shutdown)
+
+攻击者还可能针对事件聚合和分析机制进行攻击，或通过更改其他系统组件来破坏这些过程。
+
 ### [T1562.001]:Disable or Modify Tools
 > External ID: T1562.001
 > STIX ID: attack-pattern--ac08589e-ee59-4935-8667-d845e38fe579
 > Platforms: ['Windows', 'macOS', 'Linux', 'Containers', 'IaaS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7507,7 +7791,7 @@ Additionally, adversaries may exploit legitimate drivers from anti-virus softwar
 > External ID: T1562.002
 > STIX ID: attack-pattern--4eb28bed-d11a-4641-9863-c2ac017d910a
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7526,7 +7810,7 @@ By disabling Windows event logging, adversaries can operate while leaving less e
 > External ID: T1562.003
 > STIX ID: attack-pattern--8f504411-cb96-4dac-a537-8d2bb7679c59
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7543,7 +7827,7 @@ Adversaries may also leverage a [Network Device CLI](https://attack.mitre.org/te
 > External ID: T1562.004
 > STIX ID: attack-pattern--5372c5fe-f424-4def-bcd5-d3a8e770f07b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7551,10 +7835,12 @@ Adversaries may also leverage a [Network Device CLI](https://attack.mitre.org/te
 
 Modifying or disabling a system firewall may enable adversary C2 communications, lateral movement, and/or data exfiltration that would otherwise not be allowed. For example, adversaries may add a new firewall rule for a well-known protocol (such as RDP) using a non-traditional and potentially less securitized port (i.e. [Non-Standard Port](https://attack.mitre.org/techniques/T1571)).(Citation: change_rdp_port_conti)
 ### [T1562.006]:Indicator Blocking
+> 中文：阻止捕获指标
+>
 > External ID: T1562.006
 > STIX ID: attack-pattern--74d2a63f-3c7b-4852-92da-02d8fbab16da
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7567,11 +7853,22 @@ ETW interruption can be achieved multiple ways, however most directly by definin
 In the case of network-based reporting of indicators, an adversary may block traffic associated with reporting to prevent central analysis. This may be accomplished by many means, such as stopping a local process responsible for forwarding telemetry and/or creating a host-based firewall rule to block traffic to specific hosts responsible for aggregating events, such as security information and event management (SIEM) products.
 
 In Linux environments, adversaries may disable or reconfigure log processing tools such as syslog or nxlog to inhibit detection and monitoring capabilities to facilitate follow on behaviors (Citation: LemonDuck).
+
+攻击者可能会尝试阻止传感器通常捕获的指标或事件被收集和分析。这可能包括恶意重定向(Citation: Microsoft Lamin Sept 2017)或甚至禁用基于主机的传感器，如Windows事件跟踪(ETW)(Citation: Microsoft About Event Tracing 2018)，通过篡改控制事件遥测收集和流动的设置。(Citation: Medium Event Tracing Tampering 2018)这些设置可能存储在系统中的配置文件和/或注册表中，并可以通过管理工具如[PowerShell](https://attack.mitre.org/techniques/T1059/001)或[Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047)访问。
+
+例如，攻击者可以修改<code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Security</code>中的`File`值，将他们的恶意操作隐藏在一个新的或不同的.evtx日志文件中。此操作无需系统重启，立即生效。(Citation: disable_win_evt_logging)
+
+ETW中断可以通过多种方式实现，最直接的是使用[PowerShell](https://attack.mitre.org/techniques/T1059/001)的<code>Set-EtwTraceProvider</code> cmdlet定义条件，或直接与注册表接口进行更改。
+
+在涉及网络报告的指标方面，攻击者可能会阻止与报告相关的流量，以防止集中分析。这可以通过多种方式实现，例如停止负责转发遥测的本地进程和/或创建基于主机的防火墙规则，以阻止流向负责聚合事件的特定主机流量，如安全信息和事件管理（SIEM）产品。
+
+在Linux环境中，攻击者可能会禁用或重新配置日志处理工具，如syslog或nxlog，以抑制检测和监视能力，以便进行后续行为。(Citation: LemonDuck)
+
 ### [T1562.007]:Disable or Modify Cloud Firewall
 > External ID: T1562.007
 > STIX ID: attack-pattern--77532a55-c283-4cd2-bc5d-2d0b65e9d88c
 > Platforms: ['IaaS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7584,7 +7881,7 @@ Modifying or disabling a cloud firewall may enable adversary C2 communications, 
 > External ID: T1562.008
 > STIX ID: attack-pattern--cacc40da-4c9e-462c-80d5-fd70a178b12d
 > Platforms: ['IaaS', 'SaaS', 'Google Workspace', 'Azure AD', 'Office 365']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7595,7 +7892,7 @@ For example, in AWS an adversary may disable CloudWatch/CloudTrail integrations 
 > External ID: T1562.009
 > STIX ID: attack-pattern--28170e17-8384-415c-8486-2e6b294cb803
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7605,21 +7902,28 @@ Adversaries may abuse safe mode to disable endpoint defenses that may not start 
 
 Adversaries may also add their malicious applications to the list of minimal services that start in safe mode by modifying relevant Registry values (i.e. [Modify Registry](https://attack.mitre.org/techniques/T1112)). Malicious [Component Object Model](https://attack.mitre.org/techniques/T1559/001) (COM) objects may also be registered and loaded in safe mode.(Citation: Sophos Snatch Ransomware 2019)(Citation: CyberArk Labs Safe Mode 2016)(Citation: Cybereason Nocturnus MedusaLocker 2020)(Citation: BleepingComputer REvil 2021)
 ### [T1562.010]:Downgrade Attack
+> 中文：降级攻击
+>
 > External ID: T1562.010
 > STIX ID: attack-pattern--824add00-99a1-4b15-9a2d-6c5683b7b497
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may downgrade or use a version of system features that may be outdated, vulnerable, and/or does not support updated security controls such as logging. For example, [PowerShell](https://attack.mitre.org/techniques/T1059/001) versions 5+ includes Script Block Logging (SBL) which can record executed script content. However, adversaries may attempt to execute a previous version of PowerShell that does not support SBL with the intent to [Impair Defenses](https://attack.mitre.org/techniques/T1562) while running malicious scripts that may have otherwise been detected.(Citation: CrowdStrike BGH Ransomware 2021)(Citation: Mandiant BYOL 2018)(Citation: att_def_ps_logging)
 
 Adversaries may downgrade and use less-secure versions of various features of a system, such as [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059)s or even network protocols that can be abused to enable [Adversary-in-the-Middle](https://attack.mitre.org/techniques/T1557).(Citation: Praetorian TLS Downgrade Attack 2014)
+
+攻击者可能降级或使用过时、易受攻击且不支持更新的安全控制（如日志记录）的系统功能版本。例如，[PowerShell](https://attack.mitre.org/techniques/T1059/001) 5+版本包括脚本块日志记录（Script Block Logging，SBL），可以记录执行的脚本内容。然而，攻击者可能会尝试执行不支持SBL的先前版本的PowerShell，以意图在运行可能被检测到的恶意脚本时[破坏防御](https://attack.mitre.org/techniques/T1562)。(引用：CrowdStrike BGH Ransomware 2021)(引用：Mandiant BYOL 2018)(引用：att_def_ps_logging)
+
+攻击者可能降级并使用系统的各种功能的较不安全版本，例如[命令和脚本解释器](https://attack.mitre.org/techniques/T1059)，甚至可以滥用的网络协议来实现[中间人攻击](https://attack.mitre.org/techniques/T1557)。(引用：Praetorian TLS Downgrade Attack 2014)
+
 ### [T1562.011]:Spoof Security Alerting
 > External ID: T1562.011
 > STIX ID: attack-pattern--bef8aaee-961d-4359-a308-4c2182bcedff
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7664,21 +7968,28 @@ In order to move laterally from a compromised host, adversaries may take advanta
 
 Adversaries may perform RDP session hijacking which involves stealing a legitimate user's remote session. Typically, a user is notified when someone else is trying to steal their session. With System permissions and using Terminal Services Console, `c:\windows\system32\tscon.exe [session number to be stolen]`, an adversary can hijack a session without the need for credentials or prompts to the user.(Citation: RDP Hijacking Korznikov) This can be done remotely or locally and with active or disconnected sessions.(Citation: RDP Hijacking Medium) It can also lead to [Remote System Discovery](https://attack.mitre.org/techniques/T1018) and Privilege Escalation by stealing a Domain Admin or higher privileged account session. All of this can be done by using native Windows commands, but it has also been added as a feature in red teaming tools.(Citation: Kali Redsnarf)
 ## [T1564]:Hide Artifacts
+> 中文：隐藏痕迹
+>
 > External ID: T1564
 > STIX ID: attack-pattern--22905430-4901-4c2a-84f6-98243cb173f8
 > Platforms: ['Linux', 'macOS', 'Windows', 'Office 365']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may attempt to hide artifacts associated with their behaviors to evade detection. Operating systems may have features to hide various artifacts, such as important system files and administrative task execution, to avoid disrupting user work environments and prevent users from changing files or features on the system. Adversaries may abuse these features to hide artifacts such as files, directories, user accounts, or other system activity to evade detection.(Citation: Sofacy Komplex Trojan)(Citation: Cybereason OSX Pirrit)(Citation: MalwareBytes ADS July 2015)
 
 Adversaries may also attempt to hide artifacts associated with malicious behavior by creating computing regions that are isolated from common security instrumentation, such as through the use of virtualization technology.(Citation: Sophos Ragnar May 2020)
+
+攻击者可能会尝试隐藏与其行为相关的痕迹以逃避检测。操作系统可能具有隐藏各种痕迹的功能，例如重要的系统文件和管理任务执行，以避免干扰用户的工作环境，并防止用户更改系统上的文件或功能。攻击者可能滥用这些功能来隐藏文件、目录、用户帐户或其他系统活动等痕迹，以逃避检测。(引用：Sofacy Komplex Trojan)(引用：Cybereason OSX Pirrit)(引用：MalwareBytes ADS July 2015)
+
+攻击者还可能尝试通过创建与常见安全工具隔离的计算区域来隐藏与恶意行为相关的痕迹，例如通过使用虚拟化技术。(引用：Sophos Ragnar May 2020)
+
 ### [T1564.001]:Hidden Files and Directories
 > External ID: T1564.001
 > STIX ID: attack-pattern--ec8fc7e2-b356-455c-8db5-2e37be158e7d
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7693,7 +8004,7 @@ Adversaries can use this to their advantage to hide files and folders anywhere o
 > External ID: T1564.002
 > STIX ID: attack-pattern--8c4aef43-48d5-49aa-b2af-c0cd58d30c3d
 > Platforms: ['macOS', 'Windows', 'Linux']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7708,7 +8019,7 @@ On Linux systems, adversaries may hide user accounts from the login screen, also
 > External ID: T1564.003
 > STIX ID: attack-pattern--cbb66055-0325-4111-aca0-40547b6ad5b0
 > Platforms: ['macOS', 'Windows', 'Linux']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7723,18 +8034,23 @@ Adversaries may abuse these functionalities to hide otherwise visible windows fr
 > External ID: T1564.004
 > STIX ID: attack-pattern--f2857333-11d4-45bf-b064-2c28d8525be5
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may use NTFS file attributes to hide their malicious data in order to evade detection. Every New Technology File System (NTFS) formatted partition contains a Master File Table (MFT) that maintains a record for every file/directory on the partition. (Citation: SpectorOps Host-Based Jul 2017) Within MFT entries are file attributes, (Citation: Microsoft NTFS File Attributes Aug 2010) such as Extended Attributes (EA) and Data [known as Alternate Data Streams (ADSs) when more than one Data attribute is present], that can be used to store arbitrary data (and even complete files). (Citation: SpectorOps Host-Based Jul 2017) (Citation: Microsoft File Streams) (Citation: MalwareBytes ADS July 2015) (Citation: Microsoft ADS Mar 2014)
 
 Adversaries may store malicious data or binaries in file attribute metadata instead of directly in files. This may be done to evade some defenses, such as static indicator scanning tools and anti-virus. (Citation: Journey into IR ZeroAccess NTFS EA) (Citation: MalwareBytes ADS July 2015)
+
+攻击者可能使用NTFS文件属性来隐藏其恶意数据以逃避检测。每个新技术文件系统（NTFS）格式化的分区都包含一个主文件表（MFT），该表记录了分区上每个文件/目录的信息。(引用：SpectorOps Host-Based Jul 2017) MFT条目中包含文件属性，如扩展属性（EA）和数据[当存在多个数据属性时，也称为备用数据流（ADS）]，可用于存储任意数据（甚至完整文件）。(引用：SpectorOps Host-Based Jul 2017) (引用：Microsoft NTFS File Attributes Aug 2010) (引用：Microsoft File Streams) (引用：MalwareBytes ADS July 2015) (引用：Microsoft ADS Mar 2014)
+
+攻击者可能将恶意数据或二进制文件存储在文件属性元数据中，而不是直接存储在文件中。这样做是为了逃避某些防御措施，如静态指标扫描工具和反病毒软件。(引用：Journey into IR ZeroAccess NTFS EA) (引用：MalwareBytes ADS July 2015)
+
 ### [T1564.005]:Hidden File System
 > External ID: T1564.005
 > STIX ID: attack-pattern--dfebc3b7-d19d-450b-81c7-6dafe4184c04
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7745,7 +8061,7 @@ Adversaries may use their own abstracted file system, separate from the standard
 > External ID: T1564.006
 > STIX ID: attack-pattern--b5327dd1-6bf9-4785-a199-25bcbd1f4a9d
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7756,7 +8072,7 @@ Adversaries may utilize native support for virtualization (ex: Hyper-V) or drop 
 > External ID: T1564.007
 > STIX ID: attack-pattern--c898c4b5-bf36-4e6e-a4ad-5b8c4c13e35b
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7765,11 +8081,18 @@ Adversaries may utilize native support for virtualization (ex: Hyper-V) or drop 
 MS Office documents with embedded VBA content store source code inside of module streams. Each module stream has a <code>PerformanceCache</code> that stores a separate compiled version of the VBA source code known as p-code. The p-code is executed when the MS Office version specified in the <code>_VBA_PROJECT</code> stream (which contains the version-dependent description of the VBA project) matches the version of the host MS Office application.(Citation: Evil Clippy May 2019)(Citation: Microsoft _VBA_PROJECT Stream)
 
 An adversary may hide malicious VBA code by overwriting the VBA source code location with zero’s, benign code, or random bytes while leaving the previously compiled malicious p-code. Tools that scan for malicious VBA source code may be bypassed as the unwanted code is hidden in the compiled p-code. If the VBA source code is removed, some tools might even think that there are no macros present. If there is a version match between the <code>_VBA_PROJECT</code> stream and host MS Office application, the p-code will be executed, otherwise the benign VBA source code will be decompressed and recompiled to p-code, thus removing malicious p-code and potentially bypassing dynamic analysis.(Citation: Walmart Roberts Oct 2018)(Citation: FireEye VBA stomp Feb 2020)(Citation: pcodedmp Bontchev)
+
+攻击者可以通过替换VBA源代码为无害数据来隐藏嵌入在MS Office文档中的恶意Visual Basic for Applications (VBA)有效载荷。(引用：FireEye VBA stomp Feb 2020)
+
+带有嵌入式VBA内容的MS Office文档在模块流中存储源代码。每个模块流都有一个<code>PerformanceCache</code>存储着所谓的编译版本的VBA源代码，也称为p-code。当_VBA_PROJECT流（其中包含VBA项目的版本相关描述）中指定的MS Office版本与宿主MS Office应用程序的版本相匹配时，将执行p-code。(引用：Evil Clippy May 2019)(引用：Microsoft _VBA_PROJECT Stream)
+
+攻击者可以通过将VBA源代码位置覆盖为零位、无害代码或随机字节的方式隐藏恶意VBA代码，同时保留先前编译的恶意p-code。扫描恶意VBA源代码的工具可能会被绕过，因为不需要的代码隐藏在已编译的p-code中。如果VBA源代码被删除，某些工具甚至可能认为不存在宏。如果_VBA_PROJECT流与宿主MS Office应用程序版本匹配，将执行p-code，否则将解压缩无害的VBA源代码并重新编译为p-code，从而删除恶意的p-code并可能绕过动态分析。(引用：Walmart Roberts Oct 2018)(引用：FireEye VBA stomp Feb 2020)(引用：pcodedmp Bontchev)
+
 ### [T1564.008]:Email Hiding Rules
 > External ID: T1564.008
 > STIX ID: attack-pattern--0cf55441-b176-4332-89e7-2c4c7799d0ff
 > Platforms: ['Windows', 'Office 365', 'Linux', 'macOS', 'Google Workspace']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7784,18 +8107,25 @@ In some environments, administrators may be able to enable email rules that oper
 > External ID: T1564.009
 > STIX ID: attack-pattern--b22e5153-ac28-4cc6-865c-2054e36285cb
 > Platforms: ['macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
  Adversaries may abuse resource forks to hide malicious code or executables to evade detection and bypass security applications. A resource fork provides applications a structured way to store resources such as thumbnail images, menu definitions, icons, dialog boxes, and code.(Citation: macOS Hierarchical File System Overview) Usage of a resource fork is identifiable when displaying a file’s extended attributes, using <code>ls -l@</code> or <code>xattr -l</code> commands. Resource forks have been deprecated and replaced with the application bundle structure. Non-localized resources are placed at the top level directory of an application bundle, while localized resources are placed in the <code>/Resources</code> folder.(Citation: Resource and Data Forks)(Citation: ELC Extended Attributes)
 
 Adversaries can use resource forks to hide malicious data that may otherwise be stored directly in files. Adversaries can execute content with an attached resource fork, at a specified offset, that is moved to an executable location then invoked. Resource fork content may also be obfuscated/encrypted until execution.(Citation: sentinellabs resource named fork 2020)(Citation: tau bundlore erika noerenberg 2020)
+
+攻击者可能滥用资源分支来隐藏恶意代码或可执行文件，以逃避检测和绕过安全应用程序。资源分支为应用程序提供了一种结构化的方式来存储资源，如缩略图图像、菜单定义、图标、对话框和代码。(引用：macOS Hierarchical File System Overview) 使用资源分支可在显示文件的扩展属性时进行识别，使用<code>ls -l@</code>或<code>xattr -l</code>命令。资源分支已被弃用，并被应用程序捆绑结构所取代。非本地化资源放置在应用程序捆绑的顶级目录中，而本地化资源放置在<code>/Resources</code>文件夹中。(引用：Resource and Data Forks)(引用：ELC Extended Attributes)
+
+攻击者可以使用资源分支来隐藏可能直接存储在文件中的恶意数据。攻击者可以在附加的资源分支中执行内容，并在指定的偏移位置将其移到可执行位置然后调用。资源分支的内容也可以在执行之前进行混淆/加密。(引用：sentinellabs resource named fork 2020)(引用：tau bundlore erika noerenberg 2020)
+
 ### [T1564.010]:Process Argument Spoofing
+> 中文：进程参数欺骗
+>
 > External ID: T1564.010
 > STIX ID: attack-pattern--ffe59ad3-ad9b-4b9f-b74f-5beb3c309dc1
 > Platforms: ['Windows']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -7806,6 +8136,15 @@ Adversaries may manipulate a process PEB to evade defenses. For example, [Proces
 Adversaries may also execute a process with malicious command-line arguments then patch the memory with benign arguments that may bypass subsequent process memory analysis.(Citation: FireEye FiveHands April 2021)
 
 This behavior may also be combined with other tricks (such as [Parent PID Spoofing](https://attack.mitre.org/techniques/T1134/004)) to manipulate or further evade process-based detections.
+
+攻击者可能尝试通过覆盖进程内存来隐藏进程命令行参数。进程命令行参数存储在进程环境块（PEB）中，PEB是Windows用于存储进程相关信息的数据结构。PEB包含在执行进程时引用的进程命令行参数。当一个进程被创建时，监视进程创建的防御工具/传感器可能会从PEB中检索进程参数。(引用：Microsoft PEB 2021)(引用：Xpn Argue Like Cobalt 2019)
+
+攻击者可能操纵进程PEB以逃避防御措施。例如，可以滥用[进程中空心化](https://attack.mitre.org/techniques/T1055/012)来在挂起状态下生成具有无害参数的进程。在生成进程并初始化PEB（并且进程信息可能被工具/传感器记录）后，攻击者可以覆盖PEB以修改命令行参数（例如使用[本地API](https://attack.mitre.org/techniques/T1106) <code>WriteProcessMemory()</code>函数），然后使用恶意参数恢复进程执行。(引用：Cobalt Strike Arguments 2019)(引用：Xpn Argue Like Cobalt 2019)(引用：Nviso Spoof Command Line 2020)
+
+攻击者还可能使用恶意命令行参数执行进程，然后使用无害参数修补内存，以绕过后续的进程内存分析。(引用：FireEye FiveHands April 2021)
+
+这种行为可能与其他技巧（如[父进程ID欺骗](https://attack.mitre.org/techniques/T1134/004)）结合使用，以操纵或进一步逃避基于进程的检测。
+
 ## [T1565]:Data Manipulation
 > External ID: T1565
 > STIX ID: attack-pattern--ac9e6b22-11bf-45d7-9181-c1cb08360931
@@ -8098,7 +8437,7 @@ For efficiency, many protocols (including SSL/TLS) use symmetric cryptography on
 > External ID: T1574
 > STIX ID: attack-pattern--aedfca76-3b30-4866-b2aa-0f1d7fd1e4b6
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8109,7 +8448,7 @@ There are many ways an adversary may hijack the flow of execution, including by 
 > External ID: T1574.001
 > STIX ID: attack-pattern--2fee9321-3e71-4cf4-af24-d4d40d355b34
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8126,7 +8465,7 @@ If a search order-vulnerable program is configured to run at a higher privilege 
 > External ID: T1574.002
 > STIX ID: attack-pattern--e64c62cf-9cd7-4a14-94ec-cdaac43ab44b
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8137,7 +8476,7 @@ Side-loading takes advantage of the DLL search order used by the loader by posit
 > External ID: T1574.004
 > STIX ID: attack-pattern--fc742192-19e3-466c-9eb5-964a97b29490
 > Platforms: ['macOS']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8148,7 +8487,7 @@ Adversaries may gain execution by inserting malicious dylibs with the name of th
 > External ID: T1574.005
 > STIX ID: attack-pattern--70d81154-b187-45f9-8ec5-295d01255979
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8161,7 +8500,7 @@ Adversaries may use this technique to replace legitimate binaries with malicious
 > External ID: T1574.006
 > STIX ID: attack-pattern--633a100c-b2c9-41bf-9be5-905c1b16c825
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8176,7 +8515,7 @@ On macOS this behavior is conceptually the same as on Linux, differing only in h
 > External ID: T1574.007
 > STIX ID: attack-pattern--0c2d00da-7742-49e7-9928-4514e5075d32
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8189,7 +8528,7 @@ For example, if <code>C:\example path</code> precedes </code>C:\Windows\system32
 > External ID: T1574.008
 > STIX ID: attack-pattern--58af3705-8740-4c68-9329-ec015a7013c2
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8204,7 +8543,7 @@ Search order hijacking is also a common practice for hijacking DLL loads and is 
 > External ID: T1574.009
 > STIX ID: attack-pattern--bf96a5a3-3bce-43b7-8597-88545984c07b
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8217,7 +8556,7 @@ This technique can be used for persistence if executables are called on a regula
 > External ID: T1574.010
 > STIX ID: attack-pattern--9e8b28c9-35fe-48ac-a14d-e6cc032dcbcd
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8228,7 +8567,7 @@ Adversaries may use this technique to replace legitimate binaries with malicious
 > External ID: T1574.011
 > STIX ID: attack-pattern--17cc750b-e95b-4d7d-9dde-49e0de24148c
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8245,7 +8584,7 @@ Adversaries may also add the <code>Parameters</code> key, which stores driver-sp
 > External ID: T1574.012
 > STIX ID: attack-pattern--ffeb0780-356e-4261-b036-cfb6bd234335
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8258,7 +8597,7 @@ Adversaries may abuse COR_PROFILER to establish persistence that executes a mali
 > External ID: T1574.013
 > STIX ID: attack-pattern--a4657bc9-d22f-47d2-a7b7-dd6ec33f3dde
 > Platforms: ['Windows']
-> Tactics: ['persistence', 'privilege-escalation', 'defense-evasion']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8273,7 +8612,7 @@ The tampered function is typically invoked using a Windows message. After the pr
 > External ID: T1578
 > STIX ID: attack-pattern--144e007b-e638-431d-a894-45d90c54ab90
 > Platforms: ['IaaS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8284,7 +8623,7 @@ Permissions gained from the modification of infrastructure components may bypass
 > External ID: T1578.001
 > STIX ID: attack-pattern--ed2e45f9-d338-4eb2-8ce5-3a2e03323bc1
 > Platforms: ['IaaS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8295,7 +8634,7 @@ An adversary may [Create Cloud Instance](https://attack.mitre.org/techniques/T15
 > External ID: T1578.002
 > STIX ID: attack-pattern--cf1c2504-433f-4c4e-a1f8-91de45a0318c
 > Platforms: ['IaaS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8306,7 +8645,7 @@ Creating a new instance may also allow an adversary to carry out malicious activ
 > External ID: T1578.003
 > STIX ID: attack-pattern--70857657-bd0b-4695-ad3e-b13f92cac1b4
 > Platforms: ['IaaS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -8317,7 +8656,7 @@ An adversary may also [Create Cloud Instance](https://attack.mitre.org/technique
 > External ID: T1578.004
 > STIX ID: attack-pattern--0708ae90-d0eb-4938-9a76-d0fc94f6eec1
 > Platforms: ['IaaS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -9414,11 +9753,12 @@ Adversaries may also be able to spoof a complete website using what is known as 
 
 From the fake website, information is gathered in web forms and sent to the adversary. Adversaries may also use information from previous reconnaissance efforts (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)) to craft persuasive and believable lures.
 ## [T1599]:Network Boundary Bridging
+> 中文：桥接网络边界
+>
 > External ID: T1599
 > STIX ID: attack-pattern--b8017880-4b1e-42de-ad10-ae7ac6705166
 > Platforms: ['Network']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may bridge network boundaries by compromising perimeter network devices or internal devices responsible for network segmentation. Breaching these devices may enable an adversary to bypass restrictions on traffic routing that otherwise separate trusted and untrusted networks.
@@ -9426,11 +9766,18 @@ From the fake website, information is gathered in web forms and sent to the adve
 Devices such as routers and firewalls can be used to create boundaries between trusted and untrusted networks.  They achieve this by restricting traffic types to enforce organizational policy in an attempt to reduce the risk inherent in such connections.  Restriction of traffic can be achieved by prohibiting IP addresses, layer 4 protocol ports, or through deep packet inspection to identify applications.  To participate with the rest of the network, these devices can be directly addressable or transparent, but their mode of operation has no bearing on how the adversary can bypass them when compromised.
 
 When an adversary takes control of such a boundary device, they can bypass its policy enforcement to pass normally prohibited traffic across the trust boundary between the two separated networks without hinderance.  By achieving sufficient rights on the device, an adversary can reconfigure the device to allow the traffic they want, allowing them to then further achieve goals such as command and control via [Multi-hop Proxy](https://attack.mitre.org/techniques/T1090/003) or exfiltration of data via [Traffic Duplication](https://attack.mitre.org/techniques/T1020/001). Adversaries may also target internal devices responsible for network segmentation and abuse these in conjunction with [Internal Proxy](https://attack.mitre.org/techniques/T1090/001) to achieve the same goals.(Citation: Kaspersky ThreatNeedle Feb 2021)  In the cases where a border device separates two separate organizations, the adversary can also facilitate lateral movement into new victim environments.
+
+攻击者可能通过已被入侵的边界网络设备或负责网络分割的内部设备来桥接网络边界。入侵这些设备可能使攻击者能够绕过流量路由的限制，这些限制本来可以将可信任和不可信任的网络隔离开。
+
+路由器和防火墙等设备可以用于创建可信任和不可信任网络之间的边界。它们通过限制流量类型来执行组织策略，试图减少与此类连接相关的风险。限制流量可以通过禁止IP地址、第四层协议端口或通过深度包检查来识别应用程序来实现。为了与网络的其余部分一起运作，这些设备可以被直接寻址或透明，但是它们的操作方式与攻击者在被入侵时如何绕过它们没有关系。
+
+当攻击者控制这样的边界设备时，他们可以绕过策略执行，在两个分隔的网络之间无阻碍地传递通常禁止的流量。通过在设备上获得足够的权限，攻击者可以重新配置设备以允许他们想要的流量，从而使他们进一步实现命令和控制（通过[Multi-hop Proxy](https://attack.mitre.org/techniques/T1090/003)）或通过[流量复制](https://attack.mitre.org/techniques/T1020/001)泄露数据。攻击者还可以针对负责网络分割的内部设备进行攻击，并与[Internal Proxy](https://attack.mitre.org/techniques/T1090/001)结合使用以实现相同的目标。(引用：Kaspersky ThreatNeedle Feb 2021) 在边界设备将两个不同的组织分隔开的情况下，攻击者还可以促使横向移动进入新的受害者环境
+
 ### [T1599.001]:Network Address Translation Traversal
 > External ID: T1599.001
 > STIX ID: attack-pattern--4ffc1794-ec3b-45be-9e52-42dbcb2af2de
 > Platforms: ['Network']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -9445,7 +9792,7 @@ Adversaries may use [Patch System Image](https://attack.mitre.org/techniques/T16
 > External ID: T1600
 > STIX ID: attack-pattern--1f9012ef-1e10-4e48-915e-e03563435fe8
 > Platforms: ['Network']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -9455,11 +9802,12 @@ Encryption can be used to protect transmitted network traffic to maintain its co
 
 Adversaries can compromise and manipulate devices that perform encryption of network traffic. For example, through behaviors such as [Modify System Image](https://attack.mitre.org/techniques/T1601), [Reduce Key Space](https://attack.mitre.org/techniques/T1600/001), and [Disable Crypto Hardware](https://attack.mitre.org/techniques/T1600/002), an adversary can negatively effect and/or eliminate a device’s ability to securely encrypt network traffic. This poses a greater risk of unauthorized disclosure and may help facilitate data manipulation, Credential Access, or Collection efforts. (Citation: Cisco Blog Legacy Device Attacks)
 ### [T1600.001]:Reduce Key Space
+> 中文：减小密钥大小
+>
 > External ID: T1600.001
 > STIX ID: attack-pattern--3a40f208-a9c1-4efa-a598-4003c3681fb8
 > Platforms: ['Network']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may reduce the level of effort required to decrypt data transmitted over the network by reducing the cipher strength of encrypted communications.(Citation: Cisco Synful Knock Evolution)
@@ -9467,11 +9815,18 @@ Adversaries can compromise and manipulate devices that perform encryption of net
 Adversaries can weaken the encryption software on a compromised network device by reducing the key size used by the software to convert plaintext to ciphertext (e.g., from hundreds or thousands of bytes to just a couple of bytes). As a result, adversaries dramatically reduce the amount of effort needed to decrypt the protected information without the key.
 
 Adversaries may modify the key size used and other encryption parameters using specialized commands in a [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) introduced to the system through [Modify System Image](https://attack.mitre.org/techniques/T1601) to change the configuration of the device. (Citation: Cisco Blog Legacy Device Attacks)
+
+攻击者可以通过降低加密通信的密码强度来减少解密在网络上传输的数据所需的工作量。(引用：Cisco Synful Knock Evolution)
+
+攻击者可以通过降低被入侵网络设备上加密软件使用的密钥大小来削弱加密软件的强度，该密钥用于将明文转换为密文（例如，从数百或数千个字节减少到仅几个字节）。结果，攻击者大大减少了解密受保护信息所需的工作量，而无需密钥。
+
+攻击者可以使用专门的命令在通过[Modify System Image](https://attack.mitre.org/techniques/T1601)引入系统的[网络设备CLI](https://attack.mitre.org/techniques/T1059/008)中修改使用的密钥大小和其他加密参数，以改变设备的配置。(引用：Cisco Blog Legacy Device Attacks)
+
 ### [T1600.002]:Disable Crypto Hardware
 > External ID: T1600.002
 > STIX ID: attack-pattern--7efba77e-3bc4-4ca5-8292-d8201dcd64b5
 > Platforms: ['Network']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -9482,7 +9837,7 @@ Many network devices such as routers, switches, and firewalls, perform encryptio
 > External ID: T1601
 > STIX ID: attack-pattern--ae7f3575-0a5e-427e-991b-fe03ad44c754
 > Platforms: ['Network']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -9493,7 +9848,7 @@ To change the operating system, the adversary typically only needs to affect thi
 > External ID: T1601.001
 > STIX ID: attack-pattern--d245808a-7086-4310-984a-a84aaaa43f8f
 > Platforms: ['Network']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -9516,7 +9871,7 @@ When the technique is performed on the running operating system in memory and no
 > External ID: T1601.002
 > STIX ID: attack-pattern--fc74ba38-dc98-461f-8611-b3dbf9978e3d
 > Platforms: ['Network']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -9799,7 +10154,7 @@ In Docker, adversaries may specify an entrypoint during container deployment tha
 > External ID: T1610
 > STIX ID: attack-pattern--56e0d8b8-3e25-49dd-9050-3aa252f5aa92
 > Platforms: ['Containers']
-> Tactics: ['defense-evasion', 'execution']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'execution']
 
 
 **Description: **
@@ -9807,11 +10162,12 @@ In Docker, adversaries may specify an entrypoint during container deployment tha
 
 Containers can be deployed by various means, such as via Docker's <code>create</code> and <code>start</code> APIs or via a web application such as the Kubernetes dashboard or Kubeflow.(Citation: Docker Containers API)(Citation: Kubernetes Dashboard)(Citation: Kubeflow Pipelines) Adversaries may deploy containers based on retrieved or built malicious images or from benign images that download and execute malicious payloads at runtime.(Citation: Aqua Build Images on Hosts)
 ## [T1611]:Escape to Host
+> 中文：逃逸至主机
+>
 > External ID: T1611
 > STIX ID: attack-pattern--4a5b7ade-8bb5-4853-84ed-23f262002665
 > Platforms: ['Windows', 'Linux', 'Containers']
-> Tactics: ['privilege-escalation']
-
+> Tactics: ['[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may break out of a container to gain access to the underlying host. This can allow an adversary access to other containerized resources from the host level or to the host itself. In principle, containerized resources should provide a clear separation of application functionality and be isolated from the host environment.(Citation: Docker Overview)
@@ -9821,11 +10177,28 @@ There are multiple ways an adversary may escape to a host environment. Examples 
 Additionally, an adversary may be able to exploit a compromised container with a mounted container management socket, such as `docker.sock`, to break out of the container via a [Container Administration Command](https://attack.mitre.org/techniques/T1609).(Citation: Container Escape) Adversaries may also escape via [Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068), such as exploiting vulnerabilities in global symbolic links in order to access the root directory of a host machine.(Citation: Windows Server Containers Are Open)
 
 Gaining access to the host may provide the adversary with the opportunity to achieve follow-on objectives, such as establishing persistence, moving laterally within the environment, or setting up a command and control channel on the host.
+
+攻击者可能突破容器以获取对底层主机的访问权限。这可以使攻击者可以从主机级别访问其他容器化资源或主机本身。原则上，容器化资源应提供清晰的应用功能分离，并与主机环境相隔离。（文献引用：Docker Overview）
+
+攻击者可能有多种逃逸到主机环境的方式。例如，创建一个配置为使用绑定参数挂载主机文件系统的容器，使得攻击者可以在主机上放置恶意负载并执行诸如任务计划等控制工具；利用特权容器在底层主机上运行命令或加载恶意内核模块；或滥用系统调用，如`unshare`和`keyctl`来提升权限和窃取机密信息。（文献引用：Docker Bind Mounts）（文献引用：Trend Micro Privileged Container）（文献引用：Intezer Doki July 20）（文献引用：Container Escape）（文献引用：Crowdstrike Kubernetes Container Escape）（文献引用：Keyctl-unmask）
+
+此外，攻击者可能利用被入侵容器上的挂载的容器管理套接字（如`docker.sock`）进行利用，通过[容器管理命令](https://attack.mitre.org/techniques/T1609)逃逸出容器。（文献引用：Container Escape）攻击者还可以通过[利用特权升级](https://attack.mitre.org/techniques/T1068)的方式逃逸，例如利用全局符号链接中的漏洞以访问主机机器的根目录。（文献引用：Windows Server Containers Are Open）
+
+获取对主机的访问权限可能为攻击者提供了实现后续目标的机会，例如建立持久性、在环境中进行横向移动或在主机上设置命令和控制通道。
+
+Escape to host（逃逸至主机）指的是在虚拟化或容器化环境中，攻击者通过利用漏洞或弱点成功从虚拟机或容器中逃出，并进入宿主机的操作系统层。一旦攻击者逃逸至主机，他们可以绕过虚拟化或容器化的安全措施，获取对主机及其上运行的其他虚拟机或容器的访问和控制权。
+
+在虚拟化环境中，逃逸至主机通常指攻击者成功绕过虚拟机监控器（VMM）或虚拟化层，进入宿主机操作系统。攻击者可能利用虚拟机监控器的漏洞、配置错误或不安全的虚拟机配置来实现逃逸。一旦逃逸至主机，攻击者可以对主机进行各种恶意活动，例如窃取敏感信息、操纵虚拟机或其他宿主机上的服务、部署恶意软件等。
+
+在容器化环境中，逃逸至主机是指攻击者利用容器化平台或容器运行时的漏洞，成功从一个容器中逃出进入宿主机操作系统。攻击者可以利用容器隔离不完全或容器运行时的弱点，以及未对容器进行适当的安全配置，以实现逃逸。一旦逃逸至主机，攻击者可以对主机操作系统及其上运行的其他容器进行攻击和控制。
+
+逃逸至主机是一种严重的安全漏洞，因为攻击者可以绕过虚拟化或容器化环境的保护机制，对整个主机和其他运行在主机上的实体产生威胁。为了减少逃逸至主机的风险，虚拟化和容器化环境应该采取安全最佳实践，并及时修补和更新软件以修复已知漏洞。此外，应实施严格的访问控制和隔离措施，以确保未经授权的访问无法逃离虚拟机或容器。
+
 ## [T1612]:Build Image on Host
 > External ID: T1612
 > STIX ID: attack-pattern--800f9819-7007-4540-a520-40e655876800
 > Platforms: ['Containers']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
@@ -9895,16 +10268,22 @@ Adversaries may use commands such as <code>gpresult</code> or various publicly a
 
 Cloud service providers offer APIs allowing users to enumerate objects stored within cloud storage. Examples include ListObjectsV2 in AWS (Citation: ListObjectsV2) and List Blobs in Azure(Citation: List Blobs) .
 ## [T1620]:Reflective Code Loading
+> 中文：反射加载代码
+>
 > External ID: T1620
 > STIX ID: attack-pattern--4933e63b-9b77-476e-ab29-761bc5b7d15a
 > Platforms: ['macOS', 'Linux', 'Windows']
-> Tactics: ['defense-evasion']
-
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 **Description: **
  Adversaries may reflectively load code into a process in order to conceal the execution of malicious payloads. Reflective loading involves allocating then executing payloads directly within the memory of the process, vice creating a thread or process backed by a file path on disk. Reflectively loaded payloads may be compiled binaries, anonymous files (only present in RAM), or just snubs of fileless executable code (ex: position-independent shellcode).(Citation: Introducing Donut)(Citation: S1 Custom Shellcode Tool)(Citation: Stuart ELF Memory)(Citation: 00sec Droppers)(Citation: Mandiant BYOL)
 
 Reflective code injection is very similar to [Process Injection](https://attack.mitre.org/techniques/T1055) except that the “injection” loads code into the processes’ own memory instead of that of a separate process. Reflective loading may evade process-based detections since the execution of the arbitrary code may be masked within a legitimate or otherwise benign process. Reflectively loading payloads directly into memory may also avoid creating files or other artifacts on disk, while also enabling malware to keep these payloads encrypted (or otherwise obfuscated) until execution.(Citation: Stuart ELF Memory)(Citation: 00sec Droppers)(Citation: Intezer ACBackdoor)(Citation: S1 Old Rat New Tricks)
+
+攻击者可能使用反射加载代码到进程中，以隐藏恶意载荷的执行。反射加载涉及在进程的内存中直接分配和执行载荷，而不是创建一个基于磁盘文件路径的线程或进程。反射加载的载荷可以是编译的二进制文件、只存在于RAM中的匿名文件，或者仅是无文件可执行代码的片段（例如：位置无关的Shellcode）。(引用：Introducing Donut)(引用：S1 Custom Shellcode Tool)(引用：Stuart ELF Memory)(引用：00sec Droppers)(引用：Mandiant BYOL)
+
+与[进程注入](https://attack.mitre.org/techniques/T1055)非常相似，反射式代码注入将代码加载到进程自身内存中，而不是其他独立进程的内存中。反射加载可能会规避基于进程的检测，因为任意代码的执行可能会伪装在一个合法或无害的进程中。将载荷直接加载到内存中还可以避免在磁盘上创建文件或其他工件，同时还能够使恶意软件在执行之前保持这些载荷加密（或以其他方式混淆）。(引用：Stuart ELF Memory)(引用：00sec Droppers)(引用：Intezer ACBackdoor)(引用：S1 Old Rat New Tricks)
+
 ## [T1621]:Multi-Factor Authentication Request Generation
 > External ID: T1621
 > STIX ID: attack-pattern--954a1639-f2d6-407d-aef3-4917622ca493
@@ -9919,10 +10298,12 @@ Adversaries in possession of credentials to [Valid Accounts](https://attack.mitr
 
 In some cases, adversaries may continuously repeat login attempts in order to bombard users with MFA push notifications, SMS messages, and phone calls, potentially resulting in the user finally accepting the authentication request in response to “MFA fatigue.”(Citation: Russian 2FA Push Annoyance - Cimpanu)(Citation: MFA Fatigue Attacks - PortSwigger)(Citation: Suspected Russian Activity Targeting Government and Business Entities Around the Globe)
 ## [T1622]:Debugger Evasion
+> 中文：调试器逃避
+>
 > External ID: T1622
 > STIX ID: attack-pattern--e4dc8c01-417f-458d-9ee0-bb0617c1b391
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['defense-evasion', 'discovery']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'discovery']
 
 
 **Description: **
@@ -9933,11 +10314,20 @@ Debugger evasion may include changing behaviors based on the results of the chec
 Specific checks will vary based on the target and/or adversary, but may involve [Native API](https://attack.mitre.org/techniques/T1106) function calls such as <code>IsDebuggerPresent()</code> and <code> NtQueryInformationProcess()</code>, or manually checking the <code>BeingDebugged</code> flag of the Process Environment Block (PEB). Other checks for debugging artifacts may also seek to enumerate hardware breakpoints, interrupt assembly opcodes, time checks, or measurements if exceptions are raised in the current process (assuming a present debugger would “swallow” or handle the potential error).(Citation: hasherezade debug)(Citation: AlKhaser Debug)(Citation: vxunderground debug)
 
 Adversaries may use the information learned from these debugger checks during automated discovery to shape follow-on behaviors. Debuggers can also be evaded by detaching the process or flooding debug logs with meaningless data via messages produced by looping [Native API](https://attack.mitre.org/techniques/T1106) function calls such as <code>OutputDebugStringW()</code>.(Citation: wardle evilquest partii)(Citation: Checkpoint Dridex Jan 2021)
+
+攻击者可能采用各种手段来检测和避开调试器。调试器通常被防御者用于跟踪和/或分析潜在的恶意软件载荷的执行。(引用：ProcessHacker Github)
+
+调试器逃避可能包括基于检查调试环境指示性工件的结果而改变行为。类似于[虚拟化/沙箱逃避](https://attack.mitre.org/techniques/T1497)，如果攻击者检测到调试器，他们可能会修改恶意软件以与受害者脱钩或隐藏植入物的核心功能。他们还可能在释放次要或附加载荷之前搜索调试器工件。
+
+具体的检查方式因目标和/或攻击者而异，但可能涉及[本地API](https://attack.mitre.org/techniques/T1106)函数调用，如<code>IsDebuggerPresent()</code>和<code>NtQueryInformationProcess()</code>，或者手动检查进程环境块（PEB）的<code>BeingDebugged</code>标志。其他检查调试工件的方法还可能涉及枚举硬件断点、中断汇编操作码、时间检查或在当前进程中引发异常时的测量（假设存在的调试器会“吞噬”或处理可能的错误）。（引用：hasherezade debug）（引用：AlKhaser Debug）（引用：vxunderground debug）
+
+攻击者可能会利用从这些调试器检查中获取的信息来塑造后续行为中的自动发现。也可以通过分离进程或通过循环[本地API](https://attack.mitre.org/techniques/T1106)函数调用（如<code>OutputDebugStringW()</code>）向调试日志中洪水般地注入无意义的数据来逃避调试器。（引用：wardle evilquest partii）（引用：Checkpoint Dridex Jan 2021）
+
 ## [T1647]:Plist File Modification
 > External ID: T1647
 > STIX ID: attack-pattern--7d20fff9-8751-404e-badd-ccd71bda0236
 > Platforms: ['macOS']
-> Tactics: ['defense-evasion']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)']
 
 
 **Description: **
