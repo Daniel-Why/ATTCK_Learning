@@ -807,50 +807,50 @@ Discovery consists of techniques an adversary may use to gain knowledge about th
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[System Service Discovery](##[T1007]:System Service Discovery)|||T1007|
-|[Application Window Discovery](##[T1010]:Application Window Discovery)|||T1010|
-|[Query Registry](##[T1012]:Query Registry)|||T1012|
-|[System Network Configuration Discovery](##[T1016]:System Network Configuration Discovery)|||T1016|
-||[Internet Connection Discovery](###[T1016.001]:Internet Connection Discovery)||T1016.001|
-|[Remote System Discovery](##[T1018]:Remote System Discovery)|||T1018|
-|[System Owner/User Discovery](##[T1033]:System Owner/User Discovery)|||T1033|
-|[Network Sniffing](##[T1040]:Network Sniffing)|||T1040|
-|[Network Service Discovery](##[T1046]:Network Service Discovery)|||T1046|
-|[System Network Connections Discovery](##[T1049]:System Network Connections Discovery)|||T1049|
-|[Process Discovery](##[T1057]:Process Discovery)|||T1057|
-|[Permission Groups Discovery](##[T1069]:Permission Groups Discovery)|||T1069|
-||[Local Groups](###[T1069.001]:Local Groups)||T1069.001|
-||[Domain Groups](###[T1069.002]:Domain Groups)||T1069.002|
-||[Cloud Groups](###[T1069.003]:Cloud Groups)||T1069.003|
-|[System Information Discovery](##[T1082]:System Information Discovery)|||T1082|
-|[File and Directory Discovery](##[T1083]:File and Directory Discovery)|||T1083|
-|[Account Discovery](##[T1087]:Account Discovery)|||T1087|
-||[Local Account](###[T1087.001]:Local Account)||T1087.001|
-||[Domain Account](###[T1087.002]:Domain Account)||T1087.002|
-||[Email Account](###[T1087.003]:Email Account)||T1087.003|
-||[Cloud Account](###[T1087.004]:Cloud Account)||T1087.004|
-|[Peripheral Device Discovery](##[T1120]:Peripheral Device Discovery)|||T1120|
-|[System Time Discovery](##[T1124]:System Time Discovery)|||T1124|
-|[Network Share Discovery](##[T1135]:Network Share Discovery)|||T1135|
-|[Password Policy Discovery](##[T1201]:Password Policy Discovery)|||T1201|
-|[Browser Information Discovery](##[T1217]:Browser Information Discovery)|||T1217|
-|[Domain Trust Discovery](##[T1482]:Domain Trust Discovery)|||T1482|
-|[Virtualization/Sandbox Evasion](##[T1497]:Virtualization/Sandbox Evasion)|||T1497|
-||[System Checks](###[T1497.001]:System Checks)||T1497.001|
-||[User Activity Based Checks](###[T1497.002]:User Activity Based Checks)||T1497.002|
-||[Time Based Evasion](###[T1497.003]:Time Based Evasion)||T1497.003|
-|[Software Discovery](##[T1518]:Software Discovery)|||T1518|
-||[Security Software Discovery](###[T1518.001]:Security Software Discovery)||T1518.001|
-|[Cloud Service Discovery](##[T1526]:Cloud Service Discovery)|||T1526|
-|[Cloud Service Dashboard](##[T1538]:Cloud Service Dashboard)|||T1538|
-|[Cloud Infrastructure Discovery](##[T1580]:Cloud Infrastructure Discovery)|||T1580|
-|[Container and Resource Discovery](##[T1613]:Container and Resource Discovery)|||T1613|
-|[System Location Discovery](##[T1614]:System Location Discovery)|||T1614|
-||[System Language Discovery](###[T1614.001]:System Language Discovery)||T1614.001|
-|[Group Policy Discovery](##[T1615]:Group Policy Discovery)|||T1615|
-|[Cloud Storage Object Discovery](##[T1619]:Cloud Storage Object Discovery)|||T1619|
-|[Debugger Evasion](##[T1622]:Debugger Evasion)|||T1622|
-|[Device Driver Discovery](##[T1652]:Device Driver Discovery)|||T1652|
+|[System Service Discovery](##[T1007]:System Service Discovery)||探索系统服务|T1007|
+|[Application Window Discovery](##[T1010]:Application Window Discovery)||探索应用程序窗口|T1010|
+|[Query Registry](##[T1012]:Query Registry)||查询注册表|T1012|
+|[System Network Configuration Discovery](##[T1016]:System Network Configuration Discovery)||探索系统网络配置|T1016|
+||[Internet Connection Discovery](###[T1016.001]:Internet Connection Discovery)|探索网络连接|T1016.001|
+|[Remote System Discovery](##[T1018]:Remote System Discovery)||探索远程系统|T1018|
+|[System Owner/User Discovery](##[T1033]:System Owner/User Discovery)||探索系统所有人/用户|T1033|
+|[Network Sniffing](##[T1040]:Network Sniffing)||网络嗅探|T1040|
+|[Network Service Discovery](##[T1046]:Network Service Discovery)||探索网络服务|T1046|
+|[System Network Connections Discovery](##[T1049]:System Network Connections Discovery)||探索系统网络连接|T1049|
+|[Process Discovery](##[T1057]:Process Discovery)||进程探索|T1057|
+|[Permission Groups Discovery](##[T1069]:Permission Groups Discovery)||探索权限组|T1069|
+||[Local Groups](###[T1069.001]:Local Groups)|本地组|T1069.001|
+||[Domain Groups](###[T1069.002]:Domain Groups)|域组|T1069.002|
+||[Cloud Groups](###[T1069.003]:Cloud Groups)|云组|T1069.003|
+|[System Information Discovery](##[T1082]:System Information Discovery)||探索系统信息|T1082|
+|[File and Directory Discovery](##[T1083]:File and Directory Discovery)||探索文件和目录|T1083|
+|[Account Discovery](##[T1087]:Account Discovery)||探索账户|T1087|
+||[Local Account](###[T1087.001]:Local Account)|本地账户|T1087.001|
+||[Domain Account](###[T1087.002]:Domain Account)|域账户|T1087.002|
+||[Email Account](###[T1087.003]:Email Account)|邮箱账户|T1087.003|
+||[Cloud Account](###[T1087.004]:Cloud Account)|云账户|T1087.004|
+|[Peripheral Device Discovery](##[T1120]:Peripheral Device Discovery)||探索外围设备|T1120|
+|[System Time Discovery](##[T1124]:System Time Discovery)||探索系统时间|T1124|
+|[Network Share Discovery](##[T1135]:Network Share Discovery)||探索网络共享|T1135|
+|[Password Policy Discovery](##[T1201]:Password Policy Discovery)||探索密码策略|T1201|
+|[Browser Information Discovery](##[T1217]:Browser Information Discovery)||参所浏览器信息|T1217|
+|[Domain Trust Discovery](##[T1482]:Domain Trust Discovery)||探索域信任|T1482|
+|[Virtualization/Sandbox Evasion](##[T1497]:Virtualization/Sandbox Evasion)||虚拟化/沙箱逃避|T1497|
+||[System Checks](###[T1497.001]:System Checks)|系统检测|T1497.001|
+||[User Activity Based Checks](###[T1497.002]:User Activity Based Checks)|基于用户活动检测|T1497.002|
+||[Time Based Evasion](###[T1497.003]:Time Based Evasion)|基于时间的检测|T1497.003|
+|[Software Discovery](##[T1518]:Software Discovery)||探索软件|T1518|
+||[Security Software Discovery](###[T1518.001]:Security Software Discovery)|探索安全软件|T1518.001|
+|[Cloud Service Discovery](##[T1526]:Cloud Service Discovery)||探索云服务|T1526|
+|[Cloud Service Dashboard](##[T1538]:Cloud Service Dashboard)||云服务控制台|T1538|
+|[Cloud Infrastructure Discovery](##[T1580]:Cloud Infrastructure Discovery)||探索云基础设施|T1580|
+|[Container and Resource Discovery](##[T1613]:Container and Resource Discovery)||探索容器和资源|T1613|
+|[System Location Discovery](##[T1614]:System Location Discovery)||探索系统位置|T1614|
+||[System Language Discovery](###[T1614.001]:System Language Discovery)|探索系统语言|T1614.001|
+|[Group Policy Discovery](##[T1615]:Group Policy Discovery)||探索组策略|T1615|
+|[Cloud Storage Object Discovery](##[T1619]:Cloud Storage Object Discovery)||探索云存储对象|T1619|
+|[Debugger Evasion](##[T1622]:Debugger Evasion)||调试器逃避|T1622|
+|[Device Driver Discovery](##[T1652]:Device Driver Discovery)||探索设备驱动|T1652|
 
 
 ## [TA0008]:Lateral Movement
@@ -867,28 +867,28 @@ Lateral Movement consists of techniques that adversaries use to enter and contro
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[Remote Services](##[T1021]:Remote Services)|||T1021|
-||[Remote Desktop Protocol](###[T1021.001]:Remote Desktop Protocol)||T1021.001|
-||[SMB/Windows Admin Shares](###[T1021.002]:SMB/Windows Admin Shares)||T1021.002|
-||[Distributed Component Object Model](###[T1021.003]:Distributed Component Object Model)||T1021.003|
-||[SSH](###[T1021.004]:SSH)||T1021.004|
-||[VNC](###[T1021.005]:VNC)||T1021.005|
-||[Windows Remote Management](###[T1021.006]:Windows Remote Management)||T1021.006|
-||[Cloud Services](###[T1021.007]:Cloud Services)||T1021.007|
-|[Software Deployment Tools](##[T1072]:Software Deployment Tools)|||T1072|
-|[Taint Shared Content](##[T1080]:Taint Shared Content)|||T1080|
-|[Replication Through Removable Media](##[T1091]:Replication Through Removable Media)|||T1091|
-|[Exploitation of Remote Services](##[T1210]:Exploitation of Remote Services)|||T1210|
-|[Internal Spearphishing](##[T1534]:Internal Spearphishing)|||T1534|
-|[Use Alternate Authentication Material](##[T1550]:Use Alternate Authentication Material)|||T1550|
-||[Application Access Token](###[T1550.001]:Application Access Token)||T1550.001|
-||[Pass the Hash](###[T1550.002]:Pass the Hash)||T1550.002|
-||[Pass the Ticket](###[T1550.003]:Pass the Ticket)||T1550.003|
-||[Web Session Cookie](###[T1550.004]:Web Session Cookie)||T1550.004|
-|[Remote Service Session Hijacking](##[T1563]:Remote Service Session Hijacking)|||T1563|
-||[SSH Hijacking](###[T1563.001]:SSH Hijacking)||T1563.001|
-||[RDP Hijacking](###[T1563.002]:RDP Hijacking)||T1563.002|
-|[Lateral Tool Transfer](##[T1570]:Lateral Tool Transfer)|||T1570|
+|[Remote Services](##[T1021]:Remote Services)||远程服务|T1021|
+||[Remote Desktop Protocol](###[T1021.001]:Remote Desktop Protocol)|远程桌面协议|T1021.001|
+||[SMB/Windows Admin Shares](###[T1021.002]:SMB/Windows Admin Shares)|SMB/Windows admin shares|T1021.002|
+||[Distributed Component Object Model](###[T1021.003]:Distributed Component Object Model)|分布式组件对象模型|T1021.003|
+||[SSH](###[T1021.004]:SSH)|SSH|T1021.004|
+||[VNC](###[T1021.005]:VNC)|VNC|T1021.005|
+||[Windows Remote Management](###[T1021.006]:Windows Remote Management)|windows 远程管理|T1021.006|
+||[Cloud Services](###[T1021.007]:Cloud Services)|云服务|T1021.007|
+|[Software Deployment Tools](##[T1072]:Software Deployment Tools)||软件开发工具|T1072|
+|[Taint Shared Content](##[T1080]:Taint Shared Content)||污染分享的内容|T1080|
+|[Replication Through Removable Media](##[T1091]:Replication Through Removable Media)||通过可移动介质进行复制|T1091|
+|[Exploitation of Remote Services](##[T1210]:Exploitation of Remote Services)||利用远程服务漏洞|T1210|
+|[Internal Spearphishing](##[T1534]:Internal Spearphishing)||内部钓鱼|T1534|
+|[Use Alternate Authentication Material](##[T1550]:Use Alternate Authentication Material)||使用备用的身份认证材料|T1550|
+||[Application Access Token](###[T1550.001]:Application Access Token)|应用访问令牌|T1550.001|
+||[Pass the Hash](###[T1550.002]:Pass the Hash)|密码哈希|T1550.002|
+||[Pass the Ticket](###[T1550.003]:Pass the Ticket)|密码票据|T1550.003|
+||[Web Session Cookie](###[T1550.004]:Web Session Cookie)|Web Session Cookie|T1550.004|
+|[Remote Service Session Hijacking](##[T1563]:Remote Service Session Hijacking)||远程服务Session劫持|T1563|
+||[SSH Hijacking](###[T1563.001]:SSH Hijacking)|SSH 劫持|T1563.001|
+||[RDP Hijacking](###[T1563.002]:RDP Hijacking)|RDP 劫持|T1563.002|
+|[Lateral Tool Transfer](##[T1570]:Lateral Tool Transfer)||横向工具传输|T1570|
 
 ## [TA0009]:Collection
 > External ID: TA0009
@@ -904,43 +904,43 @@ Collection consists of techniques adversaries may use to gather information and 
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[Data from Local System](##[T1005]:Data from Local System)|||T1005|
-|[Data from Removable Media](##[T1025]:Data from Removable Media)|||T1025|
-|[Data from Network Shared Drive](##[T1039]:Data from Network Shared Drive)|||T1039|
-|[Input Capture](##[T1056]:Input Capture)|||T1056|
-||[Keylogging](###[T1056.001]:Keylogging)||T1056.001|
-||[GUI Input Capture](###[T1056.002]:GUI Input Capture)||T1056.002|
-||[Web Portal Capture](###[T1056.003]:Web Portal Capture)||T1056.003|
-||[Credential API Hooking](###[T1056.004]:Credential API Hooking)||T1056.004|
-|[Data Staged](##[T1074]:Data Staged)|||T1074|
-||[Local Data Staging](###[T1074.001]:Local Data Staging)||T1074.001|
-||[Remote Data Staging](###[T1074.002]:Remote Data Staging)||T1074.002|
-|[Screen Capture](##[T1113]:Screen Capture)|||T1113|
-|[Email Collection](##[T1114]:Email Collection)|||T1114|
-||[Local Email Collection](###[T1114.001]:Local Email Collection)||T1114.001|
-||[Remote Email Collection](###[T1114.002]:Remote Email Collection)||T1114.002|
-||[Email Forwarding Rule](###[T1114.003]:Email Forwarding Rule)||T1114.003|
-|[Clipboard Data](##[T1115]:Clipboard Data)|||T1115|
-|[Automated Collection](##[T1119]:Automated Collection)|||T1119|
-|[Audio Capture](##[T1123]:Audio Capture)|||T1123|
-|[Video Capture](##[T1125]:Video Capture)|||T1125|
-|[Browser Session Hijacking](##[T1185]:Browser Session Hijacking)|||T1185|
-|[Data from Information Repositories](##[T1213]:Data from Information Repositories)|||T1213|
-||[Confluence](###[T1213.001]:Confluence)||T1213.001|
-||[Sharepoint](###[T1213.002]:Sharepoint)||T1213.002|
-||[Code Repositories](###[T1213.003]:Code Repositories)||T1213.003|
-|[Data from Cloud Storage](##[T1530]:Data from Cloud Storage)|||T1530|
-|[Adversary-in-the-Middle](##[T1557]:Adversary-in-the-Middle)|||T1557|
-||[LLMNR/NBT-NS Poisoning and SMB Relay](###[T1557.001]:LLMNR/NBT-NS Poisoning and SMB Relay)||T1557.001|
-||[ARP Cache Poisoning](###[T1557.002]:ARP Cache Poisoning)||T1557.002|
-||[DHCP Spoofing](###[T1557.003]:DHCP Spoofing)||T1557.003|
-|[Archive Collected Data](##[T1560]:Archive Collected Data)|||T1560|
-||[Archive via Utility](###[T1560.001]:Archive via Utility)||T1560.001|
-||[Archive via Library](###[T1560.002]:Archive via Library)||T1560.002|
-||[Archive via Custom Method](###[T1560.003]:Archive via Custom Method)||T1560.003|
-|[Data from Configuration Repository](##[T1602]:Data from Configuration Repository)|||T1602|
-||[SNMP (MIB Dump)](###[T1602.001]:SNMP (MIB Dump))||T1602.001|
-||[Network Device Configuration Dump](###[T1602.002]:Network Device Configuration Dump)||T1602.002|
+|[Data from Local System](##[T1005]:Data from Local System)||本地系统中的数据|T1005|
+|[Data from Removable Media](##[T1025]:Data from Removable Media)||可移动介质中的数据|T1025|
+|[Data from Network Shared Drive](##[T1039]:Data from Network Shared Drive)||网络共享设备中的数据|T1039|
+|[Input Capture](##[T1056]:Input Capture)||捕获输入|T1056|
+||[Keylogging](###[T1056.001]:Keylogging)|键盘记录|T1056.001|
+||[GUI Input Capture](###[T1056.002]:GUI Input Capture)|GUI 输入捕获|T1056.002|
+||[Web Portal Capture](###[T1056.003]:Web Portal Capture)|网页门户获取|T1056.003|
+||[Credential API Hooking](###[T1056.004]:Credential API Hooking)|凭证API Hooking|T1056.004|
+|[Data Staged](##[T1074]:Data Staged)||暂存数据|T1074|
+||[Local Data Staging](###[T1074.001]:Local Data Staging)|暂存本地数据|T1074.001|
+||[Remote Data Staging](###[T1074.002]:Remote Data Staging)|暂存远程数据|T1074.002|
+|[Screen Capture](##[T1113]:Screen Capture)||桌面捕捉|T1113|
+|[Email Collection](##[T1114]:Email Collection)||邮件搜集|T1114|
+||[Local Email Collection](###[T1114.001]:Local Email Collection)|本地邮件搜集|T1114.001|
+||[Remote Email Collection](###[T1114.002]:Remote Email Collection)|远程邮件搜集|T1114.002|
+||[Email Forwarding Rule](###[T1114.003]:Email Forwarding Rule)|邮件转发规则|T1114.003|
+|[Clipboard Data](##[T1115]:Clipboard Data)||剪贴板数据|T1115|
+|[Automated Collection](##[T1119]:Automated Collection)||自动搜集|T1119|
+|[Audio Capture](##[T1123]:Audio Capture)||音频捕捉|T1123|
+|[Video Capture](##[T1125]:Video Capture)||视频捕捉|T1125|
+|[Browser Session Hijacking](##[T1185]:Browser Session Hijacking)||浏览器Session劫持|T1185|
+|[Data from Information Repositories](##[T1213]:Data from Information Repositories)||信息库中的数据|T1213|
+||[Confluence](###[T1213.001]:Confluence)|Confluence|T1213.001|
+||[Sharepoint](###[T1213.002]:Sharepoint)|网络平台|T1213.002|
+||[Code Repositories](###[T1213.003]:Code Repositories)|代码仓库|T1213.003|
+|[Data from Cloud Storage](##[T1530]:Data from Cloud Storage)||云存储中的数据|T1530|
+|[Adversary-in-the-Middle](##[T1557]:Adversary-in-the-Middle)||中间人攻击|T1557|
+||[LLMNR/NBT-NS Poisoning and SMB Relay](###[T1557.001]:LLMNR/NBT-NS Poisoning and SMB Relay)|LLMNR/NBT-NS毒化和SMB 延迟|T1557.001|
+||[ARP Cache Poisoning](###[T1557.002]:ARP Cache Poisoning)|ARP缓存毒化|T1557.002|
+||[DHCP Spoofing](###[T1557.003]:DHCP Spoofing)|DHCP欺骗|T1557.003|
+|[Archive Collected Data](##[T1560]:Archive Collected Data)||归档搜索到的数据|T1560|
+||[Archive via Utility](###[T1560.001]:Archive via Utility)|通过程序归档|T1560.001|
+||[Archive via Library](###[T1560.002]:Archive via Library)|通过库归档|T1560.002|
+||[Archive via Custom Method](###[T1560.003]:Archive via Custom Method)|通过自定义方法归档|T1560.003|
+|[Data from Configuration Repository](##[T1602]:Data from Configuration Repository)||配置存储库中的数据|T1602|
+||[SNMP (MIB Dump)](###[T1602.001]:SNMP (MIB Dump))|SNMP(MIB Dump)|T1602.001|
+||[Network Device Configuration Dump](###[T1602.002]:Network Device Configuration Dump)|网络设备配置Dump|T1602.002|
 
 ## [TA0011]:Command and Control
 > External ID: TA0011
@@ -956,45 +956,45 @@ Command and Control consists of techniques that adversaries may use to communica
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[Data Obfuscation](##[T1001]:Data Obfuscation)|||T1001|
-||[Junk Data](###[T1001.001]:Junk Data)||T1001.001|
-||[Steganography](###[T1001.002]:Steganography)||T1001.002|
-||[Protocol Impersonation](###[T1001.003]:Protocol Impersonation)||T1001.003|
-|[Fallback Channels](##[T1008]:Fallback Channels)|||T1008|
-|[Application Layer Protocol](##[T1071]:Application Layer Protocol)|||T1071|
-||[Web Protocols](###[T1071.001]:Web Protocols)||T1071.001|
-||[File Transfer Protocols](###[T1071.002]:File Transfer Protocols)||T1071.002|
-||[Mail Protocols](###[T1071.003]:Mail Protocols)||T1071.003|
-||[DNS](###[T1071.004]:DNS)||T1071.004|
-|[Proxy](##[T1090]:Proxy)|||T1090|
-||[Internal Proxy](###[T1090.001]:Internal Proxy)||T1090.001|
-||[External Proxy](###[T1090.002]:External Proxy)||T1090.002|
-||[Multi-hop Proxy](###[T1090.003]:Multi-hop Proxy)||T1090.003|
-||[Domain Fronting](###[T1090.004]:Domain Fronting)||T1090.004|
-|[Communication Through Removable Media](##[T1092]:Communication Through Removable Media)|||T1092|
-|[Non-Application Layer Protocol](##[T1095]:Non-Application Layer Protocol)|||T1095|
-|[Web Service](##[T1102]:Web Service)|||T1102|
-||[Dead Drop Resolver](###[T1102.001]:Dead Drop Resolver)||T1102.001|
-||[Bidirectional Communication](###[T1102.002]:Bidirectional Communication)||T1102.002|
-||[One-Way Communication](###[T1102.003]:One-Way Communication)||T1102.003|
-|[Multi-Stage Channels](##[T1104]:Multi-Stage Channels)|||T1104|
-|[Ingress Tool Transfer](##[T1105]:Ingress Tool Transfer)|||T1105|
-|[Data Encoding](##[T1132]:Data Encoding)|||T1132|
-||[Standard Encoding](###[T1132.001]:Standard Encoding)||T1132.001|
-||[Non-Standard Encoding](###[T1132.002]:Non-Standard Encoding)||T1132.002|
-|[Traffic Signaling](##[T1205]:Traffic Signaling)|||T1205|
-||[Port Knocking](###[T1205.001]:Port Knocking)||T1205.001|
-||[Socket Filters](###[T1205.002]:Socket Filters)||T1205.002|
-|[Remote Access Software](##[T1219]:Remote Access Software)|||T1219|
-|[Dynamic Resolution](##[T1568]:Dynamic Resolution)|||T1568|
-||[Fast Flux DNS](###[T1568.001]:Fast Flux DNS)||T1568.001|
-||[Domain Generation Algorithms](###[T1568.002]:Domain Generation Algorithms)||T1568.002|
-||[DNS Calculation](###[T1568.003]:DNS Calculation)||T1568.003|
-|[Non-Standard Port](##[T1571]:Non-Standard Port)|||T1571|
-|[Protocol Tunneling](##[T1572]:Protocol Tunneling)|||T1572|
-|[Encrypted Channel](##[T1573]:Encrypted Channel)|||T1573|
-||[Symmetric Cryptography](###[T1573.001]:Symmetric Cryptography)||T1573.001|
-||[Asymmetric Cryptography](###[T1573.002]:Asymmetric Cryptography)||T1573.002|
+|[Data Obfuscation](##[T1001]:Data Obfuscation)||数据混淆|T1001|
+||[Junk Data](###[T1001.001]:Junk Data)|垃圾数据|T1001.001|
+||[Steganography](###[T1001.002]:Steganography)|隐写术|T1001.002|
+||[Protocol Impersonation](###[T1001.003]:Protocol Impersonation)|协议伪造|T1001.003|
+|[Fallback Channels](##[T1008]:Fallback Channels)||备用通道|T1008|
+|[Application Layer Protocol](##[T1071]:Application Layer Protocol)||应用层协议|T1071|
+||[Web Protocols](###[T1071.001]:Web Protocols)|web协议|T1071.001|
+||[File Transfer Protocols](###[T1071.002]:File Transfer Protocols)|文件传输协议|T1071.002|
+||[Mail Protocols](###[T1071.003]:Mail Protocols)|邮件协议|T1071.003|
+||[DNS](###[T1071.004]:DNS)|DNS|T1071.004|
+|[Proxy](##[T1090]:Proxy)||代理|T1090|
+||[Internal Proxy](###[T1090.001]:Internal Proxy)|内部代理|T1090.001|
+||[External Proxy](###[T1090.002]:External Proxy)|外部代理|T1090.002|
+||[Multi-hop Proxy](###[T1090.003]:Multi-hop Proxy)|多跳代理|T1090.003|
+||[Domain Fronting](###[T1090.004]:Domain Fronting)|域前置|T1090.004|
+|[Communication Through Removable Media](##[T1092]:Communication Through Removable Media)||通过可移植介质通信|T1092|
+|[Non-Application Layer Protocol](##[T1095]:Non-Application Layer Protocol)||非应用层协议|T1095|
+|[Web Service](##[T1102]:Web Service)||Web服务|T1102|
+||[Dead Drop Resolver](###[T1102.001]:Dead Drop Resolver)|Dead Drop Resolver (DDR)|T1102.001|
+||[Bidirectional Communication](###[T1102.002]:Bidirectional Communication)|双向通信|T1102.002|
+||[One-Way Communication](###[T1102.003]:One-Way Communication)|单向通信|T1102.003|
+|[Multi-Stage Channels](##[T1104]:Multi-Stage Channels)||多级通道|T1104|
+|[Ingress Tool Transfer](##[T1105]:Ingress Tool Transfer)||Ingress 工具传输|T1105|
+|[Data Encoding](##[T1132]:Data Encoding)||数据加密|T1132|
+||[Standard Encoding](###[T1132.001]:Standard Encoding)|标准加密|T1132.001|
+||[Non-Standard Encoding](###[T1132.002]:Non-Standard Encoding)|非标准加密|T1132.002|
+|[Traffic Signaling](##[T1205]:Traffic Signaling)||流量信号|T1205|
+||[Port Knocking](###[T1205.001]:Port Knocking)|端口敲门|T1205.001|
+||[Socket Filters](###[T1205.002]:Socket Filters)|Socket过滤器|T1205.002|
+|[Remote Access Software](##[T1219]:Remote Access Software)||远程接入软件|T1219|
+|[Dynamic Resolution](##[T1568]:Dynamic Resolution)||动态解析|T1568|
+||[Fast Flux DNS](###[T1568.001]:Fast Flux DNS)|Fast Flux DNS|T1568.001|
+||[Domain Generation Algorithms](###[T1568.002]:Domain Generation Algorithms)|域名生成算法|T1568.002|
+||[DNS Calculation](###[T1568.003]:DNS Calculation)|DNS 计算|T1568.003|
+|[Non-Standard Port](##[T1571]:Non-Standard Port)||非标准端口|T1571|
+|[Protocol Tunneling](##[T1572]:Protocol Tunneling)||协议隧道|T1572|
+|[Encrypted Channel](##[T1573]:Encrypted Channel)||加密信道|T1573|
+||[Symmetric Cryptography](###[T1573.001]:Symmetric Cryptography)|对称加密|T1573.001|
+||[Asymmetric Cryptography](###[T1573.002]:Asymmetric Cryptography)|非对称加密|T1573.002|
 
 ## [TA0010]:Exfiltration
 > External ID: TA0010
@@ -1010,24 +1010,24 @@ Exfiltration consists of techniques that adversaries may use to steal data from 
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[Exfiltration Over Other Network Medium](##[T1011]:Exfiltration Over Other Network Medium)|||T1011|
-||[Exfiltration Over Bluetooth](###[T1011.001]:Exfiltration Over Bluetooth)||T1011.001|
-|[Automated Exfiltration](##[T1020]:Automated Exfiltration)|||T1020|
-||[Traffic Duplication](###[T1020.001]:Traffic Duplication)||T1020.001|
-|[Scheduled Transfer](##[T1029]:Scheduled Transfer)|||T1029|
-|[Data Transfer Size Limits](##[T1030]:Data Transfer Size Limits)|||T1030|
-|[Exfiltration Over C2 Channel](##[T1041]:Exfiltration Over C2 Channel)|||T1041|
-|[Exfiltration Over Alternative Protocol](##[T1048]:Exfiltration Over Alternative Protocol)|||T1048|
-||[Exfiltration Over Symmetric Encrypted Non-C2 Protocol](###[T1048.001]:Exfiltration Over Symmetric Encrypted Non-C2 Protocol)||T1048.001|
-||[Exfiltration Over Asymmetric Encrypted Non-C2 Protocol](###[T1048.002]:Exfiltration Over Asymmetric Encrypted Non-C2 Protocol)||T1048.002|
-||[Exfiltration Over Unencrypted Non-C2 Protocol](###[T1048.003]:Exfiltration Over Unencrypted Non-C2 Protocol)||T1048.003|
-|[Exfiltration Over Physical Medium](##[T1052]:Exfiltration Over Physical Medium)|||T1052|
-||[Exfiltration over USB](###[T1052.001]:Exfiltration over USB)||T1052.001|
-|[Transfer Data to Cloud Account](##[T1537]:Transfer Data to Cloud Account)|||T1537|
-|[Exfiltration Over Web Service](##[T1567]:Exfiltration Over Web Service)|||T1567|
-||[Exfiltration to Code Repository](###[T1567.001]:Exfiltration to Code Repository)||T1567.001|
-||[Exfiltration to Cloud Storage](###[T1567.002]:Exfiltration to Cloud Storage)||T1567.002|
-||[Exfiltration to Text Storage Sites](###[T1567.003]:Exfiltration to Text Storage Sites)||T1567.003|
+|[Exfiltration Over Other Network Medium](##[T1011]:Exfiltration Over Other Network Medium)||通过其他网络介质渗出|T1011|
+||[Exfiltration Over Bluetooth](###[T1011.001]:Exfiltration Over Bluetooth)|通过蓝牙渗出|T1011.001|
+|[Automated Exfiltration](##[T1020]:Automated Exfiltration)||自动渗出|T1020|
+||[Traffic Duplication](###[T1020.001]:Traffic Duplication)|流量复制|T1020.001|
+|[Scheduled Transfer](##[T1029]:Scheduled Transfer)||数据传输计划|T1029|
+|[Data Transfer Size Limits](##[T1030]:Data Transfer Size Limits)||限制数据传输大小|T1030|
+|[Exfiltration Over C2 Channel](##[T1041]:Exfiltration Over C2 Channel)||通过C2信道渗出|T1041|
+|[Exfiltration Over Alternative Protocol](##[T1048]:Exfiltration Over Alternative Protocol)||通过备选协议渗出|T1048|
+||[Exfiltration Over Symmetric Encrypted Non-C2 Protocol](###[T1048.001]:Exfiltration Over Symmetric Encrypted Non-C2 Protocol)|通过对称加密的非C2协议渗出|T1048.001|
+||[Exfiltration Over Asymmetric Encrypted Non-C2 Protocol](###[T1048.002]:Exfiltration Over Asymmetric Encrypted Non-C2 Protocol)|通过非对称加密的非C2协议渗出|T1048.002|
+||[Exfiltration Over Unencrypted Non-C2 Protocol](###[T1048.003]:Exfiltration Over Unencrypted Non-C2 Protocol)|通过未加密的非C2协议渗出|T1048.003|
+|[Exfiltration Over Physical Medium](##[T1052]:Exfiltration Over Physical Medium)||通过物理介质渗出|T1052|
+||[Exfiltration over USB](###[T1052.001]:Exfiltration over USB)|通过USB渗出|T1052.001|
+|[Transfer Data to Cloud Account](##[T1537]:Transfer Data to Cloud Account)||将数据传输至云账户|T1537|
+|[Exfiltration Over Web Service](##[T1567]:Exfiltration Over Web Service)||通过Web服务渗出|T1567|
+||[Exfiltration to Code Repository](###[T1567.001]:Exfiltration to Code Repository)|通过代码库渗出|T1567.001|
+||[Exfiltration to Cloud Storage](###[T1567.002]:Exfiltration to Cloud Storage)|通过云存储渗出|T1567.002|
+||[Exfiltration to Text Storage Sites](###[T1567.003]:Exfiltration to Text Storage Sites)|通过文本存储站点渗出|T1567.003|
 
 ## [TA0040]:Impact
 > External ID: TA0040
@@ -1043,36 +1043,39 @@ Impact consists of techniques that adversaries use to disrupt availability or co
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[Data Destruction](##[T1485]:Data Destruction)|||T1485|
-|[Data Encrypted for Impact](##[T1486]:Data Encrypted for Impact)|||T1486|
-|[Service Stop](##[T1489]:Service Stop)|||T1489|
-|[Inhibit System Recovery](##[T1490]:Inhibit System Recovery)|||T1490|
-|[Defacement](##[T1491]:Defacement)|||T1491|
-||[Internal Defacement](###[T1491.001]:Internal Defacement)||T1491.001|
-||[External Defacement](###[T1491.002]:External Defacement)||T1491.002|
-|[Firmware Corruption](##[T1495]:Firmware Corruption)|||T1495|
-|[Resource Hijacking](##[T1496]:Resource Hijacking)|||T1496|
-|[Network Denial of Service](##[T1498]:Network Denial of Service)|||T1498|
-||[Direct Network Flood](###[T1498.001]:Direct Network Flood)||T1498.001|
-||[Reflection Amplification](###[T1498.002]:Reflection Amplification)||T1498.002|
-|[Endpoint Denial of Service](##[T1499]:Endpoint Denial of Service)|||T1499|
-||[OS Exhaustion Flood](###[T1499.001]:OS Exhaustion Flood)||T1499.001|
-||[Service Exhaustion Flood](###[T1499.002]:Service Exhaustion Flood)||T1499.002|
-||[Application Exhaustion Flood](###[T1499.003]:Application Exhaustion Flood)||T1499.003|
-||[Application or System Exploitation](###[T1499.004]:Application or System Exploitation)||T1499.004|
-|[System Shutdown/Reboot](##[T1529]:System Shutdown/Reboot)|||T1529|
-|[Account Access Removal](##[T1531]:Account Access Removal)|||T1531|
-|[Disk Wipe](##[T1561]:Disk Wipe)|||T1561|
-||[Disk Content Wipe](###[T1561.001]:Disk Content Wipe)||T1561.001|
-||[Disk Structure Wipe](###[T1561.002]:Disk Structure Wipe)||T1561.002|
-|[Data Manipulation](##[T1565]:Data Manipulation)|||T1565|
-||[Stored Data Manipulation](###[T1565.001]:Stored Data Manipulation)||T1565.001|
-||[Transmitted Data Manipulation](###[T1565.002]:Transmitted Data Manipulation)||T1565.002|
-||[Runtime Data Manipulation](###[T1565.003]:Runtime Data Manipulation)||T1565.003|
+|[Data Destruction](##[T1485]:Data Destruction)||破坏数据|T1485|
+|[Data Encrypted for Impact](##[T1486]:Data Encrypted for Impact)||加密数据|T1486|
+|[Service Stop](##[T1489]:Service Stop)||停止服务|T1489|
+|[Inhibit System Recovery](##[T1490]:Inhibit System Recovery)||禁止系统恢复|T1490|
+|[Defacement](##[T1491]:Defacement)||涂改|T1491|
+||[Internal Defacement](###[T1491.001]:Internal Defacement)|内部涂改|T1491.001|
+||[External Defacement](###[T1491.002]:External Defacement)|外部涂改|T1491.002|
+|[Firmware Corruption](##[T1495]:Firmware Corruption)||固件损坏|T1495|
+|[Resource Hijacking](##[T1496]:Resource Hijacking)||资源劫持|T1496|
+|[Network Denial of Service](##[T1498]:Network Denial of Service)||网络拒绝服务|T1498|
+||[Direct Network Flood](###[T1498.001]:Direct Network Flood)|直接网络泛洪|T1498.001|
+||[Reflection Amplification](###[T1498.002]:Reflection Amplification)| 反射放大|T1498.002|
+|[Endpoint Denial of Service](##[T1499]:Endpoint Denial of Service)||终端拒绝服务|T1499|
+||[OS Exhaustion Flood](###[T1499.001]:OS Exhaustion Flood)|操作系统耗尽泛洪|T1499.001|
+||[Service Exhaustion Flood](###[T1499.002]:Service Exhaustion Flood)|服务耗尽泛洪|T1499.002|
+||[Application Exhaustion Flood](###[T1499.003]:Application Exhaustion Flood)|应用耗尽泛洪|T1499.003|
+||[Application or System Exploitation](###[T1499.004]:Application or System Exploitation)|利用应用或系统漏洞|T1499.004|
+|[System Shutdown/Reboot](##[T1529]:System Shutdown/Reboot)||系统关机/重启|T1529|
+|[Account Access Removal](##[T1531]:Account Access Removal)||删除账户访问权限|T1531|
+|[Disk Wipe](##[T1561]:Disk Wipe)||擦除磁盘|T1561|
+||[Disk Content Wipe](###[T1561.001]:Disk Content Wipe)|擦除磁盘内容|T1561.001|
+||[Disk Structure Wipe](###[T1561.002]:Disk Structure Wipe)|擦除磁盘结构|T1561.002|
+|[Data Manipulation](##[T1565]:Data Manipulation)||操纵数据|T1565|
+||[Stored Data Manipulation](###[T1565.001]:Stored Data Manipulation)|操纵存储的数据|T1565.001|
+||[Transmitted Data Manipulation](###[T1565.002]:Transmitted Data Manipulation)|操纵传输的数据|T1565.002|
+||[Runtime Data Manipulation](###[T1565.003]:Runtime Data Manipulation)|操纵运行时的数据|T1565.003|
+
+>  **Defacement 和data destruction有什么区别**
+> Defacement是指对网站或软件界面进行恶意篡改或修改，通过改变网站的外观、内容或功能，从而显著改变其原有的设计意图。
+> Defacement一般是为了对目标实体进行诋毁、抗议或宣称权利，并在互联网上公开展示。而data destruction指的是有意地删除、破坏或毁坏数据，目的是永久删除或破坏数据以防止其恢复。Data destruction可以是故意的，例如攻击者通过恶意软件或黑客活动来销毁目标系统的数据；也可以是无意的，例如由于硬盘故障或自然灾害导致的数据丢失。
+> 区别在于，Defacement更侧重于影响网站或软件的外观和功能，通常不直接导致数据的删除或破坏；而data destruction则专注于对数据的有意或无意的删除、破坏或毁坏。
 
 ---
-
-
 
 # Techniques	
 
@@ -1080,7 +1083,7 @@ Impact consists of techniques that adversaries use to disrupt availability or co
 > External ID: T1001
 > STIX ID: attack-pattern--ad255bfe-a9e6-4b52-a258-8d3462abe842
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -1089,7 +1092,7 @@ Impact consists of techniques that adversaries use to disrupt availability or co
 > External ID: T1001.001
 > STIX ID: attack-pattern--f7c0689c-4dbd-489b-81be-7cb7c7079ade
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -1098,7 +1101,7 @@ Impact consists of techniques that adversaries use to disrupt availability or co
 > External ID: T1001.002
 > STIX ID: attack-pattern--eec23884-3fa1-4d8a-ac50-6f104d51e235
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -1107,7 +1110,7 @@ Impact consists of techniques that adversaries use to disrupt availability or co
 > External ID: T1001.003
 > STIX ID: attack-pattern--c325b232-d5bc-4dde-a3ec-71f3db9e8adc
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -1287,7 +1290,7 @@ The Linux utility, unshadow, can be used to combine the two files in a format su
 > External ID: T1005
 > STIX ID: attack-pattern--3c4a2599-71ee-4405-ba1e-0e28414b4bc5
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -1319,7 +1322,7 @@ Direct Volume Access 在某些特定的场景中非常有用，例如进行数�
 > External ID: T1007
 > STIX ID: attack-pattern--322bad5a-1c49-4d23-ab79-76d641794afa
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -1330,7 +1333,7 @@ Adversaries may use the information from [System Service Discovery](https://atta
 > External ID: T1008
 > STIX ID: attack-pattern--f24faf46-3b26-4dbb-98f2-63460498e433
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -1339,7 +1342,7 @@ Adversaries may use the information from [System Service Discovery](https://atta
 > External ID: T1010
 > STIX ID: attack-pattern--4ae4f953-fe58-4cc8-a327-33257e30a830
 > Platforms: ['macOS', 'Windows', 'Linux']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -1350,7 +1353,7 @@ Adversaries typically abuse system features for this type of enumeration. For ex
 > External ID: T1011
 > STIX ID: attack-pattern--51ea26b1-ff1e-4faa-b1a0-1114cd298c87
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -1361,7 +1364,7 @@ Adversaries may choose to do this if they have sufficient access or proximity, a
 > External ID: T1011.001
 > STIX ID: attack-pattern--613d08bc-e8f4-4791-80b0-c8b974340dfd
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -1372,7 +1375,7 @@ Adversaries may choose to do this if they have sufficient access and proximity. 
 > External ID: T1012
 > STIX ID: attack-pattern--c32f7008-9fea-41f7-8366-5eb9b74bd896
 > Platforms: ['Windows']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -1399,7 +1402,7 @@ Rootkit或Rootkit启用功能可能驻留在操作系统的用户层或内核层
 > External ID: T1016
 > STIX ID: attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -1412,7 +1415,7 @@ Adversaries may use the information from [System Network Configuration Discovery
 > External ID: T1016.001
 > STIX ID: attack-pattern--132d5b37-aac5-4378-a8dc-3127b18a73dc
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -1423,7 +1426,7 @@ Adversaries may use the results and responses from these requests to determine i
 > External ID: T1018
 > STIX ID: attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -1437,8 +1440,7 @@ Adversaries may also target discovery of network infrastructure as well as lever
 > External ID: T1020
 > STIX ID: attack-pattern--774a3188-6ba9-4dc4-879d-d54ee48a5ce9
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['exfiltration']
-
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 **Description: **
  Adversaries may exfiltrate data, such as sensitive documents, through the use of automated processing after being gathered during Collection. 
@@ -1448,7 +1450,7 @@ When automated exfiltration is used, other exfiltration techniques likely apply 
 > External ID: T1020.001
 > STIX ID: attack-pattern--7c46b364-8496-4234-8a56-f7e6727e21e1
 > Platforms: ['Network', 'IaaS']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -1463,7 +1465,7 @@ Adversaries may use traffic duplication in conjunction with [Network Sniffing](h
 > External ID: T1021
 > STIX ID: attack-pattern--54a649ff-439a-41a4-9856-8d144a2551ba
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -1476,7 +1478,7 @@ Legitimate applications (such as [Software Deployment Tools](https://attack.mitr
 > External ID: T1021.001
 > STIX ID: attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf
 > Platforms: ['Windows']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -1489,7 +1491,7 @@ Adversaries may connect to a remote system over RDP/RDS to expand access if the 
 > External ID: T1021.002
 > STIX ID: attack-pattern--4f9ca633-15c5-463c-9724-bdcd54fde541
 > Platforms: ['Windows']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -1502,7 +1504,7 @@ Windows systems have hidden network shares that are accessible only to administr
 > External ID: T1021.003
 > STIX ID: attack-pattern--68a0c5ed-bee2-4513-830d-5b0d650139bd
 > Platforms: ['Windows']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -1517,7 +1519,7 @@ Through DCOM, adversaries operating in the context of an appropriately privilege
 > External ID: T1021.004
 > STIX ID: attack-pattern--2db31dcd-54da-405d-acef-b9129b816ed6
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -1528,7 +1530,7 @@ SSH is a protocol that allows authorized users to open remote shells on other co
 > External ID: T1021.005
 > STIX ID: attack-pattern--01327cde-66c4-4123-bf34-5f258d59457b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -1541,7 +1543,7 @@ Adversaries may abuse VNC to perform malicious actions as the logged-on user suc
 > External ID: T1021.006
 > STIX ID: attack-pattern--60d0c01d-e2bf-49dd-a453-f8a9c9fa6f65
 > Platforms: ['Windows']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -1552,7 +1554,7 @@ WinRM is the name of both a Windows service and a protocol that allows a user to
 > External ID: T1021.007
 > STIX ID: attack-pattern--8861073d-d1b8-4941-82ce-dce621d398f0
 > Platforms: ['Office 365', 'Azure AD', 'SaaS', 'IaaS', 'Google Workspace']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -1565,7 +1567,7 @@ In some cases, adversaries may be able to authenticate to these services via [Ap
 > External ID: T1025
 > STIX ID: attack-pattern--1b7ba276-eedc-4951-a762-0ceea2c030ec
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -1791,18 +1793,21 @@ Some forms of fileless storage activity may indirectly create artifacts in the f
 > External ID: T1029
 > STIX ID: attack-pattern--4eeaf8a9-c86b-4954-a663-9555fb406466
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
  Adversaries may schedule data exfiltration to be performed only at certain times of day or at certain intervals. This could be done to blend traffic patterns with normal activity or availability.
 
 When scheduled exfiltration is used, other exfiltration techniques likely apply as well to transfer the information out of the network, such as [Exfiltration Over C2 Channel](https://attack.mitre.org/techniques/T1041) or [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048).
+
+Scheduled Transfer是指在预定时间执行数据传输的过程。它是一种自动化的数据传输方法，可用于定期将文件、数据或信息从一个位置传输到另一个位置。
+
 ## [T1030]:Data Transfer Size Limits
 > External ID: T1030
 > STIX ID: attack-pattern--c3888c54-775d-4b2f-b759-75a2ececcbfd
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -1811,7 +1816,7 @@ When scheduled exfiltration is used, other exfiltration techniques likely apply 
 > External ID: T1033
 > STIX ID: attack-pattern--03d7999c-1f4c-42cc-8373-e7690d318104
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -2110,7 +2115,7 @@ Startup Items 是指在计算机启动时自动运行的应用程序或服务。
 > External ID: T1039
 > STIX ID: attack-pattern--ae676644-d2d2-41b7-af7e-9bed1b55898c
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -2119,7 +2124,7 @@ Startup Items 是指在计算机启动时自动运行的应用程序或服务。
 > External ID: T1040
 > STIX ID: attack-pattern--3257eb21-f9a7-4430-8de1-d8b6e288f529
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network', 'IaaS']
-> Tactics: ['[credential-access](##[TA0006]:Credential Access)', 'discovery']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -2136,7 +2141,7 @@ On network devices, adversaries may perform network captures using [Network Devi
 > External ID: T1041
 > STIX ID: attack-pattern--92d7da27-2d91-488e-a00c-059dc162766d
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -2145,7 +2150,7 @@ On network devices, adversaries may perform network captures using [Network Devi
 > External ID: T1046
 > STIX ID: attack-pattern--e3a12395-188d-4051-9a16-ea8e14d07b88
 > Platforms: ['Windows', 'IaaS', 'Linux', 'macOS', 'Containers', 'Network']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -2158,7 +2163,7 @@ Within macOS environments, adversaries may use the native Bonjour application to
 > External ID: T1047
 > STIX ID: attack-pattern--01a5a209-b94c-450b-b7f9-946497d91055
 > Platforms: ['Windows']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -2169,7 +2174,7 @@ An adversary can use WMI to interact with local and remote systems and use it as
 > External ID: T1048
 > STIX ID: attack-pattern--a19e86f8-1c0a-4fea-8407-23b73d615776
 > Platforms: ['Linux', 'macOS', 'Windows', 'Office 365', 'SaaS', 'IaaS', 'Google Workspace', 'Network']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -2184,7 +2189,7 @@ Many IaaS and SaaS platforms (such as Microsoft Exchange, Microsoft SharePoint, 
 > External ID: T1048.001
 > STIX ID: attack-pattern--79a4052e-1a89-4b09-aea6-51f1d11fe19c
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -2197,7 +2202,7 @@ Network protocols that use asymmetric encryption often utilize symmetric encrypt
 > External ID: T1048.002
 > STIX ID: attack-pattern--8e350c1d-ac79-4b5c-bd4e-7476d7e84ec5
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -2210,7 +2215,7 @@ Network protocols that use asymmetric encryption (such as HTTPS/TLS/SSL) often u
 > External ID: T1048.003
 > STIX ID: attack-pattern--fb8d023d-45be-47e9-bc51-f56bcae6435b
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -2221,7 +2226,7 @@ Adversaries may opt to obfuscate this data, without the use of encryption, withi
 > External ID: T1049
 > STIX ID: attack-pattern--7e150503-88e7-4861-866b-ff1ac82c4475
 > Platforms: ['Windows', 'IaaS', 'Linux', 'macOS', 'Network']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -2234,7 +2239,7 @@ Utilities and commands that acquire this information include [netstat](https://a
 > External ID: T1052
 > STIX ID: attack-pattern--e6415f09-df0e-48de-9aba-928c902b7549
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -2243,7 +2248,7 @@ Utilities and commands that acquire this information include [netstat](https://a
 > External ID: T1052.001
 > STIX ID: attack-pattern--a3e1e6c5-9c74-4fc0-a16c-a9d228c17829
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -2252,7 +2257,7 @@ Utilities and commands that acquire this information include [netstat](https://a
 > External ID: T1053
 > STIX ID: attack-pattern--35dd844a-b219-4e2b-a6bb-efa9a75995a9
 > Platforms: ['Windows', 'Linux', 'macOS', 'Containers']
-> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
+> Tactics: ['[execution](##[TA0002]:Execution)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2263,7 +2268,7 @@ Adversaries may use task scheduling to execute programs at system startup or on 
 > External ID: T1053.002
 > STIX ID: attack-pattern--f3d95a1f-bba2-44ce-9af7-37866cd63fd0
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
+> Tactics: ['[execution](##[TA0002]:Execution)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 **Description: **
  Adversaries may abuse the [at](https://attack.mitre.org/software/S0110) utility to perform task scheduling for initial or recurring execution of malicious code. The [at](https://attack.mitre.org/software/S0110) utility exists as an executable within Windows, Linux, and macOS for scheduling tasks at a specified time and date. Although deprecated in favor of [Scheduled Task](https://attack.mitre.org/techniques/T1053/005)'s [schtasks](https://attack.mitre.org/software/S0111) in Windows environments, using [at](https://attack.mitre.org/software/S0110) requires that the Task Scheduler service be running, and the user to be logged on as a member of the local Administrators group.
@@ -2277,7 +2282,7 @@ In Linux environments, adversaries may also abuse [at](https://attack.mitre.org/
 > External ID: T1053.003
 > STIX ID: attack-pattern--2acf44aa-542f-4366-b4eb-55ef5747759c
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
+> Tactics: ['[execution](##[TA0002]:Execution)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2288,7 +2293,7 @@ An adversary may use <code>cron</code> in Linux or Unix environments to execute 
 > External ID: T1053.005
 > STIX ID: attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9
 > Platforms: ['Windows']
-> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
+> Tactics: ['[execution](##[TA0002]:Execution)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2303,7 +2308,7 @@ Adversaries may also create "hidden" scheduled tasks (i.e. [Hide Artifacts](http
 > External ID: T1053.006
 > STIX ID: attack-pattern--a542bac9-7bc1-4da7-9a09-96f69e23cc21
 > Platforms: ['Linux']
-> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
+> Tactics: ['[execution](##[TA0002]:Execution)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2316,7 +2321,7 @@ An adversary may use systemd timers to execute malicious code at system startup 
 > External ID: T1053.007
 > STIX ID: attack-pattern--1126cab1-c700-412f-a510-61f4937bb096
 > Platforms: ['Containers']
-> Tactics: ['execution', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
+> Tactics: ['[execution](##[TA0002]:Execution)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)']
 
 
 **Description: **
@@ -2652,7 +2657,7 @@ ListPlanting的一些变体可能会在目标进程中分配内存，然后使�
 > External ID: T1056
 > STIX ID: attack-pattern--bb5a00de-e086-4859-a231-fa793f6797e2
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['collection', '[credential-access](##[TA0006]:Credential Access)']
+> Tactics: ['[collection](##[TA0009]:Collection)', '[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  Adversaries may use methods of capturing user input to obtain credentials or collect information. During normal system usage, users often provide credentials to various different locations, such as login pages/portals or system dialog boxes. Input capture mechanisms may be transparent to the user (e.g. [Credential API Hooking](https://attack.mitre.org/techniques/T1056/004)) or rely on deceiving the user into providing input into what they believe to be a genuine service (e.g. [Web Portal Capture](https://attack.mitre.org/techniques/T1056/003)).
@@ -2665,7 +2670,7 @@ ListPlanting的一些变体可能会在目标进程中分配内存，然后使�
 > External ID: T1056.001
 > STIX ID: attack-pattern--09a60ea3-a8d1-4ae5-976e-5783248b72a4
 > Platforms: ['Windows', 'macOS', 'Linux', 'Network']
-> Tactics: ['collection', '[credential-access](##[TA0006]:Credential Access)']
+> Tactics: ['[collection](##[TA0009]:Collection)', '[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -2691,7 +2696,7 @@ Keylogging is the most prevalent type of input capture, with many different ways
 > External ID: T1056.002
 > STIX ID: attack-pattern--a2029942-0a85-4947-b23c-ca434698171d
 > Platforms: ['macOS', 'Windows', 'Linux']
-> Tactics: ['collection', '[credential-access](##[TA0006]:Credential Access)']
+> Tactics: ['[collection](##[TA0009]:Collection)', '[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  Adversaries may mimic common operating system GUI components to prompt users for credentials with a seemingly legitimate prompt. When programs are executed that need additional privileges than are present in the current user context, it is common for the operating system to prompt the user for proper credentials to authorize the elevated privileges for the task (ex: [Bypass User Account Control](https://attack.mitre.org/techniques/T1548/002)).
@@ -2703,7 +2708,7 @@ Adversaries may mimic this functionality to prompt users for credentials with a 
 > External ID: T1056.003
 > STIX ID: attack-pattern--69e5226d-05dc-4f15-95d7-44f5ed78d06e
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['collection', '[credential-access](##[TA0006]:Credential Access)']
+> Tactics: ['[collection](##[TA0009]:Collection)', '[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  Adversaries may install code on externally facing portals, such as a VPN login page, to capture and transmit credentials of users who attempt to log into the service. For example, a compromised login page may log provided user credentials before logging the user in to the service.
@@ -2716,7 +2721,7 @@ This variation on input capture may be conducted post-compromise using legitimat
 > External ID: T1056.004
 > STIX ID: attack-pattern--f5946b5e-9408-485f-a7f7-b5efc88909b6
 > Platforms: ['Windows']
-> Tactics: ['collection', '[credential-access](##[TA0006]:Credential Access)']
+> Tactics: ['[collection](##[TA0009]:Collection)', '[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -2732,7 +2737,7 @@ This variation on input capture may be conducted post-compromise using legitimat
 > External ID: T1057
 > STIX ID: attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -2745,7 +2750,7 @@ On network devices, [Network Device CLI](https://attack.mitre.org/techniques/T10
 > External ID: T1059
 > STIX ID: attack-pattern--7385dfaf-6886-4229-9ecd-6fd678040830
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network', 'Office 365', 'Azure AD', 'IaaS', 'Google Workspace']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -2758,7 +2763,7 @@ Adversaries may abuse these technologies in various ways as a means of executing
 > External ID: T1059.001
 > STIX ID: attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736
 > Platforms: ['Windows']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -2773,7 +2778,7 @@ PowerShell commands/scripts can also be executed without directly invoking the <
 > External ID: T1059.002
 > STIX ID: attack-pattern--37b11151-1776-4f8f-b328-30939fbf2ceb
 > Platforms: ['macOS']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -2788,7 +2793,7 @@ Adversaries may abuse AppleScript to execute various behaviors, such as interact
 > External ID: T1059.003
 > STIX ID: attack-pattern--d1fcf083-a721-4223-aedf-bf8960798d62
 > Platforms: ['Windows']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -2801,7 +2806,7 @@ Adversaries may leverage [cmd](https://attack.mitre.org/software/S0106) to execu
 > External ID: T1059.004
 > STIX ID: attack-pattern--a9d4b653-6915-42af-98b2-5758c4ceee56
 > Platforms: ['macOS', 'Linux']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -2814,7 +2819,7 @@ Adversaries may abuse Unix shells to execute various commands or payloads. Inter
 > External ID: T1059.005
 > STIX ID: attack-pattern--dfd7cc1d-e1d8-4394-a198-97c4cab8aa67
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -2827,7 +2832,7 @@ Adversaries may use VB payloads to execute malicious commands. Common malicious 
 > External ID: T1059.006
 > STIX ID: attack-pattern--cc3502b5-30cc-4473-ad48-42d51a6ef6d1
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -2838,7 +2843,7 @@ Python comes with many built-in packages to interact with the underlying system,
 > External ID: T1059.007
 > STIX ID: attack-pattern--0f4a0c76-ab2d-4cb0-85d3-3f0efb8cba0d
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -2853,7 +2858,7 @@ Adversaries may abuse various implementations of JavaScript to execute various b
 > External ID: T1059.008
 > STIX ID: attack-pattern--818302b2-d640-477b-bf88-873120ce85c4
 > Platforms: ['Network']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -2866,7 +2871,7 @@ Adversaries can use the network CLI to change how network devices behave and ope
 > External ID: T1059.009
 > STIX ID: attack-pattern--55bb4471-ff1f-43b4-88c1-c9384ec47abf
 > Platforms: ['IaaS', 'Azure AD', 'Office 365', 'SaaS', 'Google Workspace']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -2892,7 +2897,7 @@ Adversaries may bring a signed vulnerable driver onto a compromised machine so t
 > External ID: T1069
 > STIX ID: attack-pattern--15dbf668-795c-41e6-8219-f0447c0e64ce
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -2903,7 +2908,7 @@ Adversaries may attempt to discover group permission settings in many different 
 > External ID: T1069.001
 > STIX ID: attack-pattern--a01bf75f-00b2-4568-a58f-565ff9bf202b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -2914,7 +2919,7 @@ Commands such as <code>net localgroup</code> of the [Net](https://attack.mitre.o
 > External ID: T1069.002
 > STIX ID: attack-pattern--2aed01ad-3df3-4410-a8cb-11ea4ded587c
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -2925,7 +2930,7 @@ Commands such as <code>net group /domain</code> of the [Net](https://attack.mitr
 > External ID: T1069.003
 > STIX ID: attack-pattern--16e94db9-b5b1-4cd0-b851-f38fbd0a70f2
 > Platforms: ['Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Google Workspace']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -3086,7 +3091,7 @@ In some instances, artifacts of persistence may also be removed once an adversar
 > External ID: T1071
 > STIX ID: attack-pattern--355be19c-ffc9-46d5-8d50-d6a036c675b6
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3097,7 +3102,7 @@ Adversaries may utilize many different protocols, including those used for web b
 > External ID: T1071.001
 > STIX ID: attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3108,7 +3113,7 @@ Protocols such as HTTP/S(Citation: CrowdStrike Putter Panda) and WebSocket(Citat
 > External ID: T1071.002
 > STIX ID: attack-pattern--9a60a291-8960-4387-8a4a-2ab5c18bb50b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3119,7 +3124,7 @@ Protocols such as FTP, FTPS, and TFTP that transfer files may be very common in 
 > External ID: T1071.003
 > STIX ID: attack-pattern--54b4c251-1f0e-4eba-ba6b-dbc7a6f6f06b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3130,7 +3135,7 @@ Protocols such as SMTP/S, POP3/S, and IMAP that carry electronic mail may be ver
 > External ID: T1071.004
 > STIX ID: attack-pattern--1996eef1-ced3-4d7f-bf94-33298cabbf72
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3141,7 +3146,7 @@ The DNS protocol serves an administrative function in computer networking and th
 > External ID: T1072
 > STIX ID: attack-pattern--92a78814-b191-47ca-909c-1ccfe3777414
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['execution', 'lateral-movement']
+> Tactics: ['[execution](##[TA0002]:Execution)', '[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -3154,7 +3159,7 @@ The permissions required for this action vary by system configuration; local cre
 > External ID: T1074
 > STIX ID: attack-pattern--7dd95ff6-712e-4056-9626-312ea4ab4c5e
 > Platforms: ['Windows', 'IaaS', 'Linux', 'macOS']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -3167,7 +3172,7 @@ Adversaries may choose to stage data from a victim network in a centralized loca
 > External ID: T1074.001
 > STIX ID: attack-pattern--1c34f7aa-9341-4a48-bfab-af22e51aca6c
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -3178,7 +3183,7 @@ Adversaries may also stage collected data in various available formats/locations
 > External ID: T1074.002
 > STIX ID: attack-pattern--359b00ad-9425-420b-bba5-6de8d600cbc0
 > Platforms: ['Windows', 'IaaS', 'Linux', 'macOS']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -3191,7 +3196,7 @@ By staging data on one system prior to Exfiltration, adversaries can minimize th
 > External ID: T1078
 > STIX ID: attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers', 'Network']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', 'initial-access']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -3204,7 +3209,7 @@ The overlap of permissions for local, domain, and cloud accounts across a networ
 > External ID: T1078.001
 > STIX ID: attack-pattern--6151cbea-819b-455a-9fa6-99a1cc58797d
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', 'initial-access']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -3215,7 +3220,7 @@ Default accounts are not limited to client machines, rather also include account
 > External ID: T1078.002
 > STIX ID: attack-pattern--c3d4bdd9-2cfe-4a80-9d0c-07a29ecdce8f
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', 'initial-access']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -3226,7 +3231,7 @@ Adversaries may compromise domain accounts, some with a high level of privileges
 > External ID: T1078.003
 > STIX ID: attack-pattern--fdc47f44-dd32-4b99-af5f-209f556f63c2
 > Platforms: ['Linux', 'macOS', 'Windows', 'Containers']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', 'initial-access']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -3237,7 +3242,7 @@ Local Accounts may also be abused to elevate privileges and harvest credentials 
 > External ID: T1078.004
 > STIX ID: attack-pattern--f232fa7a-025c-4d43-abc7-318e81a73d65
 > Platforms: ['Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Google Workspace']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', 'initial-access']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[privilege-escalation](##[TA0004]:Privilege Escalation)', '[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -3250,7 +3255,7 @@ Once a cloud account is compromised, an adversary may perform [Account Manipulat
 > External ID: T1080
 > STIX ID: attack-pattern--246fd3c7-f5e3-466d-8787-4c13d9e3b61c
 > Platforms: ['Windows', 'Office 365', 'SaaS', 'Linux', 'macOS']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -3264,7 +3269,7 @@ Adversaries may also compromise shared network directories through binary infect
 > External ID: T1082
 > STIX ID: attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1
 > Platforms: ['Windows', 'IaaS', 'Linux', 'macOS', 'Network']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -3277,7 +3282,7 @@ Infrastructure as a Service (IaaS) cloud providers such as AWS, GCP, and Azure a
 > External ID: T1083
 > STIX ID: attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -3288,7 +3293,7 @@ Many command shell utilities can be used to obtain this information. Examples in
 > External ID: T1087
 > STIX ID: attack-pattern--72b74d71-8169-42aa-92e0-e7b04b9f5a08
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -3301,7 +3306,7 @@ For examples, cloud environments typically provide easily accessible interfaces 
 > External ID: T1087.001
 > STIX ID: attack-pattern--25659dd6-ea12-45c4-97e6-381e3e4b593e
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -3312,7 +3317,7 @@ Commands such as <code>net user</code> and <code>net localgroup</code> of the [N
 > External ID: T1087.002
 > STIX ID: attack-pattern--21875073-b0ee-49e3-9077-1e2a885359af
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -3323,7 +3328,7 @@ Commands such as <code>net user /domain</code> and <code>net group /domain</code
 > External ID: T1087.003
 > STIX ID: attack-pattern--4bc31b94-045b-4752-8920-aebaebdb6470
 > Platforms: ['Windows', 'Office 365', 'Google Workspace']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -3336,7 +3341,7 @@ In Google Workspace, the GAL is shared with Microsoft Outlook users through the 
 > External ID: T1087.004
 > STIX ID: attack-pattern--8f104855-e5b7-4077-b1f5-bc3103b41abe
 > Platforms: ['Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Google Workspace']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -3349,7 +3354,7 @@ The AWS command <code>aws iam list-users</code> may be used to obtain a list of 
 > External ID: T1090
 > STIX ID: attack-pattern--731f4f55-b6d0-41d1-a7a9-072a66389aea
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3360,7 +3365,7 @@ Adversaries can also take advantage of routing schemes in Content Delivery Netwo
 > External ID: T1090.001
 > STIX ID: attack-pattern--f6dacc85-b37d-458e-b58d-74fc4bbf5755
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3371,7 +3376,7 @@ By using a compromised internal system as a proxy, adversaries may conceal the t
 > External ID: T1090.002
 > STIX ID: attack-pattern--69b8fd78-40e8-4600-ae4d-662c9d7afdb3
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3382,7 +3387,7 @@ External connection proxies are used to mask the destination of C2 traffic and a
 > External ID: T1090.003
 > STIX ID: attack-pattern--a782ebe2-daba-42c7-bc82-e8e9d923162d
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3393,20 +3398,28 @@ In the case of network infrastructure, particularly routers, it is possible for 
 > External ID: T1090.004
 > STIX ID: attack-pattern--ca9d3402-ada3-484d-876a-d717bd6e05f2
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
-
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 **Description: **
  Adversaries may take advantage of routing schemes in Content Delivery Networks (CDNs) and other services which host multiple domains to obfuscate the intended destination of HTTPS traffic or traffic tunneled through HTTPS. (Citation: Fifield Blocking Resistent Communication through domain fronting 2015) Domain fronting involves using different domain names in the SNI field of the TLS header and the Host field of the HTTP header. If both domains are served from the same CDN, then the CDN may route to the address specified in the HTTP header after unwrapping the TLS header. A variation of the the technique, "domainless" fronting, utilizes a SNI field that is left blank; this may allow the fronting to work even when the CDN attempts to validate that the SNI and HTTP Host fields match (if the blank SNI fields are ignored).
 
 For example, if domain-x and domain-y are customers of the same CDN, it is possible to place domain-x in the TLS header and domain-y in the HTTP header. Traffic will appear to be going to domain-x, however the CDN may route it to domain-y.
+
+Domain fronting（域前置）是一种网络通信技术，用于隐藏敏感信息的目标和绕过网络审查。它通过在通信中使用合法而不受审查的域名，来伪装实际通信的目标和内容。
+
+在传统的网络通信中，通信的目标和内容可以通过检查通信中的目标IP地址和传输层协议头来识别和限制。然而，使用域前置技术，通信流量会经过一个可预期的、经过审核的域名，然后被路由到实际的目标服务器。这个可预期的域名通常是一个合法的、经过认证的域名，比如常用的内容分发网络（CDN）或云服务提供商的域名。
+
+通过使用域前置，通信流量看起来是与合法的、不受审查的域名进行的通信，而不是实际目标的域名。这使得通信流量难以被审查或阻止。例如，在某些国家或网络环境中，特定域名或IP地址可能被封锁或监测，但使用域前置可以绕过这些限制，使得通信流量看起来是与允许的域名进行的通信。
+
+然而，域前置也可被滥用用于恶意活动，如绕过防火墙和检测系统，进行隐蔽的数据传输或执行恶意命令。因此，域前置技术在一些网络环境中可能受到限制或被严格监控和过滤。
+
 ## [T1091]:Replication Through Removable Media
 > 中文：通过可移动介质进行复制
 >
 > External ID: T1091
 > STIX ID: attack-pattern--3b744087-9945-4a6f-91e8-9dbceda417a4
 > Platforms: ['Windows']
-> Tactics: ['lateral-movement', 'initial-access']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)', '[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -3424,7 +3437,7 @@ Mobile devices may also be used to infect PCs with malware if connected via USB.
 > External ID: T1092
 > STIX ID: attack-pattern--64196062-5210-42c3-9a02-563a0d1797ef
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3433,7 +3446,7 @@ Mobile devices may also be used to infect PCs with malware if connected via USB.
 > External ID: T1095
 > STIX ID: attack-pattern--c21d5a77-d422-4a69-acd7-2c53c1faa34b
 > Platforms: ['Windows', 'Linux', 'macOS', 'Network']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3607,7 +3620,7 @@ Devices registered in Azure AD may be able to conduct [Internal Spearphishing](h
 > External ID: T1102
 > STIX ID: attack-pattern--830c9528-df21-472c-8c14-a036bf17d665
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3618,7 +3631,7 @@ Use of Web services may also protect back-end C2 infrastructure from discovery t
 > External ID: T1102.001
 > STIX ID: attack-pattern--f7827069-0bf2-4764-af4f-23fae0d181b7
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3631,7 +3644,7 @@ Use of a dead drop resolver may also protect back-end C2 infrastructure from dis
 > External ID: T1102.002
 > STIX ID: attack-pattern--be055942-6e63-49d7-9fa1-9cb7d8a8f3f4
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3642,7 +3655,7 @@ Popular websites and social media acting as a mechanism for C2 may give a signif
 > External ID: T1102.003
 > STIX ID: attack-pattern--9c99724c-a483-4d60-ad9d-7f004e42e8e8
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3653,7 +3666,7 @@ Popular websites and social media acting as a mechanism for C2 may give a signif
 > External ID: T1104
 > STIX ID: attack-pattern--84e02621-8fdf-470f-bd58-993bb6a89d91
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3666,7 +3679,7 @@ The different stages will likely be hosted separately with no overlapping infras
 > External ID: T1105
 > STIX ID: attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -3681,7 +3694,7 @@ On Windows, adversaries may use various utilities to download tools, such as `co
 > External ID: T1106
 > STIX ID: attack-pattern--391d824f-0ef1-47a0-b0ee-c59a75e27670
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -3856,7 +3869,7 @@ The Registry of a remote system may be modified to aid in execution of files as 
 > External ID: T1113
 > STIX ID: attack-pattern--0259baeb-9f63-4c69-bf10-eb038c390688
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -3866,7 +3879,7 @@ The Registry of a remote system may be modified to aid in execution of files as 
 > External ID: T1114
 > STIX ID: attack-pattern--1608f3e1-598a-42f4-a01a-2e252e81728f
 > Platforms: ['Windows', 'Office 365', 'Google Workspace', 'macOS', 'Linux']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -3875,7 +3888,7 @@ The Registry of a remote system may be modified to aid in execution of files as 
 > External ID: T1114.001
 > STIX ID: attack-pattern--1e9eb839-294b-48cc-b0d3-c45555a2a004
 > Platforms: ['Windows']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -3886,7 +3899,7 @@ Outlook stores data locally in offline data files with an extension of .ost. Out
 > External ID: T1114.002
 > STIX ID: attack-pattern--b4694861-542c-48ea-9eb1-10d356e7140a
 > Platforms: ['Office 365', 'Windows', 'Google Workspace']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -3895,7 +3908,7 @@ Outlook stores data locally in offline data files with an extension of .ost. Out
 > External ID: T1114.003
 > STIX ID: attack-pattern--7d77a07d-02fe-4e88-8bd9-e9c008c01bf0
 > Platforms: ['Office 365', 'Windows', 'Google Workspace', 'macOS', 'Linux']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -3908,7 +3921,7 @@ In some environments, administrators may be able to enable email forwarding rule
 > External ID: T1115
 > STIX ID: attack-pattern--30973a08-aed9-4edf-8604-9084ce1b5c4f
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -3921,7 +3934,7 @@ macOS and Linux also have commands, such as <code>pbpaste</code>, to grab clipbo
 > External ID: T1119
 > STIX ID: attack-pattern--30208d3e-0d6b-43c8-883e-44462a514619
 > Platforms: ['Linux', 'macOS', 'Windows', 'IaaS', 'SaaS']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -3932,7 +3945,7 @@ This technique may incorporate use of other techniques such as [File and Directo
 > External ID: T1120
 > STIX ID: attack-pattern--348f1eef-964b-4eb6-bb53-69b3dcb0c643
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -3941,7 +3954,7 @@ This technique may incorporate use of other techniques such as [File and Directo
 > External ID: T1123
 > STIX ID: attack-pattern--1035cdf2-3e5f-446f-a7a7-e8f6d7925967
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -3952,7 +3965,7 @@ Malware or scripts may be used to interact with the devices through an available
 > External ID: T1124
 > STIX ID: attack-pattern--f3c544dc-673c-4ef3-accb-53229f1ae077
 > Platforms: ['Windows', 'Network']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -3967,7 +3980,7 @@ This information could be useful for performing other techniques, such as execut
 > External ID: T1125
 > STIX ID: attack-pattern--6faf650d-bf31-4eb4-802d-1000cf38efaf
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -4003,7 +4016,7 @@ Adversaries can abuse MSBuild to proxy execution of malicious code. The inline t
 > External ID: T1129
 > STIX ID: attack-pattern--0a5231ec-41af-4a35-83d0-6bdf11f28c65
 > Platforms: ['Windows']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -4024,7 +4037,7 @@ Adversaries may use this functionality as a way to execute arbitrary payloads on
 > External ID: T1132
 > STIX ID: attack-pattern--cc7b8c4e-9be0-47ca-b0bb-83915ec3ee2f
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -4033,7 +4046,7 @@ Adversaries may use this functionality as a way to execute arbitrary payloads on
 > External ID: T1132.001
 > STIX ID: attack-pattern--04fd5427-79c7-44ea-ae13-11b24778ff1c
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -4042,7 +4055,7 @@ Adversaries may use this functionality as a way to execute arbitrary payloads on
 > External ID: T1132.002
 > STIX ID: attack-pattern--d467bc38-284b-4a00-96ac-125f447799fc
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -4053,7 +4066,7 @@ Adversaries may use this functionality as a way to execute arbitrary payloads on
 > External ID: T1133
 > STIX ID: attack-pattern--10d51417-ee35-4589-b1ff-b6df1c334e8d
 > Platforms: ['Windows', 'Linux', 'Containers', 'macOS']
-> Tactics: ['[persistence](##[TA0003]:Persistence)', 'initial-access']
+> Tactics: ['[persistence](##[TA0003]:Persistence)', '[initial-access](##[TA0001]:Initial Access)']
 
 **Description: **
  Adversaries may leverage external-facing remote services to initially access and/or persist within a network. Remote services such as VPNs, Citrix, and other access mechanisms allow users to connect to internal enterprise network resources from external locations. There are often remote service gateways that manage connections and credential authentication for these services. Services such as [Windows Remote Management](https://attack.mitre.org/techniques/T1021/006) and [VNC](https://attack.mitre.org/techniques/T1021/005) can also be used externally.(Citation: MacOS VNC software for Remote Desktop)
@@ -4169,7 +4182,7 @@ With Domain Administrator (or equivalent) rights, harvested or well-known SID va
 > External ID: T1135
 > STIX ID: attack-pattern--3489cfc5-640f-4bb3-a103-9137b97de79f
 > Platforms: ['macOS', 'Windows', 'Linux']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -4409,7 +4422,7 @@ There have also been instances of botnets using a persistent backdoor through ma
 > External ID: T1185
 > STIX ID: attack-pattern--544b0346-29ad-41e1-a808-501bb4193f47
 > Platforms: ['Windows']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -4443,7 +4456,7 @@ There are several different ways this can occur. (Citation: Osanda Stealing NetN
 > External ID: T1189
 > STIX ID: attack-pattern--d742a578-d70e-4d0e-96a6-02a9c30204e6
 > Platforms: ['Windows', 'Linux', 'macOS', 'SaaS']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -4501,7 +4514,7 @@ Adversaries may also use compromised websites to deliver a user to a malicious a
 > External ID: T1190
 > STIX ID: attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c
 > Platforms: ['Windows', 'IaaS', 'Network', 'Linux', 'macOS', 'Containers']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 **Description: **
  Adversaries may attempt to exploit a weakness in an Internet-facing host or system to initially access a network. The weakness in the system can be a software bug, a temporary glitch, or a misconfiguration.
@@ -4517,7 +4530,7 @@ For websites and databases, the OWASP top 10 and CWE top 25 highlight the most c
 > External ID: T1195
 > STIX ID: attack-pattern--3f18edba-28f4-4bb9-82c3-8aa60dcac5f7
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -4540,7 +4553,7 @@ While supply chain compromise can impact any component of hardware or software, 
 > External ID: T1195.001
 > STIX ID: attack-pattern--191cc6af-1bb2-4344-ab5f-28e496638720
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -4551,7 +4564,7 @@ Targeting may be specific to a desired victim set or may be distributed to a bro
 > External ID: T1195.002
 > STIX ID: attack-pattern--bd369cd9-abb8-41ce-b5bb-fff23ee86c00
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -4562,7 +4575,7 @@ Targeting may be specific to a desired victim set or may be distributed to a bro
 > External ID: T1195.003
 > STIX ID: attack-pattern--39131305-9282-45e4-ac3b-591d2d4fc3ef
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -4599,7 +4612,7 @@ BITS上传功能还可用于执行[利用替代协议的信息泄漏](https://at
 > External ID: T1199
 > STIX ID: attack-pattern--9fa07bef-9c81-421e-a8e5-ad4366c5a925
 > Platforms: ['Windows', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Office 365']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -4620,7 +4633,7 @@ In Office 365 environments, organizations may grant Microsoft partners or resell
 > External ID: T1200
 > STIX ID: attack-pattern--d40239b3-05ff-46d8-9bdd-b46d13463ef9
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 **Description: **
  Adversaries may introduce computer accessories, networking hardware, or other computing devices into a system or network that can be used as a vector to gain access. Rather than just connecting and distributing payloads via removable storage (i.e. [Replication Through Removable Media](https://attack.mitre.org/techniques/T1091)), more robust hardware additions can be used to introduce new functionalities and/or features into a system that can then be abused.
@@ -4635,7 +4648,7 @@ While public references of usage by threat actors are scarce, many red teams/pen
 > External ID: T1201
 > STIX ID: attack-pattern--b6075259-dba3-44e9-87c7-e954f37ec0d5
 > Platforms: ['Windows', 'Linux', 'macOS', 'IaaS', 'Network']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -4668,7 +4681,7 @@ Adversaries may abuse these features for [Defense Evasion](https://attack.mitre.
 > External ID: T1203
 > STIX ID: attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 **Description: **
  Adversaries may exploit software vulnerabilities in client applications to execute code. Vulnerabilities can exist in software due to unsecure coding practices that can lead to unanticipated behavior. Adversaries can take advantage of certain vulnerabilities through targeted exploitation for the purpose of arbitrary code execution. Oftentimes the most valuable exploits to an offensive toolkit are those that can be used to obtain code execution on a remote system because they can be used to gain access to that system. Users will expect to see files related to the applications they commonly used to do work, so they are a useful target for exploit research and development because of their high utility.
@@ -4709,7 +4722,7 @@ Web浏览是通过[Drive-by Compromise](https://attack.mitre.org/techniques/T118
 > External ID: T1204
 > STIX ID: attack-pattern--8c32eb4d-805f-4fc5-bf60-c4d476c131b5
 > Platforms: ['Linux', 'Windows', 'macOS', 'IaaS', 'Containers']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -4722,7 +4735,7 @@ Adversaries may also deceive users into performing actions such as enabling [Rem
 > External ID: T1204.001
 > STIX ID: attack-pattern--ef67e13e-5598-4adc-bdb2-998225874fa9
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -4731,7 +4744,7 @@ Adversaries may also deceive users into performing actions such as enabling [Rem
 > External ID: T1204.002
 > STIX ID: attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -4744,7 +4757,7 @@ While [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently
 > External ID: T1204.003
 > STIX ID: attack-pattern--b0c74ef9-c61e-4986-88cb-78da98a355ec
 > Platforms: ['IaaS', 'Containers']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -4757,7 +4770,7 @@ Adversaries may also name images a certain way to increase the chance of users m
 > External ID: T1205
 > STIX ID: attack-pattern--451a9977-d255-43c9-b431-66de80130c8c
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', 'command-and-control']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -4791,7 +4804,7 @@ Adversaries may also use the Wake-on-LAN feature to turn on powered off systems.
 > External ID: T1205.001
 > STIX ID: attack-pattern--8868cb5b-d575-4a60-acb2-07d37389a2fd
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', 'command-and-control']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -4813,7 +4826,7 @@ The observation of the signal packets to trigger the communication can be conduc
 > External ID: T1205.002
 > STIX ID: attack-pattern--005cc321-08ce-4d17-b1ea-cb5275926520
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', 'command-and-control']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)', '[command-and-control](##[TA0011]:Command and Control)']
 
 **Description: **
  Adversaries may attach filters to a network socket to monitor then activate backdoors used for persistence or command and control. With elevated permissions, adversaries can use features such as the `libpcap` library to open sockets and install filters to allow or disallow certain types of data to come through the socket. The filter may apply to all traffic passing through the specified network interface (or every interface if not specified). When the network interface receives a packet matching the filter criteria, additional actions can be triggered on the host, such as activation of a reverse shell.
@@ -4853,7 +4866,7 @@ This technique may bypass system logging and security monitors such as security 
 > External ID: T1210
 > STIX ID: attack-pattern--9db0cf3a-a3c9-4012-8268-123b9db6fd82
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -4888,7 +4901,7 @@ Adversaries may have prior knowledge through reconnaissance that security softwa
 > External ID: T1213
 > STIX ID: attack-pattern--d28ef391-8ed4-45dc-bc4a-2f43abf54416
 > Platforms: ['Linux', 'Windows', 'macOS', 'SaaS', 'Office 365', 'Google Workspace', 'IaaS']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -4910,7 +4923,7 @@ Information stored in a repository may vary based on the specific instance or en
 > External ID: T1213.001
 > STIX ID: attack-pattern--7ad38ef1-381a-406d-872a-38b136eb5ecc
 > Platforms: ['SaaS']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -4926,11 +4939,22 @@ Adversaries may leverage Confluence repositories to mine valuable information. O
 * Source code snippets
 * Links to network shares and other internal resources
 
+攻击者可能会利用Confluence存储库来挖掘有价值的信息。Confluence通常与Atlassian JIRA一起在开发环境中使用，用于存储与开发相关的文档，然而，一般来说可能包含更多分类的有用信息，例如：
+
+- 政策、流程和标准
+- 物理/逻辑网络图
+- 系统架构图
+- 技术系统文档
+- 测试/开发凭证
+- 工作/项目日程安排
+- 源代码片段
+- 链接到网络共享和其他内部资源
+
 ### [T1213.002]:Sharepoint
 > External ID: T1213.002
 > STIX ID: attack-pattern--0c4b4fda-9062-47da-98b9-ceae2dcf052a
 > Platforms: ['Windows', 'Office 365']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -4949,7 +4973,7 @@ Adversaries may leverage Confluence repositories to mine valuable information. O
 > External ID: T1213.003
 > STIX ID: attack-pattern--cff94884-3b1c-4987-a70b-6d5643c621c3
 > Platforms: ['SaaS']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -4984,7 +5008,7 @@ In later versions of Windows (10+), <code>PubPrn.vbs</code> has been updated to 
 > External ID: T1217
 > STIX ID: attack-pattern--5e4a2073-9643-44cb-a0b5-e7f4048446c7
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -5177,7 +5201,7 @@ Adversaries may also abuse MMC to execute malicious .msc files. For example, adv
 > External ID: T1219
 > STIX ID: attack-pattern--4061e78c-1284-44b4-9116-73e4ac3912f7
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -5332,7 +5356,7 @@ Like other [Execution Guardrails](https://attack.mitre.org/techniques/T1480), en
 > External ID: T1482
 > STIX ID: attack-pattern--767dbf9e-df3f-45cb-8998-4903ab5f80c0
 > Platforms: ['Windows']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -5380,7 +5404,7 @@ Manipulating the domain trusts may allow an adversary to escalate privileges and
 > External ID: T1485
 > STIX ID: attack-pattern--d45a3d09-b3cf-48f4-9f0f-f521ee5cb05c
 > Platforms: ['Windows', 'IaaS', 'Linux', 'macOS']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5395,7 +5419,7 @@ In cloud environments, adversaries may leverage access to delete cloud storage, 
 > External ID: T1486
 > STIX ID: attack-pattern--b80d107d-fa0d-4b60-9684-b0433e8bdba0
 > Platforms: ['Linux', 'macOS', 'Windows', 'IaaS']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5410,7 +5434,7 @@ In cloud environments, storage objects within compromised accounts may also be e
 > External ID: T1489
 > STIX ID: attack-pattern--20fb2507-d71c-455d-9b6d-6104461cf26b
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5421,7 +5445,7 @@ Adversaries may accomplish this by disabling individual services of high importa
 > External ID: T1490
 > STIX ID: attack-pattern--f5d8eed6-48a9-4cdf-a3d7-d1ffa99c3d2a
 > Platforms: ['Windows', 'macOS', 'Linux', 'Network', 'IaaS']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5444,7 +5468,7 @@ Adversaries may also delete “online” backups that are connected to their net
 > External ID: T1491
 > STIX ID: attack-pattern--5909f20f-3c39-4795-be06-ef1ea40d350b
 > Platforms: ['Windows', 'IaaS', 'Linux', 'macOS']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5454,16 +5478,16 @@ Adversaries may also delete “online” backups that are connected to their net
 > External ID: T1491.001
 > STIX ID: attack-pattern--8c41090b-aa47-4331-986b-8c9a51a91103
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['impact']
-
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 **Description: **
  An adversary may deface systems internal to an organization in an attempt to intimidate or mislead users, thus discrediting the integrity of the systems. This may take the form of modifications to internal websites, or directly to user systems with the replacement of the desktop wallpaper.(Citation: Novetta Blockbuster) Disturbing or offensive images may be used as a part of [Internal Defacement](https://attack.mitre.org/techniques/T1491/001) in order to cause user discomfort, or to pressure compliance with accompanying messages. Since internally defacing systems exposes an adversary's presence, it often takes place after other intrusion goals have been accomplished.(Citation: Novetta Blockbuster Destructive Malware)
+
 ### [T1491.002]:External Defacement
 > External ID: T1491.002
 > STIX ID: attack-pattern--0cfe31a7-81fc-472c-bc45-e2808d1066a3
 > Platforms: ['Windows', 'IaaS', 'Linux', 'macOS']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5472,7 +5496,7 @@ Adversaries may also delete “online” backups that are connected to their net
 > External ID: T1495
 > STIX ID: attack-pattern--f5bb433e-bdf6-4781-84bc-35e97e43be89
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5483,7 +5507,7 @@ In general, adversaries may manipulate, overwrite, or corrupt firmware in order 
 > External ID: T1496
 > STIX ID: attack-pattern--cd25c1b4-935c-4f0e-ba8d-552f28bc4783
 > Platforms: ['Windows', 'IaaS', 'Linux', 'macOS', 'Containers']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5498,7 +5522,7 @@ Adversaries may also use malware that leverages a system's network bandwidth as 
 > External ID: T1497
 > STIX ID: attack-pattern--82caa33e-d11a-433a-94ea-9b5a5fbef81d
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'discovery']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -5511,7 +5535,7 @@ Adversaries may use several methods to accomplish [Virtualization/Sandbox Evasio
 > External ID: T1497.001
 > STIX ID: attack-pattern--29be378d-262d-4e99-b00d-852d573628e6
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'discovery']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -5528,7 +5552,7 @@ Hardware checks, such as the presence of the fan, temperature, and audio devices
 > External ID: T1497.002
 > STIX ID: attack-pattern--91541e7e-b969-40c6-bbd8-1b5352ec2938
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'discovery']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -5539,7 +5563,7 @@ Adversaries may search for user activity on the host based on variables such as 
 > External ID: T1497.003
 > STIX ID: attack-pattern--4bed873f-0b7d-41d4-b93a-b6905d1f90b0
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'discovery']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -5554,7 +5578,7 @@ Adversaries may also use time as a metric to detect sandboxes and analysis envir
 > External ID: T1498
 > STIX ID: attack-pattern--d74c4a7e-ffbf-432f-9365-7ebf1f787cab
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5571,7 +5595,7 @@ For DoS attacks targeting the hosting system directly, see [Endpoint Denial of S
 > External ID: T1498.001
 > STIX ID: attack-pattern--0bda01d5-4c1d-4062-8ee2-6872334383c3
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5582,7 +5606,7 @@ Botnets are commonly used to conduct network flooding attacks against networks a
 > External ID: T1498.002
 > STIX ID: attack-pattern--36b2a1d7-e09e-49bf-b45e-477076c2ec01
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5593,7 +5617,7 @@ Reflection attacks often take advantage of protocols with larger responses than 
 > External ID: T1499
 > STIX ID: attack-pattern--c675646d-e204-4aa8-978d-e3d6d65885c4
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5615,7 +5639,7 @@ For attacks attempting to saturate the providing network, see [Network Denial of
 > External ID: T1499.001
 > STIX ID: attack-pattern--0df05477-c572-4ed6-88a9-47c581f548f7
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5628,7 +5652,7 @@ ACK floods leverage the stateful nature of the TCP protocol. A flood of ACK pack
 > External ID: T1499.002
 > STIX ID: attack-pattern--38eb0c22-6caf-46ce-8869-5964bd735858
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5641,7 +5665,7 @@ Another variation, known as a SSL renegotiation attack, takes advantage of a pro
 > External ID: T1499.003
 > STIX ID: attack-pattern--18cffc21-3260-437e-80e4-4ab8bf2ba5e9
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5650,7 +5674,7 @@ Another variation, known as a SSL renegotiation attack, takes advantage of a pro
 > External ID: T1499.004
 > STIX ID: attack-pattern--2bee5ffb-7a7a-4119-b1f2-158151b19ac0
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5770,7 +5794,7 @@ Adversaries may modify and/or replace the Terminal Services DLL to enable persis
 > External ID: T1518
 > STIX ID: attack-pattern--e3b6daca-e963-4a69-aee6-ed4fd653ad58
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -5781,7 +5805,7 @@ Adversaries may attempt to enumerate software for a variety of reasons, such as 
 > External ID: T1518.001
 > STIX ID: attack-pattern--cba37adb-d6fb-4610-b069-dd04c0643384
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -5811,7 +5835,7 @@ A tool has been developed to facilitate planting backdoors in cloud container im
 > External ID: T1526
 > STIX ID: attack-pattern--e24fcba8-2557-4442-a139-1ee2f2e784db
 > Platforms: ['Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Google Workspace']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -5847,7 +5871,7 @@ Application access tokens may function within a limited lifetime, limiting how l
 > External ID: T1529
 > STIX ID: attack-pattern--ff73aa03-0090-4464-83ac-f89e233c02bc
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5860,7 +5884,7 @@ Adversaries may attempt to shutdown/reboot a system after impacting it in other 
 > External ID: T1530
 > STIX ID: attack-pattern--3298ce88-1628-43b1-87d9-0b5336b193d7
 > Platforms: ['IaaS', 'SaaS']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -5879,7 +5903,7 @@ Adversaries may also obtain then abuse leaked credentials from source repositori
 > External ID: T1531
 > STIX ID: attack-pattern--b24e2a20-3b3d-4bf0-823b-1ed765398fb0
 > Platforms: ['Linux', 'macOS', 'Windows', 'Office 365', 'SaaS']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -5892,7 +5916,7 @@ Adversaries who use ransomware or similar attacks may first perform this and oth
 > External ID: T1534
 > STIX ID: attack-pattern--9e7452df-5144-4b6e-b04a-b66dd4016747
 > Platforms: ['Windows', 'macOS', 'Linux', 'Office 365', 'SaaS', 'Google Workspace']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -5930,7 +5954,7 @@ An example of adversary use of unused AWS regions is to mine cryptocurrency thro
 > External ID: T1537
 > STIX ID: attack-pattern--d4bdbdea-eaec-4071-b4f9-5105e12ea4b6
 > Platforms: ['IaaS']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -5943,7 +5967,7 @@ Incidents have been observed where adversaries have created backups of cloud ins
 > External ID: T1538
 > STIX ID: attack-pattern--e49920b0-6c54-40c1-9571-73723653205f
 > Platforms: ['Azure AD', 'Office 365', 'IaaS', 'Google Workspace']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -6919,7 +6943,7 @@ Adversaries may abuse <code>AuthorizationExecuteWithPrivileges</code> to obtain 
 > External ID: T1550
 > STIX ID: attack-pattern--51a14c76-dd3b-440b-9c20-2bf91d25a814
 > Platforms: ['Windows', 'Office 365', 'SaaS', 'Google Workspace', 'IaaS', 'Containers']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'lateral-movement']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -6939,7 +6963,7 @@ Caching alternate authentication material allows the system to verify an identit
 > External ID: T1550.001
 > STIX ID: attack-pattern--f005e783-57d4-4837-88ad-dbe7faee1c51
 > Platforms: ['Office 365', 'SaaS', 'Google Workspace', 'Containers', 'IaaS', 'Azure AD']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'lateral-movement']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -6958,7 +6982,7 @@ Direct API access through a token negates the effectiveness of a second authenti
 > External ID: T1550.002
 > STIX ID: attack-pattern--e624264c-033a-424d-9fd7-fc9c3bbdb03e
 > Platforms: ['Windows']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'lateral-movement']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -6971,7 +6995,7 @@ Adversaries may also use stolen password hashes to "overpass the hash." Similar 
 > External ID: T1550.003
 > STIX ID: attack-pattern--7b211ac6-c815-4189-93a9-ab415deca926
 > Platforms: ['Windows']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'lateral-movement']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -6988,7 +7012,7 @@ Adversaries may also create a valid Kerberos ticket using other user information
 > External ID: T1550.004
 > STIX ID: attack-pattern--c3c8c916-2f3c-4e71-94b2-240bdfc996f0
 > Platforms: ['Office 365', 'SaaS', 'Google Workspace', 'IaaS']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'lateral-movement']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -7481,7 +7505,7 @@ Adversaries may target planting malicious network provider DLLs on systems known
 > External ID: T1557
 > STIX ID: attack-pattern--035bb001-ab69-4a0b-9f6c-2de8b09e1b9d
 > Platforms: ['Windows', 'macOS', 'Linux', 'Network']
-> Tactics: ['[credential-access](##[TA0006]:Credential Access)', 'collection']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -7494,7 +7518,7 @@ Adversaries may also leverage the AiTM position to attempt to monitor and/or mod
 > External ID: T1557.001
 > STIX ID: attack-pattern--650c784b-7504-4df7-ab2c-4ea882384d1e
 > Platforms: ['Windows']
-> Tactics: ['[credential-access](##[TA0006]:Credential Access)', 'collection']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -7522,7 +7546,7 @@ SMB（Server Message Block）是一种用于文件和打印机共享的网络协
 > External ID: T1557.002
 > STIX ID: attack-pattern--cabe189c-a0e3-4965-a473-dcff00f17213
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['[credential-access](##[TA0006]:Credential Access)', 'collection']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -7540,7 +7564,7 @@ Adversaries may use ARP cache poisoning as a means to intercept network traffic.
 > External ID: T1557.003
 > STIX ID: attack-pattern--59ff91cd-1430-4075-8563-e6f15f4f9ff5
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['[credential-access](##[TA0006]:Credential Access)', 'collection']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -7657,7 +7681,7 @@ AS-REP Roasting：AS-REP Roasting是一种利用Kerberos的弱点来进行攻击
 > External ID: T1559
 > STIX ID: attack-pattern--acd0ba37-7ba9-4cc5-ac61-796586cd856d
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -7688,7 +7712,7 @@ IPC 提供一组标准化的接口和通信协议，使得进程可以在不同�
 > External ID: T1559.001
 > STIX ID: attack-pattern--2f6b4ed7-fef1-44ba-bcb8-1b4beb610b64
 > Platforms: ['Windows']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -7699,7 +7723,7 @@ Various COM interfaces are exposed that can be abused to invoke arbitrary execut
 > External ID: T1559.002
 > STIX ID: attack-pattern--232a7e42-cd6e-4902-8fe9-2960f529dd4d
 > Platforms: ['Windows']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -7714,7 +7738,7 @@ DDE could also be leveraged by an adversary operating on a compromised machine w
 > External ID: T1559.003
 > STIX ID: attack-pattern--8252f135-ed26-4ce1-ae61-f26e94429a19
 > Platforms: ['macOS']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -7725,18 +7749,23 @@ Adversaries can abuse XPC services to execute malicious content. Requests for ma
 > External ID: T1560
 > STIX ID: attack-pattern--53ac20cd-aca3-406e-9aa0-9fc7fdc60a5a
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
  An adversary may compress and/or encrypt data that is collected prior to exfiltration. Compressing the data can help to obfuscate the collected data and minimize the amount of data sent over the network. Encryption can be used to hide information that is being exfiltrated from detection or make exfiltration less conspicuous upon inspection by a defender.
 
 Both compression and encryption are done prior to exfiltration, and can be performed using a utility, 3rd party library, or custom method.
+
+攻击者可能会在数据外泄之前对其进行压缩和/或加密。压缩数据可以帮助模糊收集到的数据，并减少通过网络发送的数据量。加密可以用于隐藏正在外泄的信息，以免被防御者检测到或在检查时使外泄不那么明显。
+
+在外泄之前，压缩和加密都可以使用实用程序、第三方库或自定义方法来执行。
+
 ### [T1560.001]:Archive via Utility
 > External ID: T1560.001
 > STIX ID: attack-pattern--00f90846-cbd1-4fc5-9233-df5c2bf2a662
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -7751,7 +7780,7 @@ Adversaries may use also third party utilities, such as 7-Zip, WinRAR, and WinZi
 > External ID: T1560.002
 > STIX ID: attack-pattern--41868330-6ee2-4d0f-b743-9f2294c3c9b6
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -7762,7 +7791,7 @@ Some archival libraries are preinstalled on systems, such as bzip2 on macOS and 
 > External ID: T1560.003
 > STIX ID: attack-pattern--143c0cbb-a297-4142-9624-87ffc778980b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -7771,7 +7800,7 @@ Some archival libraries are preinstalled on systems, such as bzip2 on macOS and 
 > External ID: T1561
 > STIX ID: attack-pattern--1988cc35-ced8-4dad-b2d1-7628488fa967
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -7784,7 +7813,7 @@ On network devices, adversaries may wipe configuration files and other data from
 > External ID: T1561.001
 > STIX ID: attack-pattern--fb640c43-aa6b-431e-a961-a279010424ac
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -7797,7 +7826,7 @@ To maximize impact on the target organization in operations where network-wide a
 > External ID: T1561.002
 > STIX ID: attack-pattern--0af0ca99-357d-4ba1-805f-674fdfb7bef9
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -7998,7 +8027,7 @@ For example, adversaries may show a fake Windows Security GUI and tray icon with
 > External ID: T1563
 > STIX ID: attack-pattern--5b0ad6f8-6a16-4966-a4ef-d09ea6e2a9f5
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -8009,7 +8038,7 @@ Adversaries may commandeer these sessions to carry out actions on remote systems
 > External ID: T1563.001
 > STIX ID: attack-pattern--4d2a5b3e-340d-4600-9123-309dd63c9bf8
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -8022,7 +8051,7 @@ In order to move laterally from a compromised host, adversaries may take advanta
 > External ID: T1563.002
 > STIX ID: attack-pattern--e0033c16-a07e-48aa-8204-7c3ca669998c
 > Platforms: ['Windows']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -8211,7 +8240,7 @@ This behavior may also be combined with other tricks (such as [Parent PID Spoofi
 > External ID: T1565
 > STIX ID: attack-pattern--ac9e6b22-11bf-45d7-9181-c1cb08360931
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -8222,7 +8251,7 @@ The type of modification and the impact it will have depends on the target appli
 > External ID: T1565.001
 > STIX ID: attack-pattern--1cfcb312-b8d7-47a4-b560-4b16cc677292
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -8233,7 +8262,7 @@ Stored data could include a variety of file formats, such as Office files, datab
 > External ID: T1565.002
 > STIX ID: attack-pattern--d0613359-5781-4fd2-b5be-c269270be1f6
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -8244,7 +8273,7 @@ Manipulation may be possible over a network connection or between system process
 > External ID: T1565.003
 > STIX ID: attack-pattern--32ad5c86-2bcf-47d8-8fdc-d7f3d79a7490
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['impact']
+> Tactics: ['[impact](##[TA0040]:Impact)']
 
 
 **Description: **
@@ -8255,7 +8284,7 @@ Adversaries may alter application binaries used to display data in order to caus
 > External ID: T1566
 > STIX ID: attack-pattern--a62a8db3-f23a-4d8f-afd6-9dbc77e7813b
 > Platforms: ['Linux', 'macOS', 'Windows', 'SaaS', 'Office 365', 'Google Workspace']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -8268,7 +8297,7 @@ Victims may also receive phishing messages that instruct them to call a phone nu
 > External ID: T1566.001
 > STIX ID: attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597
 > Platforms: ['macOS', 'Windows', 'Linux']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -8279,7 +8308,7 @@ There are many options for the attachment such as Microsoft Office documents, ex
 > External ID: T1566.002
 > STIX ID: attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7
 > Platforms: ['Linux', 'macOS', 'Windows', 'Office 365', 'SaaS', 'Google Workspace']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -8292,7 +8321,7 @@ Adversaries may also utilize links to perform consent phishing, typically with O
 > External ID: T1566.003
 > STIX ID: attack-pattern--f6ad61ee-65f3-4bd0-a3f5-2f0accb36317
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['initial-access']
+> Tactics: ['[initial-access](##[TA0001]:Initial Access)']
 
 
 **Description: **
@@ -8305,7 +8334,7 @@ A common example is to build rapport with a target via social media, then send c
 > External ID: T1567
 > STIX ID: attack-pattern--40597f16-0963-4249-bf4c-ac93b7fb9807
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -8316,7 +8345,7 @@ Web service providers also commonly use SSL/TLS encryption, giving adversaries a
 > External ID: T1567.001
 > STIX ID: attack-pattern--86a96bf6-cf8b-411c-aaeb-8959944d64f7
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -8327,7 +8356,7 @@ Exfiltration to a code repository can also provide a significant amount of cover
 > External ID: T1567.002
 > STIX ID: attack-pattern--bf1b6176-597c-4600-bfcd-ac989670f96b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -8338,7 +8367,7 @@ Examples of cloud storage services include Dropbox and Google Docs. Exfiltration
 > External ID: T1567.003
 > STIX ID: attack-pattern--ba04e672-da86-4e69-aa15-0eca5db25f43
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['exfiltration']
+> Tactics: ['[exfiltration](##[TA0010]:Exfiltration)']
 
 
 **Description: **
@@ -8347,11 +8376,12 @@ Examples of cloud storage services include Dropbox and Google Docs. Exfiltration
 Text storage sites are often used to host malicious code for C2 communication (e.g., [Stage Capabilities](https://attack.mitre.org/techniques/T1608)), but adversaries may also use these sites to exfiltrate collected data. Furthermore, paid features and encryption options may allow adversaries to conceal and store data more securely.(Citation: Pastebin EchoSec)
 
 **Note:** This is distinct from [Exfiltration to Code Repository](https://attack.mitre.org/techniques/T1567/001), which highlight access to code repositories via APIs.
+
 ## [T1568]:Dynamic Resolution
 > External ID: T1568
 > STIX ID: attack-pattern--7bd9c723-2f78-4309-82c5-47cad406572b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -8362,8 +8392,7 @@ Adversaries may use dynamic resolution for the purpose of [Fallback Channels](ht
 > External ID: T1568.001
 > STIX ID: attack-pattern--29ba5a15-3b7b-4732-b817-65ea8f6468e6
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
-
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 **Description: **
  Adversaries may use Fast Flux DNS to hide a command and control channel behind an array of rapidly changing IP addresses linked to a single domain resolution. This technique uses a fully qualified domain name, with multiple IP addresses assigned to it which are swapped with high frequency, using a combination of round robin IP addressing and short Time-To-Live (TTL) for a DNS resource record.(Citation: MehtaFastFluxPt1)(Citation: MehtaFastFluxPt2)(Citation: Fast Flux - Welivesecurity)
@@ -8371,11 +8400,20 @@ Adversaries may use dynamic resolution for the purpose of [Fallback Channels](ht
 The simplest, "single-flux" method, involves registering and de-registering an addresses as part of the DNS A (address) record list for a single DNS name. These registrations have a five-minute average lifespan, resulting in a constant shuffle of IP address resolution.(Citation: Fast Flux - Welivesecurity)
 
 In contrast, the "double-flux" method registers and de-registers an address as part of the DNS Name Server record list for the DNS zone, providing additional resilience for the connection. With double-flux additional hosts can act as a proxy to the C2 host, further insulating the true source of the C2 channel.
+
+Fast Flux DNS是一种网络欺骗技术，常用于恶意活动如分发恶意软件、网络钓鱼等。它通过频繁更改域名对应的IP地址，使得恶意网络活动的主机能够快速改变其位置，从而难以被追踪和封锁。
+
+正常的DNS解析是将域名解析为特定的IP地址，而Fast Flux DNS使用了不同的方式。在Fast Flux DNS中，一个单独的域名可以同时对应多个IP地址，并且这些IP地址可以频繁更换。这样，当用户请求访问这个域名时，他们可能会被随机引导到不同的IP地址，使得恶意活动的主机在不同的位置上运行。
+
+这种技术对于黑客或攻击者来说具有一定的好处，因为它可以隐藏其恶意活动的真实位置，增加了其活动的持久性和隐秘性。同时，由于恶意活动的主机在不断变化，常规的检测和封锁技术对其效果较差，增加了对手的难度。
+
+Fast Flux DNS在网络安全领域被视为一种高级威胁，对于企图阻止和打击恶意活动的人来说，需要采取一些高级的技术和工具来识别和处理这种类型的网络欺骗。
+
 ### [T1568.002]:Domain Generation Algorithms
 > External ID: T1568.002
 > STIX ID: attack-pattern--118f61a5-eb3e-4fb6-931f-2096647f4ecd
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -8388,7 +8426,7 @@ Adversaries may use DGAs for the purpose of [Fallback Channels](https://attack.m
 > External ID: T1568.003
 > STIX ID: attack-pattern--83a766f8-1501-4b3a-a2de-2e2849e8dfc1
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -8399,7 +8437,7 @@ One implementation of [DNS Calculation](https://attack.mitre.org/techniques/T156
 > External ID: T1569
 > STIX ID: attack-pattern--d157f9d2-d09a-4efa-bb2a-64963f94e253
 > Platforms: ['Windows', 'macOS', 'Linux']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -8408,7 +8446,7 @@ One implementation of [DNS Calculation](https://attack.mitre.org/techniques/T156
 > External ID: T1569.001
 > STIX ID: attack-pattern--810aa4ad-61c9-49cb-993f-daa06199421d
 > Platforms: ['macOS']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -8420,7 +8458,7 @@ Adversaries use launchctl to execute commands and programs as [Launch Agent](htt
 > External ID: T1569.002
 > STIX ID: attack-pattern--f1951e8a-500e-4a26-8803-76d95c4554b4
 > Platforms: ['Windows']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -8433,7 +8471,7 @@ Adversaries may leverage these mechanisms to execute malicious content. This can
 > External ID: T1570
 > STIX ID: attack-pattern--bf90d72c-c00b-45e3-b3aa-68560560d4c5
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['lateral-movement']
+> Tactics: ['[lateral-movement](##[TA0008]:Lateral Movement)']
 
 
 **Description: **
@@ -8444,7 +8482,7 @@ Files can also be transferred using native or otherwise present tools on the vic
 > External ID: T1571
 > STIX ID: attack-pattern--b18eae87-b469-4e14-b454-b171b416bc18
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -8455,7 +8493,7 @@ Adversaries may also make changes to victim systems to abuse non-standard ports.
 > External ID: T1572
 > STIX ID: attack-pattern--4fe28b27-b13c-453e-a386-c2ef362a573b
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -8470,7 +8508,7 @@ Adversaries may also leverage [Protocol Tunneling](https://attack.mitre.org/tech
 > External ID: T1573
 > STIX ID: attack-pattern--b8902400-e6c5-4ba2-95aa-2d35b442b118
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -8479,7 +8517,7 @@ Adversaries may also leverage [Protocol Tunneling](https://attack.mitre.org/tech
 > External ID: T1573.001
 > STIX ID: attack-pattern--24bfaeba-cb0d-4525-b3dc-507c77ecec41
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -8488,7 +8526,7 @@ Adversaries may also leverage [Protocol Tunneling](https://attack.mitre.org/tech
 > External ID: T1573.002
 > STIX ID: attack-pattern--bf176076-b789-408e-8cba-7275e81c0ada
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['command-and-control']
+> Tactics: ['[command-and-control](##[TA0011]:Command and Control)']
 
 
 **Description: **
@@ -8729,7 +8767,7 @@ Another variation of this technique is to utilize temporary storage attached to 
 > External ID: T1580
 > STIX ID: attack-pattern--57a3d31a-d04f-4663-b2da-7df8ec3f8c9d
 > Platforms: ['IaaS']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -8744,8 +8782,7 @@ An adversary may enumerate resources using a compromised user's access keys to d
 > External ID: T1583
 > STIX ID: attack-pattern--0458aab9-ad42-4eac-9e22-706a95bafee2
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
-
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 **Description: **
  Adversaries may buy, lease, or rent infrastructure that can be used during targeting. A wide variety of infrastructure exists for hosting and orchestrating adversary operations. Infrastructure solutions include physical or cloud servers, domains, and third-party web services.(Citation: TrendmicroHideoutsLease) Additionally, botnets are available for rent or purchase.
@@ -8755,7 +8792,7 @@ Use of these infrastructure solutions allows adversaries to stage, launch, and e
 > External ID: T1583.001
 > STIX ID: attack-pattern--40f5caa0-4cb7-4117-89fc-d421bb493df3
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8770,7 +8807,7 @@ Domain registrars each maintain a publicly viewable database that displays conta
 > External ID: T1583.002
 > STIX ID: attack-pattern--197ef1b9-e764-46c3-b96c-23f77985dc81
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8781,7 +8818,7 @@ By running their own DNS servers, adversaries can have more control over how the
 > External ID: T1583.003
 > STIX ID: attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 **Description: **
  Adversaries may rent Virtual Private Servers (VPSs) that can be used during targeting. There exist a variety of cloud service providers that will sell virtual machines/containers as a service. By utilizing a VPS, adversaries can make it difficult to physically tie back operations to them. The use of cloud infrastructure can also make it easier for adversaries to rapidly provision, modify, and shut down their infrastructure.
@@ -8791,7 +8828,7 @@ Acquiring a VPS for use in later stages of the adversary lifecycle, such as Comm
 > External ID: T1583.004
 > STIX ID: attack-pattern--60c4b628-4807-4b0b-bbf5-fdac8643c337
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 **Description: **
  Adversaries may buy, lease, or rent physical servers that can be used during targeting. Use of servers allows an adversary to stage, launch, and execute an operation. During post-compromise activity, adversaries may utilize servers for various tasks, including for Command and Control. Adversaries may use web servers to support support watering hole operations, as in [Drive-by Compromise](https://attack.mitre.org/techniques/T1189), or email servers to support [Phishing](https://attack.mitre.org/techniques/T1566) operations. Instead of compromising a third-party [Server](https://attack.mitre.org/techniques/T1584/004) or renting a [Virtual Private Server](https://attack.mitre.org/techniques/T1583/003), adversaries may opt to configure and run their own servers in support of operations.
@@ -8801,7 +8838,7 @@ Adversaries may only need a lightweight setup if most of their activities will t
 > External ID: T1583.005
 > STIX ID: attack-pattern--31225cd3-cd46-4575-b287-c2c14011c074
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8810,7 +8847,7 @@ Adversaries may only need a lightweight setup if most of their activities will t
 > External ID: T1583.006
 > STIX ID: attack-pattern--88d31120-5bc7-4ce3-a9c0-7cf147be8e54
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8819,7 +8856,7 @@ Adversaries may only need a lightweight setup if most of their activities will t
 > External ID: T1583.007
 > STIX ID: attack-pattern--04a5a8ab-3bc8-4c83-95c9-55274a89786d
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8843,7 +8880,7 @@ Once acquired, the serverless runtime environment can be leveraged to either res
 > External ID: T1583.008
 > STIX ID: attack-pattern--155207c0-7f53-4f13-a06b-0a9907ef5096
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 **Description: **
  Adversaries may purchase online advertisements that can be abused to distribute malware to victims. Ads can be purchased to plant as well as favorably position artifacts in specific locations  online, such as prominently placed within search engine results. These ads may make it more difficult for users to distinguish between actual search results and advertisements.(Citation: spamhaus-malvertising) Purchased ads may also target specific audiences using the advertising network’s capabilities, potentially further taking advantage of the trust inherently given to search engines and popular websites. 
@@ -8868,7 +8905,7 @@ Adversaries may also employ several techniques to evade detection by the adverti
 > External ID: T1584
 > STIX ID: attack-pattern--7e3beebd-8bfe-4e7b-a892-e44ab06a75f9
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8888,7 +8925,7 @@ By using compromised infrastructure, adversaries may make it difficult to tie th
 > External ID: T1584.001
 > STIX ID: attack-pattern--f9cc4d06-775f-4ee1-b401-4e2cc0da30ba
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8901,7 +8938,7 @@ Adversaries who compromise a domain may also engage in domain shadowing by creat
 > External ID: T1584.002
 > STIX ID: attack-pattern--c2f59d25-87fe-44aa-8f83-e8e59d077bf5
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8912,7 +8949,7 @@ By compromising DNS servers, adversaries can alter DNS records. Such control can
 > External ID: T1584.003
 > STIX ID: attack-pattern--39cc9f64-cf74-4a48-a4d8-fe98c54a02e0
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8923,7 +8960,7 @@ Compromising a VPS for use in later stages of the adversary lifecycle, such as C
 > External ID: T1584.004
 > STIX ID: attack-pattern--e196b5c5-8118-4a1c-ab8a-936586ce3db5
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8934,7 +8971,7 @@ Adversaries may also compromise web servers to support watering hole operations,
 > External ID: T1584.005
 > STIX ID: attack-pattern--810d8072-afb6-4a56-9ee7-86379ac4a6f3
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8943,7 +8980,7 @@ Adversaries may also compromise web servers to support watering hole operations,
 > External ID: T1584.006
 > STIX ID: attack-pattern--ae797531-3219-49a4-bccf-324ad7a4c7b2
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8952,7 +8989,7 @@ Adversaries may also compromise web servers to support watering hole operations,
 > External ID: T1584.007
 > STIX ID: attack-pattern--df1bc34d-1634-4c93-b89e-8120994fce77
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8963,7 +9000,7 @@ Once compromised, the serverless runtime environment can be leveraged to either 
 > External ID: T1585
 > STIX ID: attack-pattern--cdfc5f0a-9bb9-4352-b896-553cfa2d8fd8
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8976,7 +9013,7 @@ Establishing accounts can also include the creation of accounts with email provi
 > External ID: T1585.001
 > STIX ID: attack-pattern--b1ccd744-3f78-4a0e-9bb2-2002057f7928
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -8989,7 +9026,7 @@ Once a persona has been developed an adversary can use it to create connections 
 > External ID: T1585.002
 > STIX ID: attack-pattern--65013dd2-bc61-43e3-afb5-a14c4fa7437a
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9000,7 +9037,7 @@ To decrease the chance of physically tying back operations to themselves, advers
 > External ID: T1585.003
 > STIX ID: attack-pattern--926d8cfd-1d0d-4da2-ab49-3ca10ec3f3b5
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9016,7 +9053,7 @@ Creating [Cloud Accounts](https://attack.mitre.org/techniques/T1585/003) may als
 > External ID: T1586
 > STIX ID: attack-pattern--81033c3b-16a4-46e4-8fed-9b030dd03c4a
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9031,7 +9068,7 @@ Adversaries may directly leverage compromised email accounts for [Phishing for I
 > External ID: T1586.001
 > STIX ID: attack-pattern--274770e0-2612-4ccf-a678-ef8e7bad365d
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9046,7 +9083,7 @@ Adversaries can use a compromised social media profile to create new, or hijack 
 > External ID: T1586.002
 > STIX ID: attack-pattern--3dc8c101-d4db-4f4d-8150-1b5a76ca5f1b
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9059,7 +9096,7 @@ Adversaries can use a compromised email account to hijack existing email threads
 > External ID: T1586.003
 > STIX ID: attack-pattern--3d52e51e-f6db-4719-813c-48002a99f43a
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9070,7 +9107,7 @@ A variety of methods exist for compromising cloud accounts, such as gathering cr
 > External ID: T1587
 > STIX ID: attack-pattern--edadea33-549c-4ed1-9783-8f5a5853cbdf
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9083,7 +9120,7 @@ As with legitimate development efforts, different skill sets may be required for
 > External ID: T1587.001
 > STIX ID: attack-pattern--212306d8-efa4-44c9-8c2d-ed3d2e224aa0
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9121,7 +9158,7 @@ Malware（恶意软件）指的是任何旨在侵入和破坏计算机系统、�
 > External ID: T1587.002
 > STIX ID: attack-pattern--34b3f738-bd64-40e5-a112-29b0542bc8bf
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9137,7 +9174,7 @@ Prior to [Code Signing](https://attack.mitre.org/techniques/T1553/002), adversar
 > External ID: T1587.003
 > STIX ID: attack-pattern--1cec9319-743b-4840-bb65-431547bce82a
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9152,7 +9189,7 @@ After creating a digital certificate, an adversary may then install that certifi
 > External ID: T1587.004
 > STIX ID: attack-pattern--bbc3cba7-84ae-410d-b18b-16750731dfa2
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9167,7 +9204,7 @@ Adversaries may use exploits during various phases of the adversary lifecycle (i
 > External ID: T1588
 > STIX ID: attack-pattern--ce0687a0-e692-4b77-964a-0784a8e54ff1
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9187,7 +9224,7 @@ In addition to purchasing capabilities, adversaries may steal capabilities from 
 > External ID: T1588.001
 > STIX ID: attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9198,7 +9235,7 @@ In addition to downloading free malware from the internet, adversaries may purch
 > External ID: T1588.002
 > STIX ID: attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9209,7 +9246,7 @@ Adversaries may obtain tools to support their operations, including to support e
 > External ID: T1588.003
 > STIX ID: attack-pattern--e7cbc1de-1f79-48ee-abfd-da1241c65a15
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9220,7 +9257,7 @@ Prior to [Code Signing](https://attack.mitre.org/techniques/T1553/002), adversar
 > External ID: T1588.004
 > STIX ID: attack-pattern--19401639-28d0-4c3c-adcc-bc2ba22f6421
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9235,7 +9272,7 @@ After obtaining a digital certificate, an adversary may then install that certif
 > External ID: T1588.005
 > STIX ID: attack-pattern--f4b843c1-7e92-4701-8fed-ce82f8be2636
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9250,7 +9287,7 @@ Adversaries may use exploits during various phases of the adversary lifecycle (i
 > External ID: T1588.006
 > STIX ID: attack-pattern--2b5aa86b-a0df-4382-848d-30abea443327
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -9266,7 +9303,7 @@ An adversary may monitor vulnerability disclosures/databases to understand the s
 > External ID: T1589
 > STIX ID: attack-pattern--5282dd9a-d26d-4e16-88b7-7c0f4553daf4
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9280,7 +9317,7 @@ Gathering this information may reveal opportunities for other forms of reconnais
 > External ID: T1589.001
 > STIX ID: attack-pattern--bc76d0a4-db11-4551-9ac4-01a469cfb161
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 **Description: **
  Adversaries may gather credentials that can be used during targeting. Account credentials gathered by adversaries may be those directly associated with the target victim organization or attempt to take advantage of the tendency for users to use the same passwords across personal and business accounts.
@@ -9301,7 +9338,7 @@ Gathering this information may reveal opportunities for other forms of reconnais
 > External ID: T1589.002
 > STIX ID: attack-pattern--69f897fd-12a9-4c89-ad6a-46d2f3c38262
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9314,7 +9351,7 @@ Gathering this information may reveal opportunities for other forms of reconnais
 > External ID: T1589.003
 > STIX ID: attack-pattern--76551c52-b111-4884-bc47-ff3e728f0156
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9325,7 +9362,7 @@ Adversaries may easily gather employee names, since they may be readily availabl
 > External ID: T1590
 > STIX ID: attack-pattern--9d48cab2-7929-4812-ad22-f536665f0109
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9338,7 +9375,7 @@ Adversaries may gather this information in various ways, such as direct collecti
 > External ID: T1590.001
 > STIX ID: attack-pattern--e3b168bd-fcd7-439e-9382-2e6c2f63514d
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9354,7 +9391,7 @@ Adversaries may gather this information in various ways, such as direct collecti
 > External ID: T1590.002
 > STIX ID: attack-pattern--0ff59227-8aa8-4c09-bf1f-925605bd07ea
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9367,7 +9404,7 @@ Adversaries may gather this information in various ways, such as querying or oth
 > External ID: T1590.003
 > STIX ID: attack-pattern--36aa137f-5166-41f8-b2f0-a4cfa1b4133e
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9387,7 +9424,7 @@ Adversaries may gather this information in various ways, such as direct elicitat
 > External ID: T1590.004
 > STIX ID: attack-pattern--34ab90a3-05f6-4259-8f21-621081fdaba5
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9398,7 +9435,7 @@ Adversaries may gather this information in various ways, such as direct collecti
 > External ID: T1590.005
 > STIX ID: attack-pattern--0dda99f0-4701-48ca-9774-8504922e92d3
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9409,7 +9446,7 @@ Adversaries may gather this information in various ways, such as direct collecti
 > External ID: T1590.006
 > STIX ID: attack-pattern--6c2957f9-502a-478c-b1dd-d626c0659413
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9420,7 +9457,7 @@ Adversaries may gather this information in various ways, such as direct collecti
 > External ID: T1591
 > STIX ID: attack-pattern--937e4772-8441-4e4a-8bf0-8d447d667e23
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9431,7 +9468,7 @@ Adversaries may gather this information in various ways, such as direct elicitat
 > External ID: T1591.001
 > STIX ID: attack-pattern--ed730f20-0e44-48b9-85f8-0e2adeb76867
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9442,7 +9479,7 @@ Adversaries may gather this information in various ways, such as direct elicitat
 > External ID: T1591.002
 > STIX ID: attack-pattern--6ee2dc99-91ad-4534-a7d8-a649358c331f
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9455,7 +9492,7 @@ Adversaries may gather this information in various ways, such as direct elicitat
 > External ID: T1591.003
 > STIX ID: attack-pattern--2339cf19-8f1e-48f7-8a91-0262ba547b6f
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9473,7 +9510,7 @@ Adversaries may gather this information in various ways, such as direct elicitat
 > External ID: T1591.004
 > STIX ID: attack-pattern--cc723aff-ec88-40e3-a224-5af9fd983cc4
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9491,7 +9528,7 @@ Adversaries may gather this information in various ways, such as direct elicitat
 > External ID: T1592
 > STIX ID: attack-pattern--09312b1a-c3c6-4b45-9844-3ccc78e5d82f
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9502,7 +9539,7 @@ Adversaries may gather this information in various ways, such as direct collecti
 > External ID: T1592.001
 > STIX ID: attack-pattern--24286c33-d4a4-4419-85c2-1d094a896c26
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9513,7 +9550,7 @@ Adversaries may gather this information in various ways, such as direct collecti
 > External ID: T1592.002
 > STIX ID: attack-pattern--baf60e1a-afe5-4d31-830f-1b1ba2351884
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9524,7 +9561,7 @@ Adversaries may gather this information in various ways, such as direct collecti
 > External ID: T1592.003
 > STIX ID: attack-pattern--b85f6ce5-81e8-4f36-aff2-3df9d02a9c9d
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9535,7 +9572,7 @@ Adversaries may gather this information in various ways, such as direct elicitat
 > External ID: T1592.004
 > STIX ID: attack-pattern--774ad5bb-2366-4c13-a8a9-65e50b292e7c
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9546,7 +9583,7 @@ Adversaries may gather this information in various ways, such as direct collecti
 > External ID: T1593
 > STIX ID: attack-pattern--a0e6614a-7740-4b24-bd65-f1bde09fc365
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9557,7 +9594,7 @@ Adversaries may search in different online sites depending on what information t
 > External ID: T1593.001
 > STIX ID: attack-pattern--bbe5b322-e2af-4a5e-9625-a4e62bf84ed3
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9568,7 +9605,7 @@ Adversaries may search in different social media sites depending on what informa
 > External ID: T1593.002
 > STIX ID: attack-pattern--6e561441-8431-4773-a9b8-ccf28ef6a968
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9579,7 +9616,7 @@ Adversaries may craft various search engine queries depending on what informatio
 > External ID: T1593.003
 > STIX ID: attack-pattern--70910fbd-58dc-4c1c-8c48-814d11fcd022
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9592,7 +9629,7 @@ Adversaries may search various public code repositories for various information 
 > External ID: T1594
 > STIX ID: attack-pattern--16cdd21f-da65-4e4f-bc04-dd7d198c7b26
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9603,7 +9640,7 @@ Adversaries may search victim-owned websites to gather actionable information. I
 > External ID: T1595
 > STIX ID: attack-pattern--67073dde-d720-45ae-83da-b12d5e73ca3b
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9614,7 +9651,7 @@ Adversaries may perform different forms of active scanning depending on what inf
 > External ID: T1595.001
 > STIX ID: attack-pattern--db8f5003-3b20-48f0-9b76-123e44208120
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9625,7 +9662,7 @@ Adversaries may scan IP blocks in order to [Gather Victim Network Information](h
 > External ID: T1595.002
 > STIX ID: attack-pattern--5502c4e9-24ef-4d5f-8ee9-9e906c2f82c4
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9638,7 +9675,7 @@ These scans may also include more broad attempts to [Gather Victim Host Informat
 > External ID: T1595.003
 > STIX ID: attack-pattern--bed04f7d-e48a-4e76-bd0f-4c57fe31fc46
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 **Description: **
  Adversaries may iteratively probe infrastructure using brute-forcing and crawling techniques. While this technique employs similar methods to [Brute Force](https://attack.mitre.org/techniques/T1110), its goal is the identification of content and infrastructure rather than the discovery of valid credentials. Wordlists used in these scans may contain generic, commonly used names and file extensions or terms specific to a particular software. Adversaries may also create custom, target-specific wordlists using data gathered from other Reconnaissance techniques (ex: [Gather Victim Org Information](https://attack.mitre.org/techniques/T1591), or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)).
@@ -9657,7 +9694,7 @@ As cloud storage solutions typically use globally unique names, adversaries may 
 > External ID: T1596
 > STIX ID: attack-pattern--55fc4df0-b42c-479a-b860-7a6761bcaad0
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9668,7 +9705,7 @@ Adversaries may search in different open databases depending on what information
 > External ID: T1596.001
 > STIX ID: attack-pattern--17fd695c-b88c-455a-a3d1-43b6cb728532
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9679,7 +9716,7 @@ Adversaries may search DNS data to gather actionable information. Threat actors 
 > External ID: T1596.002
 > STIX ID: attack-pattern--166de1c6-2814-4fe5-8438-4e80f76b169f
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9690,7 +9727,7 @@ Adversaries may search WHOIS data to gather actionable information. Threat actor
 > External ID: T1596.003
 > STIX ID: attack-pattern--0979abf9-4e26-43ec-9b6e-54efc4e70fca
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9701,7 +9738,7 @@ Adversaries may search digital certificate data to gather actionable information
 > External ID: T1596.004
 > STIX ID: attack-pattern--91177e6d-b616-4a03-ba4b-f3b32f7dda75
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9714,7 +9751,7 @@ Adversaries may search CDN data to gather actionable information. Threat actors 
 > External ID: T1596.005
 > STIX ID: attack-pattern--ec4be82f-940c-4dcb-87fe-2bbdd17c692f
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9730,7 +9767,7 @@ Adversaries may search scan databases to gather actionable information. Threat a
 > External ID: T1597
 > STIX ID: attack-pattern--a51eb150-93b1-484b-a503-e51453b127a4
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9741,7 +9778,7 @@ Adversaries may search in different closed databases depending on what informati
 > External ID: T1597.001
 > STIX ID: attack-pattern--51e54974-a541-4fb6-a61b-0518e4c6de41
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 **Description: **
  Adversaries may search private data from threat intelligence vendors for information that can be used during targeting. Threat intelligence vendors may offer paid feeds or portals that offer more data than what is publicly reported. Although sensitive details (such as customer names and other identifiers) may be redacted, this information may contain trends regarding breaches such as target industries, attribution claims, and successful TTPs/countermeasures.(Citation: D3Secutrity CTI Feeds)
@@ -9751,7 +9788,7 @@ Adversaries may search in private threat intelligence vendor data to gather acti
 > External ID: T1597.002
 > STIX ID: attack-pattern--0a241b6c-7bb2-48f9-98f7-128145b4d27f
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9762,7 +9799,7 @@ Adversaries may purchase information about their already identified targets, or 
 > External ID: T1598
 > STIX ID: attack-pattern--cca0ccb6-a068-4574-a722-b1556f86833a
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9779,7 +9816,7 @@ Phishing for information may also involve evasive techniques, such as removing o
 > External ID: T1598.001
 > STIX ID: attack-pattern--f870408c-b1cd-49c7-a5c7-0ef0fc496cc6
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9790,7 +9827,7 @@ All forms of spearphishing are electronically delivered social engineering targe
 > External ID: T1598.002
 > STIX ID: attack-pattern--8982a661-d84c-48c0-b4ec-1db29c6cf3bc
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9801,7 +9838,7 @@ All forms of spearphishing are electronically delivered social engineering targe
 > External ID: T1598.003
 > STIX ID: attack-pattern--2d3f5b3c-54ca-4f4d-bb1f-849346d31230
 > Platforms: ['PRE']
-> Tactics: ['reconnaissance']
+> Tactics: ['[reconnaissance](##[TA0043]:Reconnaissance)']
 
 
 **Description: **
@@ -9946,7 +9983,7 @@ Downgrading the system image to an older versions may allow an adversary to evad
 > External ID: T1602
 > STIX ID: attack-pattern--0ad7bc5c-235a-4048-944b-3b286676cb74
 > Platforms: ['Network']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -9957,7 +9994,7 @@ Adversaries may target these repositories in order to collect large quantities o
 > External ID: T1602.001
 > STIX ID: attack-pattern--ee7ff928-801c-4f34-8a99-3df965e581a5
 > Platforms: ['Network']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -9970,7 +10007,7 @@ Adversaries may use SNMP queries to collect MIB content directly from SNMP-manag
 > External ID: T1602.002
 > STIX ID: attack-pattern--52759bf1-fe12-4052-ace6-c5b0cf7dd7fd
 > Platforms: ['Network']
-> Tactics: ['collection']
+> Tactics: ['[collection](##[TA0009]:Collection)']
 
 
 **Description: **
@@ -10020,7 +10057,7 @@ An adversary may gain administrative Azure AD privileges if a SAML token is forg
 > External ID: T1608
 > STIX ID: attack-pattern--84771bc3-f6a0-403e-b144-01af70e5fda0
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -10048,7 +10085,7 @@ Staging of capabilities can aid the adversary in a number of initial access and 
 > External ID: T1608.001
 > STIX ID: attack-pattern--3ee16395-03f0-4690-a32e-69ce9ada0f9e
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -10064,7 +10101,7 @@ Adversaries may upload backdoored files, such as application binaries, virtual m
 > External ID: T1608.002
 > STIX ID: attack-pattern--506f6f49-7045-4156-9007-7474cb44ad6d
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -10084,7 +10121,7 @@ Adversaries can avoid the need to upload a tool by having compromised victim mac
 > External ID: T1608.003
 > STIX ID: attack-pattern--c071d8c1-3b3a-4f22-9407-ca4e96921069
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -10099,7 +10136,7 @@ Adversaries can obtain digital certificates (see [Digital Certificates](https://
 > External ID: T1608.004
 > STIX ID: attack-pattern--31fe0ba2-62fd-4fd9-9293-4043d84f7fe9
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 **Description: **
  Adversaries may prepare an operational environment to infect systems that visit a website over the normal course of browsing. Endpoint systems may be compromised through browsing to adversary controlled sites, as in [Drive-by Compromise](https://attack.mitre.org/techniques/T1189). In such cases, the user's web browser is typically targeted for exploitation (often not requiring any extra user interaction once landing on the site), but adversaries may also set up websites for non-exploitation behavior such as [Application Access Token](https://attack.mitre.org/techniques/T1550/001). Prior to [Drive-by Compromise](https://attack.mitre.org/techniques/T1189), adversaries must stage resources needed to deliver that exploit to users who browse to an adversary controlled site. Drive-by content can be staged on adversary controlled infrastructure that has been acquired ([Acquire Infrastructure](https://attack.mitre.org/techniques/T1583)) or previously compromised ([Compromise Infrastructure](https://attack.mitre.org/techniques/T1584)).
@@ -10136,7 +10173,7 @@ Adversaries may purchase domains similar to legitimate domains (ex: homoglyphs, 
 > External ID: T1608.005
 > STIX ID: attack-pattern--84ae8255-b4f4-4237-b5c5-e717405a9701
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -10158,7 +10195,7 @@ Adversaries may purchase domains similar to legitimate domains (ex: homoglyphs, 
 > External ID: T1608.006
 > STIX ID: attack-pattern--e5d550f3-2202-4634-85f2-4a200a1d49b3
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -10198,7 +10235,7 @@ SEO Poisoning对用户和组织都构成威胁。对用户而言，他们可能�
 > External ID: T1609
 > STIX ID: attack-pattern--7b50a1d3-4ca7-45d1-989d-a6503f04bfe1
 > Platforms: ['Containers']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -10216,7 +10253,7 @@ In Docker, adversaries may specify an entrypoint during container deployment tha
 > External ID: T1610
 > STIX ID: attack-pattern--56e0d8b8-3e25-49dd-9050-3aa252f5aa92
 > Platforms: ['Containers']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'execution']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -10271,7 +10308,7 @@ An adversary may take advantage of that <code>build</code> API to build a custom
 > External ID: T1613
 > STIX ID: attack-pattern--0470e792-32f8-46b0-a351-652bc35e9336
 > Platforms: ['Containers']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -10282,7 +10319,7 @@ These resources can be viewed within web applications such as the Kubernetes das
 > External ID: T1614
 > STIX ID: attack-pattern--c877e33f-1df6-40d6-b1e7-ce70f16f4979
 > Platforms: ['Windows', 'Linux', 'macOS', 'IaaS']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -10296,7 +10333,7 @@ Adversaries may also attempt to infer the location of a victim host using IP add
 > External ID: T1614.001
 > STIX ID: attack-pattern--c1b68a96-3c48-49ea-a6c0-9b27359f9c19
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -10311,7 +10348,7 @@ On a macOS or Linux system, adversaries may query <code>locale</code> to retriev
 > External ID: T1615
 > STIX ID: attack-pattern--1b20efbf-8063-4fc3-a07d-b575318a301b
 > Platforms: ['Windows']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -10322,7 +10359,7 @@ Adversaries may use commands such as <code>gpresult</code> or various publicly a
 > External ID: T1619
 > STIX ID: attack-pattern--8565825b-21c8-4518-b75e-cbc4c717a156
 > Platforms: ['IaaS']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -10365,7 +10402,7 @@ In some cases, adversaries may continuously repeat login attempts in order to bo
 > External ID: T1622
 > STIX ID: attack-pattern--e4dc8c01-417f-458d-9ee0-bb0617c1b391
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', 'discovery']
+> Tactics: ['[defense-evasion](##[TA0005]:Defense Evasion)', '[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
@@ -10402,7 +10439,7 @@ For example, adversaries can add a malicious application path to the `~/Library/
 > External ID: T1648
 > STIX ID: attack-pattern--e848506b-8484-4410-8017-3d235a52f5b3
 > Platforms: ['SaaS', 'IaaS', 'Office 365']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -10440,7 +10477,7 @@ Adversaries who have access to root (or subordinate) CA certificate private keys
 > External ID: T1650
 > STIX ID: attack-pattern--d21bb61f-08ad-4dc1-b001-81ca6cb79954
 > Platforms: ['PRE']
-> Tactics: ['resource-development']
+> Tactics: ['[resource-development](##[TA0042]:Resource Development)']
 
 
 **Description: **
@@ -10468,7 +10505,7 @@ In some cases, purchasing access to an organization in sectors such as IT contra
 > External ID: T1651
 > STIX ID: attack-pattern--d94b3ae9-8059-4989-8e9f-ea0f601f80a7
 > Platforms: ['IaaS', 'Azure AD']
-> Tactics: ['execution']
+> Tactics: ['[execution](##[TA0002]:Execution)']
 
 
 **Description: **
@@ -10479,7 +10516,7 @@ If an adversary gains administrative access to a cloud environment, they may be 
 > External ID: T1652
 > STIX ID: attack-pattern--215d9700-5881-48b8-8265-6449dbb7195d
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['discovery']
+> Tactics: ['[discovery](##[TA0007]:Discovery)']
 
 
 **Description: **
