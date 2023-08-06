@@ -2,7 +2,7 @@
 >
 > 创建时间：2023-07-05
 >
-> 更新时间：2023-07-10
+> 更新时间：2023-08-06
 
 
 
@@ -384,7 +384,6 @@ Persistence consists of techniques that adversaries use to keep access to system
 > 总结起来，"Logon"和"Login"在大多数情况下都指代相同的概念，即用户通过提供凭据（如用户名和密码）来访问计算机系统或网络服务。
 >
 > 
-
 ## [TA0004]:Privilege Escalation
 
 > External ID: TA0004
@@ -728,69 +727,69 @@ Credential Access consists of techniques for stealing credentials like account n
 
 |Tech|Sub-Tech|中文|External ID|
 |---|---|---|---|
-|[OS Credential Dumping](##[T1003]:OS Credential Dumping)|||T1003|
-||[LSASS Memory](###[T1003.001]:LSASS Memory)||T1003.001|
-||[Security Account Manager](###[T1003.002]:Security Account Manager)||T1003.002|
-||[NTDS](###[T1003.003]:NTDS)||T1003.003|
-||[LSA Secrets](###[T1003.004]:LSA Secrets)||T1003.004|
-||[Cached Domain Credentials](###[T1003.005]:Cached Domain Credentials)||T1003.005|
-||[DCSync](###[T1003.006]:DCSync)||T1003.006|
-||[Proc Filesystem](###[T1003.007]:Proc Filesystem)||T1003.007|
-||[/etc/passwd and /etc/shadow](###[T1003.008]:/etc/passwd and /etc/shadow)||T1003.008|
-|[Network Sniffing](##[T1040]:Network Sniffing)|||T1040|
-|[Input Capture](##[T1056]:Input Capture)|||T1056|
-||[Keylogging](###[T1056.001]:Keylogging)||T1056.001|
-||[GUI Input Capture](###[T1056.002]:GUI Input Capture)||T1056.002|
-||[Web Portal Capture](###[T1056.003]:Web Portal Capture)||T1056.003|
-||[Credential API Hooking](###[T1056.004]:Credential API Hooking)||T1056.004|
-|[Brute Force](##[T1110]:Brute Force)|||T1110|
-||[Password Guessing](###[T1110.001]:Password Guessing)||T1110.001|
-||[Password Cracking](###[T1110.002]:Password Cracking)||T1110.002|
-||[Password Spraying](###[T1110.003]:Password Spraying)||T1110.003|
-||[Credential Stuffing](###[T1110.004]:Credential Stuffing)||T1110.004|
-|[Multi-Factor Authentication Interception](##[T1111]:Multi-Factor Authentication Interception)|||T1111|
-|[Forced Authentication](##[T1187]:Forced Authentication)|||T1187|
-|[Exploitation for Credential Access](##[T1212]:Exploitation for Credential Access)|||T1212|
-|[Steal Application Access Token](##[T1528]:Steal Application Access Token)|||T1528|
-|[Steal Web Session Cookie](##[T1539]:Steal Web Session Cookie)|||T1539|
-|[Unsecured Credentials](##[T1552]:Unsecured Credentials)|||T1552|
-||[Credentials In Files](###[T1552.001]:Credentials In Files)||T1552.001|
-||[Credentials in Registry](###[T1552.002]:Credentials in Registry)||T1552.002|
-||[Bash History](###[T1552.003]:Bash History)||T1552.003|
-||[Private Keys](###[T1552.004]:Private Keys)||T1552.004|
-||[Cloud Instance Metadata API](###[T1552.005]:Cloud Instance Metadata API)||T1552.005|
-||[Group Policy Preferences](###[T1552.006]:Group Policy Preferences)||T1552.006|
-||[Container API](###[T1552.007]:Container API)||T1552.007|
-||[Chat Messages](###[T1552.008]:Chat Messages)||T1552.008|
-|[Credentials from Password Stores](##[T1555]:Credentials from Password Stores)|||T1555|
-||[Keychain](###[T1555.001]:Keychain)||T1555.001|
-||[Securityd Memory](###[T1555.002]:Securityd Memory)||T1555.002|
-||[Credentials from Web Browsers](###[T1555.003]:Credentials from Web Browsers)||T1555.003|
-||[Windows Credential Manager](###[T1555.004]:Windows Credential Manager)||T1555.004|
-||[Password Managers](###[T1555.005]:Password Managers)||T1555.005|
-|[Modify Authentication Process](##[T1556]:Modify Authentication Process)|||T1556|
-||[Domain Controller Authentication](###[T1556.001]:Domain Controller Authentication)||T1556.001|
-||[Password Filter DLL](###[T1556.002]:Password Filter DLL)||T1556.002|
-||[Pluggable Authentication Modules](###[T1556.003]:Pluggable Authentication Modules)||T1556.003|
-||[Network Device Authentication](###[T1556.004]:Network Device Authentication)||T1556.004|
-||[Reversible Encryption](###[T1556.005]:Reversible Encryption)||T1556.005|
-||[Multi-Factor Authentication](###[T1556.006]:Multi-Factor Authentication)||T1556.006|
-||[Hybrid Identity](###[T1556.007]:Hybrid Identity)||T1556.007|
-||[Network Provider DLL](###[T1556.008]:Network Provider DLL)||T1556.008|
-|[Adversary-in-the-Middle](##[T1557]:Adversary-in-the-Middle)|||T1557|
-||[LLMNR/NBT-NS Poisoning and SMB Relay](###[T1557.001]:LLMNR/NBT-NS Poisoning and SMB Relay)||T1557.001|
-||[ARP Cache Poisoning](###[T1557.002]:ARP Cache Poisoning)||T1557.002|
-||[DHCP Spoofing](###[T1557.003]:DHCP Spoofing)||T1557.003|
-|[Steal or Forge Kerberos Tickets](##[T1558]:Steal or Forge Kerberos Tickets)|||T1558|
-||[Golden Ticket](###[T1558.001]:Golden Ticket)||T1558.001|
-||[Silver Ticket](###[T1558.002]:Silver Ticket)||T1558.002|
-||[Kerberoasting](###[T1558.003]:Kerberoasting)||T1558.003|
-||[AS-REP Roasting](###[T1558.004]:AS-REP Roasting)||T1558.004|
-|[Forge Web Credentials](##[T1606]:Forge Web Credentials)|||T1606|
-||[Web Cookies](###[T1606.001]:Web Cookies)||T1606.001|
-||[SAML Tokens](###[T1606.002]:SAML Tokens)||T1606.002|
-|[Multi-Factor Authentication Request Generation](##[T1621]:Multi-Factor Authentication Request Generation)|||T1621|
-|[Steal or Forge Authentication Certificates](##[T1649]:Steal or Forge Authentication Certificates)|||T1649|
+|[OS Credential Dumping](##[T1003]:OS Credential Dumping)||操作系统凭证转储|T1003|
+||[LSASS Memory](###[T1003.001]:LSASS Memory)|LSASS 内存|T1003.001|
+||[Security Account Manager](###[T1003.002]:Security Account Manager)|安全账户管理|T1003.002|
+||[NTDS](###[T1003.003]:NTDS)|NTDS|T1003.003|
+||[LSA Secrets](###[T1003.004]:LSA Secrets)|LSA Secrets|T1003.004|
+||[Cached Domain Credentials](###[T1003.005]:Cached Domain Credentials)|缓存的域凭证|T1003.005|
+||[DCSync](###[T1003.006]:DCSync)|DC同步|T1003.006|
+||[Proc Filesystem](###[T1003.007]:Proc Filesystem)|Proc文件系统|T1003.007|
+||[/etc/passwd and /etc/shadow](###[T1003.008]:/etc/passwd and /etc/shadow)|/etc/passwd and /etc/shadow|T1003.008|
+|[Network Sniffing](##[T1040]:Network Sniffing)||网络嗅探|T1040|
+|[Input Capture](##[T1056]:Input Capture)||捕获输入|T1056|
+||[Keylogging](###[T1056.001]:Keylogging)|键盘记录|T1056.001|
+||[GUI Input Capture](###[T1056.002]:GUI Input Capture)|GUI 输入捕获|T1056.002|
+||[Web Portal Capture](###[T1056.003]:Web Portal Capture)|网页门户获取|T1056.003|
+||[Credential API Hooking](###[T1056.004]:Credential API Hooking)|凭证API Hooking|T1056.004|
+|[Brute Force](##[T1110]:Brute Force)||暴力破解|T1110|
+||[Password Guessing](###[T1110.001]:Password Guessing)|密码猜测|T1110.001|
+||[Password Cracking](###[T1110.002]:Password Cracking)|密码破解|T1110.002|
+||[Password Spraying](###[T1110.003]:Password Spraying)|密码喷洒|T1110.003|
+||[Credential Stuffing](###[T1110.004]:Credential Stuffing)|凭证填充|T1110.004|
+|[Multi-Factor Authentication Interception](##[T1111]:Multi-Factor Authentication Interception)||多因子身份认证拦截|T1111|
+|[Forced Authentication](##[T1187]:Forced Authentication)||迫使身份认证|T1187|
+|[Exploitation for Credential Access](##[T1212]:Exploitation for Credential Access)||利用凭证访问漏洞|T1212|
+|[Steal Application Access Token](##[T1528]:Steal Application Access Token)||盗取应用访问令牌|T1528|
+|[Steal Web Session Cookie](##[T1539]:Steal Web Session Cookie)||盗取Web Session Cookie|T1539|
+|[Unsecured Credentials](##[T1552]:Unsecured Credentials)||使用不安全的凭证|T1552|
+||[Credentials In Files](###[T1552.001]:Credentials In Files)|文件中的凭证|T1552.001|
+||[Credentials in Registry](###[T1552.002]:Credentials in Registry)|注册表中的凭证|T1552.002|
+||[Bash History](###[T1552.003]:Bash History)|Bash历史|T1552.003|
+||[Private Keys](###[T1552.004]:Private Keys)|私钥|T1552.004|
+||[Cloud Instance Metadata API](###[T1552.005]:Cloud Instance Metadata API)|云实例元数据API|T1552.005|
+||[Group Policy Preferences](###[T1552.006]:Group Policy Preferences)|组策略首选项|T1552.006|
+||[Container API](###[T1552.007]:Container API)|容器API|T1552.007|
+||[Chat Messages](###[T1552.008]:Chat Messages)|聊天消息|T1552.008|
+|[Credentials from Password Stores](##[T1555]:Credentials from Password Stores)||密码库中的凭证|T1555|
+||[Keychain](###[T1555.001]:Keychain)|钥匙串|T1555.001|
+||[Securityd Memory](###[T1555.002]:Securityd Memory)|Securityd 内存|T1555.002|
+||[Credentials from Web Browsers](###[T1555.003]:Credentials from Web Browsers)|浏览器中的凭证|T1555.003|
+||[Windows Credential Manager](###[T1555.004]:Windows Credential Manager)|Windows 凭证管理器|T1555.004|
+||[Password Managers](###[T1555.005]:Password Managers)|密码管理器|T1555.005|
+|[Modify Authentication Process](##[T1556]:Modify Authentication Process)||修改身份认证过程|T1556|
+||[Domain Controller Authentication](###[T1556.001]:Domain Controller Authentication)|域控制器身份验证|T1556.001|
+||[Password Filter DLL](###[T1556.002]:Password Filter DLL)|密码过滤DLL|T1556.002|
+||[Pluggable Authentication Modules](###[T1556.003]:Pluggable Authentication Modules)|可插拔验证模块 (Pluggable Authentication Module, PAM)|T1556.003|
+||[Network Device Authentication](###[T1556.004]:Network Device Authentication)|网络设备身份验证|T1556.004|
+||[Reversible Encryption](###[T1556.005]:Reversible Encryption)|可逆加密|T1556.005|
+||[Multi-Factor Authentication](###[T1556.006]:Multi-Factor Authentication)|多因子身份认证|T1556.006|
+||[Hybrid Identity](###[T1556.007]:Hybrid Identity)|混合身份|T1556.007|
+||[Network Provider DLL](###[T1556.008]:Network Provider DLL)|Network Provider DLL|T1556.008|
+|[Adversary-in-the-Middle](##[T1557]:Adversary-in-the-Middle)||中间人攻击|T1557|
+||[LLMNR/NBT-NS Poisoning and SMB Relay](###[T1557.001]:LLMNR/NBT-NS Poisoning and SMB Relay)|LLMNR/NBT-NS毒化和SMB延迟|T1557.001|
+||[ARP Cache Poisoning](###[T1557.002]:ARP Cache Poisoning)|ARP缓存毒化|T1557.002|
+||[DHCP Spoofing](###[T1557.003]:DHCP Spoofing)|DHCP欺骗|T1557.003|
+|[Steal or Forge Kerberos Tickets](##[T1558]:Steal or Forge Kerberos Tickets)||窃取或伪造Kerberos票据|T1558|
+||[Golden Ticket](###[T1558.001]:Golden Ticket)|黄金票据|T1558.001|
+||[Silver Ticket](###[T1558.002]:Silver Ticket)|白银票据|T1558.002|
+||[Kerberoasting](###[T1558.003]:Kerberoasting)|Kerberoasting|T1558.003|
+||[AS-REP Roasting](###[T1558.004]:AS-REP Roasting)|AS-REP Roasting|T1558.004|
+|[Forge Web Credentials](##[T1606]:Forge Web Credentials)||伪造Web凭证|T1606|
+||[Web Cookies](###[T1606.001]:Web Cookies)|Web Cookies|T1606.001|
+||[SAML Tokens](###[T1606.002]:SAML Tokens)|SAML 令牌|T1606.002|
+|[Multi-Factor Authentication Request Generation](##[T1621]:Multi-Factor Authentication Request Generation)||生成多因子认证请求|T1621|
+|[Steal or Forge Authentication Certificates](##[T1649]:Steal or Forge Authentication Certificates)||窃取或伪造身份认证凭证|T1649|
 
 
 
@@ -1119,8 +1118,7 @@ Adversaries may impersonate a fake SSL/TLS handshake to make it look like subseq
 > External ID: T1003
 > STIX ID: attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['credential-access']
-
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password, from the operating system and software. Credentials can then be used to perform [Lateral Movement](https://attack.mitre.org/tactics/TA0008) and access restricted information.
@@ -1131,7 +1129,7 @@ Several of the tools mentioned in associated sub-techniques may be used by both 
 > External ID: T1003.001
 > STIX ID: attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -1166,7 +1164,7 @@ The following SSPs can be used to access credentials:
 > External ID: T1003.002
 > STIX ID: attack-pattern--1644e709-12d2-41e5-a60f-3470991f5011
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -1196,7 +1194,7 @@ Notes:
 > External ID: T1003.003
 > STIX ID: attack-pattern--edf91964-b26e-4b4a-9600-ccacd7d7df24
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -1215,7 +1213,7 @@ The following tools and techniques can be used to enumerate the NTDS file and th
 > External ID: T1003.004
 > STIX ID: attack-pattern--1ecfdab8-7d59-4c98-95d4-dc41970f57fc
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -1223,10 +1221,12 @@ The following tools and techniques can be used to enumerate the NTDS file and th
 
 [Reg](https://attack.mitre.org/software/S0075) can be used to extract from the Registry. [Mimikatz](https://attack.mitre.org/software/S0002) can be used to extract secrets from memory.(Citation: ired Dumping LSA Secrets)
 ### [T1003.005]:Cached Domain Credentials
+> 中文：缓存的域凭证
+>
 > External ID: T1003.005
 > STIX ID: attack-pattern--6add2ab5-2711-4e9d-87c8-7a0be8531530
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -1237,11 +1237,20 @@ On Windows Vista and newer, the hash format is DCC2 (Domain Cached Credentials v
 With SYSTEM access, the tools/utilities such as [Mimikatz](https://attack.mitre.org/software/S0002), [Reg](https://attack.mitre.org/software/S0075), and secretsdump.py can be used to extract the cached credentials.
 
 Note: Cached credentials for Windows Vista are derived using PBKDF2.(Citation: PassLib mscache)
+
+攻击者可能尝试访问缓存的域凭证，以便在域控制器不可用的情况下进行身份验证。(引用：Microsoft - Cached Creds)
+
+在Windows Vista及更高版本中，哈希格式为DCC2（域缓存凭证版本2）哈希，也称为MS-Cache v2哈希。(引用：PassLib mscache) 默认缓存凭证的数量因系统而异，可以根据需要进行修改。该哈希不允许通过哈希方式进行攻击，而是需要使用[密码破解](https://attack.mitre.org/techniques/T1110/002)来恢复明文密码。(引用：ired mscache)
+
+在具备SYSTEM访问权限的情况下，可以使用工具/实用程序如[Mimikatz](https://attack.mitre.org/software/S0002)、[Reg](https://attack.mitre.org/software/S0075)和secretsdump.py来提取缓存的凭证。
+
+注意：Windows Vista的缓存凭证是使用PBKDF2导出的。(引用：PassLib mscache)
+
 ### [T1003.006]:DCSync
 > External ID: T1003.006
 > STIX ID: attack-pattern--f303a39a-6255-4b89-aecc-18c4d8ca7163
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  Adversaries may attempt to access credentials and other sensitive information by abusing a Windows Domain Controller's application programming interface (API)(Citation: Microsoft DRSR Dec 2017) (Citation: Microsoft GetNCCChanges) (Citation: Samba DRSUAPI) (Citation: Wine API samlib.dll) to simulate the replication process from a remote domain controller using a technique called DCSync.
@@ -1253,7 +1262,7 @@ DCSync functionality has been included in the "lsadump" module in [Mimikatz](htt
 > External ID: T1003.007
 > STIX ID: attack-pattern--3120b9fa-23b8-4500-ae73-09494f607b7d
 > Platforms: ['Linux']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -1266,7 +1275,7 @@ If running as or with the permissions of a web browser, a process can search the
 > External ID: T1003.008
 > STIX ID: attack-pattern--d0b4fcdb-d67d-4ed2-99ce-788b12f8c0f4
 > Platforms: ['Linux']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -2110,7 +2119,7 @@ Startup Items 是指在计算机启动时自动运行的应用程序或服务。
 > External ID: T1040
 > STIX ID: attack-pattern--3257eb21-f9a7-4430-8de1-d8b6e288f529
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network', 'IaaS']
-> Tactics: ['credential-access', 'discovery']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', 'discovery']
 
 
 **Description: **
@@ -2638,19 +2647,25 @@ ListPlanting的一些变体可能会在目标进程中分配内存，然后使�
 最后，通过向进程窗口的<SysListView32>子项发送LVM_SORTITEMS消息，触发有效载荷在新分配的缓冲区中传递并执行作为ListView_SortItems回调函数
 
 ## [T1056]:Input Capture
+> 中文：捕获输入
+>
 > External ID: T1056
 > STIX ID: attack-pattern--bb5a00de-e086-4859-a231-fa793f6797e2
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['collection', 'credential-access']
-
+> Tactics: ['collection', '[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  Adversaries may use methods of capturing user input to obtain credentials or collect information. During normal system usage, users often provide credentials to various different locations, such as login pages/portals or system dialog boxes. Input capture mechanisms may be transparent to the user (e.g. [Credential API Hooking](https://attack.mitre.org/techniques/T1056/004)) or rely on deceiving the user into providing input into what they believe to be a genuine service (e.g. [Web Portal Capture](https://attack.mitre.org/techniques/T1056/003)).
+
+攻击者可能使用各种方法来捕获用户输入，以获取凭证或收集信息。在正常的系统使用过程中，用户通常会向不同的地方提供凭证，例如登录页面/门户或系统对话框。输入捕获机制可能对用户不可见（例如[凭证API Hooking](https://attack.mitre.org/techniques/T1056/004)）或依靠欺骗用户，使他们在所信任的服务中提供输入（例如[Web门户捕获](https://attack.mitre.org/techniques/T1056/003)）。
+
 ### [T1056.001]:Keylogging
+> 中文：键盘记录
+>
 > External ID: T1056.001
 > STIX ID: attack-pattern--09a60ea3-a8d1-4ae5-976e-5783248b72a4
 > Platforms: ['Windows', 'macOS', 'Linux', 'Network']
-> Tactics: ['collection', 'credential-access']
+> Tactics: ['collection', '[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -2663,33 +2678,45 @@ Keylogging is the most prevalent type of input capture, with many different ways
 * Windows Registry modifications.
 * Custom drivers.
 * [Modify System Image](https://attack.mitre.org/techniques/T1601) may provide adversaries with hooks into the operating system of network devices to read raw keystrokes for login sessions.(Citation: Cisco Blog Legacy Device Attacks) 
+
+攻击者可能记录用户按键，以截取用户输入的凭证。当[操作系统凭证转储](https://attack.mitre.org/techniques/T1003)的尝试不起作用时，按键记录很可能用于获取新的访问机会的凭证，并且可能需要攻击者在系统上拦截按键一段时间，然后才能成功捕获凭证。 按键记录是最常见的输入捕获类型，有许多不同的截取按键的方法。(引用：Adventures of a Keystroke) 一些方法包括： 
+
+* 钩取用于处理按键的API回调。与[凭证API Hooking](https://attack.mitre.org/techniques/T1056/004)不同，这仅侧重于用于处理按键数据的API函数。 
+* 从硬件缓冲区读取原始按键数据。 
+* 修改Windows注册表。 
+* 自定义驱动程序。 
+* [修改系统镜像](https://attack.mitre.org/techniques/T1601)可能为攻击者提供了进入网络设备操作系统的钩子，以读取登录会话的原始按键。(引用：Cisco Blog Legacy Device Attacks)
+
 ### [T1056.002]:GUI Input Capture
 > External ID: T1056.002
 > STIX ID: attack-pattern--a2029942-0a85-4947-b23c-ca434698171d
 > Platforms: ['macOS', 'Windows', 'Linux']
-> Tactics: ['collection', 'credential-access']
-
+> Tactics: ['collection', '[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  Adversaries may mimic common operating system GUI components to prompt users for credentials with a seemingly legitimate prompt. When programs are executed that need additional privileges than are present in the current user context, it is common for the operating system to prompt the user for proper credentials to authorize the elevated privileges for the task (ex: [Bypass User Account Control](https://attack.mitre.org/techniques/T1548/002)).
 
 Adversaries may mimic this functionality to prompt users for credentials with a seemingly legitimate prompt for a number of reasons that mimic normal usage, such as a fake installer requiring additional access or a fake malware removal suite.(Citation: OSX Malware Exploits MacKeeper) This type of prompt can be used to collect credentials via various languages such as [AppleScript](https://attack.mitre.org/techniques/T1059/002)(Citation: LogRhythm Do You Trust Oct 2014)(Citation: OSX Keydnap malware)(Citation: Spoofing credential dialogs) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).(Citation: LogRhythm Do You Trust Oct 2014)(Citation: Enigma Phishing for Credentials Jan 2015)(Citation: Spoofing credential dialogs) On Linux systems adversaries may launch dialog boxes prompting users for credentials from malicious shell scripts or the command line (i.e. [Unix Shell](https://attack.mitre.org/techniques/T1059/004)).(Citation: Spoofing credential dialogs) 
 ### [T1056.003]:Web Portal Capture
+> 中文：网页门户获取
+>
 > External ID: T1056.003
 > STIX ID: attack-pattern--69e5226d-05dc-4f15-95d7-44f5ed78d06e
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['collection', 'credential-access']
-
+> Tactics: ['collection', '[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  Adversaries may install code on externally facing portals, such as a VPN login page, to capture and transmit credentials of users who attempt to log into the service. For example, a compromised login page may log provided user credentials before logging the user in to the service.
 
 This variation on input capture may be conducted post-compromise using legitimate administrative access as a backup measure to maintain network access through [External Remote Services](https://attack.mitre.org/techniques/T1133) and [Valid Accounts](https://attack.mitre.org/techniques/T1078) or as part of the initial compromise by exploitation of the externally facing web service.(Citation: Volexity Virtual Private Keylogging)
+
+攻击者可能在外部面向的门户上安装代码，例如 VPN 登录页面，以捕获和传输尝试登录服务的用户的凭据。例如，被入侵的登录页面可能会在将用户登录到服务之前记录提供的用户凭据。 这种变种的输入捕获可以在入侵后使用合法的管理访问作为备用措施，以通过 [外部远程服务](https://attack.mitre.org/techniques/T1133) 和 [有效账户](https://attack.mitre.org/techniques/T1078) 保持网络访问，也可以作为初始入侵的一部分，通过利用外部面向的 Web 服务进行。(引用：Volexity Virtual Private Keylogging)
+
 ### [T1056.004]:Credential API Hooking
 > External ID: T1056.004
 > STIX ID: attack-pattern--f5946b5e-9408-485f-a7f7-b5efc88909b6
 > Platforms: ['Windows']
-> Tactics: ['collection', 'credential-access']
+> Tactics: ['collection', '[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -2698,6 +2725,8 @@ This variation on input capture may be conducted post-compromise using legitimat
 * **Hooks procedures**, which intercept and execute designated code in response to events such as messages, keystrokes, and mouse inputs.(Citation: Microsoft Hook Overview)(Citation: Elastic Process Injection July 2017)
 * **Import address table (IAT) hooking**, which use modifications to a process’s IAT, where pointers to imported API functions are stored.(Citation: Elastic Process Injection July 2017)(Citation: Adlice Software IAT Hooks Oct 2014)(Citation: MWRInfoSecurity Dynamic Hooking 2015)
 * **Inline hooking**, which overwrites the first bytes in an API function to redirect code flow.(Citation: Elastic Process Injection July 2017)(Citation: HighTech Bridge Inline Hooking Sept 2011)(Citation: MWRInfoSecurity Dynamic Hooking 2015)
+
+
 
 ## [T1057]:Process Discovery
 > External ID: T1057
@@ -3676,7 +3705,7 @@ Adversaries may abuse these OS API functions as a means of executing behaviors. 
 > External ID: T1110
 > STIX ID: attack-pattern--a93494bb-4b80-4ea1-8695-3236a49916fd
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers', 'Network']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -3687,7 +3716,7 @@ Brute forcing credentials may take place at various points during a breach. For 
 > External ID: T1110.001
 > STIX ID: attack-pattern--09c4c11e-4fa1-4f8c-8dad-3cf8e69ad119
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers', 'Network']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -3714,22 +3743,28 @@ Typically, management services over commonly used ports are used when guessing p
 In addition to management services, adversaries may "target single sign-on (SSO) and cloud-based applications utilizing federated authentication protocols," as well as externally facing email applications, such as Office 365.(Citation: US-CERT TA18-068A 2018). Further, adversaries may abuse network device interfaces (such as `wlanAPI`) to brute force accessible wifi-router(s) via wireless authentication protocols.(Citation: Trend Micro Emotet 2020)
 
 In default environments, LDAP and Kerberos connection attempts are less likely to trigger events over SMB, which creates Windows "logon failure" event ID 4625.
+
+Password Guessing（密码猜测）是攻击者通过尝试不同的密码组合来猜测用户的密码。他们可能使用常见的密码列表、字典攻击或使用个人信息来猜测密码。攻击者可以通过多次尝试不同的密码来破解密码。
+
 ### [T1110.002]:Password Cracking
 > External ID: T1110.002
 > STIX ID: attack-pattern--1d24cdee-9ea2-4189-b08e-af110bf2435d
 > Platforms: ['Linux', 'macOS', 'Windows', 'Office 365', 'Azure AD', 'Network']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
  Adversaries may use password cracking to attempt to recover usable credentials, such as plaintext passwords, when credential material such as password hashes are obtained. [OS Credential Dumping](https://attack.mitre.org/techniques/T1003) can be used to obtain password hashes, this may only get an adversary so far when [Pass the Hash](https://attack.mitre.org/techniques/T1550/002) is not an option. Further,  adversaries may leverage [Data from Configuration Repository](https://attack.mitre.org/techniques/T1602) in order to obtain hashed credentials for network devices.(Citation: US-CERT-TA18-106A) 
 
 Techniques to systematically guess the passwords used to compute hashes are available, or the adversary may use a pre-computed rainbow table to crack hashes. Cracking hashes is usually done on adversary-controlled systems outside of the target network.(Citation: Wikipedia Password cracking) The resulting plaintext password resulting from a successfully cracked hash may be used to log into systems, resources, and services in which the account has access.
+
+Password Cracking（密码破解）是一种攻击技术，通过使用计算资源和密码破解软件来尝试破解密码。密码破解工具通常使用暴力破解或字典攻击等方法，对密码进行多次尝试，直到找到正确的密码。
+
 ### [T1110.003]:Password Spraying
 > External ID: T1110.003
 > STIX ID: attack-pattern--692074ae-bb62-4a5e-a735-02cb6bde458c
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -3753,11 +3788,14 @@ Typically, management services over commonly used ports are used when password s
 In addition to management services, adversaries may "target single sign-on (SSO) and cloud-based applications utilizing federated authentication protocols," as well as externally facing email applications, such as Office 365.(Citation: US-CERT TA18-068A 2018)
 
 In default environments, LDAP and Kerberos connection attempts are less likely to trigger events over SMB, which creates Windows "logon failure" event ID 4625.
+
+Password Spraying（密码喷洒）是一种攻击技术，攻击者尝试使用一组常见的密码组合（而不是尝试多个用户的密码）来大规模地针对一个或多个用户进行猜测。这种方法通常用来规避系统锁定或检测机制，并且可以在一定程度上降低被发现的风险。
+
 ### [T1110.004]:Credential Stuffing
 > External ID: T1110.004
 > STIX ID: attack-pattern--b2d03cea-aec1-45ca-9744-9ee583c1e1cc
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -3781,11 +3819,14 @@ Typically, management services over commonly used ports are used when stuffing c
 * VNC (5900/TCP)
 
 In addition to management services, adversaries may "target single sign-on (SSO) and cloud-based applications utilizing federated authentication protocols," as well as externally facing email applications, such as Office 365.(Citation: US-CERT TA18-068A 2018)
+
+Credential Stuffing（凭证填充）是一种攻击技术，攻击者使用从一个网站或服务中泄露的用户名和密码组合，尝试对其他网站或服务进行自动化登录。攻击者利用许多用户对多个服务使用相同凭证的习惯，通过自动化尝试登录来寻找有效的组合。这个过程通常利用了暴露的凭证的共享和重新使用。
+
 ## [T1111]:Multi-Factor Authentication Interception
 > External ID: T1111
 > STIX ID: attack-pattern--dd43c543-bb85-4a6f-aa6e-160d90d06a49
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -4381,8 +4422,7 @@ Another example involves pivoting browser traffic from the adversary's browser t
 > External ID: T1187
 > STIX ID: attack-pattern--b77cf5f3-6060-475d-bd60-40ccbf28fdc2
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
-
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  Adversaries may gather credential material by invoking or forcing a user to automatically provide authentication information through a mechanism in which they can intercept.
@@ -4839,7 +4879,7 @@ Adversaries may have prior knowledge through reconnaissance that security softwa
 > External ID: T1212
 > STIX ID: attack-pattern--9c306d8d-cde7-4b4c-b6e8-d0bb16caca36
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -5786,7 +5826,7 @@ Adversaries may use the information gained to shape follow-on behaviors, such as
 > External ID: T1528
 > STIX ID: attack-pattern--890c9858-598c-401d-a4d5-c67ebcdd703a
 > Platforms: ['SaaS', 'Office 365', 'Azure AD', 'Google Workspace', 'Containers']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -5914,7 +5954,7 @@ Depending on the configuration of the environment, an adversary may be able to e
 > External ID: T1539
 > STIX ID: attack-pattern--10ffac09-e42d-4f56-ab20-db94c67d76ff
 > Platforms: ['Linux', 'macOS', 'Windows', 'Office 365', 'SaaS', 'Google Workspace']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -6961,7 +7001,7 @@ There have been examples of malware targeting session cookies to bypass multi-fa
 > External ID: T1552
 > STIX ID: attack-pattern--435dfb86-2697-4867-85b5-2fef496c0517
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Linux', 'macOS', 'Google Workspace', 'Containers', 'Network']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -6970,7 +7010,7 @@ There have been examples of malware targeting session cookies to bypass multi-fa
 > External ID: T1552.001
 > STIX ID: attack-pattern--837f9164-50af-4ac0-8219-379d8a74cefc
 > Platforms: ['Windows', 'IaaS', 'Linux', 'macOS', 'Containers']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -6983,7 +7023,7 @@ In cloud and/or containerized environments, authenticated user and service accou
 > External ID: T1552.002
 > STIX ID: attack-pattern--341e222a-a6e3-4f6f-b69c-831d792b1580
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -6997,7 +7037,7 @@ Example commands to find Registry keys related to password information: (Citatio
 > External ID: T1552.003
 > STIX ID: attack-pattern--8187bd2a-866f-4457-9009-86b0ddedffa3
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7006,7 +7046,7 @@ Example commands to find Registry keys related to password information: (Citatio
 > External ID: T1552.004
 > STIX ID: attack-pattern--60b508a1-6a5e-46b1-821a-9f7b78752abf
 > Platforms: ['Linux', 'macOS', 'Windows', 'Network']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7023,7 +7063,7 @@ Some private keys require a password or passphrase for operation, so an adversar
 > External ID: T1552.005
 > STIX ID: attack-pattern--19bf235b-8620-4997-b5b4-94e0659ed7c3
 > Platforms: ['IaaS']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7039,7 +7079,7 @@ The de facto standard across cloud service providers is to host the Instance Met
 > External ID: T1552.006
 > STIX ID: attack-pattern--8d7bd4f5-3a89-4453-9c82-2c8894d5655e
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7059,7 +7099,7 @@ On the SYSVOL share, adversaries may use the following command to enumerate pote
 > External ID: T1552.007
 > STIX ID: attack-pattern--f8ef3a62-3f44-40a4-abca-761ab235c436
 > Platforms: ['Containers']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7070,7 +7110,7 @@ An adversary may access the Docker API to collect logs that contain credentials 
 > External ID: T1552.008
 > STIX ID: attack-pattern--9664ad0e-789e-40ac-82e2-d7b17fbe8fb3
 > Platforms: ['Office 365', 'SaaS', 'Google Workspace']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7225,7 +7265,7 @@ Adversaries may make modifications to client software binaries to carry out mali
 > External ID: T1555
 > STIX ID: attack-pattern--3fc9b85a-2862-4363-a64d-d692e3ffbee0
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7234,8 +7274,7 @@ Adversaries may make modifications to client software binaries to carry out mali
 > External ID: T1555.001
 > STIX ID: attack-pattern--1eaebf46-e361-4437-bc23-d5d65a3b92e3
 > Platforms: ['macOS']
-> Tactics: ['credential-access']
-
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  Adversaries may acquire credentials from Keychain. Keychain (or Keychain Services) is the macOS credential management system that stores account names, passwords, private keys, certificates, sensitive application data, payment data, and secure notes. There are three types of Keychains: Login Keychain, System Keychain, and Local Items (iCloud) Keychain. The default Keychain is the Login Keychain, which stores user passwords and information. The System Keychain stores items accessed by the operating system, such as items shared among users on a host. The Local Items (iCloud) Keychain is used for items synced with Apple’s iCloud service. 
@@ -7247,8 +7286,7 @@ Adversaries may gather user credentials from Keychain storage/memory. For exampl
 > External ID: T1555.002
 > STIX ID: attack-pattern--1a80d097-54df-41d8-9d33-34e755ec5e72
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['credential-access']
-
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  An adversary may obtain root access (allowing them to read securityd’s memory), then they can scan through memory to find the correct sequence of keys in relatively few tries to decrypt the user’s logon keychain. This provides the adversary with all the plaintext passwords for users, WiFi, mail, browsers, certificates, secure notes, etc.(Citation: OS X Keychain)(Citation: OSX Keydnap malware)
@@ -7258,7 +7296,7 @@ In OS X prior to El Capitan, users with root access can read plaintext keychain 
 > External ID: T1555.003
 > STIX ID: attack-pattern--58a3e6aa-4453-4cc8-a51f-4befe80b31a8
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7275,7 +7313,7 @@ After acquiring credentials from web browsers, adversaries may attempt to recycl
 > External ID: T1555.004
 > STIX ID: attack-pattern--d336b553-5da9-46ca-98a8-0b23f49fb447
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7294,7 +7332,7 @@ Password recovery tools may also obtain plain text passwords from the Credential
 > External ID: T1555.005
 > STIX ID: attack-pattern--315f51f0-6b03-4c1e-bfb2-84740afb8e21
 > Platforms: ['Linux', 'macOS', 'Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7308,7 +7346,7 @@ Adversaries may acquire user credentials from password managers by extracting th
 > External ID: T1556
 > STIX ID: attack-pattern--f4c1826f-a322-41cd-9557-562100848c84
 > Platforms: ['Windows', 'Linux', 'macOS', 'Network', 'Azure AD', 'Google Workspace', 'IaaS', 'Office 365', 'SaaS']
-> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7326,7 +7364,7 @@ Adversaries may maliciously modify a part of this process to either reveal crede
 > External ID: T1556.001
 > STIX ID: attack-pattern--d4b96d2c-1032-4b22-9235-2b5b649d0605
 > Platforms: ['Windows']
-> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7337,7 +7375,7 @@ Malware may be used to inject false credentials into the authentication process 
 > External ID: T1556.002
 > STIX ID: attack-pattern--3731fbcd-0e43-47ae-ae6c-d15e510f0d42
 > Platforms: ['Windows']
-> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7350,7 +7388,7 @@ Adversaries can register malicious password filters to harvest credentials from 
 > External ID: T1556.003
 > STIX ID: attack-pattern--06c00069-771a-4d57-8ef5-d3718c1a8771
 > Platforms: ['Linux', 'macOS']
-> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7363,7 +7401,7 @@ Malicious modifications to the PAM system may also be abused to steal credential
 > External ID: T1556.004
 > STIX ID: attack-pattern--fa44a152-ac48-441e-a524-dd7b04b8adcd
 > Platforms: ['Network']
-> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7374,7 +7412,7 @@ Malicious modifications to the PAM system may also be abused to steal credential
 > External ID: T1556.005
 > STIX ID: attack-pattern--d50955c2-272d-4ac8-95da-10c29dda1c48
 > Platforms: ['Windows']
-> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7394,7 +7432,7 @@ An adversary may set this property at various scopes through Local Group Policy 
 > External ID: T1556.006
 > STIX ID: attack-pattern--b4409cd8-0da9-46e1-a401-a241afd4d1cc
 > Platforms: ['Windows', 'Azure AD', 'Office 365', 'SaaS', 'IaaS', 'Google Workspace', 'Linux', 'macOS']
-> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7409,7 +7447,7 @@ Depending on the scope, goals, and privileges of the adversary, MFA defenses may
 > External ID: T1556.007
 > STIX ID: attack-pattern--54ca26f3-c172-4231-93e5-ccebcac2161f
 > Platforms: ['Windows', 'Azure AD', 'SaaS', 'Google Workspace', 'Office 365', 'IaaS']
-> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7430,7 +7468,7 @@ In some cases, adversaries may be able to modify the hybrid identity authenticat
 > External ID: T1556.008
 > STIX ID: attack-pattern--90c4a591-d02d-490b-92aa-619d9701ac04
 > Platforms: ['Windows']
-> Tactics: ['credential-access', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', '[defense-evasion](##[TA0005]:Defense Evasion)', '[persistence](##[TA0003]:Persistence)']
 
 
 **Description: **
@@ -7443,7 +7481,7 @@ Adversaries may target planting malicious network provider DLLs on systems known
 > External ID: T1557
 > STIX ID: attack-pattern--035bb001-ab69-4a0b-9f6c-2de8b09e1b9d
 > Platforms: ['Windows', 'macOS', 'Linux', 'Network']
-> Tactics: ['credential-access', 'collection']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', 'collection']
 
 
 **Description: **
@@ -7456,7 +7494,7 @@ Adversaries may also leverage the AiTM position to attempt to monitor and/or mod
 > External ID: T1557.001
 > STIX ID: attack-pattern--650c784b-7504-4df7-ab2c-4ea882384d1e
 > Platforms: ['Windows']
-> Tactics: ['credential-access', 'collection']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', 'collection']
 
 
 **Description: **
@@ -7469,11 +7507,22 @@ Adversaries can spoof an authoritative source for name resolution on a victim ne
 In some cases where an adversary has access to a system that is in the authentication path between systems or when automated scans that use credentials attempt to authenticate to an adversary controlled system, the NTLMv1/v2 hashes can be intercepted and relayed to access and execute code against a target system. The relay step can happen in conjunction with poisoning but may also be independent of it.(Citation: byt3bl33d3r NTLM Relaying)(Citation: Secure Ideas SMB Relay) Additionally, adversaries may encapsulate the NTLMv1/v2 hashes into various protocols, such as LDAP, SMB, MSSQL and HTTP, to expand and use multiple services with the valid NTLM response. 
 
 Several tools may be used to poison name services within local networks such as NBNSpoof, Metasploit, and [Responder](https://attack.mitre.org/software/S0174).(Citation: GitHub NBNSpoof)(Citation: Rapid7 LLMNR Spoofer)(Citation: GitHub Responder)
+
+LLMNR/NBT-NS Poisoning和SMB Relay是两种网络攻击技术。
+
+LLMNR（Link-Local Multicast Name Resolution）是一种用于局域网中未能解析的主机名的协议，它允许主机通过广播查询局域网中其他主机的IP地址。NBT-NS（NetBIOS Name Service）是一种用于解析NetBIOS名称到IP地址的协议。
+
+LLMNR/NBT-NS Poisoning是一种攻击技术，攻击者通过伪造恶意响应来欺骗局域网中的主机。当一个主机发送一个未能解析的主机名查询时，攻击者可以发送一个虚假的响应，将自己的IP地址伪装成所请求的主机的IP地址。这样，发送查询的主机会将其网络流量发送到攻击者的机器上，攻击者可以进一步利用这个流量进行其他的攻击。
+
+SMB（Server Message Block）是一种用于文件和打印机共享的网络协议。SMB Relay是一种利用SMB协议进行攻击的技术。通过中间人的角色，攻击者可以窃取认证凭证，欺骗客户端将其流量发送到其他服务器上。攻击者可以在这个过程中获取用户的用户名和密码，并且可能进一步利用这些凭证进行未授权访问。
+
+这些攻击技术都可以被用来进行网络嗅探、密码破解、钓鱼攻击等。对于安全意识培训和防御策略是非常重要的，以保护网络和数据的安全。
+
 ### [T1557.002]:ARP Cache Poisoning
 > External ID: T1557.002
 > STIX ID: attack-pattern--cabe189c-a0e3-4965-a473-dcff00f17213
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['credential-access', 'collection']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', 'collection']
 
 
 **Description: **
@@ -7491,7 +7540,7 @@ Adversaries may use ARP cache poisoning as a means to intercept network traffic.
 > External ID: T1557.003
 > STIX ID: attack-pattern--59ff91cd-1430-4075-8563-e6f15f4f9ff5
 > Platforms: ['Linux', 'Windows', 'macOS']
-> Tactics: ['credential-access', 'collection']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)', 'collection']
 
 
 **Description: **
@@ -7516,7 +7565,7 @@ Rather than establishing an AiTM position, adversaries may also abuse DHCP spoof
 > External ID: T1558
 > STIX ID: attack-pattern--3fc01293-ef5e-41c6-86ce-61f10706b64a
 > Platforms: ['Windows', 'Linux', 'macOS']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7526,14 +7575,15 @@ On Windows, the built-in <code>klist</code> utility can be used to list and anal
 
 Linux systems on Active Directory domains store Kerberos credentials locally in the credential cache file referred to as the "ccache". The credentials are stored in the ccache file while they remain valid and generally while a user's session lasts.(Citation: MIT ccache) On modern Redhat Enterprise Linux systems, and derivative distributions, the System Security Services Daemon (SSSD) handles Kerberos tickets. By default SSSD maintains a copy of the ticket database that can be found in <code>/var/lib/sss/secrets/secrets.ldb</code> as well as the corresponding key located in <code>/var/lib/sss/secrets/.secrets.mkey</code>. Both files require root access to read. If an adversary is able to access the database and key, the credential cache Kerberos blob can be extracted and converted into a usable Kerberos ccache file that adversaries may use for [Pass the Ticket](https://attack.mitre.org/techniques/T1550/003). The ccache file may also be converted into a Windows format using tools such as Kekeo.(Citation: Linux Kerberos Tickets)(Citation: Brining MimiKatz to Unix)(Citation: Kekeo)
 
-
 Kerberos tickets on macOS are stored in a standard ccache format, similar to Linux. By default, access to these ccache entries is federated through the KCM daemon process via the Mach RPC protocol, which uses the caller's environment to determine access. The storage location for these ccache entries is influenced by the <code>/etc/krb5.conf</code> configuration file and the <code>KRB5CCNAME</code> environment variable which can specify to save them to disk or keep them protected via the KCM daemon. Users can interact with ticket storage using <code>kinit</code>, <code>klist</code>, <code>ktutil</code>, and <code>kcc</code> built-in binaries or via Apple's native Kerberos framework. Adversaries can use open source tools to interact with the ccache files directly or to use the Kerberos framework to call lower-level APIs for extracting the user's TGT or Service Tickets.(Citation: SpectorOps Bifrost Kerberos macOS 2019)(Citation: macOS kerberos framework MIT)
+
+窃取或伪造Kerberos票据是一种攻击技术，旨在获取Kerberos身份验证系统中的有效认证票据，以获得未经授权的访问权限。 Kerberos是一种网络身份验证协议，用于验证用户和服务之间的身份以及授权访问。Kerberos票据是由Kerberos颁发的加密令牌，用于证明用户已经通过身份验证并获得授权访问某个服务。 攻击者可以尝试通过以下方式窃取或伪造Kerberos票据： 1. 窃取票据：攻击者可以在网络中窃取合法用户的Kerberos票据。这可以通过各种方式实现，如网络嗅探、中间人攻击或通过恶意软件在受感染的主机上拦截Kerberos通信。 2. 伪造票据：攻击者可以尝试伪造有效的Kerberos票据，以欺骗系统相信他们是合法用户或服务。这可能涉及对Kerberos协议的深入理解以及对加密算法和票据生成过程的研究。 一旦攻击者成功窃取或伪造了Kerberos票据，他们可以利用这些票据来获取受限资源或执行未经授权的操作。这可能包括访问敏感数据、远程执行命令、暴露网络中其他用户的凭据等。 为了保护免受此类攻击，组织和个人应采取一系列措施，如使用安全的网络通信协议、定期更改密码、限制特权访问等。此外，实施基于多因素身份验证和监测异常活动的安全措施可以提高对Kerberos票据攻击的防御能力。
 
 ### [T1558.001]:Golden Ticket
 > External ID: T1558.001
 > STIX ID: attack-pattern--768dce68-8d0d-477a-b01d-0eea98b963a1
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7542,11 +7592,14 @@ Kerberos tickets on macOS are stored in a standard ccache format, similar to Lin
 Using a golden ticket, adversaries are then able to request ticket granting service (TGS) tickets, which enable access to specific resources. Golden tickets require adversaries to interact with the Key Distribution Center (KDC) in order to obtain TGS.(Citation: ADSecurity Detecting Forged Tickets)
 
 The KDC service runs all on domain controllers that are part of an Active Directory domain. KRBTGT is the Kerberos Key Distribution Center (KDC) service account and is responsible for encrypting and signing all Kerberos tickets.(Citation: ADSecurity Kerberos and KRBTGT) The KRBTGT password hash may be obtained using [OS Credential Dumping](https://attack.mitre.org/techniques/T1003) and privileged access to a domain controller.
+
+​	Golden Ticket（黄金票据）：Golden Ticket攻击是一种高级攻击技术，攻击者使用域控制器的加密密钥，伪造一个具有永久有效期的Kerberos票据，赋予自己在目标网络中任意用户的凭证。这使得攻击者可以获得域控制器的完全控制权限，并绕过所有身份验证机制。
+
 ### [T1558.002]:Silver Ticket
 > External ID: T1558.002
 > STIX ID: attack-pattern--d273434a-448e-4598-8e14-607f4a0d5e27
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7555,11 +7608,14 @@ The KDC service runs all on domain controllers that are part of an Active Direct
 Silver tickets are more limited in scope in than golden tickets in that they only enable adversaries to access a particular resource (e.g. MSSQL) and the system that hosts the resource; however, unlike golden tickets, adversaries with the ability to forge silver tickets are able to create TGS tickets without interacting with the Key Distribution Center (KDC), potentially making detection more difficult.(Citation: ADSecurity Detecting Forged Tickets)
 
 Password hashes for target services may be obtained using [OS Credential Dumping](https://attack.mitre.org/techniques/T1003) or [Kerberoasting](https://attack.mitre.org/techniques/T1558/003).
+
+Silver Ticket（白银票据）：Silver Ticket攻击是一种利用Kerberos委派特性的攻击技术。攻击者可以从域控制器中获取相应的服务票据（Service Ticket）密钥，然后伪造具有特定服务访问权限的Kerberos票据。这样，攻击者可以以该服务的身份在网络中执行未经授权的操作。
+
 ### [T1558.003]:Kerberoasting
 > External ID: T1558.003
 > STIX ID: attack-pattern--f2877f7f-9a4c-4251-879f-1224e3006bee
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7572,11 +7628,14 @@ Adversaries possessing a valid Kerberos ticket-granting ticket (TGT) may request
 This same behavior could be executed using service tickets captured from network traffic.(Citation: AdSecurity Cracking Kerberos Dec 2015)
 
 Cracked hashes may enable [Persistence](https://attack.mitre.org/tactics/TA0003), [Privilege Escalation](https://attack.mitre.org/tactics/TA0004), and [Lateral Movement](https://attack.mitre.org/tactics/TA0008) via access to [Valid Accounts](https://attack.mitre.org/techniques/T1078).(Citation: SANS Attacking Kerberos Nov 2014)
+
+Kerberoasting：Kerberoasting是一种利用Kerberos身份验证协议中的弱点的攻击技术。在Kerberos中，许多服务账户的密码是存储在Active Directory中的散列形式。攻击者可以使用这些散列值来离线破解和恢复服务账户的密码。一旦攻击者知道了服务账户的明文密码，他们可以利用这些凭证进行未经授权的访问和攻击。
+
 ### [T1558.004]:AS-REP Roasting
 > External ID: T1558.004
 > STIX ID: attack-pattern--3986e7fd-a8e9-4ecb-bfc6-55920855912b
 > Platforms: ['Windows']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -7589,6 +7648,9 @@ For each account found without preauthentication, an adversary may send an AS-RE
 An account registered to a domain, with or without special privileges, can be abused to list all domain accounts that have preauthentication disabled by utilizing Windows tools like [PowerShell](https://attack.mitre.org/techniques/T1059/001) with an LDAP filter. Alternatively, the adversary may send an AS-REQ message for each user. If the DC responds without errors, the account does not require preauthentication and the AS-REP message will already contain the encrypted data. (Citation: Harmj0y Roasting AS-REPs Jan 2017)(Citation: Stealthbits Cracking AS-REP Roasting Jun 2019)
 
 Cracked hashes may enable [Persistence](https://attack.mitre.org/tactics/TA0003), [Privilege Escalation](https://attack.mitre.org/tactics/TA0004), and [Lateral Movement](https://attack.mitre.org/tactics/TA0008) via access to [Valid Accounts](https://attack.mitre.org/techniques/T1078).(Citation: SANS Attacking Kerberos Nov 2014)
+
+AS-REP Roasting：AS-REP Roasting是一种利用Kerberos的弱点来进行攻击的技术。在Kerberos身份验证过程中，域控制器向客户端发送AS-REP（认证服务请求报文），并使用客户端提供的用户名来生成其中的一部分。攻击者可以利用域配置不正确的情况，请求AS-REP报文的认证，然后对其进行离线暴力破解攻击，以获取用户的散列密码。一旦攻击者知道了用户的密码，他们可以利用这些凭证进行未经授权的访问和攻击。
+
 ## [T1559]:Inter-Process Communication
 > 中文：进程间通信(IPC)
 >
@@ -9919,7 +9981,7 @@ Adversaries can use common management tools and protocols, such as Simple Networ
 > External ID: T1606
 > STIX ID: attack-pattern--94cb00a4-b295-4d06-aa2b-5653b9c1be9c
 > Platforms: ['SaaS', 'Windows', 'macOS', 'Linux', 'Azure AD', 'Office 365', 'Google Workspace', 'IaaS']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -9932,7 +9994,7 @@ Once forged, adversaries may use these web credentials to access resources (ex: 
 > External ID: T1606.001
 > STIX ID: attack-pattern--861b8fd2-57f3-4ee1-ab5d-c19c3b8c7a4a
 > Platforms: ['Linux', 'macOS', 'Windows', 'SaaS', 'IaaS']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -9945,7 +10007,7 @@ Once forged, adversaries may use these web cookies to access resources ([Web Ses
 > External ID: T1606.002
 > STIX ID: attack-pattern--1f9c2bae-b441-4f66-a8af-b65946ee72f2
 > Platforms: ['Azure AD', 'SaaS', 'Windows', 'Office 365', 'Google Workspace', 'IaaS']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -10288,7 +10350,7 @@ Reflective code injection is very similar to [Process Injection](https://attack.
 > External ID: T1621
 > STIX ID: attack-pattern--954a1639-f2d6-407d-aef3-4917622ca493
 > Platforms: ['Windows', 'Office 365', 'Linux', 'macOS', 'IaaS', 'SaaS', 'Azure AD', 'Google Workspace']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 
 **Description: **
@@ -10362,7 +10424,7 @@ Serverless functions can also be invoked in response to cloud events (i.e. [Even
 > External ID: T1649
 > STIX ID: attack-pattern--7de1f7ac-5d0c-4c9c-8873-627202205331
 > Platforms: ['Windows', 'Linux', 'macOS', 'Azure AD']
-> Tactics: ['credential-access']
+> Tactics: ['[credential-access](##[TA0006]:Credential Access)']
 
 **Description: **
  Adversaries may steal or forge certificates used for authentication to access remote systems or resources. Digital certificates are often used to sign and encrypt messages and/or files. Certificates are also used as authentication material. For example, Azure AD device certificates and Active Directory Certificate Services (AD CS) certificates bind to an identity and can be used as credentials for domain accounts.(Citation: O365 Blog Azure AD Device IDs)(Citation: Microsoft AD CS Overview)
